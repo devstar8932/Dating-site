@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <title>LagnachiBolni.com</title>
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl" ng-init="login=true; forgotPassword=false; forgotUsername=false;">
+  <div id="wrapper" class="login-wrapper">
+    <header id="header" class="header-inner">
+      <div class="container">
+        <md-button class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </md-button>
+        <div class="logo-header">
+          <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+        </div>
+      </div>
+    </header>
+    <div class="text-center forgot-username fadein fadeout" ng-show="forgotUsername">
+      <a href="#" class="go-login pull-left btn-circle" ng-click="login = true; forgotUsername = false; forgotPassword = false">
+        <span class=""><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></span>
+      </a>
+      <h1>Trouble Accessing Your Account?</h1>
+      <hr>
+      <div class="forgot-username-content">
+        <h5>Forgot your Username? Enter your Mobile Number below. We will send you Username via SMS.</h5>
+        <p>Username has been sent to you via SMS. Please check your mobile.</p>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Mobile Number</label>
+          <input type="text">
+        </md-input-container>
+        <md-button class="md-raised md-warn">Get Username</md-button>
+        <div>
+          <a href="#" ng-click="login = true; forgotUsername = false; forgotPassword = false">Login</a>
+        </div>
+      </div>
+      <div class="text-center">
+        <br />
+        <img src="./images/floral.png">
+      </div>
+    </div>
+    <div class="text-center forgot-username fadein fadeout" ng-show="forgotPassword">
+      <a href="#" class="go-login pull-left btn-circle" ng-click="login = true; forgotUsername = false; forgotPassword = false">
+        <span class=""><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></span>
+      </a>
+      <h1>Trouble Accessing Your Account?</h1>
+      <hr>
+      <div class="forgot-username-content">
+        <h5>Forgot your Password? Enter your Mobile Number below. We will send you Password via SMS.</h5>
+        <p>Password has been sent to you via SMS. Please check your mobile.</p>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Username</label>
+          <input type="text">
+        </md-input-container>
+        <md-button class="md-raised md-warn">Get Password</md-button>
+        <div>
+          <a href="#" ng-click="login = true; forgotUsername = false; forgotPassword = false">Login</a>
+        </div>
+      </div>
+      <div class="text-center">
+        <br />
+        <img src="./images/floral.png">
+      </div>
+    </div>
+    <main id="main" ng-show="login" class="fadein fadeout">
+      <div class="login-page-holder">
+        <div class="container">
+          <h1>Login</h1>
+          <div class="row no-margin">
+            <div class="col-sm-6">
+              <div class="login-wrap">
+                <md-input-container class="md-block user-name" flex-gt-sm>
+                  <label>Mobile/Username</label>
+                  <input ng-model="user.userName">
+                </md-input-container>
+                <md-input-container class="md-block password" flex-gt-sm>
+                  <label>Password</label>
+                  <input ng-model="user.userPassword" type="password">
+                </md-input-container>
+                <md-checkbox ng-model="data.cb1" class="checkbox" aria-label="Checkbox 1">
+                  Remember me on this PC
+                </md-checkbox>
+                <md-button class="md-raised md-warn">Login</md-button>
+                <div class="forget-holder">
+                  <a href="#" class="pull-left" ng-click="forgotUsername = true; login = false; forgotPassword = false">Forgot Username?</a>
+                  <a href="#" class="pull-right" ng-click="forgotPassword = true; login = false; forgotUsername = false">Forgot Password?</a>
+                </div>
+                <div class="register-block"> <span translate>New to LagnachiBolani.com? 123</span> <a href="#">Register</a></div>
+              </div>
+            </div>
+            <div class="col-sm-6 text-center">
+              <div class="login-with-wrap">
+                <ul class="login-with">
+                  <li><a href="#" class="facebook">facebook</a></li>
+                  <li><a href="#" class="google-plus">google-plus</a></li>
+                </ul>
+                <a href="#" class="link-help">May i help you?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 visible-md visible-lg">
+              <div class="logo-footer">
+                <a href="#"><img src="images/logo.png" height="155" width="267" alt="LagnachiBolni"></a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="cast" class="fake-anchor" property="" content="">
+                <a href="#cast" class="link-title">Castes We Serve</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">96kuli-Maratha</a></li>
+                    <li><a href="#">MarathaDeshmukh</a></li>
+                    <li><a href="#">Maratha</a></li>
+                    <li><a href="#">Agri</a></li>
+                    <li><a href="#">Arya-Vysya</a></li>
+                    <li><a href="#">Aryasamaj</a></li>
+                    <li><a href="#">Beldar</a></li>
+                    <li><a href="#">Bhandari</a></li>
+                    <li><a href="#">Bhavsar</a></li>
+                    <li><a href="#">Bhavsar-Kshatriya</a></li>
+                    <li><a href="#">Brahmin</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <nav class="footer-nav">
+                <meta id="city" class="fake-anchor" property="" content="">
+                <a href="#city" class="link-title">Cities</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Ahmednagar</a></li>
+                    <li><a href="#">Aurangabad</a></li>
+                    <li><a href="#">Jalgaon</a></li>
+                    <li><a href="#">Kolhapur</a></li>
+                    <li><a href="#">Thane</a></li>
+                    <li><a href="#">Nagpur</a></li>
+                    <li><a href="#">Nashik</a></li>
+                    <li><a href="#">Sangli</a></li>
+                    <li><a href="#">Solapur</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="help" class="fake-anchor" property="" content="">
+                <a href="#help" class="link-title">Help &amp; Support</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Membership</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <nav class="footer-nav">
+                <meta id="otherservice" class="fake-anchor" property="" content="">
+                <a href="#otherservice" class="link-title">Other Services</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">Wedding Hall</a></li>
+                    <li><a href="#">Caterers</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-3 col-sm-4 contact-detail">
+              <strong class="footer-title">Follow us on</strong>
+              <ul class="social-share">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+              <strong class="footer-title helpline">Helpline Number</strong>
+              <a href="tel:+917722090227" class="tel">+91-7722090227</a>
+              <strong class="footer-title">Support Team</strong>
+              <a class="email" href="mailto:care@lagnachibolni.com">care@lagnachibolni.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          Copyright &copy; 2011-2016 <a href="#">LagnachiBolni.com</a>. <br>All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+
+      <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <!-- Angular Material requires Angular.js Libraries -->
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+      <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+      <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+      <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+      <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+      <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+      <!-- Angular Material Library -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+      <script src="js/scrollRevealAnimations.js"></script>
+      <script src="js/app.js"></script>
+
+</body>
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

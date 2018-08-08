@@ -1,0 +1,150 @@
+
+
+<div ng-controller="SidebarController as vm">
+  <div ng-if="vm.isLoggedInUser1">
+     <div class="closed-sidenav visible-md visible-lg" ng-if="!vm.isSmallView" >
+        <ul class="nav-links">
+          <li ng-class="{'active':vm.selectedMenu == 'registration'}" ng-show="vm.decide"><a href="/registration/0" ng-click="vm.changeMenu('registration')" uib-tooltip="Registration" tooltip-placement="right"><i class="icon-registration"></i></a></li>
+          <li ng-class="{'active': vm.selectedMenu == 'login'}" ng-show="vm.decide"><a href="/login" ng-click="vm.changeMenu('login')" uib-tooltip="Login" tooltip-placement="right"><i class="icon-login"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu  == 'search'}" ng-show="vm.decide"><a href="/search" ng-click="vm.changeMenu('search')" uib-tooltip="Search" tooltip-placement="right"><i class="icon-search"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'payment'}" ng-show="vm.decide"><a href="/payment" ng-click="vm.changeMenu('payment')" uib-tooltip="Payment" tooltip-placement="right"><i class="icon-wallet"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'refer-your-friends'}" ng-show="vm.decide" ng-click="vm.changeMenu('refer-your-friends')"><a href="/refer-your-friends" uib-tooltip="Refer Friends" tooltip-placement="right"><i class="icon-human-resource"></i></a></li>
+           <!--<li ng-class="{ 'active' : vm.selectedMenu == 'wedding_planer'}" ng-show="vm.decide"><a-->
+                   <!--href="/caterers"-->
+                   <!--ng-click="vm.changeMenu('wedding_planer')"-->
+                   <!--uib-tooltip="Wedding Planer" tooltip-placement="right"><i-->
+             <!--class="icon-wedding-planer"></i></a></li>-->
+          <li ng-class="{ 'active' : vm.selectedMenu == 'contactUs'}" ng-show="vm.decide"><a href="/contactUs" ng-click="vm.changeMenu('contactUs')" uib-tooltip="Contact Us" tooltip-placement="right"><i class="icon-phone2"></i></a></li>
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partner'}"><a href="/partner" ng-click="vm.changeMenu('partner')" uib-tooltip="Partner" tooltip-placement="right"><i class="fa fa-home"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDetails'}" ng-show="vm.partnerDetailsShow"><a href="/partnerdetails" ng-click="vm.changeMenu('partnerDetails')" uib-tooltip="Partner Details" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDashboard'}" ng-show="vm.partnerDetailsShow"><a href="/partnerdashboard" ng-click="vm.changeMenu('partnerDashboard')" uib-tooltip="Partner Dashboard" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogin'}" ng-show="vm.partnerDetailsShow"><a href="/partnerlogin" ng-click="vm.changeMenu('partnerLogin')" uib-tooltip="Partner Login" tooltip-placement="right"><i class="icon-login"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogout'}" ng-show="vm.partnerDetailsShow"><a href="/partnerlogout" ng-click="vm.changeMenu('partnerLogout')" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+        </ul>
+      </div>
+    <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="vm.isSidenavOpen" class="sidenav md-sidenav-left loggedout-sidenav" style= "z-index :40;">
+      <div class="nav-holder home-hamburger hidden-xs hidden-sm">
+        <span class="nav-close" ng-click="vm.openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+      </div>
+        <ul class="nav-links">
+         <li ng-class="{'active':vm.selectedMenu == 'registration'}" ng-show="vm.decide"><a href="/registration/0" ng-click="vm.changeMenu('registration')"><i class="icon-registration"></i>{{'Register' | translate}} </a></li>
+          <li ng-class="{'active': vm.selectedMenu == 'login'}" ng-show="vm.decide"><a href="/login" ng-click="vm.changeMenu('login')"><i class="icon-login" ></i>{{'Login' | translate}} </a></li>
+          <li ng-class="{'active':vm.selectedMenu  == 'search'}" ng-show="vm.decide"><a href="/search" ng-click="vm.changeMenu('search')"><i class="icon-search" ></i>{{'Search' | translate}} </a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'payment'}" ng-show="vm.decide"><a href="/payment" ng-click="vm.changeMenu('payment')"><i class="icon-wallet" ></i>{{'Payment' | translate}} </a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'refer-your-friends'}" ng-show="vm.decide" ng-click="vm.changeMenu('refer-your-friends')" ><a href="/refer-your-friends"><i class="icon-human-resource" ></i>{{'Refer Friends' | translate}} </a></li>
+            <!--<li ng-class="{ 'active' : vm.selectedMenu == 'wedding_planer'}" ng-show="vm.decide"><a-->
+                    <!--href="/caterers"-->
+                    <!--ng-click="vm.changeMenu('wedding_planer')"><i-->
+              <!--class="icon-wedding-planer"></i>{{'Wedding Planer' | translate}}-->
+            <!--</a></li>-->
+          <li ng-class="{ 'active' : vm.selectedMenu == 'contactUs'}" ng-show="vm.decide"><a href="/contactUs" ng-click="vm.changeMenu('contactUs')"><i class="icon-phone2" ></i>{{'Contact Us' | translate}} </a></li>
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partner'}"><a href="/partner" ng-click="vm.changeMenu('partner')" uib-tooltip="Partner" tooltip-placement="right"><i class="fa fa-home"></i>{{'Partner Home' | translate}}</a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDetails'}" ng-show="vm.partnerDetailsShow"><a href="/partnerdetails" ng-click="vm.changeMenu('partnerDetails')" uib-tooltip="Partner Details" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Details' | translate}}</a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDashboard'}" ng-show="vm.partnerDetailsShow"><a href="/partnerdashboard" ng-click="vm.changeMenu('partnerDashboard')" uib-tooltip="Partner Dashboard" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Dashboard' | translate}}</a></li>-->
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogin'}" ng-show="vm.partnerDetailsShow"><a href="/partnerlogin" ng-click="vm.changeMenu('partnerLogin')" uib-tooltip="Partner Login" tooltip-placement="right"><i class="icon-login"></i>{{'Partner Login' | translate}}</a></li>
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogout'}" ng-show="vm.partnerDetailsShow"><a href="/partnerlogout" ng-click="vm.changeMenu('partnerLogout')" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Logout' | translate}}</a></li>-->
+          </ul>
+      </md-sidenav>
+  </div>
+ <div ng-if="vm.isLoggedInUser">
+  <div class="closed-sidenav visible-md visible-lg" ng-if="!vm.isSmallView" >
+        <ul class="nav-links">
+          <li ng-class="{'active':vm.selectedMenu == 'dashboard'}"><a href="/dashboard" ng-click="vm.changeMenu('dashboard')"  uib-tooltip="Dashboard" tooltip-placement="right" ><i class="icon-dashboard"></i></a></li>
+          <li ng-class="{'active': vm.selectedMenu == 'inbox'}"><a href="/inbox" ng-click="vm.changeMenu('inbox')"  uib-tooltip="Inbox" tooltip-placement="right"><i class="icon-email"></i></a></li>
+          <li ng-class="{'active': vm.selectedMenu == 'outbox'}"><a href="/outbox" ng-click="vm.changeMenu('outbox')" uib-tooltip="Outbox" tooltip-placement="right"><i class="icon-box-remove"></i></a></li>
+          <li ng-class="{'active' : vm.selectedMenu  == 'profile'}"><a href="/profile" ng-click="vm.changeMenu('profile')" uib-tooltip="My Profile" tooltip-placement="right"><i class="icon-profile2"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu  == 'search'}"><a href="/search" ng-click="vm.changeMenu('search')" uib-tooltip="Search" tooltip-placement="right"><i class="icon-search"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'refer-your-friends'}" ng-click="vm.changeMenu('refer-your-friends')"><a href="/refer-your-friends" uib-tooltip="Refer Friends" tooltip-placement="right" ><i class="icon-human-resource"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'payment'}"><a href="/payment" ng-click="vm.changeMenu('payment')" uib-tooltip="Payment" tooltip-placement="right"><i class="icon-wallet"></i></a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'account'}"><a href="/account" ng-click="vm.changeMenu('account')" uib-tooltip="Settings" tooltip-placement="right"><i class="icon-settings"></i></a></li>
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'wedding_planer'}"><a-->
+            <!--href="/caterers" ng-click="vm.changeMenu('wedding_planer')"-->
+            <!--uib-tooltip="Wedding Planer" tooltip-placement="right"><i-->
+            <!--class="icon-wedding-planer"></i></a></li>-->
+          <li ng-class="{ 'active' : vm.selectedMenu == 'contactUs'}"><a href="/contactUs" ng-click="vm.changeMenu('contactUs')" uib-tooltip="Contact Us" tooltip-placement="right"><i class="icon-phone2"></i></a></li>
+          <li ng-class="{ 'active': vm.selectedMenu == 'Logout'}"><a href="#" ng-click="vm.logOut()" uib-tooltip="Logout" tooltip-placement="right"><i class="icon-logout"></i></a></li>
+        </ul>
+      </div>
+
+      <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="vm.isSidenavOpen" class="sidenav md-sidenav-left">
+        <!-- <div class="sidenav-header">
+          <span class="nav-close" ng-click="openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+          <div class="logo-header">
+            <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+          </div>
+        </div> -->
+        <ul class="nav-links">
+         <li ng-class="{'active':vm.selectedMenu == 'dashboard'}"><a href="/dashboard" ng-click="vm.changeMenu('dashboard')"><i class="icon-dashboard" ></i>{{'Dashboard' | translate}} </a></li>
+          <li ng-class="{'active': vm.selectedMenu == 'inbox'}"><a href="/inbox" ng-click="vm.changeMenu('inbox')"><i class="icon-email" ></i>{{'Inbox' | translate}} </a></li>
+           <li ng-class="{'active': vm.selectedMenu == 'outbox'}"><a href="/outbox" ng-click="vm.changeMenu('outbox')"><i class="icon-box-remove" ></i>{{'Outbox' | translate}}</a></li>
+            <li ng-class="{'active' : vm.selectedMenu  == 'profile'}"><a href="/profile" ng-click="vm.changeMenu('profile')"><i class="icon-profile2" ></i>{{'My Profile' | translate}} </a></li>
+           <li ng-class="{'active':vm.selectedMenu  == 'search'}"><a href="/search" ng-click="vm.changeMenu('search')"><i class="icon-search" ></i>{{'Search' | translate}} </a></li>
+           <li ng-class="{'active':vm.selectedMenu == 'refer-your-friends'}" ng-click="vm.changeMenu('refer-your-friends')"><a href="/refer-your-friends"><i class="icon-human-resource"></i>{{'Refer Friends' | translate}}</a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'payment'}"><a href="/payment" ng-click="vm.changeMenu('payment')"><i class="icon-wallet" ></i>{{'Payment' | translate}} </a></li>
+          <li ng-class="{'active':vm.selectedMenu == 'account'}"><a href="/account" ng-click="vm.changeMenu('account')"><i class="icon-settings"></i>{{'Account Settings' | translate}} </a></li>
+            <!--<li ng-class="{ 'active' : vm.selectedMenu == 'wedding_planer'}"><a-->
+                    <!--href="/caterers"-->
+                    <!--ng-click="vm.changeMenu('wedding_planer')"><i-->
+              <!--class="icon-wedding-planer"></i>{{'Wedding Planer' | translate}}-->
+            <!--</a></li>-->
+           <li ng-class="{ 'active' : vm.selectedMenu == 'contactUs'}"><a href="/contactUs" ng-click="vm.changeMenu('contactUs')"><i class="icon-phone2"></i>{{'Contact Us' | translate}} </a></li>
+           <li ng-class="{ 'active': vm.selectedMenu == 'Logout'}"><a href="#" ng-click="vm.logOut()"><i class="icon-logout"></i>{{'Logout' | translate}} </a></li>
+        </ul>
+      </md-sidenav>
+     </div>
+
+
+    <!--Parent logged in-->
+
+<div ng-if="vm.isParentLoggedInUser">
+  <div class="closed-sidenav visible-md visible-lg" ng-if="!vm.isSmallView" >
+        <ul class="nav-links">
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partner'}"><a href="/partner" ng-click="vm.changeMenu('partner')" uib-tooltip="Partner" tooltip-placement="right"><i class="fa fa-home"></i></a></li>
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partnerDetails'}"><a href="/partnerdetails" ng-click="vm.changeMenu('partnerDetails')" uib-tooltip="Partner Details" tooltip-placement="right"><i class="fa fa-vcard-o"></i></a></li>
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partnerDashboard'}"><a href="/partnerdashboard" ng-click="vm.changeMenu('partnerDashboard')" uib-tooltip="Partner Dashboard" tooltip-placement="right"><i class="fa fa-dashboard"></i></a></li>
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogout'}"><a href="/partnerlogout" ng-click="vm.changeMenu('partnerLogout')" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-logout"></i></a></li>-->
+          <li ng-class="{ 'active' : vm.selectedMenu == 'accountSetting'}"><a href="/partnerchangepassword" ng-click="vm.changeMenu('accountSetting')" uib-tooltip="Account Setting" tooltip-placement="right"><i class="icon-settings"></i></a></li>
+          <li ng-class="{ 'active': vm.selectedMenu == 'partnerLogout'}"><a href="#" ng-click="vm.partnerLogOut()" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-logout"></i></a></li>
+        </ul>
+      </div>
+
+      <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="vm.isSidenavOpen" class="sidenav md-sidenav-left">
+        <ul class="nav-links">
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partner'}"><a href="/partner" ng-click="vm.changeMenu('partner')" uib-tooltip="Partner" tooltip-placement="right"><i class="fa fa-home"></i>{{'Partner Home' | translate}}</a></li>
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partnerDetails'}"><a href="/partnerdetails" ng-click="vm.changeMenu('partnerDetails')" uib-tooltip="Partner Details" tooltip-placement="right"><i class="fa fa-vcard-o"></i>{{'Partner Details' | translate}}</a></li>
+          <li ng-class="{ 'active' : vm.selectedMenu == 'partnerDashboard'}"><a href="/partnerdashboard" ng-click="vm.changeMenu('partnerDashboard')" uib-tooltip="Partner Dashboard" tooltip-placement="right"><i class="fa fa-dashboard"></i>{{'Partner Dashboard' | translate}}</a></li>
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogout'}"><a href="/partnerlogout" ng-click="vm.changeMenu('partnerLogout')" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-logout"></i>{{'Partner Logout' | translate}}</a></li>-->
+          <li ng-class="{ 'active' : vm.selectedMenu == 'accountSetting'}"><a href="/partnerchangepassword" ng-click="vm.changeMenu('accountSetting')" uib-tooltip="Account Setting" tooltip-placement="right"><i class="icon-settings"></i>{{'Account Setting' | translate}}</a></li>
+          <li ng-class="{ 'active': vm.selectedMenu == 'partnerLogout'}"><a href="#" ng-click="vm.partnerLogOut()"><i class="icon-logout"></i>{{'Logout' | translate}} </a></li>
+        </ul>
+      </md-sidenav>
+     </div>
+
+</div>
+
+<!--Parent logged in-->
+
+<!--<div ng-if="vm.isParentLoggedInUser">-->
+  <!--<div class="closed-sidenav visible-md visible-lg" ng-if="!vm.isSmallView" >-->
+        <!--<ul class="nav-links">-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partner'}"><a href="/partner" ng-click="vm.changeMenu('partner')" uib-tooltip="Partner" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDetails'}"><a href="/partnerdetails" ng-click="vm.changeMenu('partnerDetails')" uib-tooltip="Partner Details" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDashboard'}"><a href="/partnerdashboard" ng-click="vm.changeMenu('partnerDashboard')" uib-tooltip="Partner Dashboard" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogout'}"><a href="/partnerlogout" ng-click="vm.changeMenu('partnerLogout')" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'accountSetting'}"><a href="/partnerchangepassword" ng-click="vm.changeMenu('accountSetting')" uib-tooltip="Account Setting" tooltip-placement="right"><i class="icon-phone2"></i></a></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+
+      <!--<md-sidenav md-component-id="left" md-disable-backdrop md-is-open="vm.isSidenavOpen" class="sidenav md-sidenav-left">-->
+        <!--<ul class="nav-links">-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partner'}"><a href="/partner" ng-click="vm.changeMenu('partner')" uib-tooltip="Partner" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Home' | translate}}</a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDetails'}"><a href="/partnerdetails" ng-click="vm.changeMenu('partnerDetails')" uib-tooltip="Partner Details" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Details' | translate}}</a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerDashboard'}"><a href="/partnerdashboard" ng-click="vm.changeMenu('partnerDashboard')" uib-tooltip="Partner Dashboard" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Dashboard' | translate}}</a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'partnerLogout'}"><a href="/partnerlogout" ng-click="vm.changeMenu('partnerLogout')" uib-tooltip="Partner Logout" tooltip-placement="right"><i class="icon-phone2"></i>{{'Partner Logout' | translate}}</a></li>-->
+          <!--<li ng-class="{ 'active' : vm.selectedMenu == 'accountSetting'}"><a href="/partnerchangepassword" ng-click="vm.changeMenu('accountSetting')" uib-tooltip="Account Setting" tooltip-placement="right"><i class="icon-phone2"></i>{{'Account Setting' | translate}}</a></li>-->
+        <!--</ul>-->
+      <!--</md-sidenav>-->
+     <!--</div>-->
+
+
+<!--Account setting &#45;&#45;&ndash;&gt; Change Password-->

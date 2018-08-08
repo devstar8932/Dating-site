@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <title>LagnachiBolni.com</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+    <div id="wrapper" class="inner-wrapper">
+        <div ng-include src="'partials/header.html'"></div>
+
+        <main id="main">
+
+            <div class="closed-sidenav visible-md visible-lg" ng-hide="isSidenavOpen">
+                <ul class="nav-links">
+                    <li><a><i class="icon-email"></i></a></li>
+                    <li><a><i class="icon-box-remove"></i></a></li>
+                    <li><a><i class="icon-dashboard"></i></a></li>
+                    <li><a><i class="icon-search"></i></a></li>
+                    <li><a><i class="icon-human-resource"></i></a></li>
+                    <li><a><i class="icon-phone2"></i></a></li>
+                    <li class="active"><a><i class="icon-profile2"></i></a></li>
+                    <li><a><i class="icon-settings"></i></a></li>
+                    <li><a><i class="icon-logout"></i></a></li>
+                </ul>
+            </div>
+
+            <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="isSidenavOpen" class="sidenav md-sidenav-left">
+                <div class="sidenav-header">
+                    <span class="nav-close" ng-click="openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+                    <div class="logo-header">
+                        <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#"><i class="icon-email"></i> Inbox</a></li>
+                    <li><a href="#"><i class="icon-box-remove"></i> Outbox</a></li>
+                    <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="icon-search"></i> Search</a></li>
+                    <li><a href="#"><i class="icon-human-resource"></i> Refer Friends</a></li>
+                    <li><a href="#"><i class="icon-phone2"></i> Contact Us</a></li>
+                    <li class="active"><a href="#"><i class="icon-profile2"></i> My Profile</a></li>
+                    <li><a href="#"><i class="icon-settings"></i> Account Settings</a></li>
+                    <li><a href="#"><i class="icon-logout"></i> Logout</a></li>
+                </ul>
+            </md-sidenav>
+
+            <div class="container-fluid inbox-container" ng-click="closeLeftMenuMobile()">
+                <div>
+                    <div class="row inbox-header-row">
+                        <div class="col-sm-4">
+                            <div class="inbox-header">
+                                <h1>Inbox - Total Profile 16 </h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <md-content>
+                                <md-tabs md-selected="selectedIndex" md-dynamic-height>
+                                    <md-tab md-on-select="selectTab(0)">
+                                        <md-tab-label>
+                                            <div class="tab-header"><span class="header-icon"><i class="icon-star-full"></i></span>&nbsp;Interests&nbsp;<span class="header-badge">3</span></div>
+                                        </md-tab-label>
+                                    </md-tab>
+
+                                    <md-tab md-on-select="selectTab(1)">
+                                        <md-tab-label>
+                                            <div class="tab-header"><span class="header-icon"><i class="icon-cross"></i></span>&nbsp;Rejected&nbsp;<span class="header-badge">2</span></div>
+                                        </md-tab-label>
+                                    </md-tab>
+
+                                    <md-tab md-on-select="selectTab(2)">
+                                        <md-tab-label>
+                                            <div class="tab-header"><span class="header-icon"><i class="icon-checkmark"></i></span>&nbsp;Accepted&nbsp;<span class="header-badge">5</span></div>
+                                        </md-tab-label>
+                                    </md-tab>
+
+                                    <md-tab md-on-select="selectTab(3)">
+                                        <md-tab-label>
+                                            <div class="tab-header"><span class="header-icon"><i class="icon-camera"></i></span>&nbsp;Photo Requests&nbsp;<span class="header-badge">4</span></div>
+                                        </md-tab-label>
+                                    </md-tab>
+                                </md-tabs>
+                            </md-content>
+                        </div>
+
+
+                    </div>
+                    <div class="row inbox-content-wrapper">
+                        <md-tab-body ng-Show="isSelected(0)">
+                            <div class="row ">
+
+                              <lb-search-result result-type="inbox" profile-data="searchProfile1" ></lb-search-result>
+                              <lb-search-result result-type="inbox" profile-data="searchProfile1"></lb-search-result>
+                              <lb-search-result result-type="inbox" profile-data="searchProfile2"></lb-search-result>
+                              <lb-search-result result-type="inbox" profile-data="searchProfile1"></lb-search-result>
+                              <lb-search-result result-type="inbox" profile-data="searchProfile1"></lb-search-result>
+                              <lb-search-result result-type="inbox" profile-data="searchProfile1"></lb-search-result>
+
+
+                            </div>
+
+                        </md-tab-body>
+
+                        <md-tab-body ng-Show="isSelected(1)">
+                          <div class="row ">
+
+                            <lb-search-result result-type="inbox"  profile-data="searchProfile2"></lb-search-result>
+                            <lb-search-result result-type="inbox" profile-data="searchProfile1"></lb-search-result>
+
+                          </div>
+                        </md-tab-body>
+
+                        <md-tab-body ng-Show="isSelected(2)">
+                          <div class="row">
+                            <lb-search-result result-type="inbox" profile-data="searchProfile1"></lb-search-result>
+
+                          </div>
+
+
+                        </md-tab-body>
+
+                        <md-tab-body ng-Show="isSelected(3)">
+                          <div class="row">
+                            <lb-search-result result-type="search" profile-data="searchProfile1" ></lb-search-result>
+                            <lb-search-result result-type="search" profile-data="searchProfile2"></lb-search-result>
+                            <lb-search-result result-type="search" profile-data="searchProfile1"></lb-search-result>
+                          </div>
+
+
+
+                        </md-tab-body>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <md-toolbar class="chrome-gap-correction">
+        <div ng-include src="'partials/footer.html'"></div>
+    </md-toolbar>
+
+        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+        <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+        <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+        <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+        <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+        <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+        <script src="js/scrollRevealAnimations.js"></script>
+        <script src="js/app.js"></script>
+
+</body>
+
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

@@ -1,0 +1,212 @@
+<div class="container-fluid" ng-click="closeLeftMenuMobile()"
+     style="padding-bottom: 65px;" ng-show="vm.logoutWindowFlag">
+    <!--<div class="text-center forgot-username fadein fadeout"-->
+         <!--ng-show="vm.forgotUsername">-->
+        <!--<form name="form1" novalidate>-->
+            <!--<a href="#" class="go-login pull-left btn-circle"-->
+               <!--ng-click="vm.login = true; vm.forgotUsername = false; vm.forgotPassword = false">-->
+                <!--<span class=""><i class="fa fa-arrow-left fa-2x"-->
+                                  <!--aria-hidden="true"></i></span>-->
+            <!--</a>-->
+
+            <!--<h1 translate>Forgot Your Username?</h1>-->
+            <!--<hr>-->
+            <!--<div class="forgot-username-content">-->
+                <!--<h5 translate>Enter your Mobile Number below. We-->
+                    <!--will send you Username via SMS.</h5>-->
+                <!--<br>-->
+                <!--&lt;!&ndash;<p>Username has been sent to you via SMS. Please check your mobile.</p>&ndash;&gt;-->
+                <!--<md-input-container class="md-block" flex-gt-sm>-->
+                    <!--<input type="tel" name="phone" data-phone-->
+                           <!--ng-model="vm.mobileNo" class="form-control"-->
+                           <!--placeholder="{{ 'Mobile Number' | translate}}"-->
+                           <!--required />-->
+
+                    <!--<div ng-messages="form1.phone.$error" role="alert">-->
+                        <!--<div ng-message="required" class="my-message" translate>Please provide-->
+                            <!--phone number.-->
+                        <!--</div>-->
+                        <!--<div ng-message="phoneField" class="my-message" translate>The-->
+                            <!--entered value is not a phone number!-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</md-input-container>-->
+                <!--<md-button type="submit" class="md-raised md-warn"-->
+                           <!--ng-click="vm.requestToUsername(form1,vm.mobileNo)">{{'Get Username' | translate}}-->
+                <!--</md-button>-->
+                <!--<div class="forget-holder">-->
+                    <!--<a href="#"-->
+                       <!--ng-click="vm.login = true; vm.forgotUsername = false; vm.forgotPassword = false" >{{'Login' | translate}}</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="text-center">-->
+                <!--<img src="./images/floral.png">-->
+            <!--</div>-->
+        <!--</form>-->
+    <!--</div>-->
+
+    <div class="text-center forgot-username fadein fadeout"
+         ng-show="vm.forgotPassword">
+        <form name="formvalid" novalidate>
+            <a href="#" class="go-login pull-left btn-circle"
+               ng-click="vm.login = true; vm.forgotUsername = false; vm.forgotPassword = false">
+                <span class=""><i class="fa fa-arrow-left fa-2x"
+                                  aria-hidden="true"></i></span>
+            </a>
+
+            <h1 translate>Forgot your Password?</h1>
+            <hr>
+            <div class="forgot-username-content">
+      <h5 translate>Enter your Mobile Number or Username/Email below And We will send your Password via SMS.</h5>
+                <!--<p>Password has been sent to you via SMS. Please check your mobile.</p>-->
+              <br>
+       <md-input-container class="md-block" flex-gt-sm>
+        <input  type="text" data-username name="phone1"  ng-model="vm.mobileNumber" class="form-control" placeholder="{{ 'Username/Mobile' | translate}}" required />
+        <div ng-messages="formvalid.phone1.$error" role="alert">
+            <div ng-message="required" class="my-message" translate>Please provide a Value</div>
+        </div>
+      </md-input-container>
+
+      <md-button type="submit" class="md-raised md-warn" ng-click ="vm.requestToPassword(formvalid , vm.mobileNumber)">{{'Get Password' | translate}}</md-button>
+      <div class="forget-holder">
+        <a href="#" ng-click="vm.login = true; vm.forgotUsername = false; vm.forgotPassword = false">{{'Login' | translate}}</a>
+      </div>
+    </div>
+    <div class="text-center">
+      <img src="./images/floral.png">
+    </div>
+  </form>
+</div>
+
+    <div id="main" ng-show="vm.login" class="fadein fadeout">
+        <div class="login-page-holder">
+            <div class="container">
+                <h1 translate>Partner Login</h1>
+
+                <div class="row no-margin">
+                        <div class="login-wrap">
+                            <form ng-submit="vm.loginUser(loginForm)"
+                                  name="loginForm" novalidate>
+
+                              <!--<md-input-container class="md-block" flex-gt-sm>-->
+                    <md-input-container class="md-block phone" flex-gt-sm>
+                                 <input type="tel"
+                               name="phone" data-phone
+                               ng-model="vm.user.user_mobile"
+                               minlength = "10"
+                               class="form-control"
+                               placeholder="{{'Mobile Number' | translate}}"
+                               ng-click="vm.initPhone()"
+                               required/>
+
+                        <div ng-messages="loginForm.phone.$error"
+                             role="alert">
+                            <div ng-message="required minlength"
+                                 class="my-message" translate>Please provide a correct phone number.
+                            </div>
+                        </div>
+                    </md-input-container>
+                                <!--<md-input-container class="md-block user-name"-->
+                                                    <!--flex-gt-sm>-->
+                                    <!--<label translate>Mobile/Username</label>-->
+                                    <!--<input ng-model="vm.user.username"-->
+                                           <!--name="username" required>-->
+
+                                    <!--<div ng-messages="loginForm.username.$error"-->
+                                         <!--role="alert">-->
+                                        <!--<div ng-message="required"-->
+                                             <!--class="my-message" translate>Please provide username-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div ng-if="vm.isInvalidUserName"-->
+                                     <!--style="color:red;font-size: 10px;" translate>The username/password that you've entered is incorrect.-->
+                                    <!--</div>-->
+                                <!--</md-input-container>-->
+                                <md-input-container class="md-block password"
+                                                    flex-gt-sm>
+                                    <label translate>Password</label>
+                                    <input ng-model="vm.user.password"
+                                           name="password" type="{{ vm.showPassfield ? 'text' :'password' }}"
+                                           required>
+
+                                    <div ng-messages="loginForm.password.$error"
+                                         role="alert">
+                                        <div ng-message="required"
+                                             class="my-message" translate>Please provide password.
+                                        </div>
+                                    </div>
+                                </md-input-container>
+                                <md-checkbox name="showPass"
+                                             class="checkbox"
+                                             style= "margin-bottom:0px;"
+                                             ng-model="vm.showPass"
+                                             ng-change="vm.showPassfield = vm.showPass" > <span translate>Show password</span>
+
+                                </md-checkbox>
+                                <md-checkbox style= "margin-top:5px;" ng-model="vm.user.remember_me"
+                                             class="checkbox"
+                                             aria-label="Checkbox 1" ><span translate>Remember me on this PC</span>
+
+                                </md-checkbox>
+
+                                <div class="login-btn-wrap">
+                                  <md-button type='submit'
+                                             class="md-raised md-warn">{{'Login' | translate}}</md-button>
+                                </div>
+
+                                <div class="forget-holder">
+                                    <a href="#" class="pull-left"
+                                       ng-click="vm.forgotUsername = true; vm.login = false; vm.forgotPassword = false" translate>Forgot your Username?</a>
+                                    <a href="#" class="pull-right"
+                                       ng-click="vm.forgotPassword = true; vm.login = false; vm.forgotUsername = false" translate>Forgot your Password?</a>
+                                </div>
+                                <div class="register-block" >{{'New to LagnachiBolani.com?' | translate}}<a href="/registration/0" target="" translate>Register</a></div>
+                            </form>
+                        </div>
+
+                    <!--<div class="col-sm-6 text-center">
+                        <div class="login-with-wrap">
+                            <ul class="login-with">
+                                <li><a href="#" ng-click="vm.checkLoginState()"
+                                       class="facebook">facebook</a></li>
+                                <li>
+                                    <div class="g-signin2"
+                                         data-onsuccess="onSignIn"
+                                         data-theme="dark"><a href="#"
+                                                              class="google-plus"
+                                                              ng-click="vm.onLogInButtonClick()">google-plus</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div id="status"></div>
+                            <a href="#" class="link-help">May i help you?</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" ng-click="closeLeftMenuMobile()"
+     style="padding-bottom: 65px;" ng-show="!vm.logoutWindowFlag">
+    <div class="text-center forgot-username fadein fadeout">
+        <form name="form2" novalidate>
+            <h1 translate style="margin-right:0;">Good bye! See you later.</h1>
+            <hr>
+            <div class="forgot-username-content">
+                <h5 translate>You have successfully Logged out.</h5>
+
+                <p translate>Help Us grow and it will help you back. Like and share us on facebook. </p>
+
+                <md-button type="button" class="md-raised md-warn"
+                           ng-click="vm.loginWindow()" >{{'Login' | translate}}
+                </md-button>
+            </div>
+            <div class="text-center">
+                <br/>
+                <img src="./images/floral.png">
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,264 @@
+/* footer styles */
+.footer-top {
+  @include box-shadow(inset 0 5px 5px rgba(0,0,0,.17));
+  position: relative;
+  background: #f6f1e6;
+  padding: 21px 0 26px;
+
+  @include media('>=tablet') {
+    @include box-shadow(inset 3px 4px 5px rgba(0,0,0,.17));
+    padding: 29px 0 26px;
+  }
+
+  @include media('>=tablet', '<desktop') {
+    .container {
+      max-width: 700px;
+    }
+  }
+
+  .email {
+    font-size: 18px;
+    color: #333;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .tel {
+    font-size: 25px;
+    line-height: 1;
+    color: #333;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: #ff5d0c;
+    }
+
+    @include media('>=tablet') {
+      margin-bottom: 35px;
+    }
+
+    @include media('>=widescreen') {
+      font-size: 35px;
+    }
+
+    @include media('>=1025px') {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  .contact-detail {
+    @include media('<tablet') {
+      text-align: center;
+      padding-top: 19px;
+    }
+  }
+
+  .fake-anchor{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    &:target {
+      ~ .link-wrap{
+        max-height: 260px;
+      }
+    }
+  }
+}
+
+.logo-footer {
+  width: 200px;
+
+  @include media('>=widescreen') {
+    width: 213px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+
+  @include media('>=tablet') {
+    margin-bottom: 21px;
+  }
+
+  .link-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+
+    @include media('>=tablet') {
+      color: #715f36;
+      pointer-events: none;
+      margin-bottom: 13px;
+    }
+
+    @include media('<tablet') {
+      padding: 17px 45px 17px 15px;
+      color: #dbdbdb;
+      position: relative;
+      background: #000;
+
+      &:before {
+        content: '+';
+        line-height: 54px;
+        position: absolute;
+        top: 0;
+        right: 21px;
+        font-weight: 500;
+        font-size: 28px;
+        color: #ff5d0c;
+      }
+
+      &:hover {
+        background: #ff5d0c;
+        color: #fff;
+
+        &:before {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .link-wrap {
+    @include media('<tablet') {
+      @include transition(0.3s ease max-height);
+      max-height: 0;
+      overflow: hidden;
+    }
+  }
+
+  ul {
+    @extend %listreset;
+
+    @include media('<tablet') {
+      padding: 15px 0 10px;
+    }
+
+    li {
+      font-size: 14px;
+      line-height: 20px;
+
+      a {
+        color: #856621;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.footer-title {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #715f36;
+  margin: 0 0 14px;
+
+  &.helpline {
+    margin-bottom: 16px;
+
+    @include media('>=tablet') {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.social-share {
+  @extend %listreset;
+  font-size: 0;
+  margin-bottom: 10px;
+
+  @include media('>=tablet') {
+    margin-right: -18px;
+    margin-bottom: 30px;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 9px 10px;
+
+    @include media('>=tablet') {
+      margin: 0 18px 10px 0;
+    }
+
+    a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      font-size: 24px;
+      color: #3766a0;
+      padding: 13px 5px;
+
+      &:hover {
+        background: lighten(#715f36, 50%);
+      }
+
+      .fa {
+        vertical-align: top;
+      }
+
+      .fa-twitter {
+        color: #2eacf6;
+      }
+
+      .fa-linkedin {
+        color: #0077b5;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background: #ff5d0c;
+  font-size: 12px;
+  line-height: 19px;
+  color: #fff;
+  padding: 15px 0;
+
+  @include media('>=tablet') {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 11px 0;
+  }
+
+  @include media('>=tablet', '<desktop') {
+    .container {
+      max-width: 700px;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-wrap: normal;
+
+    &:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+  br {
+    @include media('>=phone') {
+      display: none;
+    }
+  }
+}

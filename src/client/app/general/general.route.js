@@ -1,0 +1,52 @@
+(function() {
+  'use strict';
+
+  angular
+    .module('app.general')
+    .run(appRun);
+
+  appRun.$inject = ['routerHelper'];
+  /* @ngInject */
+  function appRun(routerHelper) {
+    routerHelper.configureStates(getStates());
+  }
+
+  function getStates() {
+    return [
+      {
+        state: 'faq',
+        config: {
+          url: '/faq',
+           views: {
+                    '': { 
+                         templateUrl: 'app/general/faq.html',
+                         controller: 'GeneralController',
+                         controllerAs: 'vm'
+                       },
+                      'header':{templateUrl: 'app/layout/ht-top-nav.html'} ,
+                      'footer':{templateUrl: 'app/layout/footer.html' },
+                       'sidebar':{templateUrl: 'app/layout/sidebar.html'} 
+                     },
+          title: 'FAQ'
+        }
+      },
+      {
+        state: 'terms',
+        config: {
+          url: '/terms',
+           views: {
+                    '': { 
+                         templateUrl: 'app/general/terms.html',
+                         controller: 'GeneralController',
+                         controllerAs: 'vm'
+                       },
+                      'header':{templateUrl: 'app/layout/ht-top-nav.html'} ,
+                      'footer':{templateUrl: 'app/layout/footer.html' },
+                       'sidebar':{templateUrl: 'app/layout/sidebar.html'} 
+                     },
+          title: 'Terms'
+        }
+      }
+    ];
+  }
+})();

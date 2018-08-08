@@ -1,0 +1,3216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lb\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Megha Bodke <megha.n.bodke@gmail.com>\n"
+"Language-Team: lb\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/viewprofile/viewprofile.html:126 app/viewprofile/viewprofile.html:45
+msgid "&nbsp; Profile Completion"
+msgstr "प्रोफाइल पूर्ण"
+
+#: app/viewprofile/viewprofile.html:55 app/viewprofile/viewprofile.html:84
+msgid "&nbsp;&nbsp;Report this user"
+msgstr "ह्या व्यक्तीची आमच्याकडे तक्रार नोंदवा "
+
+#: app/inbox/inbox.html:50 app/outbox/outbox.html:44
+msgid "&nbsp;Accepted&nbsp;"
+msgstr "स्वीकारलेले "
+
+#: app/inbox/inbox.html:14 app/outbox/outbox.html:12
+msgid "&nbsp;Interests&nbsp;"
+msgstr "आवड पाठवलेले"
+
+#: app/inbox/inbox.html:69 app/outbox/outbox.html:60
+msgid "&nbsp;Photo Requests&nbsp;"
+msgstr "फोटो विनंती"
+
+#: app/inbox/inbox.html:32 app/outbox/outbox.html:28
+msgid "&nbsp;Rejected&nbsp;"
+msgstr "नकार दिलेले"
+
+#: app/contactUs/contactUs.html:96 app/contactUs/contactUs.html:98
+msgid "+91-7218701870"
+msgstr "+९१-७२१८७०१८७०"
+
+#: app/contactUs/contactUs.html:101 app/layout/footer.html:104
+msgid "+91-7722090227"
+msgstr "+९१-७७२२०९०२२७"
+
+#: app/viewprofile/viewprofile.html:63 app/viewprofile/viewprofile.html:93
+msgid ", From -"
+msgstr ",शहर -"
+
+#: app/registration/registration.html:782
+msgid "12 Hour Birth Time"
+msgstr "जन्म वेळ "
+
+#: app/home/home.html:598 app/home/home.html:667
+msgid "17000+ profiles"
+msgstr "१७००० पेक्षा जास्त बायोडेटा. "
+
+#: app/layout/footer.html:19
+msgid "96kuli-Maratha"
+msgstr "९६ कुळी मराठा"
+
+#: app/registration/registration.html:1248 app/registration/registration.html:1469 app/registration/registration.html:898
+#: app/registration/registration.html:941
+msgid "<i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i>Back"
+msgstr "मागे"
+
+#: app/viewprofile/viewprofile.html:113 app/viewprofile/viewprofile.html:120 app/viewprofile/viewprofile.html:32 app/viewprofile/viewprofile.html:39
+msgid "<i class=\"icon-cancel-circle\" aria-hidden=\"true\"></i>&nbsp;Not Verified"
+msgstr "<i class=\"icon-cancel-circle\" aria-hidden=\"true\"></i>&nbsp;व्हेरीफाईड नाही"
+
+#: app/viewprofile/viewprofile.html:118 app/viewprofile/viewprofile.html:31 app/viewprofile/viewprofile.html:37
+msgid "<i class=\"icon-checkmark\" aria-hidden=\"true\"></i>&nbsp;Verified"
+msgstr "<i class=\"icon-checkmark\" aria-hidden=\"true\"></i>&nbsp;व्हेरीफाईड"
+
+#: app/contactUs/contactUs.html:87
+msgid "A-8 Regent lake View, Sector-26, Near Ganesh Talav, Nigadi Pradhikarn Pune, 411044, Maharashtra"
+msgstr "A-8 'रिजंट लेक व्हिव , सेक्टर 26, गणेश तलावा जवळ, निगडी  प्राधिकरण  पुणे- 411044, महाराष्ट्र"
+
+#: app/components/uploadImage/uploadimage.html:7
+msgid "ADD YOUR PICTURE"
+msgstr "तुमचा फोटो टाका "
+
+#: app/aboutUs/aboutUs.html:3 app/layout/footer.html:63
+msgid "About Us"
+msgstr "आमच्या विषयी"
+
+#: app/components/profileViewCard/profileViewCard.html:78 app/viewprofile/viewprofile.html:134
+msgid "Accept"
+msgstr "स्विकारा"
+
+#: app/dashboard/dashboard.html:154
+msgid "Accept/Reject them"
+msgstr "त्यांना स्वीकारा / नकार द्या "
+
+#: app/partnerdetails/partner_details.html:498
+msgid "Account Details"
+msgstr "अकाऊंट ची माहिती"
+
+#: app/partnerdetails/partner_details.html:826
+msgid "Account Number"
+msgstr "अकाऊंट नंबर"
+
+#: app/layout/sidebar.html:117 app/layout/sidebar.html:144
+msgid "Account Setting"
+msgstr "अकाउंट सेटिंग"
+
+#: app/account/account.html:4 app/layout/sidebar.html:84 app/partnerchangepassword/partnerChangePassword.html:5
+msgid "Account Settings"
+msgstr "सेटिंग्ज"
+
+#: app/general/faq.html:81
+msgid ""
+"After registration, we send you the password on your registered mobile number. You can use username you entered at the time of registration and the "
+"password to login to lagnachibilni. You can also use your registered mobile number as username and the password you received to login."
+msgstr ""
+"नोंदणी केल्यानंतर लॉगइन कसे करायचे?\n"
+"नोंदणी पूर्ण केल्यानंतर तुम्हाला अकाऊंटचा पासवर्ड तुमच्या नोंदविलेल्या मोबाईलवर मिळेल. लॉगइन करण्यासाठी लॉगइन पेज उघडा.  नोंदणी करताना दिलेला युजरनेम आणि मोबाइलवर  आलेल्या "
+"पासवर्ड ने तुम्ही लॉगइन करू शकाल. "
+
+#: app/home/home.html:303 app/viewprofile/viewprofile.html:59
+msgid "Age"
+msgstr "वय "
+
+#: app/search/search.html:45
+msgid "Age From"
+msgstr "कमीतकमी वय"
+
+#: app/search/search.html:66
+msgid "Age To"
+msgstr "जास्तीतजास्त वय"
+
+#: app/home/home.html:312
+msgid "Age from..."
+msgstr "कमीतकमी वय "
+
+#: app/search/search.html:79
+msgid "Age must be greater than {{vm.search.age1}}."
+msgstr "वय  {{vm.search.age1}} पेक्षा जास्त असावे."
+
+#: app/registration/registration.html:145
+msgid "Age should be 18 to 50"
+msgstr "वय 18 ते 50 असावे."
+
+#: app/home/home.html:194 app/profile/profile.html:144
+msgid "Age should be 18 to 50."
+msgstr "वय 18 ते 50 असावे."
+
+#: app/registration/registration.html:142
+msgid "Age should be 21 to 50"
+msgstr "वय 21 ते 50 असावे."
+
+#: app/home/home.html:191 app/profile/profile.html:141
+msgid "Age should be 21 to 50."
+msgstr "वय 21 ते 50 असावे."
+
+#: app/home/home.html:334
+msgid "Age to..."
+msgstr "जास्तीतजास्त वय"
+
+#: app/viewprofile/viewprofile.html:89
+msgid "Age {{vm.profile.age}}, {{vm.profile.caste}}, {{vm.profile.marital_status}}"
+msgstr "वय {{vm.profile.age}}, {{vm.profile.caste}}, {{vm.profile.marital_status}}"
+
+#: app/components/profileViewCard/profileViewCard.html:27
+msgid "Age:"
+msgstr "वय:"
+
+#: app/layout/footer.html:22
+msgid "Agri"
+msgstr "आगरी "
+
+#: app/layout/footer.html:43
+msgid "Ahmednagar"
+msgstr "अहमदनगर"
+
+#: app/components/profileViewCard/profileViewCard.html:136 app/viewprofile/viewprofile.html:524
+msgid "Already Married"
+msgstr "विवाहित आहे"
+
+#: app/payment/payment.html:127
+msgid "Amount"
+msgstr "रक्कम"
+
+#: app/viewprofile/viewprofile.html:246
+msgid "Annual Income :"
+msgstr "वार्षिक उत्पन्न :"
+
+#: app/profile/profile.html:468
+msgid "Annual Income(Rs)"
+msgstr "वार्षिक उत्पन्न(₹)"
+
+#: app/layout/footer.html:23
+msgid "Arya-Vysya"
+msgstr "आर्य-वश्य"
+
+#: app/layout/footer.html:24
+msgid "Aryasamaj"
+msgstr "आर्य समाज"
+
+#: app/confirm_email/confirm_email.html:10
+msgid "As complementary we have gifted you 5 show interests, please avail then."
+msgstr "आम्ही तुम्हाला भेट म्हणून ५ शो इन्टेरेस्टस  दिले आहेत, त्यांचा  वापर करा. "
+
+#: app/payment/payment.html:72
+msgid "As this is an offline transaction for us, this will take 2 working days to Get the contact credits."
+msgstr "पैसे आमच्या बँक खात्यात आल्यानंतर जास्तीतजास्त २ कामकाजी दिवसात आपल्याला कॉन्टॅक्ट क्रेडिट मिळतील."
+
+#: app/profile/profile.html:34 app/profile/profile.html:906 app/registration/registration.html:1274 app/registration/registration_success.html:61
+#: app/viewprofile/viewprofile.html:422
+msgid "Astro Details"
+msgstr "कुंडली माहिती"
+
+#: app/dashboard/dashboard.html:73
+msgid "Astro Details &nbsp;"
+msgstr "कुंडली माहिती "
+
+#: app/layout/footer.html:44
+msgid "Aurangabad"
+msgstr "औरंगाबाद"
+
+#: app/dashboard/dashboard.html:106
+msgid "BUY MORE"
+msgstr "खरेदी करा"
+
+#: app/components/profileViewCard/profileViewCard.html:134 app/viewprofile/viewprofile.html:522
+msgid "Bad Photo"
+msgstr "फोटो चांगला नाही / फोटो बदला."
+
+#: app/partnerdetails/partner_details.html:732 app/payment/payment.html:214
+msgid "Bank Name"
+msgstr "बँकेचे नाव "
+
+#: app/registration/registration.html:233 app/registration/registration_success.html:13
+msgid "Basic Details"
+msgstr "बेसीक माहिती "
+
+#: app/dashboard/dashboard.html:33
+msgid "Basic Details &nbsp;"
+msgstr "स्वत:बद्दल माहिती"
+
+#: app/layout/footer.html:25
+msgid "Beldar"
+msgstr "बेलदार "
+
+#: app/layout/footer.html:26
+msgid "Bhandari"
+msgstr "भंडारी"
+
+#: app/layout/footer.html:27
+msgid "Bhavsar"
+msgstr "भावसार"
+
+#: app/layout/footer.html:28
+msgid "Bhavsar-Kshatriya"
+msgstr "भावसार क्षत्रीय "
+
+#: app/registration/registration.html:643
+msgid "Birth Place"
+msgstr "जन्म स्थान"
+
+#: app/viewprofile/viewprofile.html:102 app/viewprofile/viewprofile.html:72
+msgid "Birth Place:"
+msgstr "जन्म स्थान:"
+
+#: app/profile/profile.html:269
+msgid "Blood Group"
+msgstr "रक्तगट "
+
+#: app/viewprofile/viewprofile.html:201
+msgid "Blood group :"
+msgstr "रक्तगट :"
+
+#: app/registration/registration.html:853
+msgid "Blood-Group"
+msgstr "रक्तगट"
+
+#: app/layout/footer.html:29
+msgid "Brahmin"
+msgstr "ब्राह्मण"
+
+#: app/payment/payment.html:75
+msgid "Branch - Nigdi, Pune"
+msgstr "ब्रँच - निगडी , पुणे"
+
+#: app/profile/profile.html:786 app/registration/registration.html:1130
+msgid "Brother Details"
+msgstr "भावांची माहिती"
+
+#: app/viewprofile/viewprofile.html:375
+msgid "Brother Details Not Available"
+msgstr "भावांची माहिती उपलब्ध नाही"
+
+#: app/viewprofile/viewprofile.html:342
+msgid "Brothers"
+msgstr "भाऊ "
+
+#: app/home/home.html:728 app/payment/payment.html:53
+msgid "Buy Now"
+msgstr "खरेदी करा "
+
+#: app/payment/payment.html:10
+msgid "Buy Online"
+msgstr "ऑनलाइन पेमेंट"
+
+#: app/payment/payment.html:33
+msgid "By registering for Saptpadi package, you get the access to all the profiles for your own search."
+msgstr "सप्तपदी पॅकेजला रजिस्टर करून, आपण आमच्याकडील प्रोफाईल मधून आपल्यासाठी योग्य ते प्रोफाईल स्वतः निवडू शकता."
+
+#: app/contactUs/contactUs.html:90
+msgid "Call Us"
+msgstr "संपर्क "
+
+#: app/general/faq.html:46
+msgid "Can I use the same Email ID for multiple Registrations?"
+msgstr "मी माझा ई-मेल ऍड्रेस एक पेक्षा जास्त नोंदणीसाठी वापरू शकतो का?"
+
+#: app/components/profileViewCard/profileViewCard.html:147 app/components/uploadImage/uploadProfileImage.html:10 app/layout/footer.html:145
+#: app/layout/footer.html:173 app/profile/profile.html:1092
+msgid "Cancel"
+msgstr "बंद "
+
+#: app/home/home.html:356 app/profile/profile.html:185 app/registration/registration.html:177 app/search/search.html:206
+msgid "Caste"
+msgstr "जात "
+
+#: app/components/profileViewCard/profileViewCard.html:43
+msgid "Caste:"
+msgstr "जात :"
+
+#: app/layout/footer.html:16
+msgid "Castes We Serve"
+msgstr "या समाजांसाठी आम्ही सेवा पुरवतो"
+
+#: app/caterers/caterers.html:7 app/weddinghall/weddinghall.html:6
+msgid "Caterers<span class=\"circle-icon\"><i class=\"icon-search-list\"></i></span>"
+msgstr ""
+
+#: app/partnerchangepassword/partnerChangePassword.html:341
+msgid "Change Contact Details<span class=\"circle-icon\"><i class=\"icon-change\"></i></span>"
+msgstr "संपर्क माहिती बदला<span class=\"circle-icon\"><i class=\"icon-change\"></i></span>"
+
+#: app/partnerchangepassword/partnerChangePassword.html:414
+msgid "Change Email"
+msgstr "ई-मेल ऍड्रेस बदला."
+
+#: app/registration/registration_success.html:92
+msgid "Change Mobile Number"
+msgstr " फोन नंबर बदला"
+
+#: app/account/account.html:113 app/partnerchangepassword/partnerChangePassword.html:114
+msgid "Change Password<span class=\"circle-icon\"><i class=\"icon-change\"></i></span>"
+msgstr "पासवर्ड बदला <span class=\"circle-icon\"><i class=\"icon-change\"></i></span>"
+
+#: app/partnerchangepassword/partnerChangePassword.html:349
+msgid "Change your Email"
+msgstr "ई-मेल ऍड्रेस बदला."
+
+#: app/account/account.html:121 app/partnerchangepassword/partnerChangePassword.html:122
+msgid "Change your password"
+msgstr "आपला पासवर्ड बदला"
+
+#: app/profile/profile.html:998 app/registration/registration.html:1401
+msgid "Charan"
+msgstr "चरण "
+
+#: app/viewprofile/viewprofile.html:469
+msgid "Charan :"
+msgstr "चरण :"
+
+#: app/layout/footer.html:38
+msgid "Cities"
+msgstr "शहर "
+
+#: app/profile/profile.html:164 app/registration/registration.html:256 app/search/search.html:190
+msgid "City"
+msgstr "शहर "
+
+#: app/components/uploadImage/uploadimage.html:8
+msgid "Click to upload photos from your computer"
+msgstr "आपल्या संगणकावरील फोटो अपलोड करण्यासाठी क्लिक करा"
+
+#: app/partnerdetails/partner_details.html:1393 app/profile/profile.html:1116 app/viewprofile/viewprofile.html:496
+msgid "Close"
+msgstr "बंद "
+
+#: app/profile/profile.html:326 app/registration/registration.html:757
+msgid "Complexion"
+msgstr "वर्ण  "
+
+#: app/viewprofile/viewprofile.html:208
+msgid "Complexion :"
+msgstr "वर्ण :"
+
+#: app/home/home.html:472 app/home/home.html:529
+msgid "Confirm Mobile Number"
+msgstr "फोन नंबर निश्चितीकरण"
+
+#: app/dashboard/dashboard.html:211
+msgid ""
+"Confirm your email and get 5 show interests free!<span ng-show=\"vm.email_address != ''\">We have already sent you a mail. Check your Mail Box.</"
+"span>"
+msgstr ""
+"तुमचा ई-मेल ऍड्रेस कन्फर्म करा आणि ५ शो इंटरेस्ट मिळावा ! <span ng-show=\"vm.email_address != ''\">आम्ही तुमाला ई-मेल पाठविला आहे. तुमचा मेल बॉक्स चेक करा.</span>"
+
+#: app/registration/registration_success.html:3
+msgid "Congratulations {{vm.user.firstname}}"
+msgstr "अभिनंदन {{vm.user.firstname}}"
+
+#: app/home/home.html:586 app/home/home.html:657
+msgid "Congratulatory 45 days Free trial"
+msgstr "४५ दिवस विनाशुल्क सेवा"
+
+#: app/home/home.html:503 app/home/home.html:554
+msgid "Connect"
+msgstr "कनेक्ट"
+
+#: app/dashboard/dashboard.html:127
+msgid "Connected"
+msgstr "कनेक्टेड"
+
+#: app/dashboard/dashboard.html:86 app/home/home.html:724 app/home/home.html:735 app/home/home.html:743
+msgid "Contact Credits"
+msgstr "संपर्क "
+
+#: app/profile/profile.html:30 app/profile/profile.html:500 app/registration/registration.html:491
+msgid "Contact Details"
+msgstr "संपर्क माहिती"
+
+#: app/contactUs/contactUs.html:22
+msgid "Contact Number"
+msgstr "फोन नंबर "
+
+#: app/contactUs/contactUs.html:4 app/layout/footer.html:64 app/layout/sidebar.html:40 app/layout/sidebar.html:90
+msgid "Contact Us"
+msgstr "संपर्क माहिती "
+
+#: app/payment/payment.html:25
+msgid "Contacts"
+msgstr "संपर्क"
+
+#: app/layout/footer.html:112
+msgid "Copyright &copy; 2011-2016 <a href=\"#\">LagnachiBolni.com</a>. <br>All Rights Reserved"
+msgstr ""
+
+#: app/registration/registration.html:477
+msgid "Create Your Profile"
+msgstr "तुमची प्रोफाईल बनवा"
+
+#: app/payment/payment.html:123
+msgid "Credits Received"
+msgstr "प्राप्त क्रेडिट"
+
+#: app/registration/registration.html:508 app/viewprofile/viewprofile.html:149
+msgid "Current Address"
+msgstr "सध्याचा पत्ता "
+
+#: app/profile/profile.html:554 app/registration/registration.html:515
+msgid "Current Address Line 1"
+msgstr "सध्याचा पत्ता 1"
+
+#: app/profile/profile.html:563 app/registration/registration.html:525
+msgid "Current Address Line 2"
+msgstr "सध्याचा पत्ता 2"
+
+#: app/viewprofile/viewprofile.html:69 app/viewprofile/viewprofile.html:99
+msgid "DOB:"
+msgstr "जन्म तारीख :"
+
+#: app/layout/sidebar.html:77
+msgid "Dashboard"
+msgstr "डॅशबोर्ड"
+
+#: app/home/home.html:183 app/profile/profile.html:129 app/registration/registration.html:133
+msgid "Date of Birth"
+msgstr "जन्म तारीख "
+
+#: app/home/home.html:775 app/home/home.html:806 app/home/home.html:821
+msgid "Deepali"
+msgstr ""
+
+#: app/registration/registration.html:412
+msgid "Degree"
+msgstr "पदवी"
+
+#: app/viewprofile/viewprofile.html:240
+msgid "Degree :"
+msgstr "पदवी:"
+
+#: app/components/profileViewCard/profileViewCard.html:59
+msgid "Degree:"
+msgstr "पदवी:"
+
+#: app/components/profileViewCard/profileViewCard.html:146
+msgid "Delete"
+msgstr "खाते बंद करा "
+
+#: app/account/account.html:216 app/partnerchangepassword/partnerChangePassword.html:217
+msgid "Delete Account<span class=\"circle-icon\"><i class=\"icon-profile-delete\"></i></span>"
+msgstr "खाते बंद करा <span class=\"circle-icon\"><i class=\"icon-profile-delete\"></i></span>"
+
+#: app/viewprofile/viewprofile.html:535
+msgid "Delete Flag"
+msgstr "तक्रार रद्द करा"
+
+#: app/account/account.html:325 app/partnerchangepassword/partnerChangePassword.html:326
+msgid "Delete My Account"
+msgstr "माझे खाते बंद करा "
+
+#: app/profile/profile.html:922 app/registration/registration.html:1304
+msgid "Devak"
+msgstr "देवक "
+
+#: app/viewprofile/viewprofile.html:434
+msgid "Devak :"
+msgstr "देवक :"
+
+#: app/registration/registration.html:1479
+msgid "Done"
+msgstr "पूर्ण झाले"
+
+#: app/components/uploadImage/uploadimage.html:20
+msgid "Drag or Drop photos here from computer"
+msgstr "येथे संगणकातून फोटो उचलून टाका (ड्रॅग आणि ड्रॉप करा)"
+
+#: app/profile/profile.html:19
+msgid "Edit Photo"
+msgstr "फोटो बदला"
+
+#: app/profile/profile.html:403
+msgid "Education"
+msgstr "शिक्षण"
+
+#: app/profile/profile.html:382 app/registration/registration.html:288 app/search/search.html:124
+msgid "Education Field"
+msgstr "शिक्षण शाखा"
+
+#: app/viewprofile/viewprofile.html:259
+msgid "Education Field :"
+msgstr "शिक्षण शाखा"
+
+#: app/profile/profile.html:362 app/search/search.html:141
+msgid "Education Level"
+msgstr "शैक्षणिक पातळी "
+
+#: app/viewprofile/viewprofile.html:233
+msgid "Education Level :"
+msgstr "शैक्षणिक पातळी :"
+
+#: app/profile/profile.html:28 app/profile/profile.html:355 app/viewprofile/viewprofile.html:227
+msgid "Education and Profession Details"
+msgstr "शैक्षणिक आणि व्यवसायिक माहिती"
+
+#: app/registration/registration.html:350
+msgid "Education level"
+msgstr "शैक्षणिक पातळी"
+
+#: app/account/account.html:37 app/account/account.html:82 app/contactUs/contactUs.html:33 app/contactUs/contactUs.html:77
+#: app/dashboard/dashboard.html:216 app/partnerchangepassword/partnerChangePassword.html:385 app/profile/profile.html:537
+msgid "Email"
+msgstr "ई-मेल"
+
+#: app/dashboard/dashboard.html:49
+msgid "Email &nbsp;"
+msgstr "ई-मेल"
+
+#: app/registration/registration.html:599
+msgid "Email Address"
+msgstr "ई-मेल"
+
+#: app/registration/registration_success.html:31
+msgid "Email Verification"
+msgstr "ई-मेल ची पुष्टी"
+
+#: app/viewprofile/viewprofile.html:112 app/viewprofile/viewprofile.html:31
+msgid "Email address"
+msgstr "ई-मेल"
+
+#: app/home/home.html:473 app/home/home.html:530
+msgid "Email and Mobile number confirmation ensures, your Perfect Match can connect with you."
+msgstr "ईमेल आणि फोन नंबर निश्चित करून तुम्हाला तुमच्या उत्कृष्ट मॅच बरोबर कनेक्ट होता येईल."
+
+#: app/home/home.html:12 app/layout/ht-top-nav.html:16 app/layout/ht-top-nav.html:27 app/layout/ht-top-nav.html:43 app/layout/ht-top-nav.html:54
+msgid "English"
+msgstr "English"
+
+#: app/partner/partner_home.html:142 app/partnerdetails/partner_details.html:532 app/refer-your-friends/refer-your-friends.html:25
+msgid "Ensure user name must have at least 2 characters."
+msgstr "वापरकर्ता नाव किमान 2 अक्षरी असणे आवश्यक आहे याची खात्री करा."
+
+#: app/account/account.html:125 app/partnerchangepassword/partnerChangePassword.html:126
+msgid "Enter Current Password"
+msgstr "सध्याचा पासवर्ड द्या"
+
+#: app/profile/profile.html:1076
+msgid "Enter PIN Code"
+msgstr "पिन कोड द्या"
+
+#: app/home/home.html:236 app/home/home.html:362
+msgid "Enter a caste..."
+msgstr "जात एंटर करा"
+
+#: app/payment/payment.html:226
+msgid "Enter an amount (Rs)"
+msgstr "रक्कम एंटर करा(₹)"
+
+#: app/account/account.html:145 app/partnerchangepassword/partnerChangePassword.html:146
+msgid "Enter new Password"
+msgstr "नवीन पासवर्ड द्या"
+
+#: app/login/login.html:15
+msgid "Enter your Mobile Number below. We will send you Username via SMS."
+msgstr "खाली तुमचा मोबाईल नंबर एंटर करा. आम्ही तुम्हाला तुमचा युजरनेम SMS द्वारे पाठवू."
+
+#: app/login/login.html:55 app/partnerlogin/partner_login.html:60
+msgid "Enter your Mobile Number or Username/Email below And We will send your Password via SMS."
+msgstr "खाली तुमचा मोबाइल नंबर, युजरनेम किंवा ई-मेल द्या. तुम्हाला पासवर्ड SMS द्वारे पाठविण्यात येईल."
+
+#: app/contactUs/contactUs.html:39 app/partnerchangepassword/partnerChangePassword.html:402
+msgid "Entered email is not valid"
+msgstr "दिलेला ई-मेल वैध नाही"
+
+#: app/events/events.html:4 app/layout/footer.html:71
+msgid "Events"
+msgstr "कार्यक्रम"
+
+#: app/layout/footer.html:66
+msgid "FAQs"
+msgstr "प्रश्न-उत्तरे"
+
+#: app/components/profileViewCard/profileViewCard.html:132 app/viewprofile/viewprofile.html:520
+msgid "Fake User"
+msgstr "बनावट वापरकर्ता / व्यक्ती"
+
+#: app/profile/profile.html:32 app/profile/profile.html:644 app/registration/registration.html:966 app/registration/registration_success.html:51
+#: app/viewprofile/viewprofile.html:285
+msgid "Family Details"
+msgstr "कौटुंबिक माहिती"
+
+#: app/dashboard/dashboard.html:65
+msgid "Family Details &nbsp;"
+msgstr "कौटुंबिक माहिती "
+
+#: app/profile/profile.html:651 app/registration/registration.html:986
+msgid "Father's Name"
+msgstr "वडिलांचे नाव"
+
+#: app/viewprofile/viewprofile.html:291
+msgid "Father's Name :"
+msgstr "वडिलांचे नाव :"
+
+#: app/profile/profile.html:662 app/registration/registration.html:997
+msgid "Father's Occupation"
+msgstr "वडिलांचा व्यवसाय "
+
+#: app/viewprofile/viewprofile.html:315
+msgid "Father's Occupation :"
+msgstr "वडिलांचा व्यवसाय :"
+
+#: app/home/home.html:169 app/profile/profile.html:102 app/registration/registration.html:110
+msgid "Female"
+msgstr "स्त्री"
+
+#: app/home/home.html:287
+msgid "Find"
+msgstr "शोध"
+
+#: app/home/home.html:281 app/home/home.html:381
+msgid "Find Match"
+msgstr "स्थळं शोधा "
+
+#: app/layout/footer.html:156
+msgid "Find your soulmate in any caste."
+msgstr "कोणत्याही जाती मधे आपला जोडीदार शोधा."
+
+#: app/home/home.html:124 app/profile/profile.html:56 app/registration/registration.html:54
+msgid "First Name"
+msgstr "नाव "
+
+#: app/home/home.html:136
+msgid "First name should be atleast one character long."
+msgstr "नाव किमान एक अक्षर लांब असणे आवश्यक आहे."
+
+#: app/home/home.html:133
+msgid "First name should contain only characters."
+msgstr "नावात फक्त अक्षरं असणे आवश्यक आहे."
+
+#: app/registration/registration.html:69
+msgid "Firstname should be atleast two characters long"
+msgstr "नाव किमान दोन अक्षरं लांब असणे आवश्यक आहे."
+
+#: app/registration/registration.html:66
+msgid "Firstname should contain only characters"
+msgstr "नावात फक्त अक्षरं असणे आवश्यक आहे."
+
+#: app/profile/profile.html:61
+msgid "Firstname should contain only characters."
+msgstr "नावात फक्त अक्षरं असणे आवश्यक आहे."
+
+#: app/layout/footer.html:91
+msgid "Follow us on"
+msgstr "आम्हाला अनुसरण करा"
+
+#: app/login/login.html:12
+msgid "Forgot Your Username?"
+msgstr "आपले युजरनेम विसरला आहात?"
+
+#: app/login/login.html:141 app/login/login.html:52 app/partnerlogin/partner_login.html:160 app/partnerlogin/partner_login.html:57
+msgid "Forgot your Password?"
+msgstr "आपला पासवर्ड विसरला आहात?"
+
+#: app/login/login.html:139 app/partnerlogin/partner_login.html:158
+msgid "Forgot your Username?"
+msgstr "आपला यूजरनेम  विसरलात?"
+
+#: app/account/account.html:248
+msgid "Found partner in other matrimony"
+msgstr "इतर विवाहसंस्थे तर्फे लग्न जमले आहे."
+
+#: app/profile/profile.html:934 app/registration/registration.html:1345
+msgid "Gan"
+msgstr "गण "
+
+#: app/viewprofile/viewprofile.html:458
+msgid "Gan :"
+msgstr "गण :"
+
+#: app/profile/profile.html:93
+msgid "Gender"
+msgstr "लिंग "
+
+#: app/account/account.html:10
+msgid "General Settings<span class=\"circle-icon\"><i class=\"icon-settings\"></i></span>"
+msgstr "सामान्य सेटिंग्ज <span class=\"circle-icon\"><i class=\"icon-settings\"></i></span>"
+
+#: app/login/login.html:70 app/partnerlogin/partner_login.html:70
+msgid "Get Password"
+msgstr "पासवर्ड मिळावा"
+
+#: app/registration/registration.html:217
+msgid "Get Started Today"
+msgstr "आजच प्रारंभ करा"
+
+#: app/login/login.html:30 app/partnerlogin/partner_login.html:35
+msgid "Get Username"
+msgstr "युजरनेम मिळवा"
+
+#: app/home/home.html:753
+msgid "Gift yourself"
+msgstr "भेट मिळवा"
+
+#: app/layout/ht-top-nav.html:75 app/partnerdetails/partner_details.html:1344 app/profile/profile.html:1067
+#: app/weddinghall/wedding_halls_listing.html:34
+msgid "Go To Top"
+msgstr "वर जा"
+
+#: app/dashboard/dashboard.html:121
+msgid "Go and search for perfect matches"
+msgstr "हरकत नाही, सर्च पेज वर जाऊन तुम्ही तुमच्यासाठी योग्य स्थळं शोधू शकता"
+
+#: app/general/faq.html:215
+msgid "Go to Account Setting page. Select Delete Account tab. Please provide a genuine reason to delete the account and click delete account button."
+msgstr "त्यासाठी अकाऊंट सेटिंग पेग ला भेट द्या, डिलीट अकाऊंट टॅब ला क्लिक करा. योग्य ते कारण देऊन तुम्ही आपले अकाउंट बंद करू शकता."
+
+#: app/login/login.html:179 app/partnerlogin/partner_login.html:195
+msgid "Good bye! See you later."
+msgstr "गुड बाय! पुन्हा भेटू."
+
+#: app/registration/registration_success.html:78
+msgid "Goto Dashboard"
+msgstr "डॅशबोर्डवर जा "
+
+#: app/profile/profile.html:913 app/registration/registration.html:1293
+msgid "Gotra"
+msgstr "गोञ "
+
+#: app/viewprofile/viewprofile.html:428
+msgid "Gotra :"
+msgstr "गोञ :"
+
+#: app/profile/profile.html:226 app/registration/registration.html:381
+msgid "Height"
+msgstr "उंची "
+
+#: app/viewprofile/viewprofile.html:176
+msgid "Height :"
+msgstr "उंची :"
+
+#: app/search/search.html:89
+msgid "Height From"
+msgstr "कमीतकमी उंची"
+
+#: app/search/search.html:106
+msgid "Height To"
+msgstr "जास्तीतजास्त उंची"
+
+#: app/components/profileViewCard/profileViewCard.html:35 app/viewprofile/viewprofile.html:62 app/viewprofile/viewprofile.html:92
+msgid "Height:"
+msgstr "उंची :"
+
+#: app/layout/footer.html:60
+msgid "Help &amp; Support"
+msgstr "मदत "
+
+#: app/layout/ht-top-nav.html:60
+msgid "Help &nbsp;<i class=\"icon-info\"></i>"
+msgstr "मदत "
+
+#: app/login/login.html:184 app/partnerlogin/partner_login.html:200
+msgid "Help Us grow and it will help you back. Like and share us on facebook."
+msgstr "लग्नाची बोलणीला फेसबुक वर शेअर करा, आपली ही मदत आमच्यासाठी खूप महत्वपूर्ण आहे."
+
+#: app/refer-your-friends/refer-your-friends.html:4
+msgid "Help us to Serve your Friends or Relatives..!!!"
+msgstr "आम्हाला तुमच्या नातेवाईक आणि मित्रांना मदत करायला आवडेल.!!!"
+
+#: app/layout/footer.html:103
+msgid "Helpline Number"
+msgstr " फोन नंबर"
+
+#: app/viewprofile/viewprofile.html:52 app/viewprofile/viewprofile.html:81
+msgid "Hey, I'm {{vm.profile.firstname}} {{vm.profile.lastname}}"
+msgstr "Hello, मी  {{vm.profile.firstname}} {{vm.profile.lastname}}"
+
+#: app/home/home.html:15
+msgid "Hindi"
+msgstr "हिंदी"
+
+#: app/general/faq.html:209
+msgid "How do I delete my profile?"
+msgstr "माझा अकाउंट बंद करायचे असल्यास काय करावे?"
+
+#: app/general/faq.html:141
+msgid "How do I make online payment?"
+msgstr "ऑनलाईन पेमेंट कसं करू?"
+
+#: app/general/faq.html:154
+msgid "How do I make payment through Cheque/DD?"
+msgstr "चेक किंवा DD ने पेमेंट करू शकतो काय?"
+
+#: app/general/faq.html:291
+msgid "How do I view a particular profile? How can I search profile by Profile ID?"
+msgstr "प्रोफाईल ID वापरून एखादा प्रोफाइल कसा शोधावा?"
+
+#: app/general/faq.html:182
+msgid "How long can I use contact credits? Is there any expiry date?"
+msgstr "कॉन्टॅक्ट क्रेडिट किती दिवसात वापरावे लागतात? कॉन्टॅक्ट क्रेडिटची काही एक्सपायरी डेट असते काय?"
+
+#: app/general/faq.html:168
+msgid "How long will it take to get contact credits in my account if I have made the payment by Cheque/DD?"
+msgstr "मी जर चेक ने पेमेंट केले तर मला कॉन्टॅक्ट क्रेडिट्स किती दिवसात मिळतील?"
+
+#: app/general/faq.html:236
+msgid "How to change a photo in my profile?"
+msgstr "माझा फोटो बदलायचा असल्यास काय करू ?"
+
+#: app/general/faq.html:333
+msgid "How to change your mobile number?"
+msgstr "नोंदविलेला मोबाइल नबर कसा बदलायचा?"
+
+#: app/general/faq.html:115
+msgid "How to get Contact details?"
+msgstr "स्थळांची संपर्क माहिती कशी मिळवावी?"
+
+#: app/general/faq.html:75
+msgid "How to login after registration is completed?"
+msgstr "नोंदणी केल्यानंतर लॉगइन कसे करायचे?"
+
+#: app/general/faq.html:196
+msgid "How to modify my profile contents?"
+msgstr "माझी माहिती बदलायची किंवा दुरुस्त कशी करू शकतो?"
+
+#: app/account/account.html:20
+msgid "How to notify you? Vi SMS or Email or Both"
+msgstr "तुम्हाला संदेश कसे पाठवावेत? SMS ने ई-मेल ने की दोन्हीने?"
+
+#: app/general/faq.html:16
+msgid "How to register?"
+msgstr "लग्नाची बोलणी वर नोंदणी कशी करायची?"
+
+#: app/registration/registration.html:209
+msgid "I agree with <a href=\"/terms\" tabindex=\"-1\">Terms &amp; Conditions</a> and <a href=\"/terms\" tabindex=\"-1\">privacy policy</a>."
+msgstr "<a href=\"/terms\" tabindex=\"-1\">अटी</a> आणि <a href=\"/terms\" tabindex=\"-1\">गोपनीयता धोरण</a> मला मान्य आहे."
+
+#: app/home/home.html:261
+msgid "I agree with <a href=\"/terms\">terms &amp; conditions</a> and <a href=\"/terms\">privacy policy</a>."
+msgstr "<a href=\"/terms\">टर्म्स आणि कॉन्सिशन्सला </a> and <a href=\"/terms\">privacy policy</a> मी सहमत आहे "
+
+#: app/general/faq.html:60
+msgid "I forgot my lb Matrimony ID/Username / Password. What should i do?"
+msgstr "मी माझा युजरनेम / पासवर्ड विसरलो आहे, काय करू?"
+
+#: app/account/account.html:224 app/partnerchangepassword/partnerChangePassword.html:225
+msgid "I want to delete my account"
+msgstr "मी माझे खाते बंद करू इच्चीतो "
+
+#: app/general/faq.html:89
+msgid "I'm registering for my sister/brother and me. Can we both register with the same Mobile number?"
+msgstr "मला माझ्यासाठी आणि माझ्या बहिणीसाठी किंवा भावासाठी नोंदणी करायची आहे, मी दोनही अकाऊंट साठी माझाच मोबाइल नंबर देऊ शकतो का?"
+
+#: app/payment/payment.html:75
+msgid "IDBI Bank Account Number - 0087102000042705"
+msgstr "IDBI बँक अकाऊंट नंबर - 0087102000042705"
+
+#: app/partnerdetails/partner_details.html:763
+msgid "IFSC CODE"
+msgstr ""
+
+#: app/payment/payment.html:75
+msgid "IFSC Code - IBKL0000087"
+msgstr "IFSC कोड - IBKL0000087"
+
+#: app/general/faq.html:120
+msgid ""
+"If you find matching profiles on lagnachibolni, you can get their contact details by purchasing contact credits. Please check payment page to "
+"select the suitable plan for you."
+msgstr ""
+"संपर्क माहिती जाणून घेण्यासाठी आपल्याला, आम्ही दिलेल्या प्लॅनपैकी एक प्लॅन घ्यावा लागतो.  प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन "
+"निवडा. प्लॅन घेतल्यानंतर आम्ही आपल्याला कॉन्टॅक्ट क्रेडिट्स देतो. एक कॉन्टॅक्ट क्रेडिट वापरून तुम्ही पाहिलेल्या कोणत्याही एका स्थळाची संपर्क माहिती पाहू शकाल. "
+
+#: app/registration/registration_success.html:96
+msgid "If you have entered wrong mobile number, please change it. Once you change we will send new password to your new mobile."
+msgstr "जर तुम्ही चुकीचा मोबाईल नंबर टाकला असेल तर तो चेंज करा. तो चेंज केल्यानंतर आम्ही तुम्हाला त्या नंबरवर नवीन पासवर्ड पाठवू. "
+
+#: app/general/faq.html:296
+msgid ""
+"If you know the LB id of a profile, you can search the profile by searching it by LB id. If you don’t have its ID then search it using advanced "
+"search."
+msgstr "शोध पेज वर जाऊन तुम्ही त्या स्थळाचा प्रोफाइल ID, प्रोफाइल ID ने शोधा मध्ये टाका आणि बाजूच्या बटन वर क्लिक करा. ते स्थळ तुम्हाला शोधून दाखवण्यात येईल. "
+
+#: app/general/faq.html:324
+msgid ""
+"If you like any profile, you can send interest to him/her. If that person can accept or reject your request. If it is accepted then you will be "
+"able to see their contact details. Note: Sometime if people don’t feel your profile is suitable for them then they don’t answer the request."
+msgstr ""
+"जर तुम्हाला एक स्थळ आवडले तर तुम्ही त्यांना इंटरेस्ट पाठवू शकता.  ती व्यक्ती तुमचा इंटरेस्ट स्वीकारू किंवा नाकारू शकते.  जर त्यांनी ती स्वीकारली तर तुम्हाला त्यांची संपर्क माहिती "
+"दिसू शकेल. जर त्यानी ती नाकारली तर संपर्क माहिती दिसणार नाही. \n"
+"नोट : कधी कधी काही व्यक्तीना तुमचा प्रोफाइल आवडला नाही तर ते  तुमच्या विनंतीला उत्तर देत नाहीत. "
+
+#: app/general/faq.html:310
+msgid ""
+"If you think lagnachibolni is useful for your friend and relatives, you can refer it to them. To do so, visit “Refer friend” page. Provide their "
+"mobile numbers and their names, we will send SMS to them on your behalf. If they get registered and make payment, we will give you 20% out of it as "
+"a referral bonus. You can use this referral bonus for your payments or claim it as cash. We will transfer it to your account."
+msgstr ""
+"\"मित्रांना रेफर करा\" पेज वर जाऊन तुम्ही तुमच्या मित्रांचे आणि नातेवाईकांचे मोबाइल नंबर आणि नावे द्या. आम्ही त्यांना SMS करून लग्नाचीबोलणी बद्दल कळवू. \n"
+"जर त्यांनी रजिस्टर करून पेमेंट केले तर आम्ही तुम्हाला त्यातून २०% रक्कम अनुदान म्हणून देतो. तुम्हाला मिळालेली रक्कम तुम्ही तुमच्या नोंदणी करण्यासाठी वापरू शकता किंवा ती आम्ही "
+"तुम्हाला तुम्हाला तुमच्या बँक अकाउंट नंबरला ट्रान्सफर करू. "
+
+#: app/general/faq.html:283
+msgid ""
+"In advance search you set the values for some parameters and search for matches. Every time you visit advance search page it show all fields blank. "
+"It is very boarding to select those values every time. Instead of selecting those every time you can save the search you want to do frequently. "
+"Select the values you want and click “Save Search” button."
+msgstr "शोध करताना तुम्ही जी माहिती टाकता, तू तुम्ही पुन्हा वापरण्यासाठी जतन करू शकता.  हि जतन केलेली माहिती तुम्ही वारंवार शोध करताना वापरू शकता."
+
+#: app/inbox/inbox.html:5 app/layout/sidebar.html:78
+msgid "Inbox"
+msgstr "इनबॉक्स"
+
+#: app/registration/registration.html:443
+msgid "Income"
+msgstr "उत्पन्न "
+
+#: app/search/search.html:158
+msgid "Income From"
+msgstr "कमीतकमी उत्पन्न"
+
+#: app/search/search.html:173
+msgid "Income To"
+msgstr "जास्तीतजास्त उत्पन्न"
+
+#: app/payment/payment.html:46
+msgid "Individual Marriage counseling session clears the emotional dilemmas and leads you towards Happy Married life."
+msgstr "लग्नाआधीचे वैयक्तिक समुपदेशन तुमच्या भावनिक दुविधा दूर करण्यास नक्की मदत करतात आणि तुम्हाला सुखी वैवाहिक जीवनाच्या दिशेने चालायला शिकवतात."
+
+#: app/account/account.html:66
+msgid "Interest Notifications"
+msgstr "इंटरेस्ट सूचना"
+
+#: app/dashboard/dashboard.html:144 app/payment/payment.html:125
+msgid "Interest Received"
+msgstr "आलेले इंटरेस्ट"
+
+#: app/login/login.html:63
+msgid "Invalid Username."
+msgstr "युजरनेम वैध नाही."
+
+#: app/general/faq.html:223
+msgid "Is it possible to reactivate the deleted profile?"
+msgstr "बंद केलेले अकाउंट पुन्हा चालू करू शकतो का ?"
+
+#: app/layout/footer.html:45
+msgid "Jalgaon"
+msgstr "जळगाव"
+
+#: app/layout/footer.html:46
+msgid "Kolhapur"
+msgstr "कोल्हापूर"
+
+#: app/home/home.html:806 app/home/home.html:821
+msgid "Krunal"
+msgstr ""
+
+#: app/account/account.html:239
+msgid "Lagachi bolni helped me to find my life partner"
+msgstr "\"लग्नाचीबोलणी\" ने माझा जोडीदार शोधण्यासाठी मला मदत केली"
+
+#: app/components/profileViewCard/profileViewCard.html:21
+msgid "Last Login  <span am-time-ago=\"profileData.last_loggedin\"></span>"
+msgstr "मागील लॉगिन"
+
+#: app/home/home.html:146 app/profile/profile.html:82 app/registration/registration.html:80
+msgid "Last Name"
+msgstr "आडनाव "
+
+#: app/home/home.html:158
+msgid "Last name should be atleast one character long."
+msgstr "आडनाव किमान एक अक्षर लांब असणे आवश्यक आहे."
+
+#: app/home/home.html:152
+msgid "Last name should contain only characters."
+msgstr "आडनावात केवळ वर्ण असणे आवश्यक आहे."
+
+#: app/registration/registration.html:95
+msgid "Lastname should be atleast two characters long"
+msgstr "आडनाव किमान दोन अक्षरं लांब असणे आवश्यक आहे."
+
+#: app/registration/registration.html:89
+msgid "Lastname should contain only characters"
+msgstr "आडनाव केवळ वर्ण असणे आवश्यक आहे."
+
+#: app/refer-your-friends/refer-your-friends.html:119
+msgid "List cant be empty!!!"
+msgstr "सूची रिक्त असू शकत नाही !!!"
+
+#: app/registration/registration_success.html:77
+msgid "Log in"
+msgstr "लॉग इन"
+
+#: app/confirm_email/confirm_email.html:19 app/home/home.html:6 app/layout/sidebar.html:31 app/login/login.html:135 app/login/login.html:192
+#: app/login/login.html:34 app/login/login.html:72 app/login/login.html:84 app/partnerlogin/partner_login.html:154
+#: app/partnerlogin/partner_login.html:203 app/partnerlogin/partner_login.html:39 app/partnerlogin/partner_login.html:72
+msgid "Login"
+msgstr "लॉग इन "
+
+#: app/layout/sidebar.html:118 app/layout/sidebar.html:91
+msgid "Logout"
+msgstr "लॉग आऊट"
+
+#: app/home/home.html:171 app/profile/profile.html:99 app/registration/registration.html:114
+msgid "Male"
+msgstr "पुरुष"
+
+#: app/profile/profile.html:878 app/registration/registration.html:1225
+msgid "Mama's Name"
+msgstr "मामांचे नाव "
+
+#: app/viewprofile/viewprofile.html:303
+msgid "Mama's Name :"
+msgstr "मामांचे नाव :"
+
+#: app/profile/profile.html:1040 app/registration/registration.html:1448 app/search/search.html:223
+msgid "Mangal"
+msgstr "मंगळ "
+
+#: app/viewprofile/viewprofile.html:475
+msgid "Mangal :"
+msgstr "मंगळ :"
+
+#: app/layout/footer.html:21
+msgid "Maratha"
+msgstr "मराठा"
+
+#: app/layout/footer.html:20
+msgid "MarathaDeshmukh"
+msgstr "मराठा देशमुख"
+
+#: app/profile/profile.html:108 app/profile/profile.html:725 app/profile/profile.html:816 app/registration/registration.html:1066
+#: app/registration/registration.html:1162 app/registration/registration.html:318 app/search/search.html:28
+msgid "Marital Status"
+msgstr "वैवाहिक स्थिती "
+
+#: app/viewprofile/viewprofile.html:363 app/viewprofile/viewprofile.html:402
+msgid "Marital Status :"
+msgstr "वैवाहिक स्थिती :"
+
+#: app/components/profileViewCard/profileViewCard.html:51
+msgid "Marital Status:"
+msgstr "वैवाहिक स्थिती :"
+
+#: app/home/home.html:610 app/home/home.html:676
+msgid "Marriage related counselling"
+msgstr "विवाह संबंधी समुपदेशन"
+
+#: app/home/home.html:765 app/home/home.html:777
+msgid "Matched by LagnachiBolni.com"
+msgstr "\"लग्नाचीबोलणी\" तर्फे लग्न जमलेले"
+
+#: app/home/home.html:271
+msgid "May I help You?"
+msgstr "आम्ही तुम्हाला कशी मदत करू शकतो?"
+
+#: app/layout/footer.html:70
+msgid "Membership"
+msgstr "सदस्यत्व"
+
+#: app/home/home.html:646 app/home/home.html:703
+msgid "Mentoring Support"
+msgstr "वैयक्तिक मदत"
+
+#: app/contactUs/contactUs.html:44
+msgid "Message"
+msgstr " संदेश"
+
+#: app/profile/profile.html:70
+msgid "Middle Name"
+msgstr "वडिलांचे नाव  "
+
+#: app/home/home.html:215 app/login/login.html:21 app/partner/partner_home.html:162 app/partner/partner_home.html:221
+#: app/partnerdetails/partner_details.html:575 app/partnerdetails/partner_details.html:642 app/partnerdetails/partner_details.html:722
+#: app/partnerlogin/partner_login.html:22 app/partnerlogin/partner_login.html:98 app/profile/profile.html:526
+#: app/refer-your-friends/refer-your-friends.html:41 app/refer-your-friends/refer-your-friends.html:98 app/registration/registration.html:159
+#: app/registration/registration_success.html:105 app/viewprofile/viewprofile.html:37
+msgid "Mobile Number"
+msgstr " फोन नंबर "
+
+#: app/viewprofile/viewprofile.html:159
+msgid "Mobile Number:"
+msgstr " फोन नंबर :"
+
+#: app/login/login.html:92
+msgid "Mobile/Username"
+msgstr "ई-मेल / युजरनेम"
+
+#: app/profile/profile.html:675 app/registration/registration.html:1011
+msgid "Mother's Name"
+msgstr "आईचे नाव"
+
+#: app/viewprofile/viewprofile.html:297
+msgid "Mother's Name :"
+msgstr "आईचे नाव :"
+
+#: app/profile/profile.html:684 app/registration/registration.html:1022
+msgid "Mother's Occupation"
+msgstr "आईचा व्यवसाय "
+
+#: app/viewprofile/viewprofile.html:322
+msgid "Mother's Occupation :"
+msgstr "आईचा व्यवसाय :"
+
+#: app/layout/footer.html:42
+msgid "Mumbai"
+msgstr "मुंबई"
+
+#: app/layout/sidebar.html:80
+msgid "My Profile"
+msgstr "माझा प्रोफाइल"
+
+#: app/profile/profile.html:4
+msgid "My Profile - {{vm.user.profile_id}}"
+msgstr "माझा प्रोफाइल"
+
+#: app/profile/profile.html:955 app/registration/registration.html:1316
+msgid "Nadi"
+msgstr "नाडी "
+
+#: app/viewprofile/viewprofile.html:463
+msgid "Nadi :"
+msgstr "नाडी :"
+
+#: app/layout/footer.html:48
+msgid "Nagpur"
+msgstr "नागपूर"
+
+#: app/profile/profile.html:1021 app/registration/registration.html:1425
+msgid "Nakshatra"
+msgstr "नक्षञ "
+
+#: app/viewprofile/viewprofile.html:446
+msgid "Nakshatra :"
+msgstr "नक्षञ :"
+
+#: app/contactUs/contactUs.html:13 app/profile/profile.html:713 app/profile/profile.html:804 app/refer-your-friends/refer-your-friends.html:76
+#: app/registration/registration.html:1052 app/registration/registration.html:1148
+msgid "Name"
+msgstr "नाव "
+
+#: app/payment/payment.html:75
+msgid "Name - LagnachiBolni"
+msgstr "नाव - LagnachiBolni"
+
+#: app/viewprofile/viewprofile.html:349 app/viewprofile/viewprofile.html:388
+msgid "Name :"
+msgstr "नाव :"
+
+#: app/layout/footer.html:49
+msgid "Nashik"
+msgstr "नाशिक "
+
+#: app/registration/registration.html:558
+msgid "Native Address"
+msgstr "मुळचा पत्ता "
+
+#: app/profile/profile.html:595 app/registration/registration.html:565
+msgid "Native Address Line 1"
+msgstr "मुळचा पत्ता  1"
+
+#: app/profile/profile.html:604 app/registration/registration.html:575
+msgid "Native Address Line 2"
+msgstr "मुळचा पत्ता  2"
+
+#: app/registration/registration.html:551
+msgid "Native Address is different than current Address"
+msgstr "मुळ पत्ता आत्ताच्या पत्त्या पेक्षा भिन्न आहे"
+
+#: app/partnerlogin/partner_login.html:163
+msgid "New to LagnachiBolani.com?"
+msgstr "LagnachiBolni.com ला नवीन आहात?"
+
+#: app/login/login.html:144
+msgid "New to LagnachiBolni.com?"
+msgstr "LagnachiBolni.com ला नवीन आहात?"
+
+#: app/registration/registration.html:1258 app/registration/registration.html:665 app/registration/registration.html:909
+#: app/registration/registration.html:951
+msgid "Next"
+msgstr "पुढे"
+
+#: app/profile/profile.html:1049 app/profile/profile.html:299 app/registration/registration.html:1462 app/registration/registration.html:890
+#: app/search/search.html:232 app/search/search.html:251
+msgid "No"
+msgstr "नाही"
+
+#: app/registration/registration.html:274
+msgid "No City found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:461
+msgid "No Income found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:121
+msgid "No Marital Status found."
+msgstr "वैवाहिकस्थिती सापडली नाही"
+
+#: app/search/search.html:53 app/search/search.html:74
+msgid "No age found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:282 app/registration/registration.html:869
+msgid "No blood group found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:194
+msgid "No caste found"
+msgstr "सापडले नाही"
+
+#: app/home/home.html:245 app/profile/profile.html:201 app/search/search.html:213
+msgid "No caste found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:1011 app/registration/registration.html:1441
+msgid "No charan found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:178 app/search/search.html:197
+msgid "No city found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:339 app/registration/registration.html:773
+msgid "No complexion found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:396 app/search/search.html:131
+msgid "No education field found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:430
+msgid "No education found"
+msgstr "शिक्षण सापडलं नाही"
+
+#: app/profile/profile.html:417
+msgid "No education found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:368
+msgid "No education level found"
+msgstr "शिक्षण सापडलं नाही"
+
+#: app/profile/profile.html:375 app/search/search.html:148
+msgid "No education level found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:948 app/registration/registration.html:1362
+msgid "No gan found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:240 app/search/search.html:114 app/search/search.html:97
+msgid "No height found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:483 app/search/search.html:166 app/search/search.html:181
+msgid "No income found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:742 app/registration/registration.html:1082 app/search/search.html:35
+msgid "No marital status found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:969 app/registration/registration.html:1333
+msgid "No nadi found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:1034
+msgid "No nakshatra found."
+msgstr "नक्षत्र सापडलं नाही"
+
+#: app/payment/payment.html:234
+msgid "No payment found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:318 app/registration/registration.html:718
+msgid "No physic found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:991 app/registration/registration.html:1390
+msgid "No rashi found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:337
+msgid "No status Found"
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:832 app/registration/registration.html:1178
+msgid "No status found."
+msgstr "सापडले नाही"
+
+#: app/home/home.html:623 app/home/home.html:686
+msgid "No time bound subscriptions and renewals. Packages suitable for everyone."
+msgstr "नोंदणीला वेळेची मर्यादा नाही. सर्वासाठी योग्य पॅकेजेस."
+
+#: app/profile/profile.html:262 app/registration/registration.html:744
+msgid "No weight found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:440 app/registration/registration.html:815
+msgid "No work area found."
+msgstr "सापडले नाही"
+
+#: app/profile/profile.html:460
+msgid "No work as found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:841
+msgid "No working found."
+msgstr "सापडले नाही"
+
+#: app/registration/registration.html:399
+msgid "Not found"
+msgstr "सापडले नाही"
+
+#: app/payment/payment.html:71
+msgid "Note:"
+msgstr "टीप:"
+
+#: app/account/account.html:17
+msgid "Notification Settings"
+msgstr "संदेश सेटिंग्ज"
+
+#: app/contactUs/contactUs.html:82
+msgid "Office Address"
+msgstr "ऑफिसचा पत्ता"
+
+#: app/payment/payment.html:64
+msgid "Offline Payment"
+msgstr "ऑफलाईन पेमेंट"
+
+#: app/general/faq.html:37
+msgid ""
+"Once registered you will receive password for your account via SMS on your mobile. To confirm your mobile you will just have to login using that "
+"password. we don't show your profile to others if you don't confirm your mobile."
+msgstr ""
+"नोंदणी पूर्ण केल्यानंतर पासवर्ड तुम्हाला तुमच्या नोंदविलेल्या मोबाईलवर मिळेल. तुमच्या मोबाइलची पुष्टी करण्यासाठी तुम्हाला लग्नाची बोलणी वेबसाईटला लॉगइन करावे लागेल. मोबाइलची "
+"पुष्टी झाल्या शिवाय आम्ही तुमचा प्रोफाइल कोणालाही दाखवत नाही."
+
+#: app/general/faq.html:173
+msgid ""
+"Once we receive and process the cheque/DD we will provide you the contact credit. After we receive money in our account we will give you contact "
+"credits in 2 working days."
+msgstr "चेक मिळाल्यानंतर आम्ही तो बँकेत देऊ. पैसे आमच्या अकाउंटला आल्यानंतर २ दिवसात आम्ही तुम्हाला कॉन्टॅक्ट क्रेडिट देऊ."
+
+#: app/home/home.html:635 app/home/home.html:695
+msgid "Only registered users can see profile &amp; photos"
+msgstr "फक्त नोंदणीकृत सदस्यच प्रोफाइल फोटो पाहू शकतील"
+
+#: app/payment/payment.html:121
+msgid "Order Id"
+msgstr "ऑर्डर Id"
+
+#: app/layout/footer.html:81
+msgid "Other Services"
+msgstr "इतर सेवा"
+
+#: app/account/account.html:290
+msgid "Other reason"
+msgstr "इतर कारण"
+
+#: app/home/home.html:715
+msgid "Our Membership Packages"
+msgstr "आमचे सदस्यत्व पॅकेजेस"
+
+#: app/payment/payment.html:39
+msgid "Our tele- counselling session aims at clearing your basic emotional dilemmas."
+msgstr "फोनद्वारे आमच्या सामोपदेशकाबरोबर चर्चा करून आपल्या शंकांचं निरसन करू शकता. "
+
+#: app/layout/sidebar.html:79 app/outbox/outbox.html:5
+msgid "Outbox"
+msgstr "आऊटबॉक्स"
+
+#: app/profile/profile.html:1084
+msgid "PIN Code"
+msgstr "पिन कोड"
+
+#: app/layout/sidebar.html:115 app/layout/sidebar.html:142 app/layout/sidebar.html:43
+msgid "Partner Dashboard"
+msgstr "पार्टनरर डॅशबोर्ड"
+
+#: app/layout/sidebar.html:114 app/layout/sidebar.html:141 app/layout/sidebar.html:42
+msgid "Partner Details"
+msgstr "पार्टनरची माहिती"
+
+#: app/layout/sidebar.html:113 app/layout/sidebar.html:140 app/layout/sidebar.html:41
+msgid "Partner Home"
+msgstr ""
+
+#: app/layout/sidebar.html:44 app/partnerlogin/partner_login.html:84
+msgid "Partner Login"
+msgstr "पार्टनरचे लॉगइन"
+
+#: app/layout/sidebar.html:116 app/layout/sidebar.html:143 app/layout/sidebar.html:45
+msgid "Partner Logout"
+msgstr "पार्टनरचे लॉगऑऊट"
+
+#: app/login/login.html:108 app/partnerlogin/partner_login.html:127
+msgid "Password"
+msgstr "पासवर्ड "
+
+#: app/account/account.html:175 app/partnerchangepassword/partnerChangePassword.html:176
+msgid "Password Fields are not equal!"
+msgstr "पासवर्ड फील्ड समान नाही!"
+
+#: app/events/events.html:69
+msgid "Past Events"
+msgstr "आत्तापर्यंत संप्पन्न झालेले कार्यक्रम"
+
+#: app/layout/sidebar.html:33 app/layout/sidebar.html:83 app/payment/payment.html:4
+msgid "Payment"
+msgstr "पेमेंट"
+
+#: app/payment/payment.html:131
+msgid "Payment Date"
+msgstr "पेमेंट तारीख"
+
+#: app/payment/payment.html:92
+msgid "Payment History"
+msgstr "मागील पेमेंट"
+
+#: app/payment/payment.html:129
+msgid "Payment Status"
+msgstr "पेमेंटची स्थिती"
+
+#: app/dashboard/dashboard.html:27
+msgid "Pending Sections"
+msgstr "अपूर्ण विभाग"
+
+#: app/dashboard/dashboard.html:179
+msgid "Perfect Match"
+msgstr "योग्य जोडीदार"
+
+#: app/viewprofile/viewprofile.html:154
+msgid "Permanent Address"
+msgstr "मूळचा पत्ता "
+
+#: app/profile/profile.html:24 app/profile/profile.html:49 app/registration/registration.html:680 app/registration/registration_success.html:22
+msgid "Personal Details"
+msgstr "वैयक्तिक माहिती"
+
+#: app/dashboard/dashboard.html:41
+msgid "Personal Details &nbsp;"
+msgstr "वैयक्तिक माहिती"
+
+#: app/profile/profile.html:508
+msgid "Phone"
+msgstr "फोन "
+
+#: app/registration/registration.html:628
+msgid "Phone Number"
+msgstr " फोन नंबर"
+
+#: app/viewprofile/viewprofile.html:162
+msgid "Phone Number:"
+msgstr " फोन नंबर"
+
+#: app/dashboard/dashboard.html:159
+msgid "Photo Requests"
+msgstr "फोटो विनंती "
+
+#: app/registration/registration.html:925 app/registration/registration_success.html:42
+msgid "Photo Upload"
+msgstr "फोटो अपलोड "
+
+#: app/dashboard/dashboard.html:57
+msgid "Photo Upload &nbsp;"
+msgstr "फोटो अपलोड "
+
+#: app/profile/profile.html:219 app/profile/profile.html:26
+msgid "Physical Details"
+msgstr "शारिरीक माहिती"
+
+#: app/profile/profile.html:290 app/registration/registration.html:876 app/search/search.html:241
+msgid "Physically Disabled"
+msgstr "शारिरीक अपंगत्व"
+
+#: app/viewprofile/viewprofile.html:188
+msgid "Physically Disabled :"
+msgstr "शारिरीक अपंगत्व :"
+
+#: app/profile/profile.html:305 app/registration/registration.html:701 app/viewprofile/viewprofile.html:170
+msgid "Physique"
+msgstr "शरीरवृष्टी"
+
+#: app/profile/profile.html:573 app/profile/profile.html:614 app/registration/registration.html:535 app/registration/registration.html:585
+msgid "Pin"
+msgstr "पिन  "
+
+#: app/registration/registration_success.html:70
+msgid "Please Login with password sent to your mobile number -"
+msgstr "कृपया आपल्या मोबाईल नंबर वर पाठविलेल्या पासवर्ड ने लॉगईन करा - "
+
+#: app/partnerdetails/partner_details.html:837
+msgid "Please enter 10 digits."
+msgstr "10 अंक द्या."
+
+#: app/profile/profile.html:584 app/profile/profile.html:625
+msgid "Please enter 6 digits."
+msgstr "6 अंक द्या."
+
+#: app/account/account.html:90 app/dashboard/dashboard.html:225
+msgid "Please enter a valid email."
+msgstr "वैध ई-मेल द्या."
+
+#: app/profile/profile.html:530
+msgid "Please enter a valid mobile number.!"
+msgstr "मोबाइल नंबरसाठी फक्त अंक स्वीकारले जातात."
+
+#: app/profile/profile.html:516
+msgid "Please enter a valid phone number.!"
+msgstr "फोन नंबरसाठी फक्त अंक स्वीकारले जातात."
+
+#: app/partnerdetails/partner_details.html:834 app/profile/profile.html:581 app/profile/profile.html:622
+msgid "Please enter digits only."
+msgstr "फक्त अंक स्वीकारले जातात."
+
+#: app/profile/profile.html:160 app/registration/registration.html:790
+msgid "Please enter valid birth time."
+msgstr "वैध जन्म वेळ द्या."
+
+#: app/search/search.html:307
+msgid "Please modify your search"
+msgstr "आपल्या शोध सुधारणा करा"
+
+#: app/payment/payment.html:217
+msgid "Please provide Bank Name."
+msgstr "कृपया बँक नाव द्या."
+
+#: app/registration/registration.html:63
+msgid "Please provide FirstName"
+msgstr "कृपया पाहिलं नाव सांगा."
+
+#: app/registration/registration.html:118
+msgid "Please provide Gender"
+msgstr "कृपया लिंग एंटर करा."
+
+#: app/registration/registration.html:92
+msgid "Please provide LastName"
+msgstr "कृपया आडनाव सांगा"
+
+#: app/registration/registration.html:277
+msgid "Please provide a City"
+msgstr "आपण कोणत्या शहरात रहाता?"
+
+#: app/login/login.html:62 app/partnerlogin/partner_login.html:66
+msgid "Please provide a Value"
+msgstr "कृपया योग्य माहिती द्या"
+
+#: app/home/home.html:252
+msgid "Please provide a caste."
+msgstr "कृपया योग्य जात निवडा"
+
+#: app/partner/partner_home.html:168 app/partnerlogin/partner_login.html:104 app/refer-your-friends/refer-your-friends.html:104
+#: app/refer-your-friends/refer-your-friends.html:47
+msgid "Please provide a correct phone number."
+msgstr "कृपया वैध फोन नंबर द्या."
+
+#: app/home/home.html:130
+msgid "Please provide a first name."
+msgstr "कृपया पाहिलं नाव सांगा."
+
+#: app/registration/registration.html:402
+msgid "Please provide a height"
+msgstr "कृपया उंची एंटर करा."
+
+#: app/home/home.html:155
+msgid "Please provide a last name."
+msgstr "कृपया आडनाव सांगा"
+
+#: app/registration/registration.html:340
+msgid "Please provide a marital status"
+msgstr "वैवाहिकस्थिती पुरावा"
+
+#: app/partner/partner_home.html:139 app/partnerdetails/partner_details.html:529 app/refer-your-friends/refer-your-friends.html:22
+#: app/refer-your-friends/refer-your-friends.html:84
+msgid "Please provide a name."
+msgstr "कृपया नाव एंटर करा."
+
+#: app/account/account.html:156 app/partnerchangepassword/partnerChangePassword.html:157
+msgid "Please provide a new password."
+msgstr "कृपया नवीन पासवर्ड एंटर करा."
+
+#: app/account/account.html:133 app/partnerchangepassword/partnerChangePassword.html:134
+msgid "Please provide a password."
+msgstr "कृपया पासवर्ड द्या."
+
+#: app/contactUs/contactUs.html:26
+msgid "Please provide a phone number."
+msgstr "कृपया फोन नंबर प्द्या."
+
+#: app/account/account.html:310
+msgid "Please provide a reason."
+msgstr "कृपया कारण प्रदान करा."
+
+#: app/registration/registration.html:27
+msgid "Please provide a username/email Id"
+msgstr "कृपया युजरनेम किंवा ई-मेल द्या."
+
+#: app/home/home.html:100
+msgid "Please provide a username/email Id."
+msgstr "कृपया युजरनेम किंवा ई-मेल द्या."
+
+#: app/registration/registration.html:433
+msgid "Please provide an education"
+msgstr "शैक्षणिक माहिती पुरावा"
+
+#: app/registration/registration.html:308
+msgid "Please provide an education field"
+msgstr "शैक्षणिक माहिती पुरावा"
+
+#: app/registration/registration.html:371
+msgid "Please provide an education level"
+msgstr "शैक्षणिक पातळी माहिती पुरावा."
+
+#: app/contactUs/contactUs.html:38 app/partnerchangepassword/partnerChangePassword.html:401
+msgid "Please provide an email address."
+msgstr "कृपया ई-मेल द्या."
+
+#: app/registration/registration.html:464
+msgid "Please provide an income"
+msgstr "उत्पन्नाची माहिती पुरावा."
+
+#: app/registration/registration.html:608
+msgid "Please provide email Id."
+msgstr "कृपया ई-मेल अड्डरेस पुरावा."
+
+#: app/login/login.html:115 app/partnerlogin/partner_login.html:134
+msgid "Please provide password."
+msgstr "पासवर्ड प्रदान करा."
+
+#: app/registration/registration.html:165
+msgid "Please provide phone number"
+msgstr "कृपया फोन नंबर प्द्या."
+
+#: app/home/home.html:221 app/login/login.html:25
+msgid "Please provide phone number."
+msgstr "फोन नंबर प्रदान करा."
+
+#: app/contactUs/contactUs.html:47 app/contactUs/contactUs.html:48
+msgid "Please provide some message."
+msgstr "कृपया काही संदेश द्या."
+
+#: app/contactUs/contactUs.html:16
+msgid "Please provide the subject name"
+msgstr "विषय नाव "
+
+#: app/payment/payment.html:202
+msgid "Please provide transaction date."
+msgstr "व्यवहाराची तारीख प्रदान करा."
+
+#: app/login/login.html:98
+msgid "Please provide username"
+msgstr "युजरनेम प्रदान करा"
+
+#: app/registration/registration.html:139
+msgid "Please provide valid date"
+msgstr "योग्य दिनांक एंटर करा"
+
+#: app/registration/registration.html:168
+msgid "Please provide valid phone number"
+msgstr "कृपया फोन नंबर प्द्या."
+
+#: app/home/home.html:224
+msgid "Please provide valid phone number."
+msgstr "कृपया योग्य फोन नंबर पुरावा."
+
+#: app/payment/payment.html:186
+msgid "Please provide your profile Id.."
+msgstr "कृपया आपला प्रोफाइल आयडी एंटर करा."
+
+#: app/payment/payment.html:238
+msgid "Please select a Payment"
+msgstr "कृपया भरण्यासाठी रक्कम निवडा"
+
+#: app/registration/registration.html:198
+msgid "Please select a caste"
+msgstr "कृपया योग्य जात निवडा"
+
+#: app/account/account.html:226
+msgid "Please select the reason for account deletion"
+msgstr "कृपया खाते काढून टाकण्याचे ठरवले, कारण निवडा"
+
+#: app/contactUs/contactUs.html:83
+msgid "Plot no 12, 2nd floor, Sector - 18, Opp Jijamata park, Fule Nagar, Chinchwad Pune-411019"
+msgstr "प्लॉट नं. १२, २रा मजला, सेक्टर १८, जिजामाता पार्क जवळ, फुले नगर, चिंचवड पुणे - ४११०१९"
+
+#: app/dashboard/dashboard.html:22
+msgid "Profile Complete"
+msgstr "प्रोफाईल पूर्ण"
+
+#: app/payment/payment.html:183
+msgid "Profile Id"
+msgstr "प्रोफाईल ID"
+
+#: app/registration/registration.html:505
+msgid "Provide your contact details"
+msgstr "तुमची संपर्क माहिती पुरावा."
+
+#: app/layout/footer.html:41
+msgid "Pune"
+msgstr "पुणे"
+
+#: app/profile/profile.html:978 app/registration/registration.html:1373
+msgid "Rashi"
+msgstr "राशी "
+
+#: app/viewprofile/viewprofile.html:440
+msgid "Rashi :"
+msgstr "राशी :"
+
+#: app/account/account.html:168 app/partnerchangepassword/partnerChangePassword.html:169
+msgid "Re-Enter New Password"
+msgstr "नवीन पासवर्ड निश्चितीकरण "
+
+#: app/account/account.html:181 app/partnerchangepassword/partnerChangePassword.html:182
+msgid "Re-Enter new password."
+msgstr "नवीन पासवर्ड निश्चितीकरण."
+
+#: app/refer-your-friends/refer-your-friends.html:61
+msgid "Refer"
+msgstr "रेफर"
+
+#: app/layout/sidebar.html:34 app/layout/sidebar.html:82
+msgid "Refer Friends"
+msgstr "मित्रांना रेफर करा"
+
+#: app/home/home.html:266 app/home/home.html:457 app/home/home.html:517 app/home/home.html:91 app/layout/sidebar.html:30 app/login/login.html:144
+#: app/partnerlogin/partner_login.html:163 app/registration/registration.html:13
+msgid "Register"
+msgstr "नोंदणी करा"
+
+#: app/home/home.html:658
+msgid ""
+"Register and check matching profiles free for 45\n"
+"                days."
+msgstr "नोंदणी करा, आणि ४५ दिवस विनाशुल्क योग्य स्थळ शोधा"
+
+#: app/home/home.html:587
+msgid "Register and check matching profiles free for 45 days."
+msgstr "नोंदणी करा, आणि ४५ दिवस विनाशुल्क योग्य स्थळ शोधा"
+
+#: app/contactUs/contactUs.html:86
+msgid "Registered Address"
+msgstr "नोंदणीकृत पत्ता"
+
+#: app/general/faq.html:102
+msgid "Registration is free or paid? What are registration charges?"
+msgstr "नोंदणी फ्री आहे की पेड? नोंदणी शुल्क किती आहे?"
+
+#: app/general/faq.html:107
+msgid ""
+"Registration is free. After Registration you can login and search profiles matching for you. You can check the details of the profile, but we don’t "
+"show contact details of other profiles. To get the contact details we offer different packages. Please check payment page to select the suitable "
+"packages for you."
+msgstr ""
+"नोंदणी विनामूल्य आहे. नोंदणी पूर्ण झाल्यानंतर आपण आपल्यासाठी योग्य स्थळं शोधू शकाल. तुम्ही स्थळांचे डिटेल्स पाहू शकाल परंतु आम्ही स्थळांची संपर्क माहिती दाखवत नाही.  संपर्क "
+"माहिती जाणून घेण्यासाठी मात्र आपल्याला आम्ही दिलेल्या प्लॅनपैकी एक प्लॅन घ्यावा लागतो.  प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन "
+"निवडा. "
+
+#: app/components/profileViewCard/profileViewCard.html:79 app/viewprofile/viewprofile.html:141
+msgid "Reject"
+msgstr "नकार कळवा"
+
+#: app/profile/profile.html:887 app/registration/registration.html:1236
+msgid "Relative's Surname"
+msgstr "नातेवाईकांचे आडनांव"
+
+#: app/viewprofile/viewprofile.html:330
+msgid "Relative's Surname :"
+msgstr "नातेवाईकांचे आडनांव :"
+
+#: app/login/login.html:129 app/partnerlogin/partner_login.html:148
+msgid "Remember me on this PC"
+msgstr "या मोबाइल किंवा संघनकावर मला लक्षात ठेवा"
+
+#: app/components/profileViewCard/profileViewCard.html:123 app/viewprofile/viewprofile.html:511
+msgid "Report Profile"
+msgstr "तक्रार नोंदवा"
+
+#: app/viewprofile/viewprofile.html:22
+msgid "Request Photo"
+msgstr "फोटो विनंती"
+
+#: app/account/account.html:99 app/dashboard/dashboard.html:242
+msgid "Resend Email"
+msgstr "ई-मेल पुन्हा पाठवा"
+
+#: app/registration/registration_success.html:75
+msgid "Resend Password"
+msgstr "पासवर्ड पुन्हा पाठवा"
+
+#: app/search/search.html:280
+msgid "Reset"
+msgstr "रिसेट "
+
+#: app/payment/payment.html:18
+msgid "Rs"
+msgstr "₹"
+
+#: app/home/home.html:727
+msgid "Rs.{{plan.price}}/-"
+msgstr "₹.{{plan.price}}/-"
+
+#: app/account/account.html:30
+msgid "SMS"
+msgstr "SMS"
+
+#: app/components/profileViewCard/profileViewCard.html:67
+msgid "Salary:"
+msgstr "पगार:"
+
+#: app/layout/footer.html:50
+msgid "Sangli"
+msgstr "सांगली"
+
+#: app/components/profileViewCard/profileViewCard.html:145 app/payment/payment.html:257 app/search/search.html:390
+#: app/viewprofile/viewprofile.html:536
+msgid "Save"
+msgstr "जतन करा"
+
+#: app/account/account.html:202 app/partnerchangepassword/partnerChangePassword.html:203
+msgid "Save New Password"
+msgstr "नवीन पासवर्ड जतन करा "
+
+#: app/search/search.html:278
+msgid "Save Search"
+msgstr "शोध जतन करा"
+
+#: app/search/search.html:383
+msgid "Save Search Name"
+msgstr "शोधाचे नाव"
+
+#: app/search/search.html:378
+msgid "Save as"
+msgstr "जतन करा"
+
+#: app/search/search.html:357
+msgid "Save frequently used searches. You can save search from \"Search Profile\" tab, clicking on \"Save Search\" button."
+msgstr "वारंवार वापरले जाणारे शोध जतन करा. आपण \"प्रोफाइल शोधा\" टॅब मध्ये \"शोध जतन करा \" बटण  क्लिक  करून शोध जतन करू शकता."
+
+#: app/search/search.html:319
+msgid "Saved Search<span class=\"circle-icon\"><i class=\"icon-floppy-disk padding-correction\"></i></span>"
+msgstr "जतन केलेले शोध <span class=\"circle-icon\"><i class=\"icon-floppy-disk padding-correction\"></i></span>"
+
+#: app/layout/sidebar.html:32 app/layout/sidebar.html:81 app/search/search.html:282 app/search/search.html:4
+msgid "Search"
+msgstr "शोध"
+
+#: app/caterers/search_halls.html:10
+msgid "Search Halls"
+msgstr "हॉल शोधा"
+
+#: app/home/home.html:488 app/home/home.html:542
+msgid "Search Perfect Match"
+msgstr "योग्य जोडीदार शोधा"
+
+#: app/search/search.html:10
+msgid "Search Profile <span class=\"circle-icon\"><i class=\"icon-search-people\"></i></span>"
+msgstr "प्रोफाइल शोधा <span class=\"circle-icon\"><i class=\"icon-search-people\"></i></span>"
+
+#: app/search/search.html:297
+msgid "Search Results <span class=\"circle-icon\"><i class=\"icon-search-list\"></i></span>"
+msgstr "शोध रिजल्ट्स <span class=\"circle-icon\"><i class=\"icon-search-list\"></i></span>"
+
+#: app/search/search.html:19
+msgid "Search by Profile ID"
+msgstr "प्रोफाईल ID ने शोधा"
+
+#: app/search/search.html:330
+msgid "Search name"
+msgstr "शोधाचे नाव "
+
+#: app/home/home.html:634 app/home/home.html:694
+msgid "Secure &amp; Safe"
+msgstr "सुरक्षित"
+
+#: app/payment/payment.html:14
+msgid "Select the plan by clicking on 'Buy Now'"
+msgstr "प्लॅन निवडण्यासाठी 'खरेदी करा ' या बटनवर क्लिक करा"
+
+#: app/contactUs/contactUs.html:58 app/partnerchangepassword/partnerChangePassword.html:422
+msgid "Send Message"
+msgstr " संदेश पाठवा "
+
+#: app/dashboard/dashboard.html:100 app/viewprofile/viewprofile.html:139
+msgid "Show Interest"
+msgstr "शो इंटरेस्ट "
+
+#: app/dashboard/dashboard.html:135
+msgid "Show Interest/View Contact <br>to make connections"
+msgstr ""
+
+#: app/home/home.html:726 app/payment/payment.html:26
+msgid "Show Interests"
+msgstr "शो इंटरेस्ट "
+
+#: app/login/login.html:124 app/partnerlogin/partner_login.html:143
+msgid "Show password"
+msgstr "पासवर्ड  दाखवा"
+
+#: app/account/account.html:192 app/partnerchangepassword/partnerChangePassword.html:193
+msgid "Show password."
+msgstr "पासवर्ड  दाखवा."
+
+#: app/profile/profile.html:696 app/registration/registration.html:1035
+msgid "Sister Details"
+msgstr "बहिणींची माहिती"
+
+#: app/viewprofile/viewprofile.html:415
+msgid "Sister Details Not Available"
+msgstr "माहिती उपलब्ध नाही"
+
+#: app/viewprofile/viewprofile.html:381
+msgid "Sisters"
+msgstr "बहिण "
+
+#: app/layout/footer.html:51
+msgid "Solapur"
+msgstr "सोलापूर"
+
+#: app/account/account.html:301
+msgid "Specify the reason"
+msgstr "कारण निर्देशीत करा"
+
+#: app/payment/payment.html:85
+msgid "Submit Transaction Details"
+msgstr "व्यवहारीक माहिती द्या"
+
+#: app/payment/payment.html:84
+msgid "Submit the transaction details after you transfer the amount."
+msgstr "आपण रक्कम भरल्यानंतर आम्हाला त्या व्यवहाराची माहिती पुरावा."
+
+#: app/logout/logout.html:4
+msgid "Successfully Logout..."
+msgstr "आपण यशस्वीरित्या लॉग आउट केले."
+
+#: app/layout/footer.html:105
+msgid "Support Team"
+msgstr "सपोर्ट टीम"
+
+#: app/payment/payment.html:29
+msgid ""
+"Swayamwar package provides you access to potential profiles and choose the right one. Your initiative is atmost essential for your \"Swayamwar\""
+msgstr "स्वयंवर पॅकेज मधे आपण आमच्याकडील प्रोफाईल मधून आपल्यासाठी योग्य ते प्रोफाईल निवडू शकता. आपल्या \"स्वयंवरासाठी\" आपला पुढाकार आवश्यक आहे."
+
+#: app/admin/admin.html:8
+msgid "TODO: Implement Your Features"
+msgstr ""
+
+#: app/registration/registration.html:248
+msgid "Tell Us About Yourself"
+msgstr "स्वत: बद्दल माहिती द्या "
+
+#: app/registration/registration.html:1288
+msgid "Tell us about your astro details"
+msgstr "आम्हाला तुमची कुंडली माहिती द्या "
+
+#: app/registration/registration.html:980
+msgid "Tell us about your family"
+msgstr "आम्हाला तुमची कौटुंबिक माहिती द्या "
+
+#: app/registration/registration.html:694
+msgid "Tell us about your personal details"
+msgstr "आम्हाला तुमची वैयक्तिक माहिती द्या "
+
+#: app/layout/footer.html:68
+msgid "Terms &amp; Conditions"
+msgstr "अटी "
+
+#: app/layout/footer.html:47
+msgid "Thane"
+msgstr "ठाणे"
+
+#: app/confirm_email/confirm_email.html:7
+msgid "Thanks for confirming your email address."
+msgstr "आपला ई-मेल ऍड्रेस कन्फर्म केल्याबद्दल धन्यवाद"
+
+#: app/registration/registration.html:33
+msgid "That doesn't look like a valid Mobile Number"
+msgstr "हा वैध मोबाईल नंबर दिसत नाही."
+
+#: app/home/home.html:106
+msgid "That doesn't look like a valid Mobile Number."
+msgstr "हा वैध मोबाईल नंबर दिसत नाही."
+
+#: app/registration/registration.html:36
+msgid "That doesn't look like a valid UserName"
+msgstr "हे वैध वापरकर्तानाव नाही."
+
+#: app/home/home.html:109
+msgid "That doesn't look like a valid UserName."
+msgstr "हे वैध वापरकर्तानाव नाही."
+
+#: app/registration/registration.html:30
+msgid "That doesn't look like a valid email"
+msgstr "हा वैध ई-मेल नाही."
+
+#: app/home/home.html:103 app/registration/registration.html:611
+msgid "That doesn't look like a valid email."
+msgstr "हा वैध ई-मेल नाही."
+
+#: app/account/account.html:278
+msgid "The contact buying plans are expensive"
+msgstr "संपर्क खरेदी प्लॅन महाग आहेत"
+
+#: app/home/home.html:188 app/profile/profile.html:138 app/profile/profile.html:763 app/profile/profile.html:854
+#: app/registration/registration.html:1106 app/registration/registration.html:1201
+msgid "The entered value is not a date!"
+msgstr "योग्य दिनांक एंटर करा"
+
+#: app/contactUs/contactUs.html:27 app/login/login.html:26 app/registration/registration.html:633
+msgid "The entered value is not a phone number!"
+msgstr "बरोबर मोबाइल नंबर एंटर करा"
+
+#: app/payment/payment.html:203
+msgid "The entered value is not a valid date!"
+msgstr "योग्य दिनांक एंटर करा"
+
+#: app/login/login.html:102
+msgid "The username/password that you've entered is incorrect."
+msgstr "आपण टाकलेला वापरकर्तानाव किंवा पासवर्ड चुकीचा आहे."
+
+#: app/home/home.html:793 app/home/home.html:808 app/home/home.html:823
+msgid ""
+"The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One "
+"fine day I came across his profile and it just clicke.."
+msgstr ""
+
+#: app/general/faq.html:188
+msgid "There is no time limit to use contact credits. You can use it till you consume it."
+msgstr "कॉन्टॅक्ट क्रेडिट तुम्ही जो पर्यंत संपवत नाहीत तो पर्यंत वापरू शकाल. त्यासाठी वेळेचं काहीही बंधन नाही"
+
+#: app/payment/payment.html:34
+msgid "This Value for Money Package  is designed to offer you more contact credits as well as Show Interest."
+msgstr "हे पॅकेज असं डिझाईन केला आहे की तुम्हाला जास्तीत जास्त कॉन्टॅक्ट क्रेडिट आणि शो इंटरेस्ट मिळावेत."
+
+#: app/payment/payment.html:44
+msgid "This is the most cost effective membership plan with a platter of varied services."
+msgstr ""
+
+#: app/search/search.html:102 app/search/search.html:170 app/search/search.html:63
+msgid "To"
+msgstr "ते"
+
+#: app/general/faq.html:133
+msgid ""
+"To get the contact details of the other profiles you need contact credits. If you have purchased contact credits you will be able to see contact "
+"details of any profile. It will consume 1 contact credit to see the contact details of 1 profile. For example if you purchase 10 contact credits, "
+"then you will be able to see contact details of any 10 profiles."
+msgstr ""
+"नोंदणी पूर्ण झाल्यानंतर आपण आपल्यासाठी योग्य स्थळं शोधू शकाल. तुम्ही स्थळांचे डिटेल्स पाहू शकाल परंतु आम्ही स्थळांची संपर्क माहिती दाखवत नाही. त्यासाठी तुम्हाला कॉन्टॅक्ट क्रेडिट "
+"खरेदी करावे लागतात. एका स्थळाची संपर्क माहिती पाहण्यासाठी तुम्हाला एक कॉन्टॅक्ट क्रेडिट लागतो. उ.दा जर तुमच्याकडे १० कॉन्टॅक्ट क्रेडिट असतील तर तुम्ही १० स्थळांची संपर्क "
+"माहिती पाहू शकाल. प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन निवडा."
+
+#: app/dashboard/dashboard.html:116
+msgid "Total Visits"
+msgstr "व्हिझीट्स"
+
+#: app/payment/payment.html:175
+msgid "Transaction Details"
+msgstr "व्यवहारीक माहिती"
+
+#: app/payment/payment.html:247
+msgid "Transaction Number"
+msgstr "Transaction नंबर "
+
+#: app/payment/payment.html:204
+msgid "Transaction date can not be future date."
+msgstr "व्यवहाराची तारीख भविष्यातील असू शकत नाही."
+
+#: app/payment/payment.html:69
+msgid "Transfer the amount to below account."
+msgstr "खालील खात्यावर पैसे जमा करा ."
+
+#: app/account/account.html:52
+msgid "Type of Notifications"
+msgstr "सूचना प्रकार"
+
+#: app/account/account.html:258
+msgid "Unable to find good profiles at Lagnachi bolni"
+msgstr "लग्नाचीबोलणी मध्ये चांगल्या प्रोफाईल्स भेटल्या नाहीत"
+
+#: app/account/account.html:268
+msgid "Unhappy with Lagnachi bolni"
+msgstr "लग्नाचीबोलणी बाबतीत आनंदी नाही "
+
+#: app/events/events.html:10
+msgid "Upcoming Events"
+msgstr "पुढील कार्यक्रम"
+
+#: app/components/uploadImage/uploadProfileImage.html:11 app/profile/profile.html:1095 app/registration/registration_success.html:117
+msgid "Update"
+msgstr "अपडेट "
+
+#: app/components/uploadImage/uploadimage.html:3
+msgid "Upload your photos"
+msgstr "आपले फोटो अपलोड करा"
+
+#: app/home/home.html:94 app/registration/registration.html:21
+msgid "User Name/Email"
+msgstr "वापरकर्ता नाव / ईमेल"
+
+#: app/payment/payment.html:28
+msgid "User initiative will lead to find perfect match"
+msgstr "तुमचा पुढाकाराचं तुमच्यासाठी योग्य स्थळ निवडण्यास उपयोगी ठरेल."
+
+#: app/registration/registration.html:43
+msgid "User name already used"
+msgstr "वापरकर्ता नाव आधीच कोणीतरी वापरलेले आहे. "
+
+#: app/home/home.html:116
+msgid "User name already used."
+msgstr "वापरकर्ता नाव आधीच कोणीतरी वापरलेले आहे. "
+
+#: app/registration/registration.html:39
+msgid "Username should be atleast six character long"
+msgstr "वापरकर्तानाव किमान सहा वर्ण लांब असणे आवश्यक आहे."
+
+#: app/home/home.html:112
+msgid "Username should be atleast six character long."
+msgstr "वापरकर्तानाव किमान सहा वर्ण लांब असणे आवश्यक आहे."
+
+#: app/login/login.html:60 app/partnerlogin/partner_login.html:64
+msgid "Username/Mobile"
+msgstr "वापरकर्तानाव / मोबाइल"
+
+#: app/general/faq.html:269
+msgid "Using advance search you will be able to search suitable profiles for you."
+msgstr "ऍडव्हान्स सर्च वापरून तुम्ही आपल्यासाठी योग्य स्थळं शोधू शकता"
+
+#: app/home/home.html:622 app/home/home.html:685
+msgid "Value for money package"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:107 app/viewprofile/viewprofile.html:26
+msgid "Verified ID"
+msgstr "व्हेरीफाईड ID"
+
+#: app/account/account.html:78 app/dashboard/dashboard.html:208
+msgid "Verify Email Address"
+msgstr "ईमेल व्हेरीफाई करा"
+
+#: app/dashboard/dashboard.html:183 app/layout/footer.html:30 app/layout/footer.html:52
+msgid "View All"
+msgstr "सर्व पहा"
+
+#: app/home/home.html:778 app/home/home.html:794 app/home/home.html:809 app/home/home.html:824
+msgid "View More"
+msgstr "अधिक माहिती पहा"
+
+#: app/home/home.html:835
+msgid "View More Matched"
+msgstr "मॅच अधिक पहा"
+
+#: app/viewprofile/viewprofile.html:14
+msgid "View Profile - {{vm.profile.profile_id}}"
+msgstr "View Profile - {{vm.profile.profile_id}}"
+
+#: app/viewprofile/viewprofile.html:131
+msgid "View contact details"
+msgstr "संपर्क माहिती पहा"
+
+#: app/account/account.html:59
+msgid "Visit Notifications"
+msgstr "व्हिझीट सूचना"
+
+#: app/general/faq.html:146
+msgid ""
+"Visit payment page, choose suitable plan for you. Click on Buy Now button. It will redirect you to payment gateway. There are multiple options to "
+"make the payment online using credit cards, debit cards, net banking, wallets and many more. Login is mandatory to make online payment."
+msgstr ""
+"प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन निवडा. Buy Now बटणवर क्लिक करा. पेमेंट गेटवे  वर गेल्यानंतर पेमेंट करण्यासाठी खूप पर्याय उपलब्ध "
+"आहेत. एक पर्याय वापरून पेमेंट करा. ऑनलाईन पेमेंट करण्यासाठी लॉगइन करणे आवश्यक आहे. "
+
+#: app/general/faq.html:21
+msgid ""
+"Visit register page or Home page. Enter your details, complete your registration to start using LagnachiBolni. Only registered and logged in people "
+"can see or search other profile. Mobile confirmation is mandatory."
+msgstr ""
+"रजिस्ट्रेशन किंवा होम पेज ला भेट द्या. तिथे विचारलेली संपूर्ण माहिती देऊन तुम्ही तुमची नोंदणी पूर्ण करू शकता. नोंदणी करून लॉगिन केल्यानंतरच तुम्हाला इतर स्थळाची माहिती दिसू "
+"शकेल. नोंदणी पूर्ण केल्यानंतर युजरनेम आणि पासवर्ड तुम्हाला तुमच्या नोंदणी करताना दिलेल्या मोबाईल वर मिळेल. "
+
+#: app/general/faq.html:201
+msgid ""
+"Visit “My Profile” page where you can change almost all information related to your profile. It saves the information automatically once you change "
+"it."
+msgstr "त्यासाठी तुम्ही “My Profile” पेज ला भेट द्या. तिथे तुम्ही तुमची माहिती बदलू किंवा दुरुस्त करू शकता. "
+
+#: app/general/faq.html:242
+msgid ""
+"Visit “My Profile” page where you can find link edit photo below your photo. It will redirect you to update photo page. Upload your photo there."
+msgstr ""
+"त्यासाठी तुम्ही “My Profile” पेज ला भेट द्या. तुमच्या फोटो खाली फोटो बदलण्यासाठी लिंक दिलेली आहे. त्या लिंकवर क्लिक करा.  फोटो अपलोड पेज वर जाऊन तुम्ही तुमचा फोटो बदलू "
+"शकाल. "
+
+#: app/payment/payment.html:38
+msgid ""
+"Vivah is our exclusive package which has a system generated suggestive module to save your time by our system generated suggestions for suitable "
+"matches."
+msgstr ""
+
+#: app/payment/payment.html:48
+msgid "We  will be pleased to gift you our welcome kit as well."
+msgstr ""
+
+#: app/home/home.html:574
+msgid "We are committed to provide you the best Marathi matrimonial service"
+msgstr "आम्ही आमच्या परीने सर्वोत्तम वधू वर सूचक सेवा देण्यास कार्यरत आहोत."
+
+#: app/dashboard/dashboard.html:187
+msgid "We are working to find best matches for you. Please stick around."
+msgstr "आत्ता जरी तुमच्यासाठी योग्य स्थळं नसतील तरी, आपली नोंदणी कायम ठेवा. आमच्याकडे रोज १०० हुन अधिक लोक रजिस्टर होतात."
+
+#: app/layout/footer.html:128
+msgid "We provide services in these cities. ."
+msgstr "आम्ही या शहरात आमची सेवा देतो."
+
+#: app/home/home.html:489 app/home/home.html:543
+msgid "We provide you a simple and efficient way to search your perfect life partner."
+msgstr "आम्ही आपल्याला योग्य जोडीदार शोधण्यासाठी एक साधा आणि प्रभावी माध्यम उपलब्ध करून दिले आहे."
+
+#: app/home/home.html:599 app/home/home.html:668
+msgid "We show only complete matrimonial profiles in search lists. You can find matches from 17000+ profiles."
+msgstr "तुम्ही आमच्याकडील १७ हजार पेक्षा जास्त स्थळांमधून आपल्यासाठी योग्य स्थळ निवडू शकाल."
+
+#: app/home/home.html:716
+msgid ""
+"We value your security so as every other members. Are you really serious and interested in knowing someone in more detail? Then prove it, by paying "
+"500 or more And we would be more than happy to help you with this service forever."
+msgstr ""
+
+#: app/home/home.html:575
+msgid ""
+"We won’t speak the filmy dialogue ‘ek bar jo maine commitment kar di…’. But yes, We are team of word, team of actions! We understand that, It’s our "
+"words that connects us with you. We know the value of words…! We promise to fulfill the promises that we made..! come and experience it, We bet you "
+"will believe it..!"
+msgstr ""
+
+#: app/contactUs/contactUs.html:10
+msgid "We're here to help with any questions or comments. If you just want to say hi, that's cool too."
+msgstr "तुमचे काही प्रश्न किंवा शंका असतील तर आम्हला कळवा."
+
+#: app/caterers/caterers.html:906 app/weddinghall/weddinghall.html:18
+msgid "Wedding Hall <span class=\"circle-icon\"><i class=\"icon-search-list-weddingHall\"></i></span>"
+msgstr "लग्नाचे हॉल <span class=\"circle-icon\"><i class=\"icon-search-list-weddingHall\"></i></span>"
+
+#: app/layout/sidebar.html:38 app/layout/sidebar.html:88
+msgid "Wedding Planer"
+msgstr ""
+
+#: app/profile/profile.html:248 app/registration/registration.html:728
+msgid "Weight"
+msgstr "वजन "
+
+#: app/viewprofile/viewprofile.html:182
+msgid "Weight :"
+msgstr "वजन :"
+
+#: app/general/faq.html:304
+msgid "What is Refer friends?"
+msgstr "मित्रांना संधर्भ द्या म्हणजे काय?"
+
+#: app/general/faq.html:250
+msgid "What is Request Photo? Or What if any profile does not have photo, How to request it?"
+msgstr "फोटो विनंती म्हणजे काय? इतर प्रोफाइलचे फोटो नसतील तर त्यासाठी विनंती पाठवू शकतो का?"
+
+#: app/general/faq.html:318
+msgid "What is Send Interest?"
+msgstr "इंटरेस्ट पाठविणे म्हणजे काय?"
+
+#: app/general/faq.html:263
+msgid "What is advanced search?"
+msgstr "इतर प्रोफाइल कसे शोधु शकतो?"
+
+#: app/general/faq.html:128
+msgid "What is contact credits?"
+msgstr "कॉन्टॅक्ट क्रेडिट म्हणजे काय?"
+
+#: app/general/faq.html:32
+msgid "What is mobile confirmation?"
+msgstr "मोबाइल नंबर पुष्टी कशी केली जाते?"
+
+#: app/general/faq.html:277
+msgid "What is saved search?"
+msgstr "सेव सर्च म्हणजे काय?"
+
+#: app/home/home.html:504 app/home/home.html:555
+msgid ""
+"When you come across Profile, which you think can be Perfect Match. Click on “Show Interest” or \"Show Contact Details\" to get their contact "
+"details."
+msgstr "जेव्हा तुम्ही एका योग्य प्रोफाईलला भेट देता, तेव्हा \"शो इंटरेस्ट\" किंवा \"संपर्क माहिती दाखवा\" बटन वर क्लिक करून त्यांचा संपर्क मिळवू शकता. "
+
+#: app/general/faq.html:255
+msgid ""
+"When you visit any profile, if the person has not uploaded any image, a link to “Request Photo” will be displayed below the photo section. By "
+"clicking that link you will be able to request the photo."
+msgstr ""
+"जर तुम्ही इतर प्रोफाईलला भेट दिली आणि त्या व्यक्ती ने त्याचा फोटो अपलोड केला नसेल तर, तुम्ही त्या व्यक्तीला फोटो अपलोड करण्यासाठी विनंती पाठवू शकता. प्रोफाईल मध्ये त्या "
+"व्यक्तीच्या फोटो खाली फोटो विनंतीसाठी लिंक दिलेली असेल. त्या लिंक वर क्लिक केल्यानंतर त्या व्यक्तीला तुमची विनंती पाठवली जाईल."
+
+#: app/dashboard/dashboard.html:238
+msgid "Will Do it later"
+msgstr "नंतर करेन"
+
+#: app/profile/profile.html:447
+msgid "Working As"
+msgstr "काय काम करता?"
+
+#: app/viewprofile/viewprofile.html:273
+msgid "Working As :"
+msgstr "काय काम करता?:"
+
+#: app/profile/profile.html:427 app/registration/registration.html:799
+msgid "Working With"
+msgstr "कामाचे ठिकाण "
+
+#: app/viewprofile/viewprofile.html:266
+msgid "Working With :"
+msgstr "कामाचे ठिकाण :"
+
+#: app/registration/registration.html:825
+msgid "Working as"
+msgstr "काय काम करता?"
+
+#: app/home/home.html:754
+msgid ""
+"Wow we could help you find the missing piece of your life!! What would be more pleasure than being part of your celebration! Gift yourself by "
+"Sharing your happiness with us! Share your marriage experience and accept our token of joy and blessing."
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:138 app/viewprofile/viewprofile.html:526
+msgid "Wrong Contact Details"
+msgstr "चुकीची संपर्क माहिती"
+
+#: app/profile/profile.html:1046 app/profile/profile.html:296 app/registration/registration.html:1457 app/registration/registration.html:885
+#: app/search/search.html:229 app/search/search.html:247
+msgid "Yes"
+msgstr "होय"
+
+#: app/general/faq.html:94
+msgid ""
+"Yes you can use same mobile number for both the registrations. We will suggest to use different mobile numbers for each registration, because we "
+"send notification on registered mobile number. IF you user same number for multiple account, will receive notifications for both accounts on same "
+"mobile."
+msgstr ""
+"हो, तुम्ही एक पेक्षा जास्त अकाउंटला सेम मोबाइल नंबर देऊ शकता. तरीही आम्ही तुम्हाला विनंती करू इच्छितो की प्रत्येक अकाउंट साठी वेगवेगळा मोबाइल नंबर असावा, कारण आम्ही त्या "
+"मोबाईल वर मेसेजेस पाठवतो.  जर दोन अकाउंट ला एकच मोबाईल नंबर ठेवला तर तुम्हाला आलेले मेसेज कोणत्या अकाउंट साठी आहेत हे कळणं अवघड जाईल. "
+
+#: app/general/faq.html:228
+msgid "Yes, it is possible, to do so please call us on 7218701870 / 7722090227. You can also send a request from “Contact Us” page."
+msgstr ""
+"हो, काही कारणास्तव बंद केले अकाऊंट पुन्हा चालू करायचे असल्यास आम्हाला 7218701870 / 7722090227 या नंबर वर कॉल करा. किंवा “Contact Us”  पेज वर तुमची विनंती नोंदवा. "
+"आम्ही तुमचे अकाउंट पुन्हा चालू करून देऊ."
+
+#: app/payment/payment.html:162
+msgid "You are on free plan. Go ahead and buy the one suites you."
+msgstr "तुम्ही मोफत प्लॅन वापरत आहात. प्लॅन खरेदी करा."
+
+#: app/home/home.html:447
+msgid "You are only four steps away from your Perfect Match"
+msgstr "फक्त चार पाऊले दूर आहे, तुमच्याबरोबर सात पाऊले चालणारा जोडीदार"
+
+#: app/general/faq.html:338
+msgid ""
+"You can change it from My Profile page. But when you change the number it will send you a OTP PIN to verify your number. After verifying mobile it "
+"will update it."
+msgstr ""
+"त्यासाठी तुम्ही “My Profile” पेज ला भेट द्या. तिथे मोबाईल नंबर फिल्ड मध्ये बदल करू शकता. फोन बदलल्यानंतर तुम्हाला नवीन मोबाइल वर पिन पाठवण्यात येईल. त्याची पुष्टी केल्या "
+"नंतर तुमचा मोबाइल नंबर बदल पूर्ण होतो."
+
+#: app/refer-your-friends/refer-your-friends.html:6
+msgid "You can earn money on each payment they make. Please <a href=\"/contactUs\">Contact Us</a> for more info."
+msgstr "आपण त्यांच्या प्रत्येक पेमेंट वर पैसे कमवू शकता. अधिक माहितीसाठी  <a href=\"/contactUs\">संपर्क करा</a>."
+
+#: app/general/faq.html:66
+msgid ""
+"You can find links to get username and password on Login page. Click on Forgot Password and provide your Username to receive password on your "
+"registered mobile. To receive username click on Forgot username and provide your mobile number. We will send you the username on your registered "
+"mobile number."
+msgstr ""
+"यासाठी लॉगइन पेज ला भेट द्या. तिथे तुम्हाला \"पासवर्ड विसरलाय ?\", \"युजरनेम विसरलाय?\" लिंक दिसतील. पासवर्ड विसरला असेल तर \"पासवर्ड विसरलाय ?\" वर क्लीक करा "
+"आणि तुमचा युजरनेम द्या.  आम्ही तुम्हाला तुमचा पासवर्ड तुमच्या मोबाइल नंबर वर पाठवू. युजरनेम विसरला असेल तर \"युजरनेम विसरलाय?\" वर क्लिक करा आणि तुमचा नोंदविलेला मोबाइल "
+"नंबर द्या, आम्ही तुम्हाला तुमचा युजरनेम त्या मोबाइल वर पाठवू. "
+
+#: app/home/home.html:611 app/home/home.html:677
+msgid "You can get help from our expert Counsellor"
+msgstr "आमचे एक्सपर्ट समुपदेशक आपल्याला लग्नासंबंधी मार्गदर्शन देतात."
+
+#: app/registration/registration_success.html:80
+msgid "You can resend password only 3 times, please contact us to set/reset password."
+msgstr "तुम्ही फक्त ३ वेळा पासवर्ड पाठवू शकता, पासवर्ड घेण्यासाठी कृपया आमच्याशी संपर्क साधा. "
+
+#: app/general/faq.html:160
+msgid ""
+"You can send the cheque/DD to lagnachiBolni office address, provided in the contact us page. Please mention your registered mobile number with the "
+"cheque/DD."
+msgstr "हो, तुम्ही चेक किंवा DD  लग्नाचीबोलणीच्या ऑफिस ऍड्रेस वर पाठवू शकता. तुमचा नोंदविलेला मोबाइल नंबर चेक च्या मागे लिहावा. "
+
+#: app/general/faq.html:51
+msgid ""
+"You can’t use same Email address as a username for multiple registration. But you can provide same email address in Email address field for "
+"multiple accounts."
+msgstr ""
+"तुम्ही एकाच ई-मेल ऍड्रेस एक पेक्षा जास्त नोंदणीसाठी युजरनेम साठी करू शकत नाही. कारण युजरनेम प्रत्येक अकाउंट साठी वेगवेगळा असावा लागतो.  परंतु ई-मेल ऍड्रेस फील्ड मध्ये तुम्ही "
+"तुमचा ई-मेल ऍड्रेस देऊ शकता."
+
+#: app/dashboard/dashboard.html:153
+msgid "You have not received any interest. Dont worry, go ahead and search for the match"
+msgstr "तुम्हाला आजून कोणाचेही इंटरेस्ट आलेले नाहीत. सर्च पेजवर जाऊन तुम्ही तुमच्यासाठी मॅच शोधू शकता."
+
+#: app/dashboard/dashboard.html:168
+msgid "You have not received any photo request."
+msgstr "तुम्हाला फोटो विनंती आलेल्या नाहीत."
+
+#: app/login/login.html:182 app/partnerlogin/partner_login.html:198
+msgid "You have successfully Logged out."
+msgstr "आपण यशस्वीरित्या लॉग आऊट केले."
+
+#: app/dashboard/dashboard.html:90
+msgid "You have {{vm.dash_data.contact_credits_remaining}}<br>contact credits"
+msgstr "तुमच्याकडे {{vm.dash_data.contact_credits_remaining}}<br>कॉन्टॅक्ट क्रेडिट्स आहेत. "
+
+#: app/dashboard/dashboard.html:102
+msgid "You have {{vm.dash_data.show_interests_remaining}}<br>show interests"
+msgstr "तुमच्याकडे {{vm.dash_data.show_interests_remaining}}<br>शो इंटरेस्ट आहेत."
+
+#: app/registration/registration.html:210
+msgid "You must agree with terms and conditions"
+msgstr "आपल्याला अटी मान्य करणे आवश्यक आहे."
+
+#: app/registration/registration_success.html:108
+msgid "You must supply a phone number."
+msgstr "कृपया आपला फोने नंबर द्या"
+
+#: app/payment/payment.html:47
+msgid "You will also be invited for our grooming sessions."
+msgstr "तुम्ही आमच्या सर्व जागरूकता सत्रांमध्ये भाग घेऊ शकाल."
+
+#: app/home/home.html:647 app/home/home.html:704
+msgid "You will get support from our expert mentors. They know what exactly you are looking for."
+msgstr "योग्य स्थळं शोधण्यासाठी, तुम्हाला आमच्याकडून वैयक्तिक मदत मिळेल. "
+
+#: app/payment/payment.html:45
+msgid "You will have access to all the profiles, and our personalized mentoring can short list the suitable match to save your time."
+msgstr "तुमचा वेळ वाचवण्यासाठी आमचे एक्सपर्टस तुमच्यासाठी योग्य स्थळं शोधण्यास तुमची मदत करतील. "
+
+#: app/partnerdetails/partner_details.html:520
+msgid "Your Full Name"
+msgstr "तुमचे पूर्ण नाव "
+
+#: app/partner/partner_home.html:131 app/refer-your-friends/refer-your-friends.html:14
+msgid "Your Name"
+msgstr "तुमचे नाव "
+
+#: app/partner/partner_home.html:145 app/partnerdetails/partner_details.html:535
+msgid "Your Name should contain only characters."
+msgstr "नावात फक्त अक्षरं असणे आवश्यक आहे."
+
+#: app/registration/registration_success.html:7
+msgid "Your Profile is {{vm.dynamic}}% Completed"
+msgstr "तुमचे प्रोफाईल {{vm.dynamic}}% पूर्ण झाले आहे."
+
+#: app/payment/payment.html:109
+msgid "Your last payment for Rs.{{vm.lastPayment.payment_made }} is successful."
+msgstr "तुम्ही केलेले ₹.{{vm.lastPayment.payment_made }} चे पेमेंट आम्हाला मिळाले. तुम्हाला दिलेल्या कॉन्टॅक्ट क्रेडीटचा वापर करून योग्य त्या स्थळांना संपर्क करा."
+
+#: app/payment/payment.html:98
+msgid "Your last payment for Rs.{{vm.lastPayment.payment_made}} is Initiated, But not completed."
+msgstr ""
+"तुम्ही केलेले ₹.{{\n"
+"                                vm.lastPayment.payment_made}} चे पेमेंट पूर्ण झाले नाही.  पुन्हा प्रयत्न करा."
+
+#: app/payment/payment.html:103
+msgid "Your last payment for Rs.{{vm.lastPayment.payment_made}} is failed."
+msgstr ""
+"तुम्ही केलेले ₹ {{\n"
+"                                vm.lastPayment.payment_made}} चे पेमेंट आम्हाला मिळालेले नाही. पुन्हा प्रयत्न करा."
+
+#: app/home/home.html:458 app/home/home.html:518
+msgid "create a matrimonial profile with important details i.e. age, height, caste, education, profession, income, location etc."
+msgstr "तुमची प्रोफाइल वय,उंची,जात,शिक्षण,व्यवसाय,उत्पन्न,स्थान या सर्व माहिती भरून तयार करा."
+
+#: app/account/account.html:159 app/partnerchangepassword/partnerChangePassword.html:160
+msgid "old and new password should not be same."
+msgstr "जुना आणि नवीन पासवर्ड समान असू नयेत."
+
+#: app/dashboard/dashboard.html:169
+msgid "please update your photo"
+msgstr "आपला फोटो अपलोड करा"
+
+#: app/dashboard/dashboard.html:137
+msgid "users connected to you"
+msgstr "वापरकर्ते कनेक्ट आहेत"
+
+#: app/dashboard/dashboard.html:122
+msgid "users visited your profile"
+msgstr "वापरकर्त्यांनी प्रोफाइलला व्हिझीट केली आहे"
+
+#: app/profile/profile.html:156
+msgid "{{formDateOfBirth.bday.$error}}12 Hour Birth Time"
+msgstr "{{formDateOfBirth.bday.$error}} जन्म वेळ"
+
+#: app/listview/listview.html:5
+msgid "{{vm.displayname}} - {{vm.profileListData.length}} match found"
+msgstr "{{vm.displayname}} - {{vm.profileListData.length}} स्थळं सापडली"
+
+#: app/viewprofile/viewprofile.html:59
+msgid "{{vm.profile.age}}, {{vm.profile.caste}}, {{vm.profile.marital_status}}"
+msgstr ""
+
+#: app/search/search.html:303
+msgid "{{vm.totalSearchCount}} matches found"
+msgstr "{{vm.totalSearchCount}} स्थळं सापडली"
+
+#: app/partnerdashboard/partner_dashboard.html:72
+msgid "आर्थिक लाभ कमवा !!"
+msgstr "आर्थिक लाभ कमवा !!"
+
+#: app/partner/partner_home.html:102
+msgid "आर्थिक व्यवहारातील काही भाग"
+msgstr "आर्थिक व्यवहारातील काही भाग"
+
+#: app/partner/partner_home.html:100
+msgid "मग आजच LagnachiBolni.comचे पार्टनर व्हा!"
+msgstr "मग आजच LagnachiBolni.comचे पार्टनर व्हा!"
+
+#: app/home/home.html:9 app/layout/ht-top-nav.html:14 app/layout/ht-top-nav.html:25 app/layout/ht-top-nav.html:42 app/layout/ht-top-nav.html:53
+msgid "मराठी"
+msgstr "मराठी"
+
+#: app/partner/partner_home.html:97
+msgid "लग्नासाठी आपल्या परिचितांची नावे नोंदवा,"
+msgstr "लग्नासाठी आपल्या परिचितांची नावे नोंदवा,"
+
+#: app/partner/partner_home.html:98
+msgid "सोबतच चांगला आर्थिक लाभही कमवा!"
+msgstr "सोबतच चांगला आर्थिक लाभही कमवा!"
+
+#~ msgid "You can  resend password for 3 times"
+#~ msgstr "आपण 3 वेळा पासवर्ड पुन्हा पाठवु शकता"
+
+#, fuzzy
+#~ msgid ""
+#~ "create a matrimonial profile with important details\n"
+#~ "                i.e. age, height, caste, education,\n"
+#~ "                profession, income, location etc."
+#~ msgstr "तुमची प्रोफाइल वय,उंची,जात,शिक्षण,व्यवसाय,उत्पन्न,स्थान या सर्व माहिती भरून तयार करा."
+
+#~ msgid ""
+#~ "No time bound subscriptions and renewals. Packages\n"
+#~ "                suitable for everyone."
+#~ msgstr "नोंदणीला वेळेची मर्यादा नाही. सर्वासाठी योग्य पॅकेजेस."
+
+#~ msgid ""
+#~ "No work area\n"
+#~ "                                             found."
+#~ msgstr "सापडले नाही"
+
+#~ msgid ""
+#~ "Thanks for confirming your email\n"
+#~ "        address\n"
+#~ "        ."
+#~ msgstr "आपला ई-मेल ऍड्रेस कन्फर्म केल्याबद्दल धन्यवाद"
+
+#~ msgid ""
+#~ "View\n"
+#~ "                            contact details"
+#~ msgstr "संपर्क माहिती पहा"
+
+#~ msgid ""
+#~ "View Profile -\n"
+#~ "            {{vm.profile.profile_id}}"
+#~ msgstr "प्रोफाइल पहा"
+
+#~ msgid ""
+#~ "We show only complete matrimonial profiles in search\n"
+#~ "                lists. You can find matches from 17000+ profiles."
+#~ msgstr "तुम्ही आमच्याकडील १७ हजार पेक्षा जास्त स्थळांमधून आपल्यासाठी योग्य स्थळ निवडू शकाल."
+
+#~ msgid ""
+#~ "You will get support from our expert mentors. They\n"
+#~ "                know what exactly you are looking for."
+#~ msgstr "योग्य स्थळं शोधण्यासाठी, तुम्हाला आमच्याकडून वैयक्तिक मदत मिळेल. "
+
+#~ msgid ""
+#~ "A-8 Regent lake View, Sector-26, Near\n"
+#~ "                          Ganesh Talav, Nigadi Pradhikarn Pune, 411044,\n"
+#~ "                          Maharashtra"
+#~ msgstr "A-8 'रिजंट लेक व्हिव , सेक्टर 26, गणेश तलावा जवळ, निगडी  प्राधिकरण  पुणे- 411044, महाराष्ट्र"
+
+#~ msgid ""
+#~ "As complementary we have gifted you 5 show\n"
+#~ "          interests, please avail then."
+#~ msgstr ""
+#~ "आम्ही तुम्हाला भेट म्हणून ५ शो इन्टेरेस्टस  दिले आहेत,\n"
+#~ " त्यांचा  करा. "
+
+#~ msgid ""
+#~ "Confirm your email and get 5 show interests free!\n"
+#~ "                 <span ng-show=\"vm.email_address != ''\">We have already sent you a mail. Check your Mail Box.</span>"
+#~ msgstr ""
+#~ "तुमचा ई-मेल ऍड्रेस कन्फर्म करा आणि ५ शो इंटरेस्ट मिळावा !\n"
+#~ "                 <span ng-show=\"vm.email_address != ''\">आम्ही तुमाला ई-मेल पाठविला आहे. तुमचा मेल बॉक्स चेक करा.</span>"
+
+#~ msgid ""
+#~ "Education\n"
+#~ "                                                            Field"
+#~ msgstr "शिक्षण शाखा"
+
+#~ msgid ""
+#~ "Education and Profession\n"
+#~ "                        Details"
+#~ msgstr "शैक्षणिक आणि व्यवसायिक माहिती"
+
+#~ msgid ""
+#~ "No\n"
+#~ "                                                                                    marital\n"
+#~ "                                                                                    status\n"
+#~ "                                                                                    found."
+#~ msgstr "सापडले नाही"
+
+#~ msgid ""
+#~ "No\n"
+#~ "                                                                                    status\n"
+#~ "                                                                                    found."
+#~ msgstr "सापडले नाही"
+
+#~ msgid ""
+#~ "No Marital Status\n"
+#~ "                                             found."
+#~ msgstr "वैवाहिकस्थिती सापडली नाही"
+
+#~ msgid ""
+#~ "No blood group\n"
+#~ "                                             found."
+#~ msgstr "ब्लड ग्रुप सापडला नाही"
+
+#~ msgid ""
+#~ "No complexion\n"
+#~ "                                             found."
+#~ msgstr "वर्ण सापडला नाही"
+
+#~ msgid ""
+#~ "No education\n"
+#~ "                                             field found."
+#~ msgstr "शिक्षण सापडलं नाही"
+
+#~ msgid ""
+#~ "No education\n"
+#~ "                                             found."
+#~ msgstr "शिक्षण सापडलं नाही"
+
+#~ msgid ""
+#~ "No education\n"
+#~ "                                             level found."
+#~ msgstr "शिक्षण सापडलं नाही"
+
+#~ msgid ""
+#~ "No marital\n"
+#~ "                                             status found."
+#~ msgstr "वैवाहिकस्थिती सापडली नाही"
+
+#~ msgid ""
+#~ "No nakshatra\n"
+#~ "                                             found."
+#~ msgstr "नक्षत्र सापडलं नाही"
+
+#~ msgid ""
+#~ "Phone\n"
+#~ "                        Number:"
+#~ msgstr " फोन नंबर :"
+
+#~ msgid ""
+#~ "Physically\n"
+#~ "                      Disabled"
+#~ msgstr "शारिरीक अपंगत्व :"
+
+#~ msgid ""
+#~ "Please provide phone\n"
+#~ "                        number."
+#~ msgstr "कृपया फोन नंबर पुरावा."
+
+#~ msgid ""
+#~ "Please provide valid\n"
+#~ "                        phone number."
+#~ msgstr "कृपया योग्य फोन नंबर पुरावा."
+
+#~ msgid ""
+#~ "Plot no 12, 2nd floor, Sector - 18, Opp\n"
+#~ "                            Jijamata park, Fule Nagar, Chinchwad Pune-411019"
+#~ msgstr "प्लॉट नं. १२, २रा मजला, सेक्टर १८, जिजामाता पार्क जवळ, फुले नगर, चिंचवड पुणे - ४११०१९"
+
+#~ msgid ""
+#~ "Show Interest/View Contact <br>to\n"
+#~ "                                            make connections"
+#~ msgstr ""
+#~ "Show Interest/View Contact <br>to\n"
+#~ "                                            make connections"
+
+#~ msgid ""
+#~ "That doesn't look like a valid\n"
+#~ "                        UserName."
+#~ msgstr "हे वैध वापरकर्तानाव नाही."
+
+#~ msgid ""
+#~ "That doesn't look like a valid Mobile\n"
+#~ "                        Number."
+#~ msgstr "हा वैध मोबाईल नंबर नाही."
+
+#~ msgid ""
+#~ "The\n"
+#~ "                                                              entered value is not a date!"
+#~ msgstr "योग्य दिनांक एंटर करा!"
+
+#~ msgid ""
+#~ "The\n"
+#~ "                                                    entered value is not a date!"
+#~ msgstr "योग्य दिनांक एंटर करा!"
+
+#~ msgid ""
+#~ "The entered value is\n"
+#~ "                          not a date!"
+#~ msgstr "टाकलेली तारीख वैध तारीख नाही."
+
+#~ msgid ""
+#~ "Username should be atleast six\n"
+#~ "                        character long."
+#~ msgstr "वापरकर्तानाव किमान सहा वर्ण लांब असणे आवश्यक आहे."
+
+#, fuzzy
+#~ msgid ""
+#~ "When you come across Profile, which you think can be\n"
+#~ "                Perfect Match. Click on “Show Interest”\n"
+#~ "                and this will send an email &amp; sms the profile."
+#~ msgstr ""
+#~ "तुमच्यासाठी उत्कृष्ट जोडीदार असलेल्या प्रोफाइल वरील \"शो इंटरेस्ट \" बटन वर क्लिक करा. आवड दर्शवल्यानंतर त्यांना ई-मेल आणि sms जाईल आणि ती व्यक्ती त्या इंटरेस्टला होकार "
+#~ "अथवा नकार करेल. हि सेवा मोफत आहे ."
+
+#, fuzzy
+#~ msgid ""
+#~ "When you come across Profile, which you think can be\n"
+#~ "                Perfect Match.Click on “Show Interest”\n"
+#~ "                and this will send an email &amp; sms the profile."
+#~ msgstr ""
+#~ "तुमच्यासाठी उत्कृष्ट जोडीदार असलेल्या प्रोफाइल वरील \"शो इंटरेस्ट \" बटन वर क्लिक करा. आवड दर्शवल्यानंतर त्यांना ई-मेल आणि sms जाईल आणि ती व्यक्ती त्या इंटरेस्टला होकार "
+#~ "अथवा नकार करेल. हि सेवा मोफत आहे ."
+
+#, fuzzy
+#~ msgid ""
+#~ "Last name should contain only\n"
+#~ "                        characters."
+#~ msgstr "आडनावात फक्त अक्षरं असणे आवश्यक आहे."
+
+#, fuzzy
+#~ msgid ""
+#~ "Email and Mobile number confirmation ensures, your\n"
+#~ "                Perfect Match can connect with you."
+#~ msgstr "ईमेल आणि फोन नंबर निश्चित करून तुम्हाला तुमच्या उत्कृष्ट मॅच बरोबर कनेक्ट होता येईल."
+
+#~ msgid ""
+#~ "Hey, I'm\n"
+#~ "                            {{vm.profile.firstname}} {{vm.profile.lastname}}"
+#~ msgstr "Hello, मी  {{vm.profile.firstname}} {{vm.profile.lastname}}"
+
+#, fuzzy
+#~ msgid ""
+#~ "Hey, I'm\n"
+#~ "                          {{vm.profile.firstname}} {{vm.profile.lastname}}"
+#~ msgstr "आडनाव :"
+
+#~ msgid "General Settings"
+#~ msgstr "सामान्य सेटिंग्ज "
+
+#~ msgid "Your Profile is completed {{vm.dynamic}}%"
+#~ msgstr "तुमचे प्रोफाईल {{vm.dynamic}}% पूर्ण झाले आहे."
+
+#~ msgid "Your Profile is {{vm.dynamic}}% completed"
+#~ msgstr "तुमचे प्रोफाईल {{vm.dynamic}}% पूर्ण झाले आहे."
+
+#~ msgid "{{'Family Details &nbsp;' | translate}}"
+#~ msgstr "कौटुंबिक माहिती"
+
+#~ msgid ""
+#~ "Please Login with password sent to your mobile number -\n"
+#~ "                    <span class=\"number\"> +91 {{vm.user.phone_mobile}} <a><i class=\"fa fa-pencil fa-lg\" aria-hidden=\"true\" ng-click=\"vm."
+#~ "openChangeMobileModal()\"></i></a></span>"
+#~ msgstr ""
+#~ "आपल्या मोबाइल नंबर वर पाठविलेल्या पासवर्ड ने लॉगिन करा -\n"
+#~ "                    <span class=\"number\"> +91 {{vm.user.phone_mobile}} <a><i class=\"fa fa-pencil fa-lg\" aria-hidden=\"true\" ng-click=\"vm."
+#~ "openChangeMobileModal()\"></i></a></span>"
+
+#~ msgid "Your Profile is"
+#~ msgstr "तुमची प्रोफाईल "
+
+#~ msgid ""
+#~ "Brother Details\n"
+#~ "                                                           <span class=\"panel-buttons\"><i class=\"icon-plus-circle\" ng-click=\"vm."
+#~ "addSibling('brotherObject')\"></i></span>"
+#~ msgstr ""
+#~ "भावांची माहिती\n"
+#~ "                                                           <span class=\"panel-buttons\"><i class=\"icon-plus-circle\" ng-click=\"vm."
+#~ "addSibling('brotherObject')\"></i></span>"
+
+#~ msgid "Sister Details <span class=\"panel-buttons\"><i class=\"icon-plus-circle\" ng-click=\"vm.addSibling( 'sisterObject')\"></i></span>"
+#~ msgstr "बहिणींची माहिती"
+
+#~ msgid "No Education Field found."
+#~ msgstr "सापडले नाही"
+
+#~ msgid "No status Found."
+#~ msgstr "सापडले नाही"
+
+#~ msgid "Not found."
+#~ msgstr "सापडले नाही"
+
+#, fuzzy
+#~ msgid "Please provide a City."
+#~ msgstr "कृपया योग्य शहर निवडा"
+
+#, fuzzy
+#~ msgid "Please provide a height."
+#~ msgstr "कारण प्रदान करा."
+
+#, fuzzy
+#~ msgid "Please provide a marital status."
+#~ msgstr "कृपया योग्य जात निवडा"
+
+#, fuzzy
+#~ msgid "Please provide an education field."
+#~ msgstr "कारण प्रदान करा."
+
+#, fuzzy
+#~ msgid "Please provide an education level."
+#~ msgstr "कारण प्रदान करा."
+
+#, fuzzy
+#~ msgid "Please provide an education."
+#~ msgstr "कारण प्रदान करा."
+
+#, fuzzy
+#~ msgid "Please provide an income."
+#~ msgstr "कारण प्रदान करा."
+
+#~ msgid "Please provide valid date!"
+#~ msgstr "योग्य दिनांक एंटर करा"
+
+#~ msgid "You must agree with terms and conditions."
+#~ msgstr "आपल्याला अटी मान्य करणे आवश्यक आहे."
+
+#~ msgid "Firstname should be atleast two characters long."
+#~ msgstr "नाव किमान दोन अक्षरं लांब असणे आवश्यक आहे."
+
+#~ msgid "Lastname should be atleast two characters long."
+#~ msgstr "आडनाव किमान दोन अक्षरं लांब असणे आवश्यक आहे."
+
+#~ msgid "Lastname should contain only characters."
+#~ msgstr "आडनाव केवळ वर्ण असणे आवश्यक आहे."
+
+#, fuzzy
+#~ msgid "Please provide Gender."
+#~ msgstr "कृपया तुमची लिंग माहिती द्या."
+
+#, fuzzy
+#~ msgid "Please provide LastName."
+#~ msgstr "कृपया तुमचे आडनाव द्या."
+
+#, fuzzy
+#~ msgid "Please provide FirstName."
+#~ msgstr "कृपया तुमचे नाव द्या."
+
+#~ msgid "Tell us about your contact details"
+#~ msgstr "आम्हाला तुमची संपर्क माहिती द्या "
+
+#~ msgid "I agree with"
+#~ msgstr "मी सहमत आहे"
+
+#~ msgid "and"
+#~ msgstr "आणि"
+
+#~ msgid "privacy policy"
+#~ msgstr "गोपनीयता धोरण"
+
+#~ msgid ""
+#~ "Enter your Mobile Number below. We\n"
+#~ "                    will send you Username via SMS."
+#~ msgstr ""
+#~ "खाली तुमचा मोबाइल नंबर द्या. \n"
+#~ " तुम्हाला युजरनेम SMS द्वारे पाठविण्यात येईल."
+
+#~ msgid ""
+#~ "Please provide\n"
+#~ "                            phone number."
+#~ msgstr "ई-मेल / यूजरनेम :"
+
+#~ msgid ""
+#~ "The\n"
+#~ "                            entered value is not a phone number!"
+#~ msgstr "बरोबर फोन नंबर एंटर करा"
+
+#, fuzzy
+#~ msgid ""
+#~ "{{'New to\n"
+#~ "                                    LagnachiBolni.com?' | translate}}&nbsp;<a href=\"/registration/0\" target=\"\" translate=\"\"> Register</a>"
+#~ msgstr " LagnachiBolani.com साठी नविन आहात? "
+
+#~ msgid "You can earn money on each payment they make. Please <a href=\"/contactUs\"> Contact Us</a> for more info."
+#~ msgstr "आपण त्यांच्या प्रत्येक पेमेंट वर पैसे कमवू शकता. अधिक माहितीसाठी  <a href=\"/contactUs\">संपर्क करा</a>."
+
+#~ msgid "Help us to Serve your Friends or Relatives...!!!"
+#~ msgstr "आम्हाला तुमच्या नातेवाईक आणि मित्रांना मदत करायला आवडेल. !!!"
+
+#~ msgid "You can earn money on each payment they make. Please <a href=\"/contactUs\" translate=\"\"> Contact Us</a> for more info."
+#~ msgstr "आपण त्यांच्या प्रत्येक पेमेंट वर पैसे कमवू शकता."
+
+#, fuzzy
+#~ msgid "contacts"
+#~ msgstr "संपर्क माहिती "
+
+#~ msgid "IDBI Bank Account Number - 0087102000042705 <br>Name - LagnachiBolni <br>Branch - Nigdi, Pune <br>IFSC Code - IBKL0000087"
+#~ msgstr "IDBI बँक अकाऊंट नंबर - 0087102000042705 <br> नाव - LagnachiBolni <br> ब्रँच - निगडी , पुणे <br> IFSC कोड - IBKL0000087"
+
+#~ msgid ""
+#~ "Your last payment for Rs. {{\n"
+#~ "                                vm.lastPayment.payment_made }} is successful."
+#~ msgstr ""
+#~ "तुम्ही केलेले ₹{{\n"
+#~ "                                vm.lastPayment.payment_made }} चे पेमेंट आम्हाला मिळाले. तुम्हाला दिलेल्या कॉन्टॅक्ट क्रेडीटचा वापर करून योग्य त्या स्थळांना संपर्क "
+#~ "करा."
+
+#~ msgid ""
+#~ "Your last payment for Rs. {{\n"
+#~ "                                vm.lastPayment.payment_made}} is failed."
+#~ msgstr ""
+#~ "तुम्ही केलेले ₹ {{\n"
+#~ "                                vm.lastPayment.payment_made}} चे पेमेंट आम्हाला मिळालेले नाही. पुन्हा प्रयत्न करा."
+
+#~ msgid ""
+#~ "Your last payment for Rs.{{\n"
+#~ "                                vm.lastPayment.payment_made}} is Initiated, But not completed."
+#~ msgstr ""
+#~ "तुम्ही केलेले ₹.{{\n"
+#~ "                                vm.lastPayment.payment_made}} चे पेमेंट पूर्ण झाले नाही.  पुन्हा प्रयत्न करा."
+
+#~ msgid "IDBI Bank Account Number - 0087102000042705 <br> Name - LagnachiBolni <br> Branch - Nigdi, Pune <br> IFSC Code - IBKL0000087"
+#~ msgstr "IDBI बँक अकाऊंट नंबर - 0087102000042705 <br> नाव - LagnachiBolni <br> ब्रँच - निगडी , पुणे <br> IFSC कोड - IBKL0000087"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span translate=\"\">IDBI Bank\n"
+#~ "                                                     Account Number -\n"
+#~ "                    0087102000042705\n"
+#~ "                    <br> Name - LagnachiBolni\n"
+#~ "                    <br> Branch - Nigdi, Pune\n"
+#~ "                    <br> IFSC Code - IBKL0000087</span>"
+#~ msgstr ""
+#~ "आयडीबीआय बँक खाते क्रमांक - 0087102000042705 \n"
+#~ "                    <br> नाव - LagnachiBolni\n"
+#~ "                    <br> शाखा - निगडी, पुणे \n"
+#~ "                    <br> आयएफएससी कोड - IBKL0000087"
+
+#, fuzzy
+#~ msgid ""
+#~ "IDBI Bank\n"
+#~ "                                                     Account Number -\n"
+#~ "                    0087102000042705\n"
+#~ "                    <br> Name - LagnachiBolni\n"
+#~ "                    <br> Branch - Nigdi, Pune\n"
+#~ "                    <br> IFSC Code - IBKL0000087"
+#~ msgstr ""
+#~ "आयडीबीआय बँक खाते क्रमांक - 0087102000042705 \n"
+#~ "                    <br> नाव - LagnachiBolni\n"
+#~ "                    <br> शाखा - निगडी, पुणे \n"
+#~ "                    <br> आयएफएससी कोड - IBKL0000087"
+
+#~ msgid "You have {{vm.dash_data.contact_credits_remaining}} <br>contact credits"
+#~ msgstr "तुमच्याकडे {{vm.dash_data.contact_credits_remaining}} कॉन्टॅक्ट क्रेडिट्स आहेत. "
+
+#~ msgid "You have {{vm.dash_data.show_interests_remaining}} <br>show interests"
+#~ msgstr "तुमच्याकडे {{vm.dash_data.show_interests_remaining}} शो इन्टरेस्ट आहेत."
+
+#~ msgid ""
+#~ "Username should be atleast six\n"
+#~ "                                                    character long."
+#~ msgstr "वापरकर्तानाव किमान सहा वर्ण लांब असणे आवश्यक आहे."
+
+#~ msgid ""
+#~ "You can change it from My Profile page. But when you change the number it will send you a OTP PIN to\n"
+#~ "                verify your number. After verifying mobile it will update it."
+#~ msgstr ""
+#~ "त्यासाठी तुम्ही “My Profile” पेज ला भेट द्या. तिथे मोबाईल नंबर फिल्ड मध्ये बदल करू शकता. फोन बदलल्यानंतर तुम्हाला नवीन मोबाइल वर पिन पाठवण्यात येईल. त्याची पुष्टी "
+#~ "केल्या नंतर तुमचा मोबाइल नंबर बदल पूर्ण होतो."
+
+#~ msgid ""
+#~ "After registration, we send you the password on your registered mobile number. You can use username you\n"
+#~ "                entered at the time of registration and the password to login to lagnachibilni. You can also use your\n"
+#~ "                registered mobile number as username and the password you received to login."
+#~ msgstr ""
+#~ "नोंदणी केल्यानंतर लॉगइन कसे करायचे?\n"
+#~ "नोंदणी पूर्ण केल्यानंतर तुम्हाला अकाऊंटचा पासवर्ड तुमच्या नोंदविलेल्या मोबाईलवर मिळेल. लॉगइन करण्यासाठी लॉगइन पेज उघडा.  नोंदणी करताना दिलेला युजरनेम आणि मोबाइलवर  "
+#~ "आलेल्या पासवर्ड ने तुम्ही लॉगइन करू शकाल. "
+
+#~ msgid ""
+#~ "Go to Account Setting page. Select Delete Account tab. Please provide a genuine reason to delete the\n"
+#~ "                account and click delete account button."
+#~ msgstr "त्यासाठी अकाऊंट सेटिंग पेग ला भेट द्या, डिलीट अकाऊंट टॅब ला क्लिक करा. योग्य ते कारण देऊन तुम्ही आपले अकाउंट बंद करू शकता."
+
+#~ msgid ""
+#~ "If you find matching profiles on lagnachibolni, you can get their contact details by purchasing contact\n"
+#~ "                credits. Please check payment page to select the suitable plan for you."
+#~ msgstr ""
+#~ "संपर्क माहिती जाणून घेण्यासाठी आपल्याला, आम्ही दिलेल्या प्लॅनपैकी एक प्लॅन घ्यावा लागतो.  प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन "
+#~ "निवडा. प्लॅन घेतल्यानंतर आम्ही आपल्याला कॉन्टॅक्ट क्रेडिट्स देतो. एक कॉन्टॅक्ट क्रेडिट वापरून तुम्ही पाहिलेल्या कोणत्याही एका स्थळाची संपर्क माहिती पाहू शकाल. "
+
+#~ msgid ""
+#~ "If you know the LB id of a profile, you can search the profile by searching it by LB id. If you don’t\n"
+#~ "                have its ID then search it using advanced search."
+#~ msgstr "शोध पेज वर जाऊन तुम्ही त्या स्थळाचा प्रोफाइल ID, प्रोफाइल ID ने शोधा मध्ये टाका आणि बाजूच्या बटन वर क्लिक करा. ते स्थळ तुम्हाला शोधून दाखवण्यात येईल. "
+
+#~ msgid ""
+#~ "If you like any profile, you can send interest to him/her. If that person can accept or reject your\n"
+#~ "                request. If it is accepted then you will be able to see their contact details.\n"
+#~ "                Note: Sometime if people don’t feel your profile is suitable for them then they don’t answer the\n"
+#~ "                request."
+#~ msgstr ""
+#~ "जर तुम्हाला एक स्थळ आवडले तर तुम्ही त्यांना इंटरेस्ट पाठवू शकता.  ती व्यक्ती तुमचा इंटरेस्ट स्वीकारू किंवा नाकारू शकते.  जर त्यांनी ती स्वीकारली तर तुम्हाला त्यांची संपर्क "
+#~ "माहिती दिसू शकेल. जर त्यानी ती नाकारली तर संपर्क माहिती दिसणार नाही. \n"
+#~ "नोट : कधी कधी काही व्यक्तीना तुमचा प्रोफाइल आवडला नाही तर ते  तुमच्या विनंतीला उत्तर देत नाहीत. "
+
+#~ msgid ""
+#~ "If you think lagnachibolni is useful for your friend and relatives, you can refer it to them. To do so,\n"
+#~ "                visit “Refer friend” page. Provide their mobile numbers and their names, we will send SMS to them on\n"
+#~ "                your behalf.\n"
+#~ "                If they get registered and make payment, we will give you 20% out of it as a referral bonus. You can use\n"
+#~ "                this referral bonus for your payments or claim it as cash. We will transfer it to your account."
+#~ msgstr ""
+#~ "\"मित्रांना रेफर करा\" पेज वर जाऊन तुम्ही तुमच्या मित्रांचे आणि नातेवाईकांचे मोबाइल नंबर आणि नावे द्या. आम्ही त्यांना SMS करून लग्नाचीबोलणी बद्दल कळवू. \n"
+#~ "जर त्यांनी रजिस्टर करून पेमेंट केले तर आम्ही तुम्हाला त्यातून २०% रक्कम अनुदान म्हणून देतो. तुम्हाला मिळालेली रक्कम तुम्ही तुमच्या नोंदणी करण्यासाठी वापरू शकता किंवा ती आम्ही "
+#~ "तुम्हाला तुम्हाला तुमच्या बँक अकाउंट नंबरला ट्रान्सफर करू. "
+
+#~ msgid ""
+#~ "In advance search you set the values for some parameters and search for matches. Every time you visit\n"
+#~ "                advance search page it show all fields blank. It is very boarding to select those values every time.\n"
+#~ "                Instead of selecting those every time you can save the search you want to do frequently. Select the\n"
+#~ "                values you want and click “Save Search” button."
+#~ msgstr "शोध करताना तुम्ही जी माहिती टाकता, तू तुम्ही पुन्हा वापरण्यासाठी जतन करू शकता.  हि जतन केलेली माहिती तुम्ही वारंवार शोध करताना वापरू शकता."
+
+#~ msgid ""
+#~ "Once registered you will receive password for your account via SMS on your mobile.\n"
+#~ "                To confirm your mobile you will just have to login using that password. we don't show your profile to\n"
+#~ "                others if you don't confirm your mobile."
+#~ msgstr ""
+#~ "नोंदणी पूर्ण केल्यानंतर पासवर्ड तुम्हाला तुमच्या नोंदविलेल्या मोबाईलवर मिळेल. तुमच्या मोबाइलची पुष्टी करण्यासाठी तुम्हाला लग्नाची बोलणी वेबसाईटला लॉगइन करावे लागेल. "
+#~ "मोबाइलची पुष्टी झाल्या शिवाय आम्ही तुमचा प्रोफाइल कोणालाही दाखवत नाही."
+
+#~ msgid ""
+#~ "Once we receive and process the cheque/DD we will provide you the contact credit. After we receive money\n"
+#~ "                in our account we will give you contact credits in 2 working days."
+#~ msgstr "चेक मिळाल्यानंतर आम्ही तो बँकेत देऊ. पैसे आमच्या अकाउंटला आल्यानंतर २ दिवसात आम्ही तुम्हाला कॉन्टॅक्ट क्रेडिट देऊ."
+
+#~ msgid ""
+#~ "Registration is free. After Registration you can login and search profiles matching for you. You can\n"
+#~ "                check the details of the profile, but we don’t show contact details of other profiles. To get the\n"
+#~ "                contact details we offer different packages. Please check payment page to select the suitable packages\n"
+#~ "                for you."
+#~ msgstr ""
+#~ "नोंदणी विनामूल्य आहे. नोंदणी पूर्ण झाल्यानंतर आपण आपल्यासाठी योग्य स्थळं शोधू शकाल. तुम्ही स्थळांचे डिटेल्स पाहू शकाल परंतु आम्ही स्थळांची संपर्क माहिती दाखवत नाही.  संपर्क "
+#~ "माहिती जाणून घेण्यासाठी मात्र आपल्याला आम्ही दिलेल्या प्लॅनपैकी एक प्लॅन घ्यावा लागतो.  प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन "
+#~ "निवडा. "
+
+#~ msgid ""
+#~ "To get the contact details of the other profiles you need contact credits. If you have purchased contact\n"
+#~ "                credits you will be able to see contact details of any profile.\n"
+#~ "                It will consume 1 contact credit to see the contact details of 1 profile.\n"
+#~ "                For example if you purchase 10 contact credits, then you will be able to see contact details of any 10\n"
+#~ "                profiles."
+#~ msgstr ""
+#~ "नोंदणी पूर्ण झाल्यानंतर आपण आपल्यासाठी योग्य स्थळं शोधू शकाल. तुम्ही स्थळांचे डिटेल्स पाहू शकाल परंतु आम्ही स्थळांची संपर्क माहिती दाखवत नाही. त्यासाठी तुम्हाला कॉन्टॅक्ट "
+#~ "क्रेडिट खरेदी करावे लागतात. \n"
+#~ "एका स्थळाची संपर्क माहिती पाहण्यासाठी तुम्हाला एक कॉन्टॅक्ट क्रेडिट लागतो. उ.दा जर तुमच्याकडे १० कॉन्टॅक्ट क्रेडिट असतील तर तुम्ही १० स्थळांची संपर्क माहिती पाहू शकाल. \n"
+#~ "प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन निवडा."
+
+#~ msgid ""
+#~ "Visit payment page, choose suitable plan for you. Click on Buy Now button. It will redirect you to\n"
+#~ "                payment gateway. There are multiple options to make the payment online using credit cards, debit cards,\n"
+#~ "                net banking, wallets and many more.\n"
+#~ "                Login is mandatory to make online payment."
+#~ msgstr ""
+#~ "प्लॅनची माहिती पाहण्यासाठी \"पेमेंट\" पेजला भेट द्या आणि आपल्याला योग्य तो प्लॅन निवडा. Buy Now बटणवर क्लिक करा. पेमेंट गेटवे  वर गेल्यानंतर पेमेंट करण्यासाठी खूप पर्याय "
+#~ "उपलब्ध आहेत. एक पर्याय वापरून पेमेंट करा. ऑनलाईन पेमेंट करण्यासाठी लॉगइन करणे आवश्यक आहे. "
+
+#~ msgid ""
+#~ "Visit register page or Home page. Enter your details, complete your registration to start using\n"
+#~ "                LagnachiBolni. Only registered and logged in people can see or search other profile. Mobile confirmation\n"
+#~ "                is mandatory."
+#~ msgstr ""
+#~ "रजिस्ट्रेशन किंवा होम पेज ला भेट द्या. तिथे विचारलेली संपूर्ण माहिती देऊन तुम्ही तुमची नोंदणी पूर्ण करू शकता. नोंदणी करून लॉगिन केल्यानंतरच तुम्हाला इतर स्थळाची माहिती दिसू "
+#~ "शकेल. नोंदणी पूर्ण केल्यानंतर युजरनेम आणि पासवर्ड तुम्हाला तुमच्या नोंदणी करताना दिलेल्या मोबाईल वर मिळेल. "
+
+#~ msgid ""
+#~ "Visit “My Profile” page where you can change almost all information related to your profile. It saves\n"
+#~ "                the information automatically once you change it."
+#~ msgstr "त्यासाठी तुम्ही “My Profile” पेज ला भेट द्या. तिथे तुम्ही तुमची माहिती बदलू किंवा दुरुस्त करू शकता. "
+
+#~ msgid ""
+#~ "Visit “My Profile” page where you can find link edit photo below your photo. It will redirect you to\n"
+#~ "                update photo page. Upload your photo there."
+#~ msgstr ""
+#~ "त्यासाठी तुम्ही “My Profile” पेज ला भेट द्या. तुमच्या फोटो खाली फोटो बदलण्यासाठी लिंक दिलेली आहे. त्या लिंकवर क्लिक करा.  फोटो अपलोड पेज वर जाऊन तुम्ही तुमचा फोटो "
+#~ "बदलू शकाल. "
+
+#~ msgid ""
+#~ "When you visit any profile, if the person has not uploaded any image, a link to “Request Photo” will be\n"
+#~ "                displayed below the photo section. By clicking that link you will be able to request the photo."
+#~ msgstr ""
+#~ "जर तुम्ही इतर प्रोफाईलला भेट दिली आणि त्या व्यक्ती ने त्याचा फोटो अपलोड केला नसेल तर, तुम्ही त्या व्यक्तीला फोटो अपलोड करण्यासाठी विनंती पाठवू शकता. प्रोफाईल मध्ये "
+#~ "त्या व्यक्तीच्या फोटो खाली फोटो विनंतीसाठी लिंक दिलेली असेल. त्या लिंक वर क्लिक केल्यानंतर त्या व्यक्तीला तुमची विनंती पाठवली जाईल."
+
+#~ msgid ""
+#~ "Yes you can use same mobile number for both the registrations.\n"
+#~ "                We will suggest to use different mobile numbers for each registration, because we send notification on\n"
+#~ "                registered mobile number. IF you user same number for multiple account, will receive notifications for\n"
+#~ "                both accounts on same mobile."
+#~ msgstr ""
+#~ "हो, तुम्ही एक पेक्षा जास्त अकाउंटला सेम मोबाइल नंबर देऊ शकता. तरीही आम्ही तुम्हाला विनंती करू इच्छितो की प्रत्येक अकाउंट साठी वेगवेगळा मोबाइल नंबर असावा, कारण आम्ही "
+#~ "त्या मोबाईल वर मेसेजेस पाठवतो.  जर दोन अकाउंट ला एकच मोबाईल नंबर ठेवला तर तुम्हाला आलेले मेसेज कोणत्या अकाउंट साठी आहेत हे कळणं अवघड जाईल. "
+
+#~ msgid ""
+#~ "Yes, it is possible, to do so please call us on 7218701870 / 7722090227. You can also send a request\n"
+#~ "                from “Contact Us” page."
+#~ msgstr ""
+#~ "हो, काही कारणास्तव बंद केले अकाऊंट पुन्हा चालू करायचे असल्यास आम्हाला 7218701870 / 7722090227 या नंबर वर कॉल करा. किंवा “Contact Us”  पेज वर तुमची विनंती नोंदवा. "
+#~ "आम्ही तुमचे अकाउंट पुन्हा चालू करून देऊ."
+
+#~ msgid ""
+#~ "You can find links to get username and password on Login page. Click on Forgot Password and provide your\n"
+#~ "                Username to receive password on your registered mobile. To receive username click on Forgot username and\n"
+#~ "                provide your mobile number. We will send you the username on your registered mobile number."
+#~ msgstr ""
+#~ "यासाठी लॉगइन पेज ला भेट द्या. तिथे तुम्हाला \"पासवर्ड विसरलाय ?\", \"युजरनेम विसरलाय?\" लिंक दिसतील. पासवर्ड विसरला असेल तर \"पासवर्ड विसरलाय ?\" वर क्लीक करा "
+#~ "आणि तुमचा युजरनेम द्या.  आम्ही तुम्हाला तुमचा पासवर्ड तुमच्या मोबाइल नंबर वर पाठवू. युजरनेम विसरला असेल तर \"युजरनेम विसरलाय?\" वर क्लिक करा आणि तुमचा नोंदविलेला "
+#~ "मोबाइल नंबर द्या, आम्ही तुम्हाला तुमचा युजरनेम त्या मोबाइल वर पाठवू. "
+
+#~ msgid ""
+#~ "You can send the cheque/DD to lagnachiBolni office address, provided in the contact us page. Please\n"
+#~ "                mention your registered mobile number with the cheque/DD."
+#~ msgstr "हो, तुम्ही चेक किंवा DD  लग्नाचीबोलणीच्या ऑफिस ऍड्रेस वर पाठवू शकता. तुमचा नोंदविलेला मोबाइल नंबर चेक च्या मागे लिहावा. "
+
+#~ msgid ""
+#~ "You can’t use same Email address as a username for multiple registration. But you can provide same email\n"
+#~ "                address in Email address field for multiple accounts."
+#~ msgstr ""
+#~ "तुम्ही एकाच ई-मेल ऍड्रेस एक पेक्षा जास्त नोंदणीसाठी युजरनेम साठी करू शकत नाही. कारण युजरनेम प्रत्येक अकाउंट साठी वेगवेगळा असावा लागतो.  परंतु ई-मेल ऍड्रेस फील्ड मध्ये तुम्ही "
+#~ "तुमचा ई-मेल ऍड्रेस देऊ शकता."
+
+#~ msgid "contact credits"
+#~ msgstr "संपर्क माहिती आहेत"
+
+#~ msgid "show interests"
+#~ msgstr "शो इंटरेस्ट"
+
+#, fuzzy
+#~ msgid ""
+#~ "terms &amp;\n"
+#~ "                                                 conditions"
+#~ msgstr "जन्म ठिकाण :"
+
+#~ msgid "{{'New to LagnachiBolani.com?' | translate}}<a href=\"/registration/0\" target=\"\" translate=\"\">Register</a>"
+#~ msgstr " LagnachiBolani.com साठी नविन आहात? "

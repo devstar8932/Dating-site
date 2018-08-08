@@ -1,0 +1,147 @@
+<div ng-show="vm.detail">
+    <!--<div class="hallDetails">-->
+
+      <span aria-label= "finish" class="pull-left btn-circle" ng-click="vm.back('type_hall')">
+        <i style="color:white;" class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+      </span>
+
+
+        <h1 class="page-title"> {{vm.activeHall.name}}</h1>
+         <div class="weddingHallTemplate col-sm-4  col-md-3">
+            <div class="planContent">
+               <div class="planDetail">
+        <h3>Contact Details</h3>
+        <table width="100%" border="0" cellpadding="3" cellspacing="3" class="">
+            <tr>
+                <td>
+                    <span class="bold">Name Of Owner</span>
+                </td>
+                <td>
+                    {{vm.activeHall.owner}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Phone</span>
+                </td>
+                <td>
+                    {{vm.activeHall.phone}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Mobile</span>
+                </td>
+                <td>
+                    {{vm.activeHall.mobile}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Fax</span>
+                </td>
+                <td>
+                    {{vm.activeHall.fax}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Email</span>
+                </td>
+                <td>
+                    {{vm.activeHall.email}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Website</span>
+                </td>
+                <td>
+                    {{vm.activeHall.website}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Address</span>
+                </td>
+                <td>
+                    {{vm.activeHall.address}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bold">Area</span>
+                </td>
+                <td>
+                    {{vm.activeHall.area_in_pune}}
+                </td>
+            </tr>
+        </table>
+               </div>
+            </div>
+         </div>
+        <!--<div class="clearfix">-->
+        <!--<div class="floatLeft">-->
+         <div class="weddingHallTemplate col-sm-4  col-md-3">
+            <div class="planContent">
+               <div class="planDetail">
+            <div ng-repeat="hall in vm.activeHalls">
+            <h4>Hall Details </span></h4>
+            <table width="100%" border="0" cellpadding="3" cellspacing="3" class="subTbl">
+                <tr>
+                    <td>
+                        <span class="bold">Hall type</span>
+                    </td>
+                    <td>
+                        {{hall.hall_type}}
+                    </td>
+                </tr>
+                <tr>
+                    <td width="130">
+                        <span class="bold">Hall Capacity</span>
+                    </td>
+                    <td>
+                         {{hall.hall_size}} Persons
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="130">
+                        <span class="bold">Dinning Capacity</span>
+                    </td>
+                    <td>
+                         {{hall.dining_size}} Persons
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="bold">Price</span>
+
+                    </td>
+                    <td>
+                        Rs.{{hall.price}}
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="bold">Chairs Capacity </span></td>
+                    <td>{{hall.chair_size}} Persons</td>
+                </tr>
+                <tr>
+                    <td><span class="bold">Rooms </span></td>
+                    <td>{{hall.ac_rooms}}</td>
+                </tr>
+
+                <tr>
+                    <td><span class="bold">Parking</span></td>
+                    <td>Ample Parking</td>
+
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</div>
+ </div>
+</div>
+<!--</div>-->

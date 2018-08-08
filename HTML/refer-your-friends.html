@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <title>LagnachiBolni.com</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+    <div id="wrapper" class="inner-wrapper">
+        <div ng-include src="'partials/header.html'"></div>
+        <main id="main">
+            <div class="closed-sidenav visible-md visible-lg" ng-hide="isSidenavOpen">
+                <ul class="nav-links">
+                    <li><a><i class="icon-email"></i></a></li>
+                    <li><a><i class="icon-box-remove"></i></a></li>
+                    <li><a><i class="icon-dashboard"></i></a></li>
+                    <li><a><i class="icon-search"></i></a></li>
+                    <li><a><i class="icon-human-resource"></i></a></li>
+                    <li><a><i class="icon-phone2"></i></a></li>
+                    <li class="active"><a><i class="icon-profile2"></i></a></li>
+                    <li><a><i class="icon-settings"></i></a></li>
+                    <li><a><i class="icon-logout"></i></a></li>
+                </ul>
+            </div>
+
+            <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="isSidenavOpen" class="sidenav md-sidenav-left">
+                <div class="sidenav-header">
+                    <span class="nav-close" ng-click="openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+                    <div class="logo-header">
+                        <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#"><i class="icon-email"></i> Inbox</a></li>
+                    <li><a href="#"><i class="icon-box-remove"></i> Outbox</a></li>
+                    <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="icon-search"></i> Search</a></li>
+                    <li><a href="#"><i class="icon-human-resource"></i> Refer Friends</a></li>
+                    <li><a href="#"><i class="icon-phone2"></i> Contact Us</a></li>
+                    <li class="active"><a href="#"><i class="icon-profile2"></i> My Profile</a></li>
+                    <li><a href="#"><i class="icon-settings"></i> Account Settings</a></li>
+                    <li><a href="#"><i class="icon-logout"></i> Logout</a></li>
+                </ul>
+            </md-sidenav>
+
+            <div class="container-fluid">
+                <div class="refer-friend-wrapper">
+                    <div>
+                        <h1>Help us to Serve your Friends or Relatives.!!! </h1>
+                        <hr/>
+                        <h5>You can earn money on each payment they make.<a href="#" > Contact us</a></h5>
+                    </div>
+                    <form name="" class="refer-form" novalidate>
+                        <div>
+                            <div class="select">
+                                <md-input-container ng-model="name" class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
+                                    <label for="input_8">Name</label>
+                                    <input type="text" autofocus="" class="md-input">
+                                    <div class="md-errors-spacer"></div>
+                                </md-input-container>
+                            </div>
+
+                            <div class="select">
+                                <md-input-container ng-model="name" class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
+                                    <label for="input_8">Mobile Number</label>
+                                    <input type="text" class="md-input">
+                                    <div class="md-errors-spacer"></div>
+                                </md-input-container>
+                            </div>
+
+                            <div class="select">
+                                <md-input-container ng-model="name" class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
+                                    <label for="input_8">Friend's Mobile Numbers</label>
+                                    <textarea ng-model="user.biography" md-maxlength="150" rows="3" md-select-on-focus></textarea>
+                                    <div class="md-errors-spacer"></div>
+                                </md-input-container>
+                            </div>
+
+                            <input type="submit" value="Refer" class="btn btn-primary center-block">
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <md-toolbar class="chrome-gap-correction">
+        <div ng-include src="'partials/footer.html'"></div>
+    </md-toolbar>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+    <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+    <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+    <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+    <script src="js/scrollRevealAnimations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

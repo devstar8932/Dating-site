@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <title>LagnachiBolni.com</title>
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+  <div id="wrapper">
+    <header id="header" class="header-home">
+      <div class="container">
+        <div class="row">
+          <div class="login-holder">
+            <div class="language-select">
+              <md-input-container>
+                <label>Marathi</label>
+                <md-select ng-model="languaseselect">
+                  <md-option ng-repeat="languaseselect in languaseselects" value="{{languaseselect}}">{{languaseselect}}</md-option>
+                </md-select>
+              </md-input-container>
+            </div>
+            <a href="#" class="btn btn-login">Login</a>
+          </div>
+          <div class="nav-holder">
+            <a class="nav-opener" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#"><img src="images/logoTM.png" height="155" width="267" alt="LagnachiBolni"></a>
+          </div>
+          <div class="logo-header">
+              <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="slide-wrap">
+        <div class="home-slide">
+          <div class="slide">
+            <div class="container">
+              <div class="img-wrap">
+                <img class="hidden-sm" src="images/img01.png" height="571" width="652" alt="image description">
+                <img class="hidden-md hidden-lg" src="images/img01-medium.png" height="406" width="549" alt="image description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="register-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-9 hidden-xs">
+                <h1>We help you <br><span>find your <strong>life partner</strong></span></h1>
+              </div>
+              <div class="col-sm-4 col-md-3">
+                <form action="#" class="register-form">
+                  <h2>Register</h2>
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>User Name/ Email</label>
+                    <input type="text">
+                  </md-input-container>
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>First Name</label>
+                    <input type="text">
+                  </md-input-container>
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>Last Name</label>
+                    <input type="text">
+                  </md-input-container>
+                  <div class="type-wrap">
+                    <md-radio-group class="radio-wrap" ng-model="profile.brideGroom">
+                      <md-radio-button class="radio-button" value="Bride"  class="md-primary">Bride</md-radio-button>
+                      <md-radio-button class="radio-button" value="Groom"> Groom </md-radio-button>
+                    </md-radio-group>
+                  </div>
+                  <div class="form-group">
+                    <div class="date-pick">
+                      <md-datepicker md-current-view="month" ng-model="myDate" md-placeholder="Date of Birth" md-open-on-focus></md-datepicker>
+                    </div>
+                  </div>
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label>Mobile Number</label>
+                    <input type="text">
+                  </md-input-container>
+                  <div class="form-group">
+                    <div class="select select-component">
+                      <md-input-container>
+                        <label>Caste</label>
+                        <md-select ng-model="cast">
+                            <md-option ng-repeat="cast in casts" value="{{cast}}">{{cast}}</md-option>
+                        </md-select>
+                      </md-input-container>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <md-checkbox ng-model="data.cb1" class="checkbox" aria-label="Checkbox 1">
+                      I agree with <a href="#">terms &amp; conditions</a> and <a href="#">privacy policy</a>.
+                    </md-checkbox>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-register">Register</button>
+                  <div class="link-wrap">
+                    <a href="#" class="help-link">May I help You ?</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="find-match-block">
+        <div class="container">
+          <a href="#" class="find-opener">Find Match</a>
+          <div class="slide">
+            <form action="#">
+              <div class="row">
+                <div class="col-sm-3 find">
+                  <div class="wrap">
+                    <strong class="title">Find</strong>
+                    <label class="gender-select">
+                      <input type="radio" name="gender-select" checked>
+                      <span class="fake-input male"><i class="icon-male"></i></span>
+                    </label>
+                    <label class="gender-select">
+                      <input type="radio" name="gender-select">
+                      <span class="fake-input female"><i class="icon-female"></i></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-3 age">
+                  <div class="wrap">
+                    <strong class="title">Age</strong>
+                    <md-input-container>
+                      <label>Select</label>
+                      <md-select ng-model="age">
+                        <md-option ng-repeat="age in ages" value="{{age}}">{{age}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="col-sm-3 caste">
+                  <div class="wrap">
+                    <strong class="title">Caste</strong>
+                    <md-input-container>
+                      <label>Caste</label>
+                      <md-select ng-model="cast">
+                        <md-option ng-repeat="cast in casts" value="{{cast}}">{{cast}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="btn-wrap">
+                    <button type="submit" class="btn btn-primary btn-find">Find Match</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="perfect-match">
+        <div class="container">
+          <h2>You are only four steps away from your Perfect Match</h2>
+          <div id="match-container" class="row">
+            <div class="col-sm-3">
+              <div class="text-holder sr-perfect-match">
+                <div class="ico-holder">
+                  <i class="icon-pen"></i>
+                </div>
+                <h3><a href="#">Register</a></h3>
+                <p>create a matrimonial profile with important details i.e. age, height, caste, education, profession, income, location etc.</p>
+              </div>
+              <a href="#" class="view-link">View More</a>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+              <div class="text-holder sr-perfect-match">
+                <div class="ico-holder">
+                  <i class="icon-phone"></i>
+                </div>
+                <h3><a href="#">Confirm <br>Mobile Number</a></h3>
+                <p>Email and Mobile number confirmation ensures, your Perfect Match can connect with you.</p>
+              </div>
+              <a href="#" class="view-link">View More</a>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+              <div class="text-holder sr-perfect-match">
+                <div class="ico-holder">
+                  <i class="icon-search-people"></i>
+                </div>
+                <h3><a href="#">Search <br>Perfect Match</a></h3>
+                <p>We provide you a simple and efficient way to search your perfect life partner.</p>
+              </div>
+              <a href="#" class="view-link">View More</a>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+              <div class="text-holder sr-perfect-match">
+                <div class="ico-holder">
+                  <i class="icon-connect"></i>
+                </div>
+                <h3><a href="#">Connect</a></h3>
+                <p>When you come across Profile, which you think can be Perfect Match. Click on “Show Interest” and this will send an email &amp; sms the profile.</p>
+              </div>
+              <a href="#" class="view-link">View More</a>
+            </div>
+          </div>
+          <ul class="pagination-nav">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="best-metromonial">
+        <div class="bg-img">
+          <div class="img-wrap" >
+          </div>
+        </div>
+        <div class="container">
+          <div class="text-box">
+            <i class="icon-award"></i>
+            <h2>We are committed to provide <br>you the best <br>Marathi matrimonial service</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="text-wrap sr-best-matrimonial-1">
+                <div class="ico-holder">
+                  <i class="icon-registration"></i>
+                </div>
+                <h3>Free Registration</h3>
+                <p>Matrimony registration is free</p>
+              </div>
+            </div>
+            <div class="col-sm-3 pull-right">
+              <div class="text-wrap sr-best-matrimonial-2">
+                <div class="ico-holder">
+                  <i class="icon-profile"></i>
+                </div>
+                <h3>Complete Profiles</h3>
+                <p>Only complete profiles shown in search lists.</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="text-wrap sr-best-matrimonial-1">
+                <div class="ico-holder">
+                  <i class="icon-email"></i>
+                </div>
+                <h3>Free SMS/Email Updates</h3>
+                <p>Notifications for visits, interests in your profile</p>
+              </div>
+            </div>
+            <div class="col-sm-3 pull-right">
+              <div class="text-wrap sr-best-matrimonial-2">
+                <div class="ico-holder">
+                  <i class="icon-wallet"></i>
+                </div>
+                <h3>Pay as you go</h3>
+                <p>Pay only for the contacts you are interested in</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="text-wrap sr-best-matrimonial-1">
+                <div class="ico-holder">
+                  <i class="icon-lock"></i>
+                </div>
+                <h3>Secure &amp; Safe</h3>
+                <p>Only registered users can see profile &amp; photos</p>
+              </div>
+            </div>
+            <div class="col-sm-3 pull-right">
+              <div class="text-wrap sr-best-matrimonial-2">
+                <div class="ico-holder">
+                  <i class="icon-currency-ru"></i>
+                </div>
+                <h3>Online Payment</h3>
+                <p>Credit card, Debit Card, Net Banking, Paytm etc.</p>
+              </div>
+            </div>
+          </div>
+          <ul class="pagination-nav">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-gift-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-wrap">
+                <h2>Contact Credits</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of</p>
+                <div class="price-wrap row">
+                  <div class="col-xs-4">
+                    <div class="price-item price-item-1 sr-price-item">
+                      <span class="contact-text">25</span>
+                      <span class="text">Contact Credits</span>
+                      <span class="price-text">Rs. 200/-</span>
+                      <a href="#" class="link-buy">Buy Now </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="price-item price-item-2 sr-price-item">
+                      <span class="contact-text">75</span>
+                      <span class="text">Contact Credits</span>
+                      <span class="price-text">Rs. 500/-</span>
+                      <a href="#" class="link-buy">Buy Now </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="price-item price-item-3 sr-price-item">
+                      <span class="contact-text">200</span>
+                      <span class="text">Contact Credits</span>
+                      <span class="price-text">Rs. 1000/-</span>
+                      <a href="#" class="link-buy">Buy Now </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="gift-box">
+                <h2>Gift yourself</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of</p>
+                <div class="img-wrap">
+                  <img src="images/img03.png" height="218" width="262" alt="gift image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="match-by-lb">
+        <div class="container">
+          <h2>Matched by LagnachiBolni.com</h2>
+          <div class="match-slide-wrap">
+            <div class="row">
+              <div class="col-sm-6 col-md-3 sr-match-slide">
+                <div class="match-item">
+                  <div class="item-wrap">
+                    <img src="images/img04.jpg" height="255" width="255" alt="image description">
+                    <div class="desc-text" ng-class="{'active':hovering1}" ng-mouseenter="hovering1=true" ng-mouseleave="hovering1=false">
+                      <strong class="name"><span class="name-text">Deepali</span><span>&amp;</span><span class="name-text">Krunal</span></strong>
+                      <p>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                      <a href="#" class="link-view">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 hidden-xs sr-match-slide">
+                <div class="match-item">
+                  <div class="item-wrap">
+                    <img src="images/img05.jpg" height="255" width="255" alt="image description">
+                    <div class="desc-text" ng-class="{'active':hovering2}" ng-mouseenter="hovering2=true" ng-mouseleave="hovering2=false">
+                      <strong class="name"><span class="name-text">Deepali</span><span>&amp;</span><span class="name-text">Krunal</span></strong>
+                      <p>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                      <a href="#" class="link-view">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 hidden-sm hidden-xs sr-match-slide">
+                <div class="match-item">
+                  <div class="item-wrap">
+                    <img src="images/img06.jpg" height="255" width="255" alt="image description">
+                    <div class="desc-text" ng-class="{'active':hovering3}" ng-mouseenter="hovering3=true" ng-mouseleave="hovering3=false">
+                      <strong class="name"><span class="name-text">Deepali</span><span>&amp;</span><span class="name-text">Krunal</span></strong>
+                      <p>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                      <a href="#" class="link-view">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 hidden-sm hidden-xs sr-match-slide">
+                <div class="match-item">
+                  <div class="item-wrap">
+                    <img src="images/img07.jpg" height="255" width="255" alt="image description">
+                    <div class="desc-text" ng-class="{'active':hovering4}" ng-mouseenter="hovering4=true" ng-mouseleave="hovering4=false">
+                      <strong class="name"><span class="name-text">Deepali</span><span>&amp;</span><span class="name-text">Krunal</span></strong>
+                      <p>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                      <a href="#" class="link-view">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-holder clearfix">
+              <a href="#" class="btn-prev disbled"><i class="icon-arrow-left"></i></a>
+              <a href="#" class="btn-next"><i class="icon-arrow-right"></i></a>
+            </div>
+          </div>
+          <a href="#" class="link-more">View More Matched</a>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 visible-md visible-lg">
+              <div class="logo-footer">
+                <a href="#"><img src="images/logo.png" height="155" width="267" alt="LagnachiBolni"></a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="cast" class="fake-anchor" property="" content="">
+                <a href="#cast" class="link-title">Castes We Serve</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">96kuli-Maratha</a></li>
+                    <li><a href="#">MarathaDeshmukh</a></li>
+                    <li><a href="#">Maratha</a></li>
+                    <li><a href="#">Agri</a></li>
+                    <li><a href="#">Arya-Vysya</a></li>
+                    <li><a href="#">Aryasamaj</a></li>
+                    <li><a href="#">Beldar</a></li>
+                    <li><a href="#">Bhandari</a></li>
+                    <li><a href="#">Bhavsar</a></li>
+                    <li><a href="#">Bhavsar-Kshatriya</a></li>
+                    <li><a href="#">Brahmin</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <nav class="footer-nav">
+                <meta id="city" class="fake-anchor" property="" content="">
+                <a href="#city" class="link-title">Cities</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Ahmednagar</a></li>
+                    <li><a href="#">Aurangabad</a></li>
+                    <li><a href="#">Jalgaon</a></li>
+                    <li><a href="#">Kolhapur</a></li>
+                    <li><a href="#">Thane</a></li>
+                    <li><a href="#">Nagpur</a></li>
+                    <li><a href="#">Nashik</a></li>
+                    <li><a href="#">Sangli</a></li>
+                    <li><a href="#">Solapur</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="help" class="fake-anchor" property="" content="">
+                <a href="#help" class="link-title">Help &amp; Support</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Membership</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <nav class="footer-nav">
+                <meta id="otherservice" class="fake-anchor" property="" content="">
+                <a href="#otherservice" class="link-title">Other Services</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">Wedding Hall</a></li>
+                    <li><a href="#">Caterers</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-3 col-sm-4 contact-detail">
+              <strong class="footer-title">Follow us on</strong>
+              <ul class="social-share">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+              <strong class="footer-title helpline">Helpline Number</strong>
+              <a href="tel:+917722090227" class="tel">+91-7722090227</a>
+              <strong class="footer-title">Support Team</strong>
+              <a class="email" href="mailto:care@lagnachibolni.com">care@lagnachibolni.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          Copyright &copy; 2011-2016 <a href="#">LagnachiBolni.com</a>. <br>All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+
+      <script src="//code.jquery.com/jquery-3.1.1.min.js" ></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+      <!-- Angular Material requires Angular.js Libraries -->
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+      <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+      <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+      <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+      <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+      <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+      <!-- Angular Material Library -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+      <script src="js/scrollRevealAnimations.js"></script>
+      <script src="js/app.js"></script>
+
+</body>
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

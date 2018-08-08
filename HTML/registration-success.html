@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <title>LagnachiBolni.com</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+<div>
+    <div ng-include src="'partials/header.html'"></div>
+    <main>
+
+        <div class="container-fluid registration-success">
+            <div class="reg-success-wrapper">
+                <h2>Congratulations Neha Rane!</h2>
+                <img src="./images/img15.jpg">
+                <div class="progress-wrapper">
+                  <uib-progressbar animate="false" value="90" type="success"><b><span class="hidden-xs">Your Profile is </span><span>90% Complete</span></b></uib-progressbar>
+                </div>
+                <table align="center" text-left class="detail-table">
+                    <tr>
+                        <td>
+                            Basic Details &nbsp;
+                        </td>
+                        <td>
+                            <i class="icon-checkmark"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Personal Details &nbsp;
+                        </td>
+                        <td>
+                            <i class="icon-checkmark"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Photo Upload &nbsp;
+                        </td>
+                        <td >
+                            <i class="icon-checkmark"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Family Details &nbsp;
+                        </td>
+                        <td class="incomplete">
+                            95%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Astro Details &nbsp;
+                        </td>
+                        <td  class="incomplete">
+                            50%
+                        </td>
+                    </tr>
+                </table>
+                <div class="success-number">
+                <p >Please Login with password sent to your mobile number - <span class="number">9819 8797 8797                 <a><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+</span></p>
+                &nbsp;
+                </div>
+                <div class="search-profile-btns">
+                    <button type="submit" class="btn btn-secondary">Resend Password</button>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                    <br/>
+                    <img src="images/floral.png">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <md-toolbar>
+        <div ng-include src="'partials/footer.html'"></div>
+    </md-toolbar>
+</div>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+    <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+    <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+    <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+    <script src="js/scrollRevealAnimations.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

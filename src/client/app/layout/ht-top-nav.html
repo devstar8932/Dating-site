@@ -1,0 +1,111 @@
+<nav><!--  style="position: fixed; z-index: 100;" -->
+<div id="wrapper"  class="header-rel" ng-controller="ShellController as vm">
+        <header id="header" headroom class="header-inner">
+      <div class="container-fluid" id="menubutton">
+        <md-button  id="menubutton" class="nav-toggle" aria-label="abc" ng-click="vm.openLeftMenu()" ng-if="!vm.loginCtrl">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </md-button>
+          <div class="header-right pull-right hidden-sm hidden-md hidden-lg"
+               ng-hide="!vm.isFullFooter"><!--hidden-sm-->
+              <div class="language" style="cursor: pointer">
+                  <a href="#" ng-hide="$root.languaseUsed == 'Marathi'"
+                     ng-click="vm.languageChange('mr','Marathi')" translate>मराठी</a>&nbsp;&nbsp;&nbsp;
+                  <a href="#" ng-if="$root.languaseUsed != 'English'"
+                     ng-click="vm.languageChange('en','English')" translate>English</a>&nbsp;&nbsp;&nbsp;
+
+              </div>
+          </div>
+
+          <div class="header-right pull-right hidden-sm hidden-md hidden-lg"
+               ng-hide="vm.isFullFooter"><!--hidden-sm-->
+              <div class="language" style="cursor: pointer">
+                  <a href="#" ng-hide="$root.languaseUsed == 'Marathi'"
+                     ng-click="vm.languageChange('mr','Marathi')" translate>मराठी</a>&nbsp;&nbsp;&nbsp;
+                  <a href="#" ng-if="$root.languaseUsed != 'English'"
+                     ng-click="vm.languageChange('en','English')" translate>English</a>&nbsp;&nbsp;&nbsp;
+
+              </div>
+          </div>
+
+        <div class="logo-header">
+          <a href="#" ng-click="vm.goTo()"><img src="images/main_images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+        </div>
+          <div class="header-right pull-right hidden-xs hidden-sm"
+               ng-hide="vm.isFullFooter">
+          <!--<div class="header-inline partner">-->
+          <!--<button class="btn btn-secondary">Become a Partner</button>-->
+          <!--</div>-->
+          <div class="language" style="cursor: pointer">
+         <a href="#" ng-hide="$root.languaseUsed == 'Marathi'" ng-click="vm.languageChange('mr','Marathi')" translate>मराठी</a>&nbsp;&nbsp;&nbsp;
+         <a href="#" ng-if="$root.languaseUsed != 'English'" ng-click="vm.languageChange('en','English')" translate>English</a>&nbsp;&nbsp;&nbsp;
+
+          </div>
+        </div>
+          <div class="header-right pull-right hidden-xs "
+               ng-hide="!vm.isFullFooter">
+          <!--<div class="header-inline partner">-->
+            <!--<button class="btn btn-secondary">Become a Partner</button>-->
+          <!--</div>-->
+          <div class="header-inline language">
+         <a href="#" ng-hide="$root.languaseUsed == 'Marathi'" ng-click="vm.languageChange('mr','Marathi')" translate>मराठी</a>&nbsp;&nbsp;&nbsp;
+         <a href="#" ng-if="$root.languaseUsed != 'English'" ng-click="vm.languageChange('en','English')" translate>English</a>&nbsp;&nbsp;&nbsp;
+          </div>
+          <!--<div class="header-inline message">-->
+            <!--<span>Message &nbsp;<i class="icon-email"></i></span>-->
+          <!--</div>-->
+          <div class="header-inline help ">
+            <a class="pending-link" href="/faq"><span translate >Help &nbsp;<i class="icon-info"></i></span></a>
+          </div>
+          <div class="header-inline profile">
+              <span>{{vm.user.firstname}}</span>
+              <img ng-if="vm.user.profile_image_url == null" class="img-circle" src="./images/img12.jpg">
+              <img  ng-if="vm.user.profile_image_url != null" ng-src="{{vm.user.profile_image_url}}" class="img-circle">
+          </div>
+        </div>
+      </div>
+    </header>
+  <!--<md-button id="header-Content" ng-click="vm.goToTop();"-->
+  <!--class="md-fab md-mini md-no-ink md-fab-bottom-right"-->
+  <!--style="position:fixed; background-color: rgb(255, 93, 12);z-index:60">-->
+
+  <!--<i class="material-icons" style="margin-top: 8px;">arrow_upward</i>-->
+  <!--<md-tooltip md-direction="left"><span translate>Go To Top</span></md-tooltip>-->
+  <!--</md-button>-->
+</div>
+</nav>
+
+
+<style type="text/css">
+ @media only screen and (max-width: 767px){
+    #wrapper.header-rel {
+      box-shadow : 1px 2px 2px rgba(35, 31, 32, 0.32)
+    }
+    #wrapper #header{
+      position: relative !important;
+    }
+
+    .inner-wrapper{
+      padding-top: 0px;
+    }
+    md-sidenav{
+      position: absolute !important;
+    }
+    .header-up{
+       display: none;
+    }
+    .header-down{
+       display: block;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .header-up{
+       display: none;
+    }
+    .header-down{
+       display: none;
+    }
+  }
+</style>

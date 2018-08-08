@@ -1,0 +1,94 @@
+<div class="container-fluid payment-container search-container inbox-container" ng-click="closeLeftMenuMobile()">
+      <div class="row inbox-header-row">
+            <div class="search-header"
+               ng-click="vm.update_connect_requests_count()">
+               <h1 translate>Inbox</h1>
+            </div>
+            <md-content>
+               <md-tabs md-selected="vm.selectedIndex" md-dynamic-height>
+                  <md-tab md-on-select="vm.selectTab(0)">
+                    <md-tab-label>
+                        <div class="tab-header"><span
+                           class="header-icon"><i
+                           class="icon-star-full"
+                           ></i></span>{{'&nbsp;Interests&nbsp;' | translate}}<span
+                           class="header-badge">{{vm.connectList.length}}</span>
+                        </div>
+                     </md-tab-label>
+                    <md-tab-body>
+                      <div class="row payment-plans-list">
+                        <!--<p class="plans-header">{{vm.connectList.length}} match found</p>-->
+                        <div ng-repeat="profile in vm.connectList">
+                          <lb-search-result result-type="search"
+                                            profile-data="profile"></lb-search-result>
+                        </div>
+                      </div>
+                    </md-tab-body>
+                  </md-tab>
+                  <md-tab md-on-select="vm.selectTab(1)">
+                     <md-tab-label>
+                        <div class="tab-header"><span
+                           class="header-icon"><i
+                           class="icon-cross"></i></span >{{'&nbsp;Rejected&nbsp;' | translate}}<span
+                           class="header-badge">{{vm.rejectedList.length}}</span>
+                        </div>
+                     </md-tab-label>
+                    <md-tab-body >
+                      <div class="row payment-plans-list">
+                        <!--<p class="plans-header">{{vm.rejectedList.length}} match found</p>-->
+                        <div ng-repeat="profile in vm.rejectedList">
+                          <lb-search-result result-type="inbox"
+                                            profile-data="profile"></lb-search-result>
+                        </div>
+                      </div>
+                    </md-tab-body>
+                  </md-tab>
+                  <md-tab md-on-select="vm.selectTab(2)">
+                     <md-tab-label>
+                        <div class="tab-header"><span
+                           class="header-icon"><i
+                           class="icon-checkmark"></i></span>{{'&nbsp;Accepted&nbsp;' | translate}}<span
+                           class="header-badge">{{vm.acceptedList.length}}</span>
+                        </div>
+                     </md-tab-label>
+                    <md-tab-body >
+                      <div class="row payment-plans-list">
+                        <!--<p class="plans-header">{{vm.acceptedList.length}} match found</p>-->
+                        <div ng-repeat="profile in vm.acceptedList">
+                          <lb-search-result result-type="inbox"
+                                            profile-data="profile"></lb-search-result>
+                        </div>
+                      </div>
+                    </md-tab-body>
+                  </md-tab>
+                  <md-tab md-on-select="vm.selectTab(3)">
+                     <md-tab-label>
+                        <div class="tab-header" ng-click="vm.update_photo_upload_requests_count()">
+                            <span class="header-icon">
+                                <i class="icon-camera"></i>
+                            </span>{{'&nbsp;Photo Requests&nbsp;' | translate}}
+                            <span class="header-badge" >
+                                {{vm.photo_uploadList.length}}
+                            </span>
+                        </div>
+                     </md-tab-label>
+                    <md-tab-body>
+                      <div class="row payment-plans-list">
+                        <!--<p class="plans-header">{{vm.photo_uploadList.length}} match found</p>-->
+                        <div ng-repeat="profile in vm.photo_uploadList">
+                          <lb-search-result result-type="inbox"
+                                            profile-data="profile"></lb-search-result>
+                        </div>
+                      </div>
+                    </md-tab-body>
+                  </md-tab>
+               </md-tabs>
+            </md-content>
+      </div>
+<!--      <div class="row inbox-content-wrapper">
+
+
+
+
+      </div>-->
+</div>

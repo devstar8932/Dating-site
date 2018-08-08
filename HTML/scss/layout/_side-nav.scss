@@ -1,0 +1,93 @@
+.sidenav {
+  @include box-shadow(0 8px 17px 0 rgba(0,0,0,0.2));
+  background: #fbf7ee;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  @include media('>=tablet') {
+    width: 224px;
+  }
+
+  @include media('>=desktop') {
+    @include box-shadow(none);
+    top: 65px;
+    padding-top: 30px;
+    overflow: auto;
+    z-index: 8;
+  }
+
+  .sidenav-header {
+    overflow: hidden;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+
+    @include media('>=desktop') {
+      display: none;
+    }
+  }
+
+  .logo-header {
+    margin: 0;
+    width: 140px;
+    float: left;
+  }
+
+  .nav-close {
+    @include translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    line-height: 1;
+    font-size: 16px;
+    color: $brand-primary;
+  }
+
+  .nav-links{
+    @extend %listreset;
+
+    >li {
+      font-size: 16px;
+      line-height: 20px;
+
+      &.active,
+      &:hover {
+        >a {
+          background: #f7efde;
+        }
+      }
+
+      >a {
+        color: #696864;
+        display: block;
+        padding: 13px 15px 13px 50px;
+        position: relative;
+
+        @include media('>=widescreen') {
+          padding-left: 55px;
+        }
+
+        i {
+          @include translate(0, -50%);
+          left: 15px;
+          position: absolute;
+          top: 50%;
+          font-size: 24px;
+
+          @include media('>=widescreen') {
+            left: 20px;
+          }
+
+          &.icon-email {
+            font-size: 18px;
+          }
+
+          &.icon-refer-friend {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}

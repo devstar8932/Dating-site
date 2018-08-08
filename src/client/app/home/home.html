@@ -1,0 +1,875 @@
+<div>
+  <header id="header" class="header-home">
+    <div class="container">
+      <div class="home-header-row">
+        <div class="login-holder">
+          <span><a href="" ng-click="vm.login()" class="btn btn-login" translate>Login</a></span>
+          <div class="language-select">
+
+            <a href="#" ng-hide="$root.languaseUsed == 'Marathi'"
+               ng-click="vm.languageChange('mr','Marathi')"
+               translate>मराठी</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" ng-if="$root.languaseUsed != 'English'"
+               ng-click="vm.languageChange('en','English')"
+               translate>English</a>&nbsp;&nbsp;&nbsp;
+            <a ng-hide="true" href="#" ng-if="$root.languaseUsed != 'Hindi'"
+               ng-click="vm.languageChange('hi','Hindi')"
+               translate>Hindi</a>&nbsp;&nbsp;&nbsp;
+          </div>
+
+        </div>
+        <div class="nav-holder">
+          <ul class="dropdown">
+            <a class="nav-opener" ng-click="vm.openLeftMenu(); $event.stopPropagation();">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="images/logoTM.png" height="155" width="267"
+                           alt="LagnachiBolni"></a>
+        </div>
+        <div class="logo-header">
+          <a href="#"><img src="images/logo-header.png" height="155" width="267"
+                           alt="LagnachiBolni"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="slide-wrap">
+      <div class="home-slide">
+        <div class="slide">
+          <div class="container">
+            <div class="img-wrap">
+              <div uib-carousel active="0" interval="5000" no-pause="true"
+                   no-wrap="false">
+                <div uib-slide index="0">
+                  <img class="hidden-sm" src="images/main_images/img01.png"
+                       height="571" width="652"
+                       alt="image description">
+                  <img class="hidden-md hidden-lg"
+                       src="images/main_images/img01-medium.png" height="406"
+                       width="549"
+                       alt="image description">
+                </div>
+               <!--  <div uib-slide index="1">
+                  <img class="hidden-sm" src="images/main_images/img01.png"
+                       height="571" width="652"
+                       alt="image description">
+                  <img class="hidden-md hidden-lg"
+                       src="images/main_images/img01-medium.png" height="406"
+                       width="549"
+                       alt="image description">
+                </div> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="register-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-9 hidden-xs left-content">
+              <div uib-carousel active="0" interval="5000" no-pause="true"
+                   no-wrap="false">
+                <div uib-slide
+                     ng-repeat="slide in vm.bannerSlides track by slide.id"
+                     index="slide.id">
+                  <h1>{{slide.text1}}<br><span>{{slide.text2}}<strong>{{slide.textStrong}}</strong></span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 right-content">
+              <form name="registerForm" class="register-form"
+                    ng-submit="vm.submit(registerForm)" novalidate>
+                <h2 translate>Register</h2>
+                <div class="form-group">
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label translate>User Name/Email</label>
+                    <input type="text" data-username name="emailid"
+                           ng-model="vm.user.emailid"
+                           class="form-control" ng-blur="vm.checkUsername()"
+                           minlength="6" required>
+                    <div ng-messages="registerForm.emailid.$error" role="alert">
+                      <div ng-message="required" class="my-message" translate>
+                        Please provide a username/email Id.
+                      </div>
+                      <div ng-message="emailValid" class="my-message" translate>
+                        That doesn't look like a valid email.
+                      </div>
+                      <div ng-message="phoneValid" class="my-message" translate>
+                        That doesn't look like a valid Mobile Number.
+                      </div>
+                      <div ng-message="usernameValid" class="my-message"
+                           translate>That doesn't look like a valid UserName.
+                      </div>
+                      <div ng-message-exp="['minlength']" class="my-message"
+                           translate>Username should be atleast six character long.
+                      </div>
+                    </div>
+                    <div ng-if="vm.isUserNamePresent" class="my-message"
+                         style="color:#f10; font-size: 10px"
+                         translate>User name already used.
+                    </div>
+                  </md-input-container>
+                </div>
+                <div class="form-group">
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label translate>First Name</label>
+                    <input type="text" name="firstname"
+                           ng-model="vm.user.firstname" class="form-control"
+                           ng-pattern="/^[a-zA-Z\S]+$/" minlength="2" required>
+                    <div ng-messages="registerForm.firstname.$error"
+                         role="alert">
+                      <div ng-message="required" class="my-message" translate>
+                        Please provide a first name.
+                      </div>
+                      <div ng-message="pattern" class="my-message" translate>
+                        First name should contain only characters.
+                      </div>
+                      <div ng-message-exp="['minlength']" class="my-message"
+                           translate>
+                        First name should be atleast one character long.
+                      </div>
+
+                    </div>
+                  </md-input-container>
+                </div>
+                <div class="form-group">
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <label translate>Last Name</label>
+                    <input type="text" name="lastname"
+                           ng-model="vm.user.lastname" class="form-control"
+                           ng-pattern="/^[a-zA-Z\S]+$/" minlength="2" required>
+                    <div ng-messages="registerForm.lastname.$error"
+                         role="alert">
+                      <div ng-message="pattern" class="my-message" translate>
+                        Last name should contain only characters.
+                      </div>
+                      <div ng-message="required" class="my-message" translate>
+                        Please provide a last name.
+                      </div>
+                      <div ng-message-exp="['minlength']" class="my-message"
+                           translate>
+                        Last name should be atleast one character long.
+                      </div>
+                    </div>
+                  </md-input-container>
+                </div>
+                <div class="type-wrap">
+                  <md-radio-group class="radio-wrap" ng-model="vm.user.gender"
+                                  ng-change="vm.isvalideDate()" required>
+                    <md-radio-button class="radio-button" value="Female"
+                                     class="md-primary" checked="checked"><span
+                      translate> Female</span></md-radio-button>
+                    <md-radio-button class="radio-button" value="Male"><span
+                      translate>Male</span></md-radio-button>
+                  </md-radio-group>
+                </div>
+                <div class="form-group">
+                  <div>
+                    <md-input-container class="md-block" flex-gt-sm>
+                      <input data-inputmask="'alias': 'date'"
+                             name="bday"
+                             type="tel"
+                             data-datevalidater="vm.user.gender"
+                             ng-model="vm.user.bday"
+                             placeholder="{{'Date of Birth' | translate}}"
+                             ng-blur='vm.changeDateOfBirth( "bday" , vm.user.bday)'
+                      />
+                      <div ng-messages="registerForm.bday.$error"
+                           role="alert">
+                        <div ng-message="dateField"
+                             class="my-message" translate>The entered value is not a date!
+                        </div>
+                        <div ng-message='maleField' class="my-message"
+                             translate>Age should be 21 to 50.
+                        </div>
+                        <div ng-message='femaleField' class="my-message"
+                             translate>Age should be 18 to 50.
+                        </div>
+                      </div>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!-- <md-input-container class="md-block" flex-gt-sm>
+                    <label translate>Mobile Number</label>
+                    <input type="tel" name="phone" data-phone ng-model="vm.user.phone_mobile" class="form-control"  required/>
+                    <div ng-messages="registerForm.phone.$error" role="alert">
+                      <div ng-message="required" class="my-message" translate>Please provide a phone number.</div>
+                      <div ng-message="phoneField" class="my-message" translate>The entered value is not a phone number!</div>
+                    </div>
+                  </md-input-container> -->
+                  <md-input-container class="md-block" flex-gt-sm>
+                    <input type="tel"
+                           name="phone" data-phone
+                           ng-model="vm.user.phone_mobile"
+                           class="form-control"
+                           placeholder="{{'Mobile Number' | translate}}"
+                           ng-click="vm.initPhone()"
+                           required/>
+
+                    <div ng-messages="registerForm.phone.$error"
+                         role="alert">
+                      <div ng-message="required"
+                           class="my-message" translate>Please provide phone number.
+                      </div>
+                      <div ng-message="phoneField"
+                           class="my-message" translate>Please provide valid phone number.
+                      </div>
+                    </div>
+                  </md-input-container>
+                </div>
+                <div class="form-group">
+                  <ui-select ng-model="vm.user.cast" theme="bootstrap"
+                             class="form-control" name="caste"
+                             reset-search-input="true" ng-required="true" skip-focusser=true
+                  >
+                    <ui-select-match
+                      placeholder="{{'Enter a caste...' | translate}}">
+                      {{$select.selected.value}}
+                    </ui-select-match>
+                    <ui-select-choices
+                      repeat="cast.key as cast in vm.casts | filter : $select.search">
+                      <div
+                        ng-bind-html="cast.value | highlight: $select.search"></div>
+                    </ui-select-choices>
+                    <ui-select-no-choice>
+                      <translate>No caste found.</translate>
+                    </ui-select-no-choice>
+                  </ui-select>
+                  <div
+                    ng-messages="registerForm.$submitted && registerForm.caste.$error.required"
+                    role="alert"
+                    class="ui-select-error">
+                    <div ng-message="required" class="my-message" translate>
+                      Please provide a caste.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <md-checkbox ng-model="vm.user.cb1" class="checkbox"
+                               aria-label="Checkbox 1"
+                               ng-disabled="registerForm.$invalid">
+                    <span translate>  I agree with <a href="/terms">terms &amp; conditions</a> and <a
+                      href="/terms">privacy policy</a>.</span>
+                  </md-checkbox>
+                </div>
+                <!-- !vm.user.cb1 || vm.bdayvalidFlag || isEditFlag-->
+                <button type="submit" class="btn btn-primary btn-register"
+                        ng-disabled="!vm.user.cb1 || vm.bdayvalidFlag || vm.isUserNamePresent"
+                        translate>Register
+                </button>
+                <div class="link-wrap">
+                  <a href="/contactUs" translate>May I help You?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="find-match-block">
+      <div class="container">
+        <a href="#" class="find-opener" translate>Find Match</a>
+        <div class="slide">
+          <form name="searchForm">
+            <div class="row">
+              <div class="col-sm-3 find">
+                <div class="wrap">
+                  <strong class="title" translate>Find</strong>
+                  <label class="gender-select">
+                    <input type="radio" ng-model="vm.search.gender"
+                           value="Male"/>
+                    <span class="fake-input male"><i
+                      class="icon-male"></i></span>
+                  </label>
+                  <label class="gender-select">
+                    <input type="radio" ng-model="vm.search.gender"
+                           value="Female"/>
+                    <span class="fake-input female"><i class="icon-female"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-3 age">
+                <div class="wrap">
+                  <strong class="title" translate>Age</strong>
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <ui-select ng-model="vm.search.age1" theme="bootstrap"
+                                 class="form-control"
+                                 reset-search-input="true"
+                                 on-select="vm.checkValidAge1();vm.checkValidAge2();" skip-focusser=true>
+                        <ui-select-match
+                          placeholder="{{'Age from...' | translate}}">
+                          {{$select.selected}}
+                        </ui-select-match>
+                        <ui-select-choices
+                          repeat="age in vm.ageList | filter : $select.search ">
+                          <div
+                            ng-bind-html="age | highlight: $select.search"></div>
+                        </ui-select-choices>
+                      </ui-select>
+                      <div ng-messages="vm.isInvalidAgeFlag"
+                           class="invalid-age-error">
+                        <div ng-if="vm.isInvalidAgeFlag"
+                             style="color: #DD2C00">{{vm.ageError}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <ui-select ng-model="vm.search.age2" theme="bootstrap"
+                                 class="form-control"
+                                 reset-search-input="true"
+                                 on-select="vm.checkValidAge2();vm.checkValidAge1()" skip-focusser=true>
+                        <ui-select-match
+                          placeholder="{{'Age to...' | translate}}">{{$select
+                          .selected}}
+                        </ui-select-match>
+                        <ui-select-choices
+                          repeat="age in vm.ageList | filter : $select.search ">
+                          <div
+                            ng-bind-html="age | highlight: $select.search"></div>
+                        </ui-select-choices>
+                      </ui-select>
+                      <div ng-messages="vm.isInvalidAgeFlag2"
+                           class="invalid-age-error">
+                        <div ng-if="vm.isInvalidAgeFlag2"
+                             style="color: #DD2C00">Age must be greater
+                          than{{vm.search.age1}}.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 caste">
+                <div class="wrap">
+                  <strong class="title" translate>Caste</strong>
+                  <ui-select ng-model="vm.search.cast" theme="bootstrap"
+                             class="form-control"
+                             reset-search-input="true" required skip-focusser=true
+                  >
+                    <ui-select-match
+                      placeholder="{{'Enter a caste...' | translate}}">
+                      {{$select.selected.value}}
+                    </ui-select-match>
+                    <ui-select-choices
+                      repeat="cast.key as cast in vm.casts | filter : $select.search">
+                      <div
+                        ng-bind-html="cast.value | highlight: $select.search"></div>
+                    </ui-select-choices>
+                    <ui-select-no-choice>No caste found.
+                    </ui-select-no-choice>
+
+                  </ui-select>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="btn-wrap">
+                  <button type="button"
+                          ng-disabled="(vm.isInvalidAgeFlag2 || vm.isInvalidAgeFlag)"
+                          class="btn btn-primary btn-find"
+                          ng-click="vm.goToSearch()">{{'Find Match' |
+                    translate}}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="welcome-text-block" ng-if="vm.welComeText">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="home">Welcome to LagnachiBolni.com, {{vm.cityParam}}'s
+              growing {{vm.casteParam}} vadhu var
+              suchak.</h1>
+
+            <p>
+              LagnachiBolni is a <b>{{vm.casteParam}} matrimony</b>. We are
+              committed to provide you the best <i>{{vm.casteParam}}
+              matrimonial</i> service. This service is available for all the
+              casts in the maharashtra.
+            </p>
+
+            <b>Why LagnachiBolni [{{vm.casteParam}} Matrimony]?</b>
+            <ul>
+              <li><b>Congratulatory 45 days Free trial:</b> Register and
+                check matching profiles free for 45 days.
+              </li>
+              <li><b>Mentoring Support:</b> You will get support from our
+                expert mentors. They know what exactly you are looking for.
+              </li>
+              <li><b>Secure:</b> We are the first {{vm.casteParam}} vadhu var
+                suchak using secure certificate(Https
+                connection).
+              </li>
+              <li><b>Safe:</b> Only registered users can see your profile and
+                photos.Phone number confirmation is
+                compulsory to complete the registration for our matrimony.
+              </li>
+              <li><b>17000+ profiles:</b> We show only complete matrimonial
+                profiles in search lists. You can find matches from 17000+
+                profiles.
+              </li>
+              <li><b>Value for money package:</b> No time bound subscriptions
+                and
+                renewals. Packages suitable for everyone.
+              </li>
+              <li><b>Marriage related counselling:</b> You can get help from
+                our
+                expert Counsellor.
+              </li>
+            </ul>
+            <p>We invite all {{vm.casteParam}} brides and grooms to avail our
+              matrimonial site service.
+
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="perfect-match">
+      <div class="container">
+        <h2 translate>You are only four steps away from your Perfect Match</h2>
+        <div id="match-container" class="row hidden-xs">
+          <div id="1" class="col-sm-3"
+               ng-class="{'hidden-xs' : vm.selectedCardId != 1 }"
+               ng-swipe-left="vm.swipe(2)"
+               ng-swipe-right="vm.swipe(4)">
+            <div class="text-holder sr-perfect-match">
+              <div class="ico-holder">
+                <i class="icon-pen"></i>
+              </div>
+              <h3><a href="#" translate>Register</a></h3>
+              <p translate>Create a matrimonial profile with important details i.e. age, height, caste, education, profession, income, location etc.</p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="create a matrimonial profile with important details i.e. age, height, caste, education, profession, income, location etc."-->
+            <!--translate>View More</a>-->
+          </div>
+          <div id="2" class="col-sm-3"
+               ng-class="{'hidden-xs' : vm.selectedCardId != 2 }"
+               ng-swipe-left="vm.swipe(3)"
+               ng-swipe-right="vm.swipe(1)">
+            <div class="text-holder sr-perfect-match">
+              <div class="ico-holder">
+                <i class="icon-phone"></i>
+              </div>
+              <h3><a href="#" translate>Confirm Mobile Number</a></h3>
+              <p translate>Email and Mobile number confirmation ensures, your Perfect Match can connect with you. </p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="Email and Mobile number confirmat- ion ensures, your Perfect Match can connect with you."-->
+            <!--translate>View More</a>-->
+
+          </div>
+          <div id="3" class="col-sm-3"
+               ng-class="{'hidden-xs' : vm.selectedCardId != 3 }"
+               ng-swipe-left="vm.swipe(4)"
+               ng-swipe-right="vm.swipe(2)">
+            <div class="text-holder sr-perfect-match">
+              <div class="ico-holder">
+                <i class="icon-search-people"></i>
+              </div>
+              <h3><a href="#" translate>Search Perfect Match</a></h3>
+              <p translate>We provide you a simple and efficient way to search your perfect life partner.</p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="We provide you a simple and efficient way to search your perfect life partner." translate>View-->
+            <!--More</a>-->
+          </div>
+          <div id="4" class="col-sm-3 "
+               ng-class="{'hidden-xs' : vm.selectedCardId != 4 }"
+               ng-swipe-left="vm.swipe(1)"
+               ng-swipe-right="vm.swipe(3)">
+            <div class="text-holder sr-perfect-match">
+              <div class="ico-holder">
+                <i class="icon-connect"></i>
+              </div>
+              <h3><a href="#" translate>Connect</a></h3>
+              <p translate>When you come across Profile, which you think can be Perfect Match. Click on “Show Interest” or "Show Contact Details" to get their contact details.</p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="When you come across Profile, which you think can be Perfect Match. Click on “Show Interest” and this will send an email &amp; sms the profile."-->
+            <!--translate>View More</a>-->
+          </div>
+        </div>
+        <div class="fourSteps-carousel visible-xs-block">
+          <div>
+            <div class="text-holder">
+              <div class="ico-holder">
+                <i class="icon-pen"></i>
+              </div>
+              <h3><a href="#" translate>Register</a></h3>
+              <p translate>create a matrimonial profile with important details i.e. age, height, caste, education, profession, income, location etc.</p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="create a matrimonial profile with important details i.e. age, height, caste, education, profession, income, location etc."-->
+            <!--translate>View More</a>-->
+          </div>
+          <div>
+            <div class="text-holder">
+              <div class="ico-holder">
+                <i class="icon-phone"></i>
+              </div>
+              <h3><a href="#" translate>Confirm Mobile Number</a></h3>
+              <p translate> Email and Mobile number confirmation ensures, your Perfect Match can connect with you. </p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="Email and Mobile number confirmat- ion ensures, your Perfect Match can connect with you."-->
+            <!--translate>View More</a>-->
+
+          </div>
+          <div>
+            <div class="text-holder">
+              <div class="ico-holder">
+                <i class="icon-search-people"></i>
+              </div>
+              <h3><a href="#" translate> Search Perfect Match </a></h3>
+              <p translate>We provide you a simple and efficient way to search your perfect life partner.</p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="We provide you a simple and efficient way to search your perfect life partner." translate>View-->
+            <!--More</a>-->
+          </div>
+          <div>
+            <div class="text-holder">
+              <div class="ico-holder">
+                <i class="icon-connect"></i>
+              </div>
+              <h3><a href="#" translate>Connect</a></h3>
+              <p translate>When you come across Profile, which you think can be Perfect Match. Click on “Show Interest” or "Show Contact Details" to get their contact details.</p>
+            </div>
+            <!--<a href="#" data-placement="bottom" class="view-link" data-toggle="popover" data-trigger="hover"-->
+            <!--data-content="When you come across Profile, which you think can be Perfect Match. Click on “Show Interest” and this will send an email &amp; sms the profile."-->
+            <!--translate>View More</a>-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="best-metromonial">
+      <div class="bg-img">
+        <div class="img-wrap">
+          <!--  <img src="images/main_images/img02.jpg" alt="image description"> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-box">
+          <i class="icon-award"></i>
+          <h2 translate>We are committed to provide you the best Marathi matrimonial service</h2>
+          <p translate>We won’t speak the filmy dialogue ‘ek bar jo maine commitment kar di…’. But yes, We are team of word, team of actions! We understand that, It’s our words that connects us with you. We know the value of words…! We promise to fulfill the promises that we made..! come and experience it, We bet you will believe it..!</p>
+        </div>
+        <div class="row hidden-xs">
+          <div id="mat1" class="col-sm-3"
+               ng-class="{'hidden-xs' : vm.selectedMatId != 'mat1' }"
+               ng-swipe-right="vm.swipeMat('mat6')"
+               ng-swipe-left="vm.swipeMat('mat2')">
+            <div class="text-wrap sr-best-matrimonial-1">
+              <div class="ico-holder">
+                <i class="icon-registration"></i>
+              </div>
+              <h3 translate>Congratulatory 45 days Free trial</h3>
+              <p translate>Register and check matching profiles free for 45 days.</p>
+            </div>
+          </div>
+          <div id="mat2" class="col-sm-3 pull-right"
+               ng-class="{'hidden-xs' : vm.selectedMatId != 'mat2' }"
+               ng-swipe-right="vm.swipeMat('mat1')"
+               ng-swipe-left="vm.swipeMat('mat3')">
+            <div class="text-wrap sr-best-matrimonial-2">
+              <div class="ico-holder">
+                <i class="icon-profile"></i>
+              </div>
+              <h3 translate>17000+ profiles</h3>
+              <p translate>We show only complete matrimonial profiles in search lists. You can find matches from 17000+ profiles.</p>
+            </div>
+          </div>
+          <div id="mat3" class="col-sm-3"
+               ng-class="{'hidden-xs' : vm.selectedMatId != 'mat3' }"
+               ng-swipe-right="vm.swipeMat('mat2')"
+               ng-swipe-left="vm.swipeMat('mat4')">
+            <div class="text-wrap sr-best-matrimonial-1">
+              <div class="ico-holder">
+                <i class="icon-email"></i>
+              </div>
+              <h3 translate>Marriage related counselling</h3>
+              <p translate>You can get help from our expert Counsellor</p>
+            </div>
+          </div>
+          <div id="mat4" class="col-sm-3 pull-right"
+               ng-class="{'hidden-xs' : vm.selectedMatId != 'mat4' }"
+               ng-swipe-right="vm.swipeMat('mat3')"
+               ng-swipe-left="vm.swipeMat('mat5')">
+            <div class="text-wrap sr-best-matrimonial-2">
+              <div class="ico-holder">
+                <i class="icon-wallet"></i>
+              </div>
+              <h3 translate>Value for money package</h3>
+              <p translate>No time bound subscriptions and renewals. Packages suitable for everyone.</p>
+            </div>
+          </div>
+          <div id="mat5" class="col-sm-3"
+               ng-class="{'hidden-xs' : vm.selectedMatId != 'mat5' }"
+               ng-swipe-right="vm.swipeMat('mat4')"
+               ng-swipe-left="vm.swipeMat('mat6')">
+            <div class="text-wrap sr-best-matrimonial-1">
+              <div class="ico-holder">
+                <i class="icon-lock"></i>
+              </div>
+              <h3 translate>Secure &amp; Safe</h3>
+              <p translate>Only registered users can see profile &amp; photos</p>
+            </div>
+          </div>
+          <div id="mat6" class="col-sm-3 pull-right"
+               ng-class="{'hidden-xs' : vm.selectedMatId != 'mat6' }"
+               ng-swipe-right="vm.swipeMat('mat5')"
+               ng-swipe-left="vm.swipeMat('mat1')">
+            <div class="text-wrap sr-best-matrimonial-2">
+              <div class="ico-holder">
+                <i class="icon-currency-ru"></i>
+              </div>
+              <h3 translate>Mentoring Support </h3>
+              <p translate>You will get support from our expert mentors. They know what exactly you are looking for.</p>
+            </div>
+          </div>
+        </div>
+        <div class="commitment-carousel visible-xs-block">
+          <div>
+            <div class="text-wrap">
+              <div class="ico-holder">
+                <i class="icon-registration"></i>
+              </div>
+              <h3 translate>Congratulatory 45 days Free trial</h3>
+              <p translate>Register and check matching profiles free for 45
+                days.</p>
+            </div>
+          </div>
+          <div>
+            <div class="text-wrap">
+              <div class="ico-holder">
+                <i class="icon-profile"></i>
+              </div>
+              <h3 translate>17000+ profiles</h3>
+              <p translate> We show only complete matrimonial profiles in search lists. You can find matches from 17000+ profiles.</p>
+            </div>
+          </div>
+          <div>
+            <div class="text-wrap">
+              <div class="ico-holder">
+                <i class="icon-email"></i>
+              </div>
+              <h3 translate>Marriage related counselling</h3>
+              <p translate>You can get help from our expert Counsellor</p>
+            </div>
+          </div>
+          <div>
+            <div class="text-wrap">
+              <div class="ico-holder">
+                <i class="icon-wallet"></i>
+              </div>
+              <h3 translate>Value for money package</h3>
+              <p translate>No time bound subscriptions and renewals. Packages suitable for everyone.</p>
+            </div>
+          </div>
+          <div>
+            <div class="text-wrap">
+              <div class="ico-holder">
+                <i class="icon-lock"></i>
+              </div>
+              <h3 translate>Secure &amp; Safe</h3>
+              <p translate>Only registered users can see profile &amp; photos</p>
+            </div>
+          </div>
+          <div>
+            <div class="text-wrap">
+              <div class="ico-holder">
+                <i class="icon-currency-ru"></i>
+              </div>
+              <h3 translate>Mentoring Support</h3>
+              <p translate>You will get support from our expert mentors. They know what exactly you are looking for.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-gift-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="contact-wrap">
+              <h2 translate>Our Membership Packages</h2>
+              <p translate>We value your security so as every other members. Are you really serious and interested in knowing someone in more detail? Then prove it, by paying 500 or more And we would be more than happy to help you with this service forever.</p>
+              <div class="price-wrap row">
+                <div class="col-xs-3"
+                     ng-repeat="plan in vm.plansList | orderBy:'credits':'false'">
+                  <div class="price-item sr-price-item price-item-{{$index + 1}}" ng-class="">
+                    <span ng-hide="" class="contact-title">
+                      {{plan.name}}</span>
+                    <span ng-hide="plan.credits ==0" class="contact-text">{{plan.credits}}</span>
+                    <span ng-hide="plan.credits ==0" class="text" translate>Contact Credits</span>
+                    <span ng-show="plan.credits ==0" class="contact-text">{{plan.interests}}</span>
+                    <span ng-show="plan.credits ==0" class="text" translate>Show Interests</span>
+                    <span class="price-text" translate>Rs.{{plan.price}}/-</span>
+                    <a href="" ng-click="vm.goToPayment()" class="link-buy"
+                       translate>Buy Now </a>
+                  </div>
+                </div>
+                <!-- <div class="col-xs-4">
+              <div class="price-item price-item-2 sr-price-item">
+                <span class="contact-text">75</span>
+                <span class="text">{{'Contact Credits'|translate}}</span>
+                <span class="price-text">Rs. 500/-</span>
+                <a href="#" class="link-buy">Buy Now </a>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="price-item price-item-3 sr-price-item">
+                <span class="contact-text">200</span>
+                <span class="text">{{'Contact Credits'|translate}}</span>
+                <span class="price-text">Rs. 1000/-</span>
+                <a href="#" class="link-buy">Buy Now </a>
+              </div>
+            </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gift-box">
+              <h2 translate>Gift yourself</h2>
+              <p translate>Wow we could help you find the missing piece of your life!! What would be more pleasure than being part of your celebration! Gift yourself by Sharing your happiness with us! Share your marriage experience and accept our token of joy and blessing.</p>
+              <div class="img-wrap">
+                <img src="images/main_images/img03.png" height="218" width="262" alt="gift image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="match-by-lb ng-hide">
+      <div class="container">
+        <h2 translate>Matched by LagnachiBolni.com</h2>
+        <div class="match-slide-wrap">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 sr-match-slide">
+              <div class="match-item">
+                <div class="item-wrap">
+                  <img src="images/main_images/img04.jpg" height="255" width="255" alt="image description">
+                  <div class="desc-text" ng-class="{'active':hovering1}"
+                       ng-mouseenter="hovering1=true"
+                       ng-mouseleave="hovering1=false">
+                    <strong class="name"><span class="name-text" translate>Deepali</span><span>&amp;</span><span
+                      class="name-text">Krunal</span></strong>
+                    <p translate>Matched by LagnachiBolni.com</p>
+                    <a href="#" class="link-view" translate>View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 hidden-xs sr-match-slide">
+              <div class="match-item">
+                <div class="item-wrap">
+                  <img src="images/main_images/img05.jpg" height="255" width="255" alt="image description">
+                  <div class="desc-text" ng-class="{'active':hovering2}"
+                       ng-mouseenter="hovering2=true"
+                       ng-mouseleave="hovering2=false">
+                    <strong class="name"><span
+                      class="name-text">Deepali</span><span>&amp;</span><span
+                      class="name-text">Krunal</span></strong>
+                    <p translate>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                    <a href="#" class="link-view" translate>View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 hidden-sm hidden-xs sr-match-slide">
+              <div class="match-item">
+                <div class="item-wrap">
+                  <img src="images/main_images/img06.jpg" height="255" width="255" alt="image description">
+                  <div class="desc-text" ng-class="{'active':hovering3}"
+                       ng-mouseenter="hovering3=true"
+                       ng-mouseleave="hovering3=false">
+                    <strong class="name"><span class="name-text" translate>Deepali</span><span>&amp;</span><span
+                      class="name-text" translate>Krunal</span></strong>
+                    <p translate>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                    <a href="#" class="link-view" translate>View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 hidden-sm hidden-xs sr-match-slide">
+              <div class="match-item">
+                <div class="item-wrap">
+                  <img src="images/main_images/img07.jpg" height="255" width="255" alt="image description">
+                  <div class="desc-text" ng-class="{'active':hovering4}"
+                       ng-mouseenter="hovering4=true"
+                       ng-mouseleave="hovering4=false">
+                    <strong class="name"><span class="name-text" translate>Deepali</span><span>&amp;</span><span
+                      class="name-text" translate>Krunal</span></strong>
+                    <p translate>The word 'romance,' according to the dictionary, means excitement, adventure, and something extremely real. Romance should last a lifetime. One fine day I came across his profile and it just clicke..</p>
+                    <a href="#" class="link-view" translate>View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-holder clearfix">
+            <a href="#" class="btn-prev disbled"><i class="icon-arrow-left"></i></a>
+            <a href="#" class="btn-next"><i class="icon-arrow-right"></i></a>
+          </div>
+        </div>
+        <a href="#" class="link-more" translate>View More Matched</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<style type="text/css">
+  .inner-wrapper {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+  }
+  #wrapper {
+    transition: none !important;*/
+     -webkit-transition: none !important;
+     -o-transition: none !important;
+  }
+
+
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $(":input").inputmask();
+      $('.fourSteps-carousel').not('.slick-initialized').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        dotsClass: 'pagination-nav',
+        autoplaySpeed: '3000'
+      });
+      $('.commitment-carousel').not('.slick-initialized').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        dotsClass: 'pagination-nav',
+        autoplaySpeed: '3000'
+      });
+    });
+
+
+</script>

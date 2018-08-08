@@ -1,0 +1,136 @@
+        <div class="container-fluid registration-success" ng-init="vm.getSuccess()">
+            <div class="reg-success-wrapper">
+                 <h2 translate>Congratulations {{vm.user.firstname}}</h2>
+                <img ng-src='{{ vm.user.profile_image_url != null ? vm.user.profile_image_url : vm.user.gender == "male"?
+                 "./images/Male_avatar.jpg" : "./images/Female_avatar.jpg"}}'>
+                <div class="progress-wrapper">
+                  <uib-progressbar class="progress-striped active" value="vm.dynamic" type="success"><b><span class="hidden-xs" translate>Your Profile is {{vm.dynamic}}% Completed</span></b></uib-progressbar>
+                </div>
+                <table align="center" text-left class="detail-table">
+                    <tr>
+                        <td>
+                            <!-- Basic Details &nbsp; -->
+                            <a  href="/profile#physique-detail" ng-class = "vm.linkToDashFlag ? 'linkEnabled' : 'linkDisabled'" translate>Basic Details</a>
+                        </td>
+                        <td>
+                           <span ng-if="vm.basic.isComplete"><i class="icon-checkmark"></i></span>
+                             <span ng-if="!vm.basic.isComplete" class="incomplete"> {{vm.basic.value}}%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a ng-class = "vm.linkToDashFlag ? 'linkEnabled' : 'linkDisabled'" ng-click="vm.changeState()" href="/profile#personal-detail" translate>Personal Details </a>
+                        </td>
+                        <td>
+                             <span ng-if="vm.personal.isComplete"><i class="icon-checkmark"></i></span>
+                             <span ng-if="!vm.personal.isComplete" class="incomplete"> {{vm.personal.value}}%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a ng-class=
+                                       "vm.linkToDashFlag ? 'linkEnabled' : 'linkDisabled'"
+                                href="/profile#contact-detail" translate>Email Verification</a>
+                        </td>
+                        <td>
+                             <span ng-if="vm.email.isComplete"><i class="icon-checkmark"></i></span>
+                             <span ng-if="!vm.email.isComplete" class="incomplete"> <a href="/registration"></a>{{vm.email.value}}% </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a ng-class = "vm.linkToDashFlag ? 'linkEnabled' : 'linkDisabled'" href="/uploadimages" translate>Photo Upload</a>
+                        </td>
+                        <td>
+                              <span ng-if="vm.photo.isComplete"><i class="icon-checkmark"></i></span>
+                             <span ng-if="!vm.photo.isComplete" class="incomplete"> {{vm.photo.value}}%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a ng-class = "vm.linkToDashFlag ? 'linkEnabled' : 'linkDisabled'" href="/profile#family-detail" translate>Family Details</a>
+                        </td>
+                        <td >
+                      <span ng-if="vm.family.isComplete"><i class="icon-checkmark"></i></span>
+                             <span ng-if="!vm.family.isComplete" class="incomplete"> {{vm.family.value}}%</span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a ng-class = "vm.linkToDashFlag ? 'linkEnabled' : 'linkDisabled'" href="/profile#astro-detail" translate>Astro Details</a>
+                        </td>
+                        <td >
+                              <span ng-if="vm.astro.isComplete"><i class="icon-checkmark"></i></span>
+                             <span ng-if="!vm.astro.isComplete" class="incomplete"> {{vm.astro.value}}%</span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="success-number">
+                <p> <span translate>Please Login with password sent to your mobile number - </span> <span class="number"> +91 {{vm.user.phone_mobile}} <a><i
+                            class="fa fa-pencil fa-lg" aria-hidden="true" ng-click="vm.openChangeMobileModal()" ></i></a></span></p>
+                &nbsp;
+                </div>
+                <div class="search-profile-btns row">
+                    <button type="submit"  class="btn btn-secondary" ng-click="vm.resendPassword()" ng-disabled="vm.resendPassLimit || vm.count>=3" translate>Resend Password</button>
+
+                    <button ng-show="!vm.linkToDashFlag" type="submit" class="btn btn-primary btn-register" ng-click="vm.login()" translate>Log in</button>
+                   <button ng-show="vm.linkToDashFlag" type="submit" class="btn btn-primary btn-register" ng-click="vm.gotoDashboard()" translate>Goto Dashboard</button>
+                    <br/>
+                  <div ng-if="vm.resendPassLimit || vm.count>=3" style="font-size:10px;color: #ff5d0c;" translate>You can resend password only 3 times, please contact us to set/reset password.</div>
+                    <br />
+                    <img src="images/floral.png">
+                </div>
+            </div>
+        </div>
+    <div class="modal fade" id="changeNo" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+       <form name="myForm">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center" translate>Change Mobile Number</h4>
+        </div>
+        <div class="modal-body">
+
+          <p translate class="text-center"> If you have entered wrong mobile number, please change it. Once you change we will send new password to your new mobile.
+             </p>
+          <p></p>
+
+          <div class="row row-buffer-lg">
+              <div class="col-sm-3 col-md-3" >
+                </div>
+              <div class="col-sm-5 col-md-5">
+                <md-input-container class="md-block search">
+                  <label translate>Mobile Number</label>
+                  <input type="tel" name="phone" data-phone ng-model="vm.phone_mobile"  required>
+                  <div ng-messages="myForm.phone.$error" role="alert" multiple>
+                      <div ng-message="phoneField" class="my-message" translate>You must supply a phone number.</div>
+                      <!--  <div ng-message="pattern" class="my-message">The entered value is not correct a phone number!</div> -->
+                      </div>
+
+                </md-input-container>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="search-profile-btns">
+                    <button type="submit" class="btn btn-primary btn-register" ng-click="vm.changeMobile(myForm)" translate>Update</button>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="submit" class="btn btn-success btn-default" ng-click="vm.changeMobile(myForm)">Update</button>
+          <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">Cancel</button>
+        </div> -->
+         </form>
+      </div>
+    </div>
+  </div>
+<style type="text/css">
+
+  .inner-wrapper {
+        padding-left:0px !important;
+   }
+</style>

@@ -1,0 +1,35 @@
+(function() {
+  'use strict';
+
+  angular
+    .module('app.contactUs')
+    .run(appRun);
+
+  appRun.$inject = ['routerHelper'];
+  /* @ngInject */
+  function appRun(routerHelper) {
+    routerHelper.configureStates(getStates());
+  }
+
+  function getStates() {
+    return [
+      {
+        state: 'contactUs',
+        config: {
+          url: '/contactUs',
+           views: {
+                    '': { 
+                         templateUrl: 'app/contactUs/contactUs.html',
+                         controller: 'ContactUsController',
+                         controllerAs: 'vm'
+                       },
+                      'header':{templateUrl: 'app/layout/ht-top-nav.html'} ,
+                      'footer':{templateUrl: 'app/layout/footer.html' } ,
+                       'sidebar':{templateUrl: 'app/layout/sidebar.html'} 
+                     },
+          title: 'ContactUs'
+        }
+      }
+    ];
+  }
+})();

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <!-- Angular Material style sheet -->
+    <title>LagnachiBolni.com</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/angular-notification-icons/dist/angular-notification-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+    <div id="wrapper" class="inner-wrapper">
+        <div ng-include src="'partials/header.html'"></div>
+        <main id="main">
+            <div class="closed-sidenav visible-md visible-lg" ng-hide="isSidenavOpen">
+                <ul class="nav-links">
+                    <li><a><i class="icon-email"></i></a></li>
+                    <li><a><i class="icon-box-remove"></i></a></li>
+                    <li><a><i class="icon-dashboard"></i></a></li>
+                    <li><a><i class="icon-search"></i></a></li>
+                    <li><a><i class="icon-human-resource"></i></a></li>
+                    <li><a><i class="icon-phone2"></i></a></li>
+                    <li class="active"><a><i class="icon-profile2"></i></a></li>
+                    <li><a><i class="icon-settings"></i></a></li>
+                    <li><a><i class="icon-logout"></i></a></li>
+                </ul>
+            </div>
+
+            <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="isSidenavOpen" class="sidenav md-sidenav-left">
+                <div class="sidenav-header">
+                    <span class="nav-close" ng-click="openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+                    <div class="logo-header">
+                        <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#"><i class="icon-email"></i> Inbox</a></li>
+                    <li><a href="#"><i class="icon-box-remove"></i> Outbox</a></li>
+                    <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="icon-search"></i> Search</a></li>
+                    <li><a href="#"><i class="icon-human-resource"></i> Refer Friends</a></li>
+                    <li><a href="#"><i class="icon-phone2"></i> Contact Us</a></li>
+                    <li class="active"><a href="#"><i class="icon-profile2"></i> My Profile</a></li>
+                    <li><a href="#"><i class="icon-settings"></i> Account Settings</a></li>
+                    <li><a href="#"><i class="icon-logout"></i> Logout</a></li>
+                </ul>
+            </md-sidenav>
+
+            <div class="db-container">
+                <div class="row">
+                    <div class="db-header">
+                        <h4>Good Morning! Manas <span><i class="fa fa-thumbs-up"></i>&nbsp; Already Viewed &nbsp; | &nbsp; Connected</span></h4>
+                    </div>
+
+                    <div class="row db-top-section">
+                        <div class="col-sm-6 db-left">
+                            <div class="col-sm-12 db-left-section">
+                                <div>
+                                    <div class="col-md-4 col-xs-12">
+                                        <div class="text-center">
+                                            <div class="col-md-12 col-xs-6">
+                                                <img class="img-circle db-profile" src="./images/img12.jpg">
+                                            </div>
+                                            <div class="col-md-12 col-xs-6 db-percentage-container">
+                                                <span class="db-profile-percentage">50%</span>
+                                                <span class="db-profile-completion">Profile Complete</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="detail-table-header">
+                                            Pending Sections <a><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                                        </p>
+                                        <table align="center" text-left class="detail-table">
+                                            <tr>
+                                                <td>
+                                                    Basic Details &nbsp;
+                                                </td>
+                                                <td>
+                                                    <i class="icon-checkmark"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Personal Details &nbsp;
+                                                </td>
+                                                <td>
+                                                    <i class="icon-checkmark"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Photo Upload &nbsp;
+                                                </td>
+                                                <td>
+                                                    <i class="icon-checkmark"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Family Details &nbsp;
+                                                </td>
+                                                <td>
+                                                    95%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Astro Details &nbsp;
+                                                </td>
+                                                <td>
+                                                    50%
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 db-left-section db-left-bottom">
+                                <div>
+                                    <div class="col-sm-4 col-xs-6 divider-xs">
+                                        <div class="text-center">
+                                            <h4>Contact Credits</h4>
+                                            <p class="db-contact-credits" count-up start-val="0" end-val="100" duration="6"></p>
+                                            <span class="">Lorem Ipusm Dolor</span>
+                                            <span class="">Lorem Ipusm Dolor</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 hidden-xs">
+                                      <hr width="1" size="500">
+                                    </div>
+                                    <div class="col-sm-4 col-xs-6 db-show-interest">
+                                        <div class="text-center">
+                                            <h4>Show Interest</h4>
+                                            <p count-up start-val="0" end-val="150" duration="6"></p>
+                                            <span class="">Lorem Ipusm Dolor</span>
+                                            <span class="">Lorem Ipusm Dolor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="db-buy-more">
+                                  BUY MORE
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 db-right">
+                            <div class="col-sm-12 db-right-section">
+                                <div class="row">
+                                    <div class="col-xs-6 top-left">
+                                        <div class="text-center">
+                                            <h4>Total Visits</h4>
+                                            <notification-icon count=5 animation="Grow">
+                                                <h1 count-up start-val="0" end-val="26" duration="6"></h1>
+                                            </notification-icon>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 top-right">
+                                        <div class="text-center">
+                                            <h4>Connected</h4>
+                                            <notification-icon count=8 animation="Grow">
+                                                <h1 count-up start-val="0" end-val="10" duration="6"></h1>
+                                            </notification-icon>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row bottom-row">
+                                    <div class="col-xs-6 bottom-left">
+                                        <div class="text-center">
+                                            <h4>Interest Received</h4>
+                                            <notification-icon count=15 animation="Grow">
+                                                <h1 count-up start-val="0" end-val="18" duration="6"></h1>
+                                            </notification-icon>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 bottom-right">
+                                        <div class="text-center">
+                                            <h4>Photo Requests</h4>
+                                            <notification-icon count=3 animation="Grow">
+                                                <h1 count-up start-val="0" end-val="16" duration="6"></h1>
+                                            </notification-icon>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                            <p class="">Lorem Ipusm Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-margin perfect-match-header">
+                        <span class="pull-left">
+                            <notification-icon count=5 animation="Grow">
+                                <h2>Perfect Match</h2>
+                            </notification-icon>
+                        </span>
+
+                        <span class="pull-left view-all"><a href="#">View All</a></span>
+                    </div>
+                    <div class="row payment-plans-list">
+                      <lb-search-result result-type="dashboard" profile-data="searchProfile1"></lb-search-result>
+                      <lb-search-result result-type="dashboard" profile-data="searchProfile2"></lb-search-result>
+                      <lb-search-result result-type="dashboard" profile-data="searchProfile2"></lb-search-result>
+                      <lb-search-result result-type="dashboard" profile-data="searchProfile1"></lb-search-result>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <md-toolbar class="chrome-gap-correction">
+        <div ng-include src="'partials/footer.html'"></div>
+    </md-toolbar>
+
+        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+        <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+        <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+        <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+        <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+        <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+        <script src="js/scrollRevealAnimations.js"></script>
+        <script src="js/app.js"></script>
+
+</body>
+
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

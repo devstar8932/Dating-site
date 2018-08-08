@@ -1,0 +1,99 @@
+<div ng-class="resultType">
+  <div class="{{profileData.visited}}">
+    <div class="search-list hidden-xs">
+        <div class="search-result">
+          <div class="search-check">
+              <a class="options-check"><i class="icon-checkmark"></i></a>
+          </div>
+            <div class="search-options">
+                <a class="options-star starred"><i class="icon-star-full"></i><i class="icon-star-empty"></i></a>
+                <a class="options-more"><i class="fa fa-ellipsis-v"></i></a>
+            </div>
+            <div class="search-result-top">
+                <img ng-src="{{profileData.src}}" />
+                <h4 class="text-center">{{profileData.name}}</h4>
+                <p class="address text-center">Lb123 | Latur</p>
+                <p class="activity pull-left">Last Login 8 Days ago</p>
+                <p class="profile-status pull-right">55% Complete</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        Age:
+                    </td>
+                    <td>
+                        28
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Height:
+                    </td>
+                    <td>
+                        5.5 - 165cm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Caste:
+                    </td>
+                    <td>
+                        96k Maratha
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Marital Status:
+                    </td>
+                    <td>
+                        Unmarried
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Education:
+                    </td>
+                    <td>
+                        UG in Arts
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salary:
+                    </td>
+                    <td>
+                        2 Lakhs
+                    </td>
+                </tr>
+            </table>
+            <div class="search-result-bottom text-center">
+              <a class="btn-accept">Accept</a>
+              <a class="btn-reject">Reject</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row visible-xs mb-search-row">
+      <div class="mb-search-result">
+        <div class="col-xs-3 thumbnail pull-left">
+          <img ng-src="{{profileData.src}}" />
+          <p class="caption text-center">85% Complete</p>
+        </div>
+        <div class="col-xs-8 mb-search-result-content">
+            <p>{{profileData.name}} &nbsp; Lb123 | Latur</p>
+            <p> 26 years  |  5.5 -165cm</p>
+            <p>96K Maratha  |  Unmarried</p>
+            <p>UG in Arts  |  2 Lakhs Anually</p>
+        </div>
+        <div class="col-xs-1 mb-search-result-actions">
+          <a class="options-star starred"><i class="icon-star-full"></i><i class="icon-star-empty"></i></a>
+          <br />
+          <br />
+          <br />
+          <br />
+          <a class="options-thumbs"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-o-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

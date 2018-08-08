@@ -1,0 +1,2984 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/viewprofile/viewprofile.html:129
+#: app/viewprofile/viewprofile.html:46
+msgid "&nbsp; Profile Completion"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:57
+#: app/viewprofile/viewprofile.html:87
+msgid "&nbsp;&nbsp;Report this user"
+msgstr ""
+
+#: app/inbox/inbox.html:50
+#: app/outbox/outbox.html:44
+msgid "&nbsp;Accepted&nbsp;"
+msgstr ""
+
+#: app/inbox/inbox.html:14
+#: app/outbox/outbox.html:12
+msgid "&nbsp;Interests&nbsp;"
+msgstr ""
+
+#: app/inbox/inbox.html:69
+#: app/outbox/outbox.html:60
+msgid "&nbsp;Photo Requests&nbsp;"
+msgstr ""
+
+#: app/inbox/inbox.html:32
+#: app/outbox/outbox.html:28
+msgid "&nbsp;Rejected&nbsp;"
+msgstr ""
+
+#: app/contactUs/contactUs.html:101
+#: app/contactUs/contactUs.html:99
+msgid "+91-7218701870"
+msgstr ""
+
+#: app/contactUs/contactUs.html:104
+#: app/layout/footer.html:104
+msgid "+91-7722090227"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:65
+#: app/viewprofile/viewprofile.html:96
+msgid ", From -"
+msgstr ""
+
+#: app/registration/registration.html:807
+msgid "12 Hour Birth Time"
+msgstr ""
+
+#: app/home/home.html:621
+#: app/home/home.html:693
+msgid "17000+ profiles"
+msgstr ""
+
+#: app/layout/footer.html:19
+msgid "96kuli-Maratha"
+msgstr ""
+
+#: app/caterers/caterers.html:7
+#: app/weddinghall/weddinghall.html:6
+msgid "<a href=\"/caterers\">Caterers</a><span class=\"circle-icon\"><i class=\"icon-search-list\"></i></span>"
+msgstr ""
+
+#: app/registration/registration.html:1278
+#: app/registration/registration.html:1499
+#: app/registration/registration.html:923
+#: app/registration/registration.html:966
+msgid "<i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i>Back"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:116
+#: app/viewprofile/viewprofile.html:123
+#: app/viewprofile/viewprofile.html:33
+#: app/viewprofile/viewprofile.html:40
+msgid "<i class=\"icon-cancel-circle\" aria-hidden=\"true\"></i>&nbsp;Not Verified"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:121
+#: app/viewprofile/viewprofile.html:32
+#: app/viewprofile/viewprofile.html:38
+msgid "<i class=\"icon-checkmark\" aria-hidden=\"true\"></i>&nbsp;Verified"
+msgstr ""
+
+#: app/payment/payment.html:81
+msgid ""
+"<span translate=\"\">IDBI Bank\n"
+"                                                     Account Number -\n"
+"                    0087102000042705\n"
+"                    <br> Name - LagnachiBolni\n"
+"                    <br> Branch - Nigdi, Pune\n"
+"                    <br> IFSC Code - IBKL0000087</span>"
+msgstr ""
+
+#: app/contactUs/contactUs.html:88
+msgid ""
+"A-8 Regent lake View, Sector-26, Near\n"
+"                          Ganesh Talav, Nigadi Pradhikarn Pune, 411044,\n"
+"                          Maharashtra"
+msgstr ""
+
+#: app/components/uploadImage/uploadimage.html:7
+msgid "ADD YOUR PICTURE"
+msgstr ""
+
+#: app/aboutUs/aboutUs.html:3
+#: app/layout/footer.html:63
+msgid "About Us"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:78
+#: app/viewprofile/viewprofile.html:138
+msgid "Accept"
+msgstr ""
+
+#: app/dashboard/dashboard.html:152
+msgid "Accept/Reject them"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:498
+msgid "Account Details"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:826
+msgid "Account Number"
+msgstr ""
+
+#: app/layout/sidebar.html:117
+#: app/layout/sidebar.html:144
+msgid "Account Setting"
+msgstr ""
+
+#: app/account/account.html:4
+#: app/layout/sidebar.html:84
+#: app/partnerchangepassword/partnerChangePassword.html:5
+msgid "Account Settings"
+msgstr ""
+
+#: app/general/faq.html:90
+msgid ""
+"After registration, we send you the password on your registered mobile number. You can use username you\n"
+"                entered at the time of registration and the password to login to lagnachibilni. You can also use your\n"
+"                registered mobile number as username and the password you received to login."
+msgstr ""
+
+#: app/home/home.html:310
+msgid "Age"
+msgstr ""
+
+#: app/search/search.html:45
+msgid "Age From"
+msgstr ""
+
+#: app/search/search.html:66
+msgid "Age To"
+msgstr ""
+
+#: app/home/home.html:319
+msgid "Age from..."
+msgstr ""
+
+#: app/search/search.html:79
+msgid "Age must be greater than {{vm.search.age1}}."
+msgstr ""
+
+#: app/home/home.html:199
+#: app/profile/profile.html:147
+#: app/registration/registration.html:156
+msgid "Age should be 18 to 50."
+msgstr ""
+
+#: app/home/home.html:196
+#: app/profile/profile.html:144
+#: app/registration/registration.html:153
+msgid "Age should be 21 to 50."
+msgstr ""
+
+#: app/home/home.html:341
+msgid "Age to..."
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:61
+#: app/viewprofile/viewprofile.html:92
+msgid "Age {{vm.profile.age}}, {{vm.profile.caste}}, {{vm.profile.marital_status}}"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:27
+msgid "Age:"
+msgstr ""
+
+#: app/layout/footer.html:22
+msgid "Agri"
+msgstr ""
+
+#: app/layout/footer.html:43
+msgid "Ahmednagar"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:136
+#: app/viewprofile/viewprofile.html:530
+msgid "Already Married"
+msgstr ""
+
+#: app/payment/payment.html:142
+msgid "Amount"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:251
+msgid "Annual Income :"
+msgstr ""
+
+#: app/profile/profile.html:477
+msgid "Annual Income(Rs)"
+msgstr ""
+
+#: app/layout/footer.html:23
+msgid "Arya-Vysya"
+msgstr ""
+
+#: app/layout/footer.html:24
+msgid "Aryasamaj"
+msgstr ""
+
+#: app/confirm_email/confirm_email.html:12
+msgid ""
+"As complementary we have gifted you 5 show\n"
+"          interests, please avail then."
+msgstr ""
+
+#: app/payment/payment.html:77
+msgid "As this is an offline transaction for us, this will take 2 working days to Get the contact credits."
+msgstr ""
+
+#: app/profile/profile.html:35
+#: app/profile/profile.html:917
+#: app/registration/registration.html:1304
+#: app/viewprofile/viewprofile.html:428
+msgid "Astro Details"
+msgstr ""
+
+#: app/dashboard/dashboard.html:73
+#: app/registration/registration_success.html:62
+msgid "Astro Details &nbsp;"
+msgstr ""
+
+#: app/layout/footer.html:44
+msgid "Aurangabad"
+msgstr ""
+
+#: app/dashboard/dashboard.html:104
+msgid "BUY MORE"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:134
+#: app/viewprofile/viewprofile.html:528
+msgid "Bad Photo"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:732
+#: app/payment/payment.html:229
+msgid "Bank Name"
+msgstr ""
+
+#: app/registration/registration.html:249
+msgid "Basic Details"
+msgstr ""
+
+#: app/dashboard/dashboard.html:33
+#: app/registration/registration_success.html:13
+msgid "Basic Details &nbsp;"
+msgstr ""
+
+#: app/layout/footer.html:25
+msgid "Beldar"
+msgstr ""
+
+#: app/layout/footer.html:26
+msgid "Bhandari"
+msgstr ""
+
+#: app/layout/footer.html:27
+msgid "Bhavsar"
+msgstr ""
+
+#: app/layout/footer.html:28
+msgid "Bhavsar-Kshatriya"
+msgstr ""
+
+#: app/registration/registration.html:668
+msgid "Birth Place"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:105
+#: app/viewprofile/viewprofile.html:74
+msgid "Birth Place:"
+msgstr ""
+
+#: app/profile/profile.html:272
+msgid "Blood Group"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:206
+msgid "Blood group :"
+msgstr ""
+
+#: app/registration/registration.html:878
+msgid "Blood-Group"
+msgstr ""
+
+#: app/layout/footer.html:29
+msgid "Brahmin"
+msgstr ""
+
+#: app/profile/profile.html:796
+msgid "Brother Details"
+msgstr ""
+
+#: app/registration/registration.html:1158
+msgid ""
+"Brother Details\n"
+"                                                           <span class=\"panel-buttons\"><i class=\"icon-plus-circle\" ng-click=\"vm.addSibling('brotherObject')\"></i></span>"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:380
+msgid "Brother Details Not Available"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:347
+msgid "Brothers"
+msgstr ""
+
+#: app/home/home.html:762
+#: app/payment/payment.html:58
+msgid "Buy Now"
+msgstr ""
+
+#: app/payment/payment.html:10
+msgid "Buy Online"
+msgstr ""
+
+#: app/contactUs/contactUs.html:93
+msgid "Call Us"
+msgstr ""
+
+#: app/general/faq.html:51
+msgid "Can I use the same Email ID for multiple Registrations?"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:147
+#: app/components/uploadImage/uploadProfileImage.html:10
+#: app/layout/footer.html:145
+#: app/layout/footer.html:173
+#: app/profile/profile.html:1102
+#: app/viewprofile/viewprofile.html:542
+msgid "Cancel"
+msgstr ""
+
+#: app/home/home.html:363
+#: app/profile/profile.html:188
+#: app/registration/registration.html:188
+#: app/search/search.html:206
+msgid "Caste"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:43
+msgid "Caste:"
+msgstr ""
+
+#: app/layout/footer.html:16
+msgid "Castes We Serve"
+msgstr ""
+
+#: app/partnerchangepassword/partnerChangePassword.html:341
+msgid "Change Contact Details<span class=\"circle-icon\"><i class=\"icon-change\"></i></span>"
+msgstr ""
+
+#: app/partnerchangepassword/partnerChangePassword.html:414
+msgid "Change Email"
+msgstr ""
+
+#: app/registration/registration_success.html:93
+msgid "Change Mobile Number"
+msgstr ""
+
+#: app/account/account.html:113
+#: app/partnerchangepassword/partnerChangePassword.html:114
+msgid "Change Password<span class=\"circle-icon\"><i class=\"icon-change\"></i></span>"
+msgstr ""
+
+#: app/partnerchangepassword/partnerChangePassword.html:349
+msgid "Change your Email"
+msgstr ""
+
+#: app/account/account.html:121
+#: app/partnerchangepassword/partnerChangePassword.html:122
+msgid "Change your password"
+msgstr ""
+
+#: app/profile/profile.html:1007
+#: app/registration/registration.html:1431
+msgid "Charan"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:475
+msgid "Charan :"
+msgstr ""
+
+#: app/layout/footer.html:38
+msgid "Cities"
+msgstr ""
+
+#: app/profile/profile.html:167
+#: app/registration/registration.html:272
+#: app/search/search.html:190
+msgid "City"
+msgstr ""
+
+#: app/components/uploadImage/uploadimage.html:8
+msgid "Click to upload photos from your computer"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:1393
+#: app/profile/profile.html:1126
+#: app/viewprofile/viewprofile.html:502
+msgid "Close"
+msgstr ""
+
+#: app/profile/profile.html:330
+#: app/registration/registration.html:782
+msgid "Complexion"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:213
+msgid "Complexion :"
+msgstr ""
+
+#: app/home/home.html:481
+#: app/home/home.html:543
+msgid "Confirm Mobile Number"
+msgstr ""
+
+#: app/dashboard/dashboard.html:208
+msgid ""
+"Confirm your email and get 5 show interests free!\n"
+"                 <span ng-show=\"vm.email_address != ''\">We have already sent you a mail. Check your Mail Box.</span>"
+msgstr ""
+
+#: app/registration/registration_success.html:3
+msgid "Congratulations {{vm.user.firstname}}"
+msgstr ""
+
+#: app/home/home.html:608
+#: app/home/home.html:683
+msgid "Congratulatory 45 days Free trial"
+msgstr ""
+
+#: app/home/home.html:513
+#: app/home/home.html:568
+msgid "Connect"
+msgstr ""
+
+#: app/dashboard/dashboard.html:125
+msgid "Connected"
+msgstr ""
+
+#: app/dashboard/dashboard.html:86
+#: app/home/home.html:758
+#: app/home/home.html:769
+#: app/home/home.html:777
+msgid "Contact Credits"
+msgstr ""
+
+#: app/profile/profile.html:31
+#: app/profile/profile.html:508
+#: app/registration/registration.html:516
+msgid "Contact Details"
+msgstr ""
+
+#: app/contactUs/contactUs.html:22
+msgid "Contact Number"
+msgstr ""
+
+#: app/contactUs/contactUs.html:4
+#: app/layout/footer.html:64
+#: app/layout/sidebar.html:40
+#: app/layout/sidebar.html:90
+#: app/refer-your-friends/refer-your-friends.html:10
+msgid "Contact Us"
+msgstr ""
+
+#: app/layout/footer.html:112
+msgid "Copyright &copy; 2011-2016 <a href=\"#\">LagnachiBolni.com</a>. <br>All Rights Reserved"
+msgstr ""
+
+#: app/payment/payment.html:138
+msgid "Credits Received"
+msgstr ""
+
+#: app/registration/registration.html:533
+#: app/viewprofile/viewprofile.html:153
+msgid "Current Address"
+msgstr ""
+
+#: app/profile/profile.html:562
+#: app/registration/registration.html:540
+msgid "Current Address Line 1"
+msgstr ""
+
+#: app/profile/profile.html:571
+#: app/registration/registration.html:550
+msgid "Current Address Line 2"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:102
+#: app/viewprofile/viewprofile.html:71
+msgid "DOB:"
+msgstr ""
+
+#: app/layout/sidebar.html:77
+msgid "Dashboard"
+msgstr ""
+
+#: app/home/home.html:187
+#: app/profile/profile.html:131
+#: app/registration/registration.html:144
+msgid "Date of Birth"
+msgstr ""
+
+#: app/home/home.html:814
+#: app/home/home.html:849
+#: app/home/home.html:868
+msgid "Deepali"
+msgstr ""
+
+#: app/registration/registration.html:433
+msgid "Degree"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:245
+msgid "Degree :"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:59
+msgid "Degree:"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:146
+#: app/viewprofile/viewprofile.html:541
+msgid "Delete"
+msgstr ""
+
+#: app/account/account.html:216
+#: app/partnerchangepassword/partnerChangePassword.html:217
+msgid "Delete Account<span class=\"circle-icon\"><i class=\"icon-profile-delete\"></i></span>"
+msgstr ""
+
+#: app/account/account.html:325
+#: app/partnerchangepassword/partnerChangePassword.html:326
+msgid "Delete My Account"
+msgstr ""
+
+#: app/profile/profile.html:933
+#: app/registration/registration.html:1334
+msgid "Devak"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:440
+msgid "Devak :"
+msgstr ""
+
+#: app/registration/registration.html:1507
+msgid "Done"
+msgstr ""
+
+#: app/components/uploadImage/uploadimage.html:20
+msgid "Drag or Drop photos here from computer"
+msgstr ""
+
+#: app/profile/profile.html:19
+msgid "Edit Photo"
+msgstr ""
+
+#: app/profile/profile.html:410
+msgid "Education"
+msgstr ""
+
+#: app/registration/registration.html:304
+msgid ""
+"Education\n"
+"                                                            Field"
+msgstr ""
+
+#: app/profile/profile.html:388
+#: app/search/search.html:124
+msgid "Education Field"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:264
+msgid "Education Field :"
+msgstr ""
+
+#: app/profile/profile.html:367
+#: app/search/search.html:141
+msgid "Education Level"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:238
+msgid "Education Level :"
+msgstr ""
+
+#: app/profile/profile.html:28
+msgid ""
+"Education and Profession\n"
+"                        Details"
+msgstr ""
+
+#: app/profile/profile.html:360
+#: app/viewprofile/viewprofile.html:232
+msgid "Education and Profession Details"
+msgstr ""
+
+#: app/registration/registration.html:369
+msgid "Education level"
+msgstr ""
+
+#: app/account/account.html:37
+#: app/account/account.html:82
+#: app/contactUs/contactUs.html:33
+#: app/contactUs/contactUs.html:77
+#: app/dashboard/dashboard.html:214
+#: app/partnerchangepassword/partnerChangePassword.html:385
+#: app/profile/profile.html:545
+msgid "Email"
+msgstr ""
+
+#: app/dashboard/dashboard.html:49
+msgid "Email &nbsp;"
+msgstr ""
+
+#: app/registration/registration.html:624
+msgid "Email Address"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:115
+#: app/viewprofile/viewprofile.html:32
+msgid "Email address"
+msgstr ""
+
+#: app/home/home.html:482
+msgid ""
+"Email and Mobile number confirmation ensures, your\n"
+"                Perfect Match can connect with you."
+msgstr ""
+
+#: app/home/home.html:544
+msgid "Email and Mobile number confirmation ensures, your Perfect Match can connect with you."
+msgstr ""
+
+#: app/home/home.html:12
+#: app/layout/ht-top-nav.html:16
+#: app/layout/ht-top-nav.html:27
+#: app/layout/ht-top-nav.html:43
+#: app/layout/ht-top-nav.html:54
+msgid "English"
+msgstr ""
+
+#: app/partner/partner_home.html:142
+#: app/partnerdetails/partner_details.html:532
+#: app/refer-your-friends/refer-your-friends.html:31
+msgid "Ensure user name must have at least 2 characters."
+msgstr ""
+
+#: app/account/account.html:125
+#: app/partnerchangepassword/partnerChangePassword.html:126
+msgid "Enter Current Password"
+msgstr ""
+
+#: app/profile/profile.html:1086
+msgid "Enter PIN Code"
+msgstr ""
+
+#: app/home/home.html:243
+#: app/home/home.html:369
+msgid "Enter a caste..."
+msgstr ""
+
+#: app/payment/payment.html:241
+msgid "Enter an amount (Rs)"
+msgstr ""
+
+#: app/account/account.html:145
+#: app/partnerchangepassword/partnerChangePassword.html:146
+msgid "Enter new Password"
+msgstr ""
+
+#: app/login/login.html:15
+msgid ""
+"Enter your Mobile Number below. We\n"
+"                    will send you Username via SMS."
+msgstr ""
+
+#: app/login/login.html:60
+#: app/partnerlogin/partner_login.html:60
+msgid "Enter your Mobile Number or Username/Email below And We will send your Password via SMS."
+msgstr ""
+
+#: app/contactUs/contactUs.html:39
+#: app/partnerchangepassword/partnerChangePassword.html:402
+msgid "Entered email is not valid"
+msgstr ""
+
+#: app/events/events.html:4
+#: app/layout/footer.html:71
+msgid "Events"
+msgstr ""
+
+#: app/layout/footer.html:66
+msgid "FAQs"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:132
+#: app/viewprofile/viewprofile.html:526
+msgid "Fake User"
+msgstr ""
+
+#: app/profile/profile.html:33
+#: app/profile/profile.html:652
+#: app/registration/registration.html:991
+#: app/viewprofile/viewprofile.html:290
+msgid "Family Details"
+msgstr ""
+
+#: app/dashboard/dashboard.html:65
+#: app/registration/registration_success.html:52
+msgid "Family Details &nbsp;"
+msgstr ""
+
+#: app/profile/profile.html:659
+#: app/registration/registration.html:1011
+msgid "Father's Name"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:296
+msgid "Father's Name :"
+msgstr ""
+
+#: app/profile/profile.html:670
+#: app/registration/registration.html:1022
+msgid "Father's Occupation"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:320
+msgid "Father's Occupation :"
+msgstr ""
+
+#: app/home/home.html:173
+#: app/profile/profile.html:103
+#: app/registration/registration.html:121
+msgid "Female"
+msgstr ""
+
+#: app/home/home.html:294
+msgid "Find"
+msgstr ""
+
+#: app/home/home.html:288
+#: app/home/home.html:388
+msgid "Find Match"
+msgstr ""
+
+#: app/layout/footer.html:156
+msgid "Find your soulmate in any caste."
+msgstr ""
+
+#: app/home/home.html:127
+#: app/profile/profile.html:57
+#: app/registration/registration.html:65
+msgid "First Name"
+msgstr ""
+
+#: app/home/home.html:139
+msgid "First name should be atleast one character long."
+msgstr ""
+
+#: app/home/home.html:136
+msgid "First name should contain only characters."
+msgstr ""
+
+#: app/registration/registration.html:80
+msgid "Firstname should be atleast two characters long."
+msgstr ""
+
+#: app/profile/profile.html:62
+#: app/registration/registration.html:49
+#: app/registration/registration.html:77
+msgid "Firstname should contain only characters."
+msgstr ""
+
+#: app/layout/footer.html:91
+msgid "Follow us on"
+msgstr ""
+
+#: app/login/login.html:12
+msgid "Forgot Your Username?"
+msgstr ""
+
+#: app/login/login.html:146
+#: app/login/login.html:57
+#: app/partnerlogin/partner_login.html:160
+#: app/partnerlogin/partner_login.html:57
+msgid "Forgot your Password?"
+msgstr ""
+
+#: app/login/login.html:144
+#: app/partnerlogin/partner_login.html:158
+msgid "Forgot your Username?"
+msgstr ""
+
+#: app/account/account.html:248
+msgid "Found partner in other matrimony"
+msgstr ""
+
+#: app/profile/profile.html:945
+#: app/registration/registration.html:1375
+msgid "Gan"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:464
+msgid "Gan :"
+msgstr ""
+
+#: app/profile/profile.html:94
+msgid "Gender"
+msgstr ""
+
+#: app/account/account.html:20
+msgid "General Settings"
+msgstr ""
+
+#: app/account/account.html:10
+msgid "General Settings<span class=\"circle-icon\"><i class=\"icon-settings\"></i></span>"
+msgstr ""
+
+#: app/login/login.html:75
+#: app/partnerlogin/partner_login.html:70
+msgid "Get Password"
+msgstr ""
+
+#: app/registration/registration.html:233
+msgid "Get Started Today"
+msgstr ""
+
+#: app/login/login.html:35
+#: app/partnerlogin/partner_login.html:35
+msgid "Get Username"
+msgstr ""
+
+#: app/home/home.html:787
+msgid "Gift yourself"
+msgstr ""
+
+#: app/layout/ht-top-nav.html:75
+#: app/partnerdetails/partner_details.html:1344
+#: app/profile/profile.html:1077
+#: app/weddinghall/wedding_halls_listing.html:34
+msgid "Go To Top"
+msgstr ""
+
+#: app/dashboard/dashboard.html:119
+msgid "Go and search for perfect matches"
+msgstr ""
+
+#: app/general/faq.html:254
+msgid ""
+"Go to Account Setting page. Select Delete Account tab. Please provide a genuine reason to delete the\n"
+"                account and click delete account button."
+msgstr ""
+
+#: app/login/login.html:185
+#: app/partnerlogin/partner_login.html:195
+msgid "Good bye! See you later."
+msgstr ""
+
+#: app/registration/registration_success.html:80
+msgid "Goto Dashboard"
+msgstr ""
+
+#: app/profile/profile.html:924
+#: app/registration/registration.html:1323
+msgid "Gotra"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:434
+msgid "Gotra :"
+msgstr ""
+
+#: app/profile/profile.html:229
+#: app/registration/registration.html:401
+msgid "Height"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:181
+msgid "Height :"
+msgstr ""
+
+#: app/search/search.html:89
+msgid "Height From"
+msgstr ""
+
+#: app/search/search.html:106
+msgid "Height To"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:35
+#: app/viewprofile/viewprofile.html:64
+#: app/viewprofile/viewprofile.html:95
+msgid "Height:"
+msgstr ""
+
+#: app/layout/footer.html:60
+msgid "Help &amp; Support"
+msgstr ""
+
+#: app/layout/ht-top-nav.html:60
+msgid "Help &nbsp;<i class=\"icon-info\"></i>"
+msgstr ""
+
+#: app/login/login.html:190
+#: app/partnerlogin/partner_login.html:200
+msgid "Help Us grow and it will help you back. Like and share us on facebook."
+msgstr ""
+
+#: app/refer-your-friends/refer-your-friends.html:5
+msgid "Help us to Serve your Friends or Relatives..!!!"
+msgstr ""
+
+#: app/refer-your-friends/refer-your-friends.html:7
+msgid "Help us to Serve your Friends or Relatives...!!!"
+msgstr ""
+
+#: app/layout/footer.html:103
+msgid "Helpline Number"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:83
+msgid ""
+"Hey, I'm\n"
+"                            {{vm.profile.firstname}} {{vm.profile.lastname}}"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:53
+msgid ""
+"Hey, I'm\n"
+"                          {{vm.profile.firstname}} {{vm.profile.lastname}}"
+msgstr ""
+
+#: app/home/home.html:15
+msgid "Hindi"
+msgstr ""
+
+#: app/general/faq.html:248
+msgid "How do I delete my profile?"
+msgstr ""
+
+#: app/general/faq.html:171
+msgid "How do I make online payment?"
+msgstr ""
+
+#: app/general/faq.html:188
+msgid "How do I make payment through Cheque/DD?"
+msgstr ""
+
+#: app/general/faq.html:341
+msgid "How do I view a particular profile? How can I search profile by Profile ID?"
+msgstr ""
+
+#: app/general/faq.html:219
+msgid "How long can I use contact credits? Is there any expiry date?"
+msgstr ""
+
+#: app/general/faq.html:203
+msgid "How long will it take to get contact credits in my account if I have made the payment by Cheque/DD?"
+msgstr ""
+
+#: app/general/faq.html:278
+msgid "How to change a photo in my profile?"
+msgstr ""
+
+#: app/general/faq.html:392
+msgid "How to change your mobile number?"
+msgstr ""
+
+#: app/general/faq.html:137
+msgid "How to get Contact details?"
+msgstr ""
+
+#: app/general/faq.html:84
+msgid "How to login after registration is completed?"
+msgstr ""
+
+#: app/general/faq.html:233
+msgid "How to modify my profile contents?"
+msgstr ""
+
+#: app/general/faq.html:16
+msgid "How to register?"
+msgstr ""
+
+#: app/registration/registration.html:219
+msgid "I agree with"
+msgstr ""
+
+#: app/home/home.html:268
+msgid "I agree with <a href=\"/terms\">terms &amp; conditions</a> and <a href=\"/terms\">privacy policy</a>."
+msgstr ""
+
+#: app/general/faq.html:67
+msgid "I forgot my lb Matrimony ID/Username / Password. What should i do?"
+msgstr ""
+
+#: app/account/account.html:224
+#: app/partnerchangepassword/partnerChangePassword.html:225
+msgid "I want to delete my account"
+msgstr ""
+
+#: app/general/faq.html:101
+msgid "I'm registering for my sister/brother and me. Can we both register with the same Mobile number?"
+msgstr ""
+
+#: app/payment/payment.html:81
+msgid ""
+"IDBI Bank\n"
+"                                                     Account Number -\n"
+"                    0087102000042705\n"
+"                    <br> Name - LagnachiBolni\n"
+"                    <br> Branch - Nigdi, Pune\n"
+"                    <br> IFSC Code - IBKL0000087"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:763
+msgid "IFSC CODE"
+msgstr ""
+
+#: app/general/faq.html:144
+msgid ""
+"If you find matching profiles on lagnachibolni, you can get their contact details by purchasing contact\n"
+"                credits. Please check payment page to select the suitable plan for you."
+msgstr ""
+
+#: app/general/faq.html:346
+msgid ""
+"If you know the LB id of a profile, you can search the profile by searching it by LB id. If you don’t\n"
+"                have its ID then search it using advanced search."
+msgstr ""
+
+#: app/general/faq.html:380
+msgid ""
+"If you like any profile, you can send interest to him/her. If that person can accept or reject your\n"
+"                request. If it is accepted then you will be able to see their contact details.\n"
+"                Note: Sometime if people don’t feel your profile is suitable for them then they don’t answer the\n"
+"                request."
+msgstr ""
+
+#: app/general/faq.html:361
+msgid ""
+"If you think lagnachibolni is useful for your friend and relatives, you can refer it to them. To do so,\n"
+"                visit “Refer friend” page. Provide their mobile numbers and their names, we will send SMS to them on\n"
+"                your behalf.\n"
+"                If they get registered and make payment, we will give you 20% out of it as a referral bonus. You can use\n"
+"                this referral bonus for your payments or claim it as cash. We will transfer it to your account."
+msgstr ""
+
+#: app/general/faq.html:329
+msgid ""
+"In advance search you set the values for some parameters and search for matches. Every time you visit\n"
+"                advance search page it show all fields blank. It is very boarding to select those values every time.\n"
+"                Instead of selecting those every time you can save the search you want to do frequently. Select the\n"
+"                values you want and click “Save Search” button."
+msgstr ""
+
+#: app/inbox/inbox.html:5
+#: app/layout/sidebar.html:78
+msgid "Inbox"
+msgstr ""
+
+#: app/registration/registration.html:465
+msgid "Income"
+msgstr ""
+
+#: app/search/search.html:158
+msgid "Income From"
+msgstr ""
+
+#: app/search/search.html:173
+msgid "Income To"
+msgstr ""
+
+#: app/account/account.html:66
+msgid "Interest Notifications"
+msgstr ""
+
+#: app/dashboard/dashboard.html:143
+#: app/payment/payment.html:140
+msgid "Interest Received"
+msgstr ""
+
+#: app/login/login.html:68
+msgid "Invalid Username."
+msgstr ""
+
+#: app/general/faq.html:263
+msgid "Is it possible to reactivate the deleted profile?"
+msgstr ""
+
+#: app/layout/footer.html:45
+msgid "Jalgaon"
+msgstr ""
+
+#: app/layout/footer.html:46
+msgid "Kolhapur"
+msgstr ""
+
+#: app/home/home.html:849
+#: app/home/home.html:868
+msgid "Krunal"
+msgstr ""
+
+#: app/account/account.html:239
+msgid "Lagachi bolni helped me to find my life partner"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:21
+msgid "Last Login  <span am-time-ago=\"profileData.last_loggedin\"></span>"
+msgstr ""
+
+#: app/home/home.html:149
+#: app/profile/profile.html:83
+#: app/registration/registration.html:91
+msgid "Last Name"
+msgstr ""
+
+#: app/home/home.html:162
+msgid "Last name should be atleast one character long."
+msgstr ""
+
+#: app/home/home.html:155
+msgid ""
+"Last name should contain only\n"
+"                        characters."
+msgstr ""
+
+#: app/registration/registration.html:106
+msgid "Lastname should be atleast two characters long."
+msgstr ""
+
+#: app/registration/registration.html:100
+msgid "Lastname should contain only characters."
+msgstr ""
+
+#: app/refer-your-friends/refer-your-friends.html:125
+msgid "List cant be empty!!!"
+msgstr ""
+
+#: app/registration/registration_success.html:79
+msgid "Log in"
+msgstr ""
+
+#: app/confirm_email/confirm_email.html:22
+#: app/home/home.html:6
+#: app/layout/sidebar.html:31
+#: app/login/login.html:140
+#: app/login/login.html:198
+#: app/login/login.html:39
+#: app/login/login.html:77
+#: app/login/login.html:89
+#: app/partnerlogin/partner_login.html:154
+#: app/partnerlogin/partner_login.html:203
+#: app/partnerlogin/partner_login.html:39
+#: app/partnerlogin/partner_login.html:72
+msgid "Login"
+msgstr ""
+
+#: app/layout/sidebar.html:118
+#: app/layout/sidebar.html:91
+msgid "Logout"
+msgstr ""
+
+#: app/home/home.html:175
+#: app/profile/profile.html:100
+#: app/registration/registration.html:125
+msgid "Male"
+msgstr ""
+
+#: app/profile/profile.html:889
+#: app/registration/registration.html:1255
+msgid "Mama's Name"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:308
+msgid "Mama's Name :"
+msgstr ""
+
+#: app/profile/profile.html:1050
+#: app/registration/registration.html:1478
+#: app/search/search.html:223
+msgid "Mangal"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:481
+msgid "Mangal :"
+msgstr ""
+
+#: app/layout/footer.html:21
+msgid "Maratha"
+msgstr ""
+
+#: app/layout/footer.html:20
+msgid "MarathaDeshmukh"
+msgstr ""
+
+#: app/profile/profile.html:109
+#: app/profile/profile.html:733
+#: app/profile/profile.html:826
+#: app/registration/registration.html:1091
+#: app/registration/registration.html:1190
+#: app/registration/registration.html:336
+#: app/search/search.html:28
+msgid "Marital Status"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:368
+#: app/viewprofile/viewprofile.html:408
+msgid "Marital Status :"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:51
+msgid "Marital Status:"
+msgstr ""
+
+#: app/home/home.html:634
+#: app/home/home.html:703
+msgid "Marriage related counselling"
+msgstr ""
+
+#: app/home/home.html:804
+#: app/home/home.html:816
+msgid "Matched by LagnachiBolni.com"
+msgstr ""
+
+#: app/home/home.html:278
+msgid "May I help You?"
+msgstr ""
+
+#: app/layout/footer.html:70
+msgid "Membership"
+msgstr ""
+
+#: app/home/home.html:671
+#: app/home/home.html:731
+msgid "Mentoring Support"
+msgstr ""
+
+#: app/contactUs/contactUs.html:44
+msgid "Message"
+msgstr ""
+
+#: app/profile/profile.html:71
+msgid "Middle Name"
+msgstr ""
+
+#: app/home/home.html:220
+#: app/login/login.html:22
+#: app/partner/partner_home.html:162
+#: app/partner/partner_home.html:221
+#: app/partnerdetails/partner_details.html:575
+#: app/partnerdetails/partner_details.html:642
+#: app/partnerdetails/partner_details.html:722
+#: app/partnerlogin/partner_login.html:22
+#: app/partnerlogin/partner_login.html:98
+#: app/profile/profile.html:534
+#: app/refer-your-friends/refer-your-friends.html:104
+#: app/refer-your-friends/refer-your-friends.html:47
+#: app/registration/registration.html:170
+#: app/registration/registration_success.html:102
+#: app/viewprofile/viewprofile.html:38
+msgid "Mobile Number"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:163
+msgid "Mobile Number:"
+msgstr ""
+
+#: app/login/login.html:97
+msgid "Mobile/Username"
+msgstr ""
+
+#: app/profile/profile.html:683
+#: app/registration/registration.html:1036
+msgid "Mother's Name"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:302
+msgid "Mother's Name :"
+msgstr ""
+
+#: app/profile/profile.html:692
+#: app/registration/registration.html:1047
+msgid "Mother's Occupation"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:327
+msgid "Mother's Occupation :"
+msgstr ""
+
+#: app/layout/footer.html:42
+msgid "Mumbai"
+msgstr ""
+
+#: app/layout/sidebar.html:80
+msgid "My Profile"
+msgstr ""
+
+#: app/profile/profile.html:4
+msgid "My Profile - {{vm.user.profile_id}}"
+msgstr ""
+
+#: app/profile/profile.html:965
+#: app/registration/registration.html:1346
+msgid "Nadi"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:469
+msgid "Nadi :"
+msgstr ""
+
+#: app/layout/footer.html:48
+msgid "Nagpur"
+msgstr ""
+
+#: app/profile/profile.html:1030
+#: app/registration/registration.html:1455
+msgid "Nakshatra"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:452
+msgid "Nakshatra :"
+msgstr ""
+
+#: app/contactUs/contactUs.html:13
+#: app/profile/profile.html:721
+#: app/profile/profile.html:814
+#: app/refer-your-friends/refer-your-friends.html:82
+#: app/registration/registration.html:1077
+#: app/registration/registration.html:1176
+msgid "Name"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:354
+#: app/viewprofile/viewprofile.html:394
+msgid "Name :"
+msgstr ""
+
+#: app/layout/footer.html:49
+msgid "Nashik"
+msgstr ""
+
+#: app/registration/registration.html:583
+msgid "Native Address"
+msgstr ""
+
+#: app/profile/profile.html:603
+#: app/registration/registration.html:590
+msgid "Native Address Line 1"
+msgstr ""
+
+#: app/profile/profile.html:612
+#: app/registration/registration.html:600
+msgid "Native Address Line 2"
+msgstr ""
+
+#: app/registration/registration.html:576
+msgid "Native Address is different than current Address"
+msgstr ""
+
+#: app/partnerlogin/partner_login.html:163
+msgid "New to LagnachiBolani.com?"
+msgstr ""
+
+#: app/registration/registration.html:1285
+#: app/registration/registration.html:498
+#: app/registration/registration.html:687
+#: app/registration/registration.html:931
+#: app/registration/registration.html:973
+msgid "Next"
+msgstr ""
+
+#: app/profile/profile.html:1059
+#: app/profile/profile.html:303
+#: app/registration/registration.html:1492
+#: app/registration/registration.html:915
+#: app/search/search.html:232
+#: app/search/search.html:252
+msgid "No"
+msgstr ""
+
+#: app/registration/registration.html:1107
+msgid ""
+"No\n"
+"                                                                                    marital\n"
+"                                                                                    status\n"
+"                                                                                    found."
+msgstr ""
+
+#: app/registration/registration.html:1206
+msgid ""
+"No\n"
+"                                                                                    status\n"
+"                                                                                    found."
+msgstr ""
+
+#: app/registration/registration.html:290
+msgid "No City found."
+msgstr ""
+
+#: app/registration/registration.html:322
+msgid "No Education Field found."
+msgstr ""
+
+#: app/registration/registration.html:483
+msgid "No Income found."
+msgstr ""
+
+#: app/profile/profile.html:122
+msgid ""
+"No Marital Status\n"
+"                                             found."
+msgstr ""
+
+#: app/search/search.html:53
+#: app/search/search.html:74
+msgid "No age found."
+msgstr ""
+
+#: app/profile/profile.html:285
+msgid ""
+"No blood group\n"
+"                                             found."
+msgstr ""
+
+#: app/registration/registration.html:894
+msgid "No blood group found."
+msgstr ""
+
+#: app/home/home.html:252
+#: app/profile/profile.html:204
+#: app/registration/registration.html:204
+#: app/search/search.html:213
+msgid "No caste found."
+msgstr ""
+
+#: app/profile/profile.html:1020
+#: app/registration/registration.html:1471
+msgid "No charan found."
+msgstr ""
+
+#: app/profile/profile.html:181
+#: app/search/search.html:197
+msgid "No city found."
+msgstr ""
+
+#: app/profile/profile.html:343
+msgid ""
+"No complexion\n"
+"                                             found."
+msgstr ""
+
+#: app/registration/registration.html:798
+msgid "No complexion found."
+msgstr ""
+
+#: app/profile/profile.html:402
+msgid ""
+"No education\n"
+"                                             field found."
+msgstr ""
+
+#: app/profile/profile.html:424
+msgid ""
+"No education\n"
+"                                             found."
+msgstr ""
+
+#: app/profile/profile.html:380
+msgid ""
+"No education\n"
+"                                             level found."
+msgstr ""
+
+#: app/search/search.html:131
+msgid "No education field found."
+msgstr ""
+
+#: app/registration/registration.html:451
+msgid "No education found."
+msgstr ""
+
+#: app/registration/registration.html:387
+#: app/search/search.html:148
+msgid "No education level found."
+msgstr ""
+
+#: app/profile/profile.html:958
+#: app/registration/registration.html:1392
+msgid "No gan found."
+msgstr ""
+
+#: app/profile/profile.html:243
+#: app/search/search.html:114
+#: app/search/search.html:97
+msgid "No height found."
+msgstr ""
+
+#: app/profile/profile.html:491
+#: app/search/search.html:166
+#: app/search/search.html:181
+msgid "No income found."
+msgstr ""
+
+#: app/profile/profile.html:750
+msgid ""
+"No marital\n"
+"                                             status found."
+msgstr ""
+
+#: app/search/search.html:35
+msgid "No marital status found."
+msgstr ""
+
+#: app/profile/profile.html:978
+#: app/registration/registration.html:1363
+msgid "No nadi found."
+msgstr ""
+
+#: app/profile/profile.html:1043
+msgid ""
+"No nakshatra\n"
+"                                             found."
+msgstr ""
+
+#: app/payment/payment.html:249
+msgid "No payment found."
+msgstr ""
+
+#: app/profile/profile.html:322
+#: app/registration/registration.html:743
+msgid "No physic found."
+msgstr ""
+
+#: app/profile/profile.html:1000
+#: app/registration/registration.html:1420
+msgid "No rashi found."
+msgstr ""
+
+#: app/registration/registration.html:355
+msgid "No status Found."
+msgstr ""
+
+#: app/profile/profile.html:842
+msgid "No status found."
+msgstr ""
+
+#: app/home/home.html:647
+#: app/home/home.html:713
+msgid ""
+"No time bound subscriptions and renewals. Packages\n"
+"                suitable for everyone."
+msgstr ""
+
+#: app/profile/profile.html:265
+#: app/registration/registration.html:769
+msgid "No weight found."
+msgstr ""
+
+#: app/profile/profile.html:448
+msgid ""
+"No work area\n"
+"                                             found."
+msgstr ""
+
+#: app/registration/registration.html:840
+msgid "No work area found."
+msgstr ""
+
+#: app/profile/profile.html:469
+msgid "No work as found."
+msgstr ""
+
+#: app/registration/registration.html:866
+msgid "No working found."
+msgstr ""
+
+#: app/registration/registration.html:419
+msgid "Not found."
+msgstr ""
+
+#: app/payment/payment.html:76
+msgid "Note:"
+msgstr ""
+
+#: app/account/account.html:17
+msgid "Notification Settings"
+msgstr ""
+
+#: app/contactUs/contactUs.html:82
+msgid "Office Address"
+msgstr ""
+
+#: app/payment/payment.html:69
+msgid "Offline Payment"
+msgstr ""
+
+#: app/general/faq.html:40
+msgid ""
+"Once registered you will receive password for your account via SMS on your mobile.\n"
+"                To confirm your mobile you will just have to login using that password. we don't show your profile to\n"
+"                others if you don't confirm your mobile."
+msgstr ""
+
+#: app/general/faq.html:209
+msgid ""
+"Once we receive and process the cheque/DD we will provide you the contact credit. After we receive money\n"
+"                in our account we will give you contact credits in 2 working days."
+msgstr ""
+
+#: app/home/home.html:660
+#: app/home/home.html:723
+msgid "Only registered users can see profile &amp; photos"
+msgstr ""
+
+#: app/payment/payment.html:136
+msgid "Order Id"
+msgstr ""
+
+#: app/layout/footer.html:81
+msgid "Other Services"
+msgstr ""
+
+#: app/account/account.html:290
+msgid "Other reason"
+msgstr ""
+
+#: app/home/home.html:744
+msgid "Our Membership Packages"
+msgstr ""
+
+#: app/layout/sidebar.html:79
+#: app/outbox/outbox.html:5
+msgid "Outbox"
+msgstr ""
+
+#: app/profile/profile.html:1094
+msgid "PIN Code"
+msgstr ""
+
+#: app/layout/sidebar.html:115
+#: app/layout/sidebar.html:142
+#: app/layout/sidebar.html:43
+msgid "Partner Dashboard"
+msgstr ""
+
+#: app/layout/sidebar.html:114
+#: app/layout/sidebar.html:141
+#: app/layout/sidebar.html:42
+msgid "Partner Details"
+msgstr ""
+
+#: app/layout/sidebar.html:113
+#: app/layout/sidebar.html:140
+#: app/layout/sidebar.html:41
+msgid "Partner Home"
+msgstr ""
+
+#: app/layout/sidebar.html:44
+#: app/partnerlogin/partner_login.html:84
+msgid "Partner Login"
+msgstr ""
+
+#: app/layout/sidebar.html:116
+#: app/layout/sidebar.html:143
+#: app/layout/sidebar.html:45
+msgid "Partner Logout"
+msgstr ""
+
+#: app/login/login.html:113
+#: app/partnerlogin/partner_login.html:127
+msgid "Password"
+msgstr ""
+
+#: app/account/account.html:175
+#: app/partnerchangepassword/partnerChangePassword.html:176
+msgid "Password Fields are not equal!"
+msgstr ""
+
+#: app/events/events.html:69
+msgid "Past Events"
+msgstr ""
+
+#: app/layout/sidebar.html:33
+#: app/layout/sidebar.html:83
+#: app/payment/payment.html:4
+msgid "Payment"
+msgstr ""
+
+#: app/payment/payment.html:146
+msgid "Payment Date"
+msgstr ""
+
+#: app/payment/payment.html:103
+msgid "Payment History"
+msgstr ""
+
+#: app/payment/payment.html:144
+msgid "Payment Status"
+msgstr ""
+
+#: app/dashboard/dashboard.html:27
+msgid "Pending Sections"
+msgstr ""
+
+#: app/dashboard/dashboard.html:176
+msgid "Perfect Match"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:158
+msgid "Permanent Address"
+msgstr ""
+
+#: app/profile/profile.html:24
+#: app/profile/profile.html:50
+#: app/registration/registration.html:705
+msgid "Personal Details"
+msgstr ""
+
+#: app/dashboard/dashboard.html:41
+#: app/registration/registration_success.html:22
+msgid "Personal Details &nbsp;"
+msgstr ""
+
+#: app/profile/profile.html:516
+msgid "Phone"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:166
+msgid ""
+"Phone\n"
+"                        Number:"
+msgstr ""
+
+#: app/registration/registration.html:653
+msgid "Phone Number"
+msgstr ""
+
+#: app/dashboard/dashboard.html:157
+msgid "Photo Requests"
+msgstr ""
+
+#: app/registration/registration.html:950
+msgid "Photo Upload"
+msgstr ""
+
+#: app/dashboard/dashboard.html:57
+#: app/registration/registration_success.html:43
+msgid "Photo Upload &nbsp;"
+msgstr ""
+
+#: app/profile/profile.html:222
+#: app/profile/profile.html:26
+msgid "Physical Details"
+msgstr ""
+
+#: app/search/search.html:241
+msgid ""
+"Physically\n"
+"                      Disabled"
+msgstr ""
+
+#: app/profile/profile.html:294
+#: app/registration/registration.html:901
+msgid "Physically Disabled"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:193
+msgid "Physically Disabled :"
+msgstr ""
+
+#: app/profile/profile.html:309
+#: app/registration/registration.html:726
+#: app/viewprofile/viewprofile.html:175
+msgid "Physique"
+msgstr ""
+
+#: app/profile/profile.html:581
+#: app/profile/profile.html:622
+#: app/registration/registration.html:560
+#: app/registration/registration.html:610
+msgid "Pin"
+msgstr ""
+
+#: app/registration/registration_success.html:71
+msgid ""
+"Please Login with password sent to your mobile number -\n"
+"                    <span class=\"number\"> +91 {{vm.user.phone_mobile}} <a><i class=\"fa fa-pencil fa-lg\" aria-hidden=\"true\" ng-click=\"vm.openChangeMobileModal()\"></i></a></span>"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:837
+msgid "Please enter 10 digits."
+msgstr ""
+
+#: app/profile/profile.html:592
+#: app/profile/profile.html:633
+msgid "Please enter 6 digits."
+msgstr ""
+
+#: app/account/account.html:90
+#: app/dashboard/dashboard.html:223
+msgid "Please enter a valid email."
+msgstr ""
+
+#: app/profile/profile.html:538
+msgid "Please enter a valid mobile number.!"
+msgstr ""
+
+#: app/profile/profile.html:524
+msgid "Please enter a valid phone number.!"
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:834
+#: app/profile/profile.html:589
+#: app/profile/profile.html:630
+msgid "Please enter digits only."
+msgstr ""
+
+#: app/profile/profile.html:163
+#: app/registration/registration.html:815
+msgid "Please enter valid birth time."
+msgstr ""
+
+#: app/search/search.html:308
+msgid "Please modify your search"
+msgstr ""
+
+#: app/login/login.html:26
+msgid ""
+"Please provide\n"
+"                            phone number."
+msgstr ""
+
+#: app/payment/payment.html:232
+msgid "Please provide Bank Name."
+msgstr ""
+
+#: app/registration/registration.html:74
+msgid "Please provide FirstName."
+msgstr ""
+
+#: app/registration/registration.html:129
+msgid "Please provide Gender."
+msgstr ""
+
+#: app/registration/registration.html:103
+msgid "Please provide LastName."
+msgstr ""
+
+#: app/registration/registration.html:293
+msgid "Please provide a City."
+msgstr ""
+
+#: app/login/login.html:67
+#: app/partnerlogin/partner_login.html:66
+msgid "Please provide a Value"
+msgstr ""
+
+#: app/home/home.html:259
+msgid "Please provide a caste."
+msgstr ""
+
+#: app/partner/partner_home.html:168
+#: app/partnerlogin/partner_login.html:104
+#: app/refer-your-friends/refer-your-friends.html:110
+#: app/refer-your-friends/refer-your-friends.html:53
+msgid "Please provide a correct phone number."
+msgstr ""
+
+#: app/home/home.html:133
+msgid "Please provide a first name."
+msgstr ""
+
+#: app/registration/registration.html:422
+msgid "Please provide a height."
+msgstr ""
+
+#: app/home/home.html:159
+msgid "Please provide a last name."
+msgstr ""
+
+#: app/registration/registration.html:358
+msgid "Please provide a marital status."
+msgstr ""
+
+#: app/partner/partner_home.html:139
+#: app/partnerdetails/partner_details.html:529
+#: app/refer-your-friends/refer-your-friends.html:28
+#: app/refer-your-friends/refer-your-friends.html:90
+msgid "Please provide a name."
+msgstr ""
+
+#: app/account/account.html:156
+#: app/partnerchangepassword/partnerChangePassword.html:157
+msgid "Please provide a new password."
+msgstr ""
+
+#: app/account/account.html:133
+#: app/partnerchangepassword/partnerChangePassword.html:134
+msgid "Please provide a password."
+msgstr ""
+
+#: app/contactUs/contactUs.html:26
+msgid "Please provide a phone number."
+msgstr ""
+
+#: app/account/account.html:310
+msgid "Please provide a reason."
+msgstr ""
+
+#: app/home/home.html:100
+#: app/registration/registration.html:32
+msgid "Please provide a username/email Id."
+msgstr ""
+
+#: app/registration/registration.html:325
+msgid "Please provide an education field."
+msgstr ""
+
+#: app/registration/registration.html:390
+msgid "Please provide an education level."
+msgstr ""
+
+#: app/registration/registration.html:454
+msgid "Please provide an education."
+msgstr ""
+
+#: app/contactUs/contactUs.html:38
+#: app/partnerchangepassword/partnerChangePassword.html:401
+msgid "Please provide an email address."
+msgstr ""
+
+#: app/registration/registration.html:486
+msgid "Please provide an income."
+msgstr ""
+
+#: app/registration/registration.html:633
+msgid "Please provide email Id."
+msgstr ""
+
+#: app/login/login.html:120
+#: app/partnerlogin/partner_login.html:134
+msgid "Please provide password."
+msgstr ""
+
+#: app/home/home.html:226
+msgid ""
+"Please provide phone\n"
+"                        number."
+msgstr ""
+
+#: app/registration/registration.html:176
+msgid "Please provide phone number."
+msgstr ""
+
+#: app/contactUs/contactUs.html:47
+#: app/contactUs/contactUs.html:48
+msgid "Please provide some message."
+msgstr ""
+
+#: app/contactUs/contactUs.html:16
+msgid "Please provide the subject name"
+msgstr ""
+
+#: app/payment/payment.html:217
+msgid "Please provide transaction date."
+msgstr ""
+
+#: app/login/login.html:103
+msgid "Please provide username"
+msgstr ""
+
+#: app/home/home.html:230
+msgid ""
+"Please provide valid\n"
+"                        phone number."
+msgstr ""
+
+#: app/registration/registration.html:150
+msgid "Please provide valid date!"
+msgstr ""
+
+#: app/registration/registration.html:179
+msgid "Please provide valid phone number."
+msgstr ""
+
+#: app/payment/payment.html:201
+msgid "Please provide your profile Id.."
+msgstr ""
+
+#: app/payment/payment.html:253
+msgid "Please select a Payment"
+msgstr ""
+
+#: app/registration/registration.html:208
+msgid "Please select a caste"
+msgstr ""
+
+#: app/account/account.html:226
+msgid "Please select the reason for account deletion"
+msgstr ""
+
+#: app/contactUs/contactUs.html:83
+msgid ""
+"Plot no 12, 2nd floor, Sector - 18, Opp\n"
+"                            Jijamata park, Fule Nagar, Chinchwad Pune-411019"
+msgstr ""
+
+#: app/dashboard/dashboard.html:22
+msgid "Profile Complete"
+msgstr ""
+
+#: app/payment/payment.html:198
+msgid "Profile Id"
+msgstr ""
+
+#: app/layout/footer.html:41
+msgid "Pune"
+msgstr ""
+
+#: app/profile/profile.html:987
+#: app/registration/registration.html:1403
+msgid "Rashi"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:446
+msgid "Rashi :"
+msgstr ""
+
+#: app/account/account.html:168
+#: app/partnerchangepassword/partnerChangePassword.html:169
+msgid "Re-Enter New Password"
+msgstr ""
+
+#: app/account/account.html:181
+#: app/partnerchangepassword/partnerChangePassword.html:182
+msgid "Re-Enter new password."
+msgstr ""
+
+#: app/refer-your-friends/refer-your-friends.html:67
+msgid "Refer"
+msgstr ""
+
+#: app/layout/sidebar.html:34
+#: app/layout/sidebar.html:82
+msgid "Refer Friends"
+msgstr ""
+
+#: app/home/home.html:273
+#: app/home/home.html:464
+#: app/home/home.html:529
+#: app/home/home.html:91
+#: app/layout/sidebar.html:30
+#: app/login/login.html:150
+#: app/partnerlogin/partner_login.html:163
+#: app/registration/registration.html:13
+msgid "Register"
+msgstr ""
+
+#: app/home/home.html:609
+#: app/home/home.html:684
+msgid ""
+"Register and check matching profiles free for 45\n"
+"                days."
+msgstr ""
+
+#: app/contactUs/contactUs.html:87
+msgid "Registered Address"
+msgstr ""
+
+#: app/general/faq.html:119
+msgid "Registration is free or paid? What are registration charges?"
+msgstr ""
+
+#: app/general/faq.html:125
+msgid ""
+"Registration is free. After Registration you can login and search profiles matching for you. You can\n"
+"                check the details of the profile, but we don’t show contact details of other profiles. To get the\n"
+"                contact details we offer different packages. Please check payment page to select the suitable packages\n"
+"                for you."
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:79
+#: app/viewprofile/viewprofile.html:145
+msgid "Reject"
+msgstr ""
+
+#: app/profile/profile.html:898
+#: app/registration/registration.html:1266
+msgid "Relative's Surname"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:335
+msgid "Relative's Surname :"
+msgstr ""
+
+#: app/login/login.html:134
+#: app/partnerlogin/partner_login.html:148
+msgid "Remember me on this PC"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:123
+#: app/viewprofile/viewprofile.html:517
+msgid "Report Profile"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:23
+msgid "Request Photo"
+msgstr ""
+
+#: app/account/account.html:99
+#: app/dashboard/dashboard.html:239
+msgid "Resend Email"
+msgstr ""
+
+#: app/registration/registration_success.html:77
+msgid "Resend Password"
+msgstr ""
+
+#: app/search/search.html:281
+msgid "Reset"
+msgstr ""
+
+#: app/payment/payment.html:18
+msgid "Rs"
+msgstr ""
+
+#: app/home/home.html:761
+msgid "Rs.{{plan.price}}/-"
+msgstr ""
+
+#: app/account/account.html:30
+msgid "SMS"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:67
+msgid "Salary:"
+msgstr ""
+
+#: app/layout/footer.html:50
+msgid "Sangli"
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:145
+#: app/payment/payment.html:272
+#: app/search/search.html:391
+#: app/viewprofile/viewprofile.html:540
+msgid "Save"
+msgstr ""
+
+#: app/account/account.html:202
+#: app/partnerchangepassword/partnerChangePassword.html:203
+msgid "Save New Password"
+msgstr ""
+
+#: app/search/search.html:279
+msgid "Save Search"
+msgstr ""
+
+#: app/search/search.html:384
+msgid "Save Search Name"
+msgstr ""
+
+#: app/search/search.html:379
+msgid "Save as"
+msgstr ""
+
+#: app/search/search.html:358
+msgid "Save frequently used searches. You can save search from \"Search Profile\" tab, clicking on \"Save Search\" button."
+msgstr ""
+
+#: app/search/search.html:320
+msgid "Saved Search<span class=\"circle-icon\"><i class=\"icon-floppy-disk padding-correction\"></i></span>"
+msgstr ""
+
+#: app/layout/sidebar.html:32
+#: app/layout/sidebar.html:81
+#: app/search/search.html:283
+#: app/search/search.html:4
+msgid "Search"
+msgstr ""
+
+#: app/caterers/search_halls.html:10
+msgid "Search Halls"
+msgstr ""
+
+#: app/home/home.html:498
+#: app/home/home.html:556
+msgid "Search Perfect Match"
+msgstr ""
+
+#: app/search/search.html:10
+msgid "Search Profile <span class=\"circle-icon\"><i class=\"icon-search-people\"></i></span>"
+msgstr ""
+
+#: app/search/search.html:298
+msgid "Search Results <span class=\"circle-icon\"><i class=\"icon-search-list\"></i></span>"
+msgstr ""
+
+#: app/search/search.html:19
+msgid "Search by Profile ID"
+msgstr ""
+
+#: app/search/search.html:331
+msgid "Search name"
+msgstr ""
+
+#: app/home/home.html:659
+#: app/home/home.html:722
+msgid "Secure &amp; Safe"
+msgstr ""
+
+#: app/payment/payment.html:14
+msgid "Select the plan by clicking on 'Buy Now'"
+msgstr ""
+
+#: app/contactUs/contactUs.html:58
+#: app/partnerchangepassword/partnerChangePassword.html:422
+msgid "Send Message"
+msgstr ""
+
+#: app/dashboard/dashboard.html:97
+#: app/viewprofile/viewprofile.html:143
+msgid "Show Interest"
+msgstr ""
+
+#: app/dashboard/dashboard.html:133
+msgid ""
+"Show Interest/View Contact <br>to\n"
+"                                            make connections"
+msgstr ""
+
+#: app/home/home.html:760
+#: app/payment/payment.html:26
+msgid "Show Interests"
+msgstr ""
+
+#: app/login/login.html:129
+#: app/partnerlogin/partner_login.html:143
+msgid "Show password"
+msgstr ""
+
+#: app/account/account.html:192
+#: app/partnerchangepassword/partnerChangePassword.html:193
+msgid "Show password."
+msgstr ""
+
+#: app/profile/profile.html:704
+msgid "Sister Details"
+msgstr ""
+
+#: app/registration/registration.html:1059
+msgid "Sister Details <span class=\"panel-buttons\"><i class=\"icon-plus-circle\" ng-click=\"vm.addSibling( 'sisterObject')\"></i></span>"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:421
+msgid "Sister Details Not Available"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:387
+msgid "Sisters"
+msgstr ""
+
+#: app/layout/footer.html:51
+msgid "Solapur"
+msgstr ""
+
+#: app/account/account.html:301
+msgid "Specify the reason"
+msgstr ""
+
+#: app/payment/payment.html:96
+msgid "Submit Transaction Details"
+msgstr ""
+
+#: app/payment/payment.html:95
+msgid "Submit the transaction details after you transfer the amount."
+msgstr ""
+
+#: app/logout/logout.html:4
+msgid "Successfully Logout..."
+msgstr ""
+
+#: app/layout/footer.html:105
+msgid "Support Team"
+msgstr ""
+
+#: app/admin/admin.html:8
+msgid "TODO: Implement Your Features"
+msgstr ""
+
+#: app/registration/registration.html:264
+msgid "Tell Us About Yourself"
+msgstr ""
+
+#: app/registration/registration.html:1318
+msgid "Tell us about your astro details"
+msgstr ""
+
+#: app/registration/registration.html:530
+msgid "Tell us about your contact details"
+msgstr ""
+
+#: app/registration/registration.html:1005
+msgid "Tell us about your family"
+msgstr ""
+
+#: app/registration/registration.html:719
+msgid "Tell us about your personal details"
+msgstr ""
+
+#: app/layout/footer.html:68
+msgid "Terms &amp; Conditions"
+msgstr ""
+
+#: app/layout/footer.html:47
+msgid "Thane"
+msgstr ""
+
+#: app/confirm_email/confirm_email.html:7
+msgid ""
+"Thanks for confirming your email\n"
+"        address\n"
+"        ."
+msgstr ""
+
+#: app/home/home.html:110
+msgid ""
+"That doesn't look like a valid\n"
+"                        UserName."
+msgstr ""
+
+#: app/home/home.html:106
+msgid ""
+"That doesn't look like a valid Mobile\n"
+"                        Number."
+msgstr ""
+
+#: app/registration/registration.html:38
+msgid "That doesn't look like a valid Mobile Number."
+msgstr ""
+
+#: app/registration/registration.html:42
+msgid "That doesn't look like a valid UserName."
+msgstr ""
+
+#: app/home/home.html:103
+#: app/registration/registration.html:35
+#: app/registration/registration.html:636
+msgid "That doesn't look like a valid email."
+msgstr ""
+
+#: app/profile/profile.html:772
+#: app/profile/profile.html:864
+msgid ""
+"The\n"
+"                                                              entered value is not a date!"
+msgstr ""
+
+#: app/profile/profile.html:140
+msgid ""
+"The\n"
+"                                                    entered value is not a date!"
+msgstr ""
+
+#: app/login/login.html:29
+msgid ""
+"The\n"
+"                            entered value is not a phone number!"
+msgstr ""
+
+#: app/account/account.html:278
+msgid "The contact buying plans are expensive"
+msgstr ""
+
+#: app/home/home.html:192
+msgid ""
+"The entered value is\n"
+"                          not a date!"
+msgstr ""
+
+#: app/registration/registration.html:1134
+#: app/registration/registration.html:1231
+msgid "The entered value is not a date!"
+msgstr ""
+
+#: app/contactUs/contactUs.html:27
+#: app/registration/registration.html:658
+msgid "The entered value is not a phone number!"
+msgstr ""
+
+#: app/payment/payment.html:218
+msgid "The entered value is not a valid date!"
+msgstr ""
+
+#: app/login/login.html:107
+msgid "The username/password that you've entered is incorrect."
+msgstr ""
+
+#: app/home/home.html:832
+#: app/home/home.html:851
+#: app/home/home.html:870
+msgid ""
+"The word 'romance,' according to the\n"
+"                      dictionary, means excitement, adventure, and\n"
+"                      something extremely real. Romance should last a lifetime.\n"
+"                      One fine day I came across his profile\n"
+"                      and it just clicke.."
+msgstr ""
+
+#: app/general/faq.html:225
+msgid "There is no time limit to use contact credits. You can use it till you consume it."
+msgstr ""
+
+#: app/search/search.html:102
+#: app/search/search.html:170
+#: app/search/search.html:63
+msgid "To"
+msgstr ""
+
+#: app/general/faq.html:159
+msgid ""
+"To get the contact details of the other profiles you need contact credits. If you have purchased contact\n"
+"                credits you will be able to see contact details of any profile.\n"
+"                It will consume 1 contact credit to see the contact details of 1 profile.\n"
+"                For example if you purchase 10 contact credits, then you will be able to see contact details of any 10\n"
+"                profiles."
+msgstr ""
+
+#: app/dashboard/dashboard.html:114
+msgid "Total Visits"
+msgstr ""
+
+#: app/payment/payment.html:190
+msgid "Transaction Details"
+msgstr ""
+
+#: app/payment/payment.html:262
+msgid "Transaction Number"
+msgstr ""
+
+#: app/payment/payment.html:219
+msgid "Transaction date can not be future date."
+msgstr ""
+
+#: app/payment/payment.html:74
+msgid "Transfer the amount to below account."
+msgstr ""
+
+#: app/account/account.html:52
+msgid "Type of Notifications"
+msgstr ""
+
+#: app/account/account.html:258
+msgid "Unable to find good profiles at Lagnachi bolni"
+msgstr ""
+
+#: app/account/account.html:268
+msgid "Unhappy with Lagnachi bolni"
+msgstr ""
+
+#: app/events/events.html:10
+msgid "Upcoming Events"
+msgstr ""
+
+#: app/components/uploadImage/uploadProfileImage.html:11
+#: app/profile/profile.html:1105
+#: app/registration/registration_success.html:114
+msgid "Update"
+msgstr ""
+
+#: app/components/uploadImage/uploadimage.html:3
+msgid "Upload your photos"
+msgstr ""
+
+#: app/home/home.html:94
+#: app/registration/registration.html:28
+msgid "User Name/Email"
+msgstr ""
+
+#: app/home/home.html:119
+#: app/registration/registration.html:54
+msgid "User name already used."
+msgstr ""
+
+#: app/home/home.html:114
+msgid ""
+"Username should be atleast six\n"
+"                        character long."
+msgstr ""
+
+#: app/registration/registration.html:45
+msgid "Username should be atleast six character long."
+msgstr ""
+
+#: app/login/login.html:65
+#: app/partnerlogin/partner_login.html:64
+msgid "Username/Mobile"
+msgstr ""
+
+#: app/general/faq.html:315
+msgid "Using advance search you will be able to search suitable profiles for you."
+msgstr ""
+
+#: app/home/home.html:646
+#: app/home/home.html:712
+msgid "Value for money package"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:110
+#: app/viewprofile/viewprofile.html:27
+msgid "Verified ID"
+msgstr ""
+
+#: app/account/account.html:78
+#: app/dashboard/dashboard.html:205
+msgid "Verify Email Address"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:134
+msgid ""
+"View\n"
+"                            contact details"
+msgstr ""
+
+#: app/dashboard/dashboard.html:180
+#: app/layout/footer.html:30
+#: app/layout/footer.html:52
+msgid "View All"
+msgstr ""
+
+#: app/home/home.html:817
+#: app/home/home.html:837
+#: app/home/home.html:856
+#: app/home/home.html:875
+msgid "View More"
+msgstr ""
+
+#: app/home/home.html:886
+msgid "View More Matched"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:14
+msgid ""
+"View Profile -\n"
+"            {{vm.profile.profile_id}}"
+msgstr ""
+
+#: app/account/account.html:59
+msgid "Visit Notifications"
+msgstr ""
+
+#: app/general/faq.html:177
+msgid ""
+"Visit payment page, choose suitable plan for you. Click on Buy Now button. It will redirect you to\n"
+"                payment gateway. There are multiple options to make the payment online using credit cards, debit cards,\n"
+"                net banking, wallets and many more.\n"
+"                Login is mandatory to make online payment."
+msgstr ""
+
+#: app/general/faq.html:21
+msgid ""
+"Visit register page or Home page. Enter your details, complete your registration to start using\n"
+"                LagnachiBolni. Only registered and logged in people can see or search other profile. Mobile confirmation\n"
+"                is mandatory."
+msgstr ""
+
+#: app/general/faq.html:239
+msgid ""
+"Visit “My Profile” page where you can change almost all information related to your profile. It saves\n"
+"                the information automatically once you change it."
+msgstr ""
+
+#: app/general/faq.html:284
+msgid ""
+"Visit “My Profile” page where you can find link edit photo below your photo. It will redirect you to\n"
+"                update photo page. Upload your photo there."
+msgstr ""
+
+#: app/home/home.html:590
+msgid "We are committed to provide you the best Marathi matrimonial service"
+msgstr ""
+
+#: app/dashboard/dashboard.html:184
+msgid "We are working to find best matches for you. Please stick around."
+msgstr ""
+
+#: app/layout/footer.html:128
+msgid "We provide services in these cities. ."
+msgstr ""
+
+#: app/home/home.html:499
+#: app/home/home.html:557
+msgid "We provide you a simple and efficient way to search your perfect life partner."
+msgstr ""
+
+#: app/home/home.html:622
+#: app/home/home.html:694
+msgid ""
+"We show only complete matrimonial profiles in search\n"
+"                lists. You can find matches from 17000+ profiles."
+msgstr ""
+
+#: app/home/home.html:745
+msgid ""
+"We value your security so as every other members.\n"
+"                Are you really serious and interested in knowing someone in more\n"
+"                detail? Then prove it, by paying 500\n"
+"                more\n"
+"                And we would be more than happy to help you with this service\n"
+"                forever."
+msgstr ""
+
+#: app/home/home.html:591
+msgid ""
+"We won’t speak the filmy dialogue ‘ek bar jo maine\n"
+"            commitment kar di…’.\n"
+"            But yes, We are team of word, team of actions!\n"
+"            We understand that, It’s our words that connects us with you. We\n"
+"            know the value of words…!\n"
+"            We promise to fulfill the promises that we made..! come and\n"
+"            experience it, We bet you will believe it..!"
+msgstr ""
+
+#: app/contactUs/contactUs.html:10
+msgid "We're here to help with any questions or comments. If you just want to say hi, that's cool too."
+msgstr ""
+
+#: app/caterers/caterers.html:906
+#: app/weddinghall/weddinghall.html:18
+msgid "Wedding Hall <span class=\"circle-icon\"><i class=\"icon-search-list-weddingHall\"></i></span>"
+msgstr ""
+
+#: app/layout/sidebar.html:38
+#: app/layout/sidebar.html:88
+msgid "Wedding Planer"
+msgstr ""
+
+#: app/profile/profile.html:251
+#: app/registration/registration.html:753
+msgid "Weight"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:187
+msgid "Weight :"
+msgstr ""
+
+#: app/general/faq.html:355
+msgid "What is Refer friends?"
+msgstr ""
+
+#: app/general/faq.html:293
+msgid "What is Request Photo? Or What if any profile does not have photo, How to request it?"
+msgstr ""
+
+#: app/general/faq.html:374
+msgid "What is Send Interest?"
+msgstr ""
+
+#: app/general/faq.html:309
+msgid "What is advanced search?"
+msgstr ""
+
+#: app/general/faq.html:153
+msgid "What is contact credits?"
+msgstr ""
+
+#: app/general/faq.html:35
+msgid "What is mobile confirmation?"
+msgstr ""
+
+#: app/general/faq.html:323
+msgid "What is saved search?"
+msgstr ""
+
+#: app/home/home.html:569
+msgid ""
+"When you come across Profile, which you think can be\n"
+"                Perfect Match. Click on “Show Interest”\n"
+"                and this will send an email &amp; sms the profile."
+msgstr ""
+
+#: app/home/home.html:514
+msgid ""
+"When you come across Profile, which you think can be\n"
+"                Perfect Match.Click on “Show Interest”\n"
+"                and this will send an email &amp; sms the profile."
+msgstr ""
+
+#: app/general/faq.html:299
+msgid ""
+"When you visit any profile, if the person has not uploaded any image, a link to “Request Photo” will be\n"
+"                displayed below the photo section. By clicking that link you will be able to request the photo."
+msgstr ""
+
+#: app/profile/profile.html:456
+msgid "Working As"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:278
+msgid "Working As :"
+msgstr ""
+
+#: app/profile/profile.html:435
+#: app/registration/registration.html:824
+msgid "Working With"
+msgstr ""
+
+#: app/viewprofile/viewprofile.html:271
+msgid "Working With :"
+msgstr ""
+
+#: app/registration/registration.html:850
+msgid "Working as"
+msgstr ""
+
+#: app/home/home.html:788
+msgid ""
+"Wow we could help you find the missing piece of your\n"
+"                life!!\n"
+"                What would be more pleasure than being part of your celebration!\n"
+"                Gift yourself by Sharing your happiness with us! Share your\n"
+"                marriage experience and accept our token of\n"
+"                joy and blessing."
+msgstr ""
+
+#: app/components/profileViewCard/profileViewCard.html:138
+#: app/viewprofile/viewprofile.html:532
+msgid "Wrong Contact Details"
+msgstr ""
+
+#: app/profile/profile.html:1056
+#: app/profile/profile.html:300
+#: app/registration/registration.html:1487
+#: app/registration/registration.html:910
+#: app/search/search.html:229
+#: app/search/search.html:248
+msgid "Yes"
+msgstr ""
+
+#: app/general/faq.html:107
+msgid ""
+"Yes you can use same mobile number for both the registrations.\n"
+"                We will suggest to use different mobile numbers for each registration, because we send notification on\n"
+"                registered mobile number. IF you user same number for multiple account, will receive notifications for\n"
+"                both accounts on same mobile."
+msgstr ""
+
+#: app/general/faq.html:269
+msgid ""
+"Yes, it is possible, to do so please call us on 7218701870 / 7722090227. You can also send a request\n"
+"                from “Contact Us” page."
+msgstr ""
+
+#: app/payment/payment.html:177
+msgid "You are on free plan. Go ahead and buy the one suites you."
+msgstr ""
+
+#: app/home/home.html:454
+msgid "You are only four steps away from your Perfect Match"
+msgstr ""
+
+#: app/registration/registration_success.html:78
+msgid "You can  resend password for 3 times"
+msgstr ""
+
+#: app/general/faq.html:398
+msgid ""
+"You can change it from My Profile page. But when you change the number it will send you a OTP PIN to\n"
+"                verify your number. After verifying mobile it will update it."
+msgstr ""
+
+#: app/refer-your-friends/refer-your-friends.html:10
+msgid "You can earn money on each payment they make. Please <a href=\"/contactUs\" translate=\"\"> Contact Us</a> for more info."
+msgstr ""
+
+#: app/general/faq.html:73
+msgid ""
+"You can find links to get username and password on Login page. Click on Forgot Password and provide your\n"
+"                Username to receive password on your registered mobile. To receive username click on Forgot username and\n"
+"                provide your mobile number. We will send you the username on your registered mobile number."
+msgstr ""
+
+#: app/home/home.html:635
+#: app/home/home.html:704
+msgid "You can get help from our expert Counsellor"
+msgstr ""
+
+#: app/general/faq.html:194
+msgid ""
+"You can send the cheque/DD to lagnachiBolni office address, provided in the contact us page. Please\n"
+"                mention your registered mobile number with the cheque/DD."
+msgstr ""
+
+#: app/general/faq.html:56
+msgid ""
+"You can’t use same Email address as a username for multiple registration. But you can provide same email\n"
+"                address in Email address field for multiple accounts."
+msgstr ""
+
+#: app/dashboard/dashboard.html:88
+#: app/dashboard/dashboard.html:99
+msgid "You have"
+msgstr ""
+
+#: app/login/login.html:188
+#: app/partnerlogin/partner_login.html:198
+msgid "You have successfully Logged out."
+msgstr ""
+
+#: app/registration/registration.html:225
+msgid "You must agree with terms and conditions."
+msgstr ""
+
+#: app/registration/registration_success.html:105
+msgid "You must supply a phone number."
+msgstr ""
+
+#: app/home/home.html:672
+#: app/home/home.html:732
+msgid ""
+"You will get support from our expert mentors. They\n"
+"                know what exactly you are looking for."
+msgstr ""
+
+#: app/partnerdetails/partner_details.html:520
+msgid "Your Full Name"
+msgstr ""
+
+#: app/partner/partner_home.html:131
+#: app/refer-your-friends/refer-your-friends.html:20
+msgid "Your Name"
+msgstr ""
+
+#: app/partner/partner_home.html:145
+#: app/partnerdetails/partner_details.html:535
+msgid "Your Name should contain only characters."
+msgstr ""
+
+#: app/registration/registration_success.html:7
+msgid "Your Profile is"
+msgstr ""
+
+#: app/payment/payment.html:123
+msgid ""
+"Your last payment for Rs. {{\n"
+"                                vm.lastPayment.payment_made }} is successful."
+msgstr ""
+
+#: app/payment/payment.html:116
+msgid ""
+"Your last payment for Rs. {{\n"
+"                                vm.lastPayment.payment_made}} is failed."
+msgstr ""
+
+#: app/payment/payment.html:109
+msgid ""
+"Your last payment for Rs.{{\n"
+"                                vm.lastPayment.payment_made}} only Initiated."
+msgstr ""
+
+#: app/registration/registration.html:222
+msgid "and"
+msgstr ""
+
+#: app/dashboard/dashboard.html:89
+msgid "contact credits"
+msgstr ""
+
+#: app/payment/payment.html:25
+msgid "contacts"
+msgstr ""
+
+#: app/home/home.html:465
+#: app/home/home.html:530
+msgid ""
+"create a matrimonial profile with important details\n"
+"                i.e. age, height, caste, education,\n"
+"                profession, income, location etc."
+msgstr ""
+
+#: app/account/account.html:159
+#: app/partnerchangepassword/partnerChangePassword.html:160
+msgid "old and new password should not be same."
+msgstr ""
+
+#: app/dashboard/dashboard.html:166
+msgid "please update your photo"
+msgstr ""
+
+#: app/registration/registration.html:223
+msgid "privacy policy"
+msgstr ""
+
+#: app/dashboard/dashboard.html:100
+msgid "show interests"
+msgstr ""
+
+#: app/registration/registration.html:220
+msgid ""
+"terms &amp;\n"
+"                                                 conditions"
+msgstr ""
+
+#: app/dashboard/dashboard.html:136
+msgid "users connected to you"
+msgstr ""
+
+#: app/dashboard/dashboard.html:120
+msgid "users visited your profile"
+msgstr ""
+
+#: app/registration/registration_success.html:52
+msgid "{{'Family Details &nbsp;' | translate}}"
+msgstr ""
+
+#: app/profile/profile.html:159
+msgid "{{formDateOfBirth.bday.$error}}12 Hour Birth Time"
+msgstr ""
+
+#: app/listview/listview.html:5
+msgid "{{vm.displayname}} - {{vm.profileListData.length}} match found"
+msgstr ""
+
+#: app/search/search.html:304
+msgid "{{vm.totalSearchCount}} matches found"
+msgstr ""
+
+#: app/partnerdashboard/partner_dashboard.html:72
+msgid "आर्थिक लाभ कमवा !!"
+msgstr ""
+
+#: app/partner/partner_home.html:102
+msgid "आर्थिक व्यवहारातील काही भाग"
+msgstr ""
+
+#: app/partner/partner_home.html:100
+msgid "मग आजच LagnachiBolni.comचे पार्टनर व्हा!"
+msgstr ""
+
+#: app/home/home.html:9
+#: app/layout/ht-top-nav.html:14
+#: app/layout/ht-top-nav.html:25
+#: app/layout/ht-top-nav.html:42
+#: app/layout/ht-top-nav.html:53
+msgid "मराठी"
+msgstr ""
+
+#: app/partner/partner_home.html:97
+msgid "लग्नासाठी आपल्या परिचितांची नावे नोंदवा,"
+msgstr ""
+
+#: app/partner/partner_home.html:98
+msgid "सोबतच चांगला आर्थिक लाभही कमवा!"
+msgstr ""

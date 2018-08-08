@@ -1,0 +1,12 @@
+<div class="container-fluid inbox-container" ng-click="closeLeftMenuMobile()"  >
+  <div  infinite-scroll="vm.getNextData()">
+    <div class="row">
+      <div class="row payment-plans-list">
+        <p class="plans-header" translate>{{vm.displayname}} - {{vm.profileListData.length}} match found</p>
+        <div ng-repeat ="profile in vm.profileListData" >
+          <lb-search-result set-id="profile_{{$index}}" result-type="dashboard" profile-data="profile"></lb-search-result>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

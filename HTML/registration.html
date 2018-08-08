@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <title>LagnachiBolni.com</title>
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+  <div>
+    <div ng-include src="'partials/header.html'"></div>
+    <main>
+
+      <div class="container-fluid reg-container registration-page">
+
+        <div class="reg-flow-wrapper">
+          <div class="reg-flow registration-wizard">
+
+            <md-content>
+
+              <md-tabs md-selected="selectedIndex" md-dynamic-height md-border-bottom>
+
+                <md-tab>
+                  <md-tab-label>
+                    <span class="reg-state">Register</span>
+                    <div class="reg-icon-wrap">
+                      <div class="reg-icon">
+                        <i class="icon-user"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap">
+                      <form name="formStep0" novalidate class="wizard-form formStep0">
+                        <div class="row no-margin">
+                          <div class="col-12">
+                            <h1 class="wizard-heading-title">Register</h1>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="col-sm-6">
+                              <div class="select">
+                                <md-input-container ng-model="username">
+                                  <label>User Name/Email</label>
+                                  <input type="text" autofocus  >
+                                </md-input-container>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container ng-model="firstName">
+                                <label>First Name</label>
+                                <input type="text"  >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container ng-model="lastName">
+                                <label>Last Name</label>
+                                <input type="text"  >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 no-margin-bottom">
+                            <md-radio-group class="radio-wrap" ng-model="brideGroom">
+                              <md-radio-button class="radio-button" value="Bride" class="md-primary">Bride</md-radio-button>
+                              <md-radio-button class="radio-button" value="Groom">Groom</md-radio-button>
+                            </md-radio-group>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <div class="date-pick">
+                                <md-datepicker md-current-view="month" ng-model="myDate" md-placeholder="Date of Birth" md-open-on-focus ng-model="dob"></md-datepicker>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container ng-model="mobile">
+                                <label>Mobile Number</label>
+                                <input type="text"  >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Caste</label>
+                                <md-select ng-model="caste" >
+                                  <md-option>A</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="button-section">
+                              <md-button class="md-primary registration-btn" ng-transclude="" aria-label="finish" ng-click="nextStep(1)">Create Profile</md-button>
+                              <br/>
+                              <br />
+                              <img src="images/floral.png">
+                            </div>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+
+                <md-tab index="1" id="basic" md-on-select="selectTab(1)">
+                  <md-tab-label>
+                    <span class="reg-state">Basic Details</span>
+                    <div class="reg-icon-wrap">
+                      <div class="reg-icon">
+                        <i class="icon-photo-frame"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap">
+                      <form name="formStep1" novalidate class="wizard-form formStep1">
+                        <div class="row no-margin">
+                          <div class="col-12">
+                            <h3 class="wizard-heading-title">Tell us about your details</h3>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>City</label>
+                                <md-select ng-model="city">
+                                  <md-option value="Single">A</md-option>
+                                  <md-option value="Married">B</md-option>
+                                  <md-option value="Divorcee">C</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Education Level</label>
+                                <md-select ng-model="education">
+                                  <md-option value="Single">A</md-option>
+                                  <md-option value="Married">B</md-option>
+                                  <md-option value="Divorcee">C</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Marital Status</label>
+                                <md-select ng-model="status">
+                                  <md-option value="Single">Single</md-option>
+                                  <md-option value="Married">Married</md-option>
+                                  <md-option value="Divorcee">Divorcee</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Education Level</label>
+                                <md-select ng-model="educationLevel">
+                                  <md-option ng-repeat="educationLevel in educationLevels" value="{{educationLevel}}">{{educationLevel}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Height (cms)</label>
+                                <md-select ng-model="height">
+                                  <md-option ng-repeat="height in heights" value="{{height}}">{{height}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Degree</label>
+                                <md-select ng-model="educationDegree">
+                                  <md-option ng-repeat="educationDegree in educationDegrees" value="{{educationDegree}}">{{educationDegree}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Annual Income (Rs)</label>
+                                <md-select ng-model="income">
+                                  <md-option ng-repeat="income in annualIncome" value="{{income}}">{{income}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="button-section">
+                              <md-button class="md-primary back-btn" ng-click="nextStep(0)" ng-hide="selectedIndex == 0" aria-hidden="false"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</md-button>
+                              <md-button class="md-primary registration-btn" ng-transclude="" aria-label="finish" ng-click="nextStep(2)">Next</md-button>
+                              <br>
+                              <br>
+                              <img src="images/floral.png">
+                            </div>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+
+                <md-tab>
+                  <md-tab-label>
+                    <span class="reg-state">Personal Details - 1</span>
+                    <div class="reg-icon-wrap">
+                      <div class="reg-icon">
+                        <i class="icon-male"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap2">
+                      <form name="formStep2" novalidate class="wizard-form formStep2">
+                        <div class="row no-margin">
+                          <div>
+                            <h3 class="wizard-heading-title">Tell us about your personal details</h3>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Current Address</div>
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="select">
+                                    <md-input-container>
+                                      <label>Address 1</label>
+                                      <input type="text" >
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="select">
+                                    <md-input-container>
+                                      <label>Address 2</label>
+                                      <input type="text" >
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="select select-component">
+                                    <md-input-container>
+                                      <label>Pin</label>
+                                      <md-select ng-model="pin">
+                                        <md-option ng-repeat="pin in pins" value="{{pin}}">{{pin}}</md-option>
+                                      </md-select>
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+                                Native Address is different than current Address
+                              </md-checkbox>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Native Address</div>
+                            <div class="panel-body">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="select">
+                                    <md-input-container>
+                                      <label>Address 1</label>
+                                      <input type="text" >
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="select">
+                                    <md-input-container>
+                                      <label>Address 1</label>
+                                      <input type="text" >
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="select select-component">
+                                    <md-input-container>
+                                      <label>Pin</label>
+                                      <md-select ng-model="pin">
+                                        <md-option ng-repeat="pin in pins" value="{{pin}}">{{pin}}</md-option>
+                                      </md-select>
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="">
+                            <div class="col-sm-4">
+                              <div class="select">
+                                <md-input-container>
+                                  <label>Email Address</label>
+                                  <input type="text" >
+                                </md-input-container>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="select select-component">
+                                <md-input-container>
+                                  <label>HH/MM , AM/PM</label>
+                                  <md-select ng-model="birth">
+                                    <md-option value="HH">HH</md-option>
+                                    <md-option value="MM">MM</md-option>
+                                    <md-option value="SS">SS</md-option>
+                                  </md-select>
+                                </md-input-container>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="select">
+                                <md-input-container>
+                                  <label>Birth Place</label>
+                                  <input type="text" >
+                                </md-input-container>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12">
+                            <div class="button-section">
+                              <md-button class="md-primary back-btn" ng-click="nextStep(1)" ng-hide="selectedIndex == 0" aria-hidden="false"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</md-button>
+                              <md-button class="md-primary registration-btn" ng-transclude="" aria-label="finish" ng-click="nextStep(3)">Next</md-button>
+                              <br>
+                              <br>
+                              <img src="images/floral.png">
+                            </div>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+
+                <md-tab index="3">
+                  <md-tab-label>
+                    <span class="reg-state">Personal Details - 2</span>
+                    <div class="reg-icon-wrap">
+                      <div class="reg-icon">
+                        <i class="icon-male"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap">
+                      <form name="formStep3" novalidate class="wizard-form formStep3">
+                        <div class="row no-margin">
+                          <div>
+                            <h3 class="wizard-heading-title">Tell us about your personal details</h3>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Physic</label>
+                                <md-select ng-model="demo">
+                                  <md-option ng-repeat="demo in demos" value="{{demo}}">{{demo}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Weight</label>
+                                <md-select ng-model="weight">
+                                  <md-option ng-repeat="weight in weights" value="{{weight}}">{{weight}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div>
+                              <div class="col-sm-6 no-buffer">
+                                <div class="select ">
+                                  <md-input-container>
+                                    <label>Complexion</label>
+                                    <md-select ng-model="complexion">
+                                      <md-option ng-repeat="complexion in demos1" value="{{complexion}}">{{complexion}}</md-option>
+                                    </md-select>
+                                  </md-input-container>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Working with</label>
+                                <md-select ng-model="work">
+                                  <md-option ng-repeat="work in works" value="{{work}}">{{work}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Working As</label>
+                                <md-select ng-model="work">
+                                  <md-option ng-repeat="workasdata in workas" value="{{workasdata}}">{{workasdata}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <label class="label-text small-font radio-label">Physically Disabled</label>
+                            <br>
+                            <md-radio-group class="radio-wrap" ng-model="data.physicallyDisabled">
+                              <md-radio-button class="radio-button" value="Yes" class="md-primary">Yes</md-radio-button>
+                              <md-radio-button class="radio-button" value="No"> No</md-radio-button>
+                            </md-radio-group>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select ">
+                              <md-input-container>
+                                <label>Blood Group</label>
+                                <md-select ng-model="blodgroup">
+                                  <md-option ng-repeat="blodgroup in blodgroups" value="{{blodgroup}}">{{blodgroup}}</md-option>
+                                </md-select>
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="button-section">
+                              <md-button class="md-primary back-btn" ng-click="nextStep(2)" ng-hide="selectedIndex == 0" aria-hidden="false"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</md-button>
+                              <md-button class="md-primary registration-btn" ng-transclude="" aria-label="finish" ng-click="nextStep(4)">Next</md-button>
+                              <br>
+                              <br>
+                              <img src="images/floral.png">
+                            </div>
+
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+
+                <md-tab>
+                  <md-tab-label>
+                    <span class="reg-state">Photo Upload</span>
+                    <div class="reg-icon-wrap">
+                      <div class="reg-icon">
+                        <i class="icon-photo-upload"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap2">
+                      <form name="formStep4" novalidate class="wizard-form">
+                        <div class="row no-margin">
+                          <div>
+                            <h3 class="wizard-heading-title">Upload your photos</h3>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="upload-content">
+                              <h1 class="upload-title">ADD YOUR PICTURE</h1>
+                              <span class="below-text">Click to upload photos from your computer</span>
+                              <br>
+                              <br>
+                              <button class="upload-button">Upload</button>
+                              <br>
+                              <p>or</p>
+                              <div class="drag-box">Drag photos here from computer</div>
+                              <br>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 uploaded-images">
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <div class="img-box">
+                                <i class="fa fa-times-circle close-img"></i>
+                                <img src="images/cuty.jpg">
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <div class="img-box">
+                                <i class="fa fa-times-circle close-img"></i>
+                                <img src="images/cuty.jpg">
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <div class="img-box">
+                                <i class="fa fa-times-circle close-img"></i>
+                                <img src="images/cuty.jpg">
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <div class="img-box">
+                                <i class="fa fa-times-circle close-img"></i>
+                                <img src="images/cuty.jpg">
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <div class="img-box">
+                                <i class="fa fa-times-circle close-img"></i>
+                                <img src="images/cuty.jpg">
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <div class="img-box">
+                                <i class="fa fa-times-circle close-img"></i>
+                                <img src="images/cuty.jpg">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="button-section">
+                              <md-button class="md-primary back-btn" ng-click="nextStep(3)" ng-hide="selectedIndex == 0" aria-hidden="false"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</md-button>
+                              <md-button class="md-primary registration-btn" ng-transclude="" aria-label="finish" ng-click="nextStep(5)">Next</md-button>
+                              <br>
+                              <br>
+                              <img src="images/floral.png">
+                            </div>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+
+                <md-tab>
+                  <md-tab-label>
+                    <span class="reg-state">Family Details</span>
+                    <div class="reg-icon-wrap">
+                      <div class="reg-icon">
+                        <i class="icon-family"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap2">
+                      <form name="formStep5" novalidate class="formStep5 wizard-form">
+                        <div class="row no-margin">
+                          <div>
+                            <h3 class="wizard-heading-title">Tell us about your family</h3>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div class="select">
+                                <md-input-container>
+                                  <label>Father Name</label>
+                                  <input type="text" >
+                                </md-input-container>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="select">
+                                <md-input-container>
+                                  <label>Father Occupation</label>
+                                  <input type="text" >
+                                </md-input-container>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div>
+                              <div class="col-sm-4">
+                                <div class="select">
+                                  <md-input-container>
+                                    <label>Mother Name</label>
+                                    <input type="text" >
+                                  </md-input-container>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="select">
+                                  <md-input-container>
+                                    <label>Mother Occupation</label>
+                                    <input type="text" >
+                                  </md-input-container>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">Sister Details <span class="panel-buttons"><a href="#"> <i class="icon-plus-circle"></i></a><a href="#"> <i class="icon-info"></i></a></span></div>
+                              <div class="panel-body">
+                                <div class=" col-sm-4">
+                                  <div class="select">
+                                    <md-input-container>
+                                      <label>Name</label>
+                                      <input type="text" >
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class=" col-sm-4">
+                                  <div class="select select-component">
+                                    <md-input-container>
+                                      <label>Marital Status</label>
+                                      <md-select ng-model="status">
+                                        <md-option value="Single">Single</md-option>
+                                        <md-option value="Married">Married</md-option>
+                                        <md-option value="Divorcee">Divorcee</md-option>
+                                      </md-select>
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class=" col-sm-4">
+                                  <div class="date-pick">
+                                    <md-datepicker md-current-view="month" ng-model="myDate" md-placeholder="Date of Birth" md-open-on-focus></md-datepicker>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">Brother Details <span class="panel-buttons"><a href="#"> <i class="icon-plus-circle"></i></a><a href="#"> <i class="icon-info"></i></a></span></div>
+                              <div class="panel-body">
+                                <div class=" col-sm-4">
+                                  <div class="select">
+                                    <md-input-container>
+                                      <label>Name</label>
+                                      <input type="text" >
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class=" col-sm-4">
+                                  <div class="select select-component">
+                                    <md-input-container>
+                                      <label>Marital Status</label>
+                                      <md-select ng-model="status">
+                                        <md-option value="Single">Single</md-option>
+                                        <md-option value="Married">Married</md-option>
+                                        <md-option value="Divorcee">Divorcee</md-option>
+                                      </md-select>
+                                    </md-input-container>
+                                  </div>
+                                </div>
+                                <div class=" col-sm-4">
+                                  <div class="date-pick">
+                                    <md-datepicker md-current-view="month" ng-model="myDate" md-placeholder="Date of Birth" md-open-on-focus></md-datepicker>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div>
+                              <div class=" col-sm-4">
+                                <div class="select">
+                                  <md-input-container>
+                                    <label>Mama Surname</label>
+                                    <input type="text" >
+                                  </md-input-container>
+                                </div>
+                              </div>
+                              <div class=" col-sm-4">
+                                <div class="select">
+                                  <md-input-container>
+                                    <label>Relative Surname</label>
+                                    <input type="text" >
+                                  </md-input-container>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="button-section">
+                              <md-button class="md-primary back-btn" ng-click="nextStep(4)" ng-hide="selectedIndex == 0" aria-hidden="false"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</md-button>
+                              <md-button class="md-primary registration-btn" ng-transclude="" aria-label="finish" ng-click="nextStep(6)">Next</md-button>
+                              <br>
+                              <br>
+                              <img src="images/floral.png">
+                            </div>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+
+                <md-tab>
+                  <md-tab-label>
+                    <span class="reg-state">Astro Details</span>
+                    <div class="reg-icon-wrap no-divider">
+                      <div class="reg-icon">
+                        <i class="icon-astro"></i>
+                      </div>
+                    </div>
+                  </md-tab-label>
+                  <md-tab-body>
+                    <div class="reg-form-wrap">
+                      <form name="formStep6" novalidate class="formStep6 wizard-form">
+                        <div class="row no-margin">
+                          <div>
+                            <h3 class="wizard-heading-title">Tell us about your astro details</h3>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Gotra</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Gan</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Devak</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Nadi</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Rashi</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Charan</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="select">
+                              <md-input-container>
+                                <label>Nakshtra</label>
+                                <input type="text" >
+                              </md-input-container>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <label class="label-text small-font radio-label">Mangal</label>
+                            <br>
+                            <md-radio-group class="radio-wrap">
+                              <md-radio-button class="radio-button" value="Yes" class="md-primary">Yes</md-radio-button>
+                              <md-radio-button class="radio-button" value="No"> No</md-radio-button>
+                            </md-radio-group>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="button-section">
+                              <md-button class="md-primary back-btn" ng-click="nextStep(5)" ng-hide="selectedIndex == 0" aria-hidden="false"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</md-button>
+                              <md-button class="md-primary registration-btn" ng-click="nextStep(7)">Save</md-button>
+                              <br>
+                              <br>
+                              <img src="images/floral.png">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </md-tab-body>
+                </md-tab>
+              </md-tabs>
+
+            </md-content>
+          </div>
+
+          <!-- <div class="visible-xs floating-buttons" ng-hide="hideFloatingBtns">
+            <div ng-Show="isSelected(0)">
+            <md-button class="md-primary create-btn" ng-click="nextStep(selectedIndex + 1)">Create Profile</md-button>
+            </div>
+            <div ng-Show="isSelected(1) || isSelected(2) || isSelected(3) || isSelected(4) || isSelected(5)">
+              <md-button class="md-primary back-btn" ng-click="nextStep(selectedIndex-1)"> <i class="fa fa-arrow-left" ></i> Back</md-button>
+              <md-button class="md-primary next-btn" ng-click="nextStep(selectedIndex + 1)">Next</md-button>
+            </div>
+            <div ng-Show="isSelected(6)">
+              <md-button class="md-primary back-btn" ng-click="nextStep(selectedIndex-1)"> <i class="fa fa-arrow-left" ></i> Back</md-button>
+              <md-button class="md-primary next-btn" >Save</md-button>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+
+    </main>
+
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 visible-md visible-lg">
+              <div class="logo-footer">
+                <a href="#"><img src="images/logo.png" height="155" width="267" alt="LagnachiBolni"></a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="cast" class="fake-anchor" property="" content="">
+                <a href="#cast" class="link-title">Castes We Serve</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">96kuli-Maratha</a></li>
+                    <li><a href="#">MarathaDeshmukh</a></li>
+                    <li><a href="#">Maratha</a></li>
+                    <li><a href="#">Agri</a></li>
+                    <li><a href="#">Arya-Vysya</a></li>
+                    <li><a href="#">Aryasamaj</a></li>
+                    <li><a href="#">Beldar</a></li>
+                    <li><a href="#">Bhandari</a></li>
+                    <li><a href="#">Bhavsar</a></li>
+                    <li><a href="#">Bhavsar-Kshatriya</a></li>
+                    <li><a href="#">Brahmin</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <nav class="footer-nav">
+                <meta id="city" class="fake-anchor" property="" content="">
+                <a href="#city" class="link-title">Cities</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Ahmednagar</a></li>
+                    <li><a href="#">Aurangabad</a></li>
+                    <li><a href="#">Jalgaon</a></li>
+                    <li><a href="#">Kolhapur</a></li>
+                    <li><a href="#">Thane</a></li>
+                    <li><a href="#">Nagpur</a></li>
+                    <li><a href="#">Nashik</a></li>
+                    <li><a href="#">Sangli</a></li>
+                    <li><a href="#">Solapur</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="help" class="fake-anchor" property="" content="">
+                <a href="#help" class="link-title">Help &amp; Support</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Membership</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <nav class="footer-nav">
+                <meta id="otherservice" class="fake-anchor" property="" content="">
+                <a href="#otherservice" class="link-title">Other Services</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a href="#">Wedding Hall</a></li>
+                    <li><a href="#">Caterers</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-3 col-sm-4 contact-detail">
+              <strong class="footer-title">Follow us on</strong>
+              <ul class="social-share">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+              <strong class="footer-title helpline">Helpline Number</strong>
+              <a href="tel:+917722090227" class="tel">+91-7722090227</a>
+              <strong class="footer-title">Support Team</strong>
+              <a class="email" href="mailto:care@lagnachibolni.com">care@lagnachibolni.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container-fluid">
+          Copyright &copy; 2011-2016 <a href="#">LagnachiBolni.com</a>.
+          <br>All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+
+      <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <!-- Angular Material requires Angular.js Libraries -->
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+      <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+      <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+      <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+      <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+      <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+      <!-- Angular Material Library -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+      <script src="js/scrollRevealAnimations.js"></script>
+      <script src="js/app.js"></script>
+
+</body>
+
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

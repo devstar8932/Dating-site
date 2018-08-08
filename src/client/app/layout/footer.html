@@ -1,0 +1,178 @@
+<!-- <div style="padding-top: 0px; overflow:hidden"> class="chrome-gap-correction" -->
+<div ng-controller="FooterController as vm">
+<md-toolbar  class="footer-wrap">
+  <footer id="footer" >
+      <div class="footer-top" ng-show="isFullFooter">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 visible-md visible-lg">
+              <div class="logo-footer">
+                <a href="#"><img src="images/main_images/logo.png" height="155" width="267" alt="LagnachiBolni"></a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="cast" class="fake-anchor" property="" content="">
+                <a href="#cast" class="link-title" translate>Castes We Serve</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a ng-click="vm.redirectTOCaste('96kuli-Maratha')" translate>96kuli-Maratha</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('MarathaDeshmukh')" translate>MarathaDeshmukh</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Maratha')" translate>Maratha</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Agri')" translate>Agri</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Arya-Vysya')" translate>Arya-Vysya</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Aryasamaj')" translate>Aryasamaj</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Beldar')" translate>Beldar</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Bhandari')" translate>Bhandari</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Bhavsar')" translate>Bhavsar</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Bhavsar-Kshatriya')" translate>Bhavsar-Kshatriya</a></li>
+                    <li><a ng-click="vm.redirectTOCaste('Brahmin')" translate>Brahmin</a></li>
+                    <li><a data-toggle="modal" data-target="#casteModal" class="view-link" translate>View All</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <nav class="footer-nav">
+                <meta id="city" class="fake-anchor" property="" content="">
+                <a href="#city" class="link-title" translate>Cities</a>
+                <div class="link-wrap">
+                  <ul>
+                    <li><a ng-click=" vm.redirectTOCity('Pune')" translate>Pune</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Mumbai')" translate>Mumbai</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Ahmednagar')" translate>Ahmednagar</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Aurangabad')" translate>Aurangabad</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Jalgaon')" translate>Jalgaon</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Kolhapur')" translate>Kolhapur</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Thane')" translate>Thane</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Nagpur')" translate>Nagpur</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Nashik')" translate>Nashik</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Sangli')" translate>Sangli</a></li>
+                    <li><a ng-click=" vm.redirectTOCity('Solapur')" translate>Solapur</a></li>
+                     <li><a href="" class="view-link" data-toggle="modal" data-target="#cityModal" translate>View All</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 col-sm-3">
+              <nav class="footer-nav">
+                <meta id="help" class="fake-anchor" property="" content="">
+                <a href="#help" class="link-title" translate>Help &amp; Support</a>
+                <div class="link-wrap">
+                  <ul>
+                    <!--<li><a href="/aboutUs" translate>About Us</a></li>-->
+                    <li><a href="/contactUs" translate>Contact Us</a></li>
+                    <!--<li><a href="#">Feedback</a></li>-->
+                    <li><a href="/faq" translate>FAQs</a></li>
+                    <!--<li><a href="#" translate>Safety Tips</a></li>-->
+                    <li><a href="/terms" translate>Terms &amp; Conditions</a></li>
+                    <!--<li><a href="/terms" translate>Privacy Policy</a></li>-->
+                    <li><a href="/payment" translate>Membership</a></li>
+                    <!--<li><a href="/events" translate>Events</a></li>-->
+                  </ul>
+                </div>
+              </nav>
+              <a href="https://heapanalytics.com/?utm_source=badge"><img
+                style="width:108px;height:41px"
+                src="images/badgeLight.png"
+                alt="Heap | Mobile and Web Analytics"/></a>
+              <!--<nav class="footer-nav">-->
+                <!--<meta id="otherservice" class="fake-anchor" property="" content="">-->
+                <!--<a href="#otherservice" class="link-title">{{'Other Services' | translate}}</a>-->
+                <!--<div class="link-wrap">-->
+                  <!--<ul>-->
+                    <!--<li><a href="/weddinghall">Wedding Hall</a></li>-->
+                    <!--<li><a href="/caterers">Caterers</a></li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</nav>-->
+            </div>
+            <div class="col-md-3 col-sm-4 contact-detail">
+              <strong class="footer-title" translate>Follow us on</strong>
+              <ul class="social-share">
+                <li><a target="_blank"
+                       href="https://www.facebook.com/marathilagnachibolni/"><i
+                  class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank"
+                       href="https://twitter.com/lagnachibolani?lang=en"><i
+                  class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank"
+                       href="https://plus.google.com/+Lagnachibolni"><i
+                  class="fa fa-google-plus"></i></a></li>
+              </ul>
+              <strong class="footer-title helpline" translate>Helpline Number</strong>
+              <a href="tel:+917722090227" class="tel" translate>+91-7722090227</a>
+              <strong class="footer-title" translate>Support Team</strong>
+              <a class="email" href="mailto:care@lagnachibolni.com">care@lagnachibolni.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container-fluid" translate>
+          Copyright &copy; 2011-2016 <a href="#">LagnachiBolni.com</a>. <br>All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    </md-toolbar>
+    <!-- </div> -->
+
+ <!-- /////////////////////////// -->
+    <div class="modal fade" id="cityModal" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <form id="myForm" name="myForm" novalidate>
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" translate>We provide services in these cities. . </h4>
+            </div>
+            <div class="modal-body">
+
+              <div class="row row-buffer">
+                <div class="col-md-3 col-xs-6" ng-repeat ="city in vm.cities">
+                  <nav class="footer-nav">
+                     <div class="link-popup">
+                  <ul>
+                    <li><a  ng-click="vm.redirectTOCity(city.key)" ng-if="city !='Other'" >{{city.value}}</a></li>
+                   </ul></div>
+                   </nav>
+
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default " data-dismiss="modal" translate>Cancel</button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="casteModal" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <form id="myForm" name="myForm" novalidate>
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" translate>Find your soulmate in any caste.</h4>
+            </div>
+            <div class="modal-body">
+
+              <div class="row row-buffer">
+                <div class="col-md-3 col-xs-6" ng-repeat ="caste in vm.casts">
+
+                     <nav class="footer-nav">
+                     <div class="link-popup">
+                  <ul>
+                    <li><a  ng-click="vm.redirectTOCaste(caste.key)"  >{{caste.value}}</a></li>
+                   </ul></div>
+                   </nav>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default " data-dismiss="modal" translate>Cancel</button>
+          </div>
+      </div>
+    </div>
+    </div>
+   </div>

@@ -1,0 +1,560 @@
+<div class="container-fluid profile-container" ng-click="closeLeftMenuMobile()">
+     <!-- <button class="btn btn-primary row-buffer-lg " ng-click="vm.goBack()" >
+                Back
+                        </button> -->
+<!-- <div class="row text-right" >
+    <div class="button-section">
+      <span aria-label= "finish" class="pull-left btn-circle" ng-click="vm.goBack()">
+        <i style="color:white;" class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+      </span>
+    </div>
+
+</div -->
+  <div class="row">
+    <h1 class="view-profile-title" translate>View Profile - {{vm.profile.profile_id}} </h1>
+
+    <div class="col-md-3 vw-left-container clearfix" >
+      <div class="vw-profile-image row-buffer-lg">
+        <div class="row row-buffer-lg" ng-click="vm.previewImage()" ng-if="vm.profile.profile_image_url !=null">
+          <img src={{vm.profile.profile_image_url}} class="img-circle main-profile-image" alt="Display Picture">
+        </div>
+        <div class="row row-buffer-lg">
+          <a href="" ng-click="vm.sendPhotoRequest()" translate>Request Photo</a>
+        </div>
+        <div class="verification-wrapper hidden-xs hidden-sm row-buffer-lg">
+          <div class="row verified-title">
+            <h4 translate>Verified ID</h4>
+            <hr/>
+          </div>
+
+          <div class="row verified-email row-buffer">
+            <span translate>Email address</span><span ng-if="vm.profile.confirm_email == 'Confirmed'" class="verified-status" translate> <i class="icon-checkmark" aria-hidden="true" ></i>&nbsp;Verified</span>
+            <span ng-if="vm.profile.confirm_email != 'Confirmed'" class="verified-status" translate> <i
+                                class="icon-cancel-circle"
+                                aria-hidden="true" ></i>&nbsp;Not Verified</span>
+          </div>
+          <div class="row verified-number row-buffer">
+            <span translate>Mobile Number</span><span ng-if="vm.profile.confirm_mobile == 'yes'" class="verified-status" translate> <i class="icon-checkmark"
+                                                        aria-hidden="true"></i>&nbsp;Verified</span>
+            <span ng-if="vm.profile.confirm_mobile != 'yes'" class="verified-status" translate> <i
+                                class="icon-cancel-circle"
+                                aria-hidden="true"></i>&nbsp;Not Verified</span>
+          </div>
+          <div class="row verified-completion row-buffer">
+            <span class="completion-percentage">{{vm.profile.complete_percentage}}%
+                              </span><span translate>&nbsp; Profile Completion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vw-profile-greeting">
+        <div class="row row-buffer-lg">
+          <h3 class="intro-title" translate>Hey, I'm {{vm.profile.firstname}} {{vm.profile.lastname}}</h3>
+          <a href="#" class="intro-report" data-toggle="modal" data-target="#reportModal" >
+          <i class="icon-flag" aria-hidden="true"></i>
+          <span ng-show="!vm.flagObject.isPresent" translate>&nbsp;&nbsp;Report this user </span>
+           <span ng-show="vm.flagObject.isPresent">&nbsp;&nbsp;{{vm.flagObject.message}}</span> </a>
+        </div>
+        <div class="row row-buffer">
+          <label class="intro-label" translate>Age </label> <span class="intro-label-content">{{vm.profile.age}}, {{vm.profile.caste}}, {{vm.profile.marital_status}}</span>
+        </div>
+        <div class="row row-buffer">
+          <label class="intro-label" translate>Height: </label> <span class="intro-label-content">{{vm.profile.height}}</span>
+          <label class="intro-label" translate>, From -</label> <span class="intro-label-content">{{vm.profile.current_place_residence}}</span>
+        </div>
+        <!--<div class="row row-buffer">-->
+        <!--<span class="intro-label-content">Undergraduate in Arts</span>-->
+        <!--</div>-->
+        <div class="row row-buffer">
+          <label class="intro-label" translate>DOB:</label> <span class="intro-label-content">{{vm.profile.birth_date}}</span>
+        </div>
+        <div class="row row-buffer birth-place-wrapper">
+          <label class="intro-label" translate>Birth Place:</label> <span class="intro-label-content">{{vm.profile.birth_place}}</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-9">
+      <div id="intro" class="intro row">
+        <div class="col-sm-6 left-column mobile-side-view custom-hide">
+          <div class="row row-buffer-lg">
+            <h3 class="intro-title" translate>Hey, I'm {{vm.profile.firstname}} {{vm.profile.lastname}}
+              </h3>
+            <a href="" class="intro-report" data-toggle="modal" data-target="#reportModal"><i class="icon-flag" aria-hidden="true"></i>
+              <span ng-show="!vm.flagObject.isPresent" translate>&nbsp;&nbsp;Report this user </span>
+              <span ng-show="vm.flagObject.isPresent">&nbsp;&nbsp;{{vm.flagObject.message}}</span> </a>
+          </div>
+
+          <div class="row row-buffer">
+            <span class="intro-label-content" translate>Age {{vm.profile.age}}, {{vm.profile.caste}}, {{vm.profile.marital_status}}</span>
+          </div>
+          <div class="row row-buffer">
+            <label class="intro-label" translate>Height:</label> <span class="intro-label-content">{{vm.profile.height}}</span>
+            <label class="intro-label" translate>, From -</label> <span class="intro-label-content">{{vm.profile.current_place_residence}}</span>
+          </div>
+          <!--<div class="row row-buffer">-->
+          <!--<span class="intro-label-content">Undergraduate in Arts</span>-->
+          <!--</div>-->
+          <div class="row row-buffer">
+            <label class="intro-label" translate>DOB:</label> <span class="intro-label-content">{{vm.profile.birth_date}}</span>
+            <label class="intro-label" translate>, Birth time</label> <span
+            class="intro-label-content">{{vm.profile.birth_time}}</span>
+          </div>
+          <div class="row row-buffer birth-place-wrapper">
+            <label class="intro-label" translate>Birth Place:</label> <span class="intro-label-content">{{vm.profile.birth_place}}</span>
+          </div>
+        </div>
+        <div class="verification-wrapper visible-xs visible-sm row-buffer-lg">
+          <div class="row verified-title">
+            <h4 translate>Verified ID</h4>
+            <hr/>
+          </div>
+
+          <div class="row verified-email row-buffer">
+            <span translate>Email address</span><span ng-if="vm.profile.confirm_email == 'Confirmed'" class="verified-status"> <i class="icon-checkmark" aria-hidden="true" translate></i>&nbsp;Verified</span>
+            <span ng-if="vm.profile.confirm_email != 'Confirmed'" class="verified-status" translate> <i
+                                class="icon-cancel-circle"
+                                aria-hidden="true" ></i>&nbsp;Not Verified</span>
+          </div>
+          <div class="row verified-number row-buffer">
+            <span>Mobile Number</span><span ng-if="vm.profile.confirm_mobile == 'yes'" class="verified-status" translate> <i class="icon-checkmark"
+                                                        aria-hidden="true"></i>&nbsp;Verified</span>
+            <span ng-if="vm.profile.confirm_mobile != 'yes'" class="verified-status" translate> <i
+                                class="icon-cancel-circle"
+                                aria-hidden="true"></i>&nbsp;Not Verified</span>
+          </div>
+          <div class="row verified-completion row-buffer">
+            <span class="completion-percentage">{{vm.profile.complete_percentage}}%
+                              </span><span translate>&nbsp; Profile Completion</span>
+          </div>
+        </div>
+        <div class="col-md-6 right-column vw-btn-wrapper">
+          <div>
+            <button id="contact_credit_btn" class="btn btn-primary row-buffer-lg btn-interest" ng-click="vm.contact_details(vm.profile.profile_id)" ng-show="vm.contactflag" translate>
+                            View contact details
+                        </button>
+            <button class="btn btn-primary row-buffer-lg" ng-click="vm.accepted(vm.profile.profile_id)" ng-show="vm.acceptflag" translate>Accept
+                        </button>
+          </div>
+
+          <div>
+            <button id="show_interest" class="btn btn-interest btn-secondary" ng-click="vm.show_interest(vm.profile.profile_id)" ng-show="vm.interestflag" translate>Show Interest
+                        </button>
+            <button class="btn row-buffer-lg btn-secondary" ng-click="vm.rejected(vm.profile.profile_id)" ng-show="vm.rejectflag" translate>Reject
+                        </button>
+          </div>
+          <div if="vm.showmessage" class="msg-sent">{{vm.message}}</div>
+        </div>
+        <div class="col-md-6 right-column margin-correction" ng-show="!vm.hideAddress">
+
+          <div class="row row-buffer">
+            <label class="intro-label" translate>Current Address</label>
+            <br/>
+            <span class="intro-label-content">{{vm.profile.current_address}} </span>
+          </div>
+          <div class="row row-buffer">
+            <label class="intro-label" translate>Permanent Address</label>
+            <br/>
+            <span class="intro-label-content">{{vm.profile.postal_address}}</span>
+          </div>
+          <div class="row row-buffer">
+            <label class="intro-label" translate>Mobile Number:</label> <span class="intro-label-content">{{vm.profile.phone_mobile}}</span>
+          </div>
+          <div class="row row-buffer">
+            <label class="intro-label" translate>Phone Number:</label> <span class="intro-label-content">{{vm.profile
+                        .phone_residance}}</span>
+          </div>
+        </div>
+
+      </div>
+      <div id="physique" class="row physique">
+        <div class="row row-buffer">
+          <h3 translate>Physique</h3>
+        </div>
+        <div class="col-sm-6 left-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="physique-label label-td" translate>Height :</td>
+                <td class="physique-label-content">
+                  {{vm.profile.height}}
+                </td>
+              </tr>
+              <tr>
+                <td class="physique-label label-td" translate>Weight :</td>
+                <td class="physique-label-content">
+                  {{vm.profile.weight}}
+                </td>
+              </tr>
+              <tr>
+                <td class="physique-label label-td" translate>Physically Disabled :
+                </td>
+                <td class="physique-label-content">
+                  {{vm.profile.physical_disablity}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-6 right-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="physique-label label-td" translate>Blood group :
+                </td>
+                <td class="physique-label-content">
+                  {{vm.profile.blood_group}}
+                </td>
+              </tr>
+              <tr>
+                <td class="physique-label label-td" translate>Complexion :
+                </td>
+                <td class="physique-label-content">
+                  {{vm.profile.complexion}}
+                </td>
+              </tr>
+              <!--<tr>-->
+                <!--<td class="physique-label label-td" translate>Disability Description :-->
+                <!--</td>-->
+                <!--<td class="physique-label-content">-->
+                  <!--{{vm.profile.physical_disablity_specify}}-->
+                <!--</td>-->
+              <!--</tr>-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="education" class="row education">
+        <div class="row row-buffer">
+          <h3 translate>Education and Profession Details</h3>
+        </div>
+        <div class="col-sm-6 left-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="education-label label-td" translate>Education Level :
+                </td>
+                <td class="education-label-content">
+                  {{vm.profile.edu_level}}
+                </td>
+              </tr>
+              <tr>
+                <td class="education-label label-td" translate>Degree : </td>
+                <td class="education-label-content">
+                  {{vm.profile.education}}
+                </td>
+              </tr>
+              <tr>
+                <td class="education-label label-td" translate>Annual Income :
+                </td>
+                <td class="education-label-content">
+                  {{vm.profile.income}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-6 right-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="education-label label-td" translate>Education Field :
+                </td>
+                <td class="education-label-content">
+                  {{vm.profile.edu_field}}
+                </td>
+              </tr>
+              <tr>
+                <td class="education-label label-td" translate>Working With :
+                </td>
+                <td class="education-label-content">
+                  {{vm.profile.working_with}}
+                </td>
+              </tr>
+              <tr>
+                <td class="education-label label-td" translate>Working As :
+                </td>
+                <td class="education-label-content">
+                  {{vm.profile.occupation}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="family" class="row family">
+        <div class="row row-buffer">
+          <h3 translate>Family Details</h3>
+        </div>
+        <div class="col-sm-6 left-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="family-label label-td" translate>Father's Name : </td>
+                <td class="family-label-content">
+                  {{vm.profile.fathername}}
+                </td>
+              </tr>
+              <tr>
+                <td class="family-label label-td" translate>Mother's Name : </td>
+                <td class="family-label-content">
+                  {{vm.profile.mothername}}
+                </td>
+              </tr>
+              <tr>
+                <td class="family-label label-td" translate>Mama's Name : </td>
+                <td class="family-label-content">
+                  {{vm.profile.mamaname}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-6 right-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="family-label label-td" translate>Father's Occupation :
+                </td>
+                <td class="family-label-content">
+                  {{vm.profile.father_occupation}}
+                </td>
+              </tr>
+              <tr>
+                <td class="family-label label-td" translate>Mother's Occupation :
+                </td>
+                <td class="family-label-content">
+                  {{vm.profile.mother_occupation}}
+                </td>
+              </tr>
+
+              <tr>
+                <td class="family-label label-td" translate>Relative's Surname : </td>
+                <td class="family-label-content">
+                  {{vm.profile.relatives}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="family-ext" class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading" translate>Brothers</div>
+            <div class="panel-body">
+              <div ng-repeat="brother in vm.brotherList">
+                <div class="col-sm-6 left-column">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="family-label label-td" translate>
+                          Name :
+                        </td>
+                        <td class="family-label-content">
+                          {{brother.first_name}}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-6 right-column">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="family-label label-td" translate>
+                          Marital Status :
+                        </td>
+                        <td class="family-label-content">
+                          {{brother.marital_status}}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+              <div ng-if="vm.brotherList.length ==0" translate class="no-detail-found"> Brother Details Not Available </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading" translate>Sisters</div>
+            <div class="panel-body">
+              <div ng-repeat="sister in vm.sisterList">
+                <div class="col-sm-6 left-column">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="family-label label-td" translate>
+                          Name :
+                        </td>
+                        <td class="family-label-content">
+                          {{sister.first_name}}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-6 right-column">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="family-label label-td" translate>
+                          Marital Status :
+                        </td>
+                        <td class="family-label-content">
+                          {{sister.marital_status}}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+            <div ng-if="vm.sisterList.length ==0" translate class="no-detail-found"> Sister Details Not Available
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="astro" class="row astro">
+        <div class="row row-buffer">
+          <h3 translate>Astro Details</h3>
+        </div>
+        <div class="col-sm-6 left-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="astro-label label-td" translate>Gotra : </td>
+                <td class="astro-label-content">
+                  {{vm.profile.gotra}}
+                </td>
+              </tr>
+              <tr>
+                <td class="astro-label label-td" translate>Devak : </td>
+                <td class="astro-label-content">
+                  {{vm.profile.devak}}
+                </td>
+              </tr>
+              <tr>
+                <td class="astro-label label-td" translate>Rashi : </td>
+                <td class="astro-label-content">
+                  {{vm.profile.rashi}}
+                </td>
+              </tr>
+              <tr>
+                <td class="astro-label label-td" translate>Nakshatra : </td>
+                <td class="astro-label-content">
+                  {{vm.profile.nakshatra}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-6 right-column">
+          <table>
+            <tbody>
+              <tr>
+                <td class="astro-label label-td" translate>Gan : </td>
+                <td class="astro-label-content">{{vm.profile.gan}}
+                </td>
+              </tr>
+              <tr>
+                <td class="astro-label label-td" translate>Nadi : </td>
+                <td class="astro-label-content">
+                  {{vm.profile.nadi}}
+                </td>
+              </tr>
+              <tr>
+                <td class="astro-label label-td" translate>Charan : </td>
+                <td class="family-label-content">
+                  {{vm.profile.charan}}
+                </td>
+              </tr>
+              <tr>
+                <td class="astro-label label-td" translate>Mangal : </td>
+                <td class="astro-label-content">
+                  {{vm.profile.mangal}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="previewImage" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="row text-center" style="margin-top: 10px">
+        <img id="addImage" src="{{vm.profile.image_url}}" alt="image description">
+
+      </div>
+      <div class="row text-center">
+        <div class="search-profile-btns">
+          <button type="button " class="btn btn-secondary" data-dismiss="modal" translate>Close
+                    </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /////////////////// -->
+<div class="modal fade" id="reportModal" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <form id="myForm" name="myForm" novalidate>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" translate>Report Profile</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-buffer">
+            <div class="col-md-3"> </div>
+            <div class="col-sm-12 col-md-6">
+                <md-radio-group  name="report" ng-model="vm.reportStatus" required>
+                    <md-radio-button class="radio-button" value="10" class="md-primary">
+                    <span translate>Fake User</span>
+                    </md-radio-button>
+                    <md-radio-button class="radio-button" value="20"><span translate> Bad Photo</span>
+                    </md-radio-button>
+                    <md-radio-button class="radio-button" value="30"><span translate> Already Married</span>
+                    </md-radio-button>
+                    <md-radio-button class="radio-button" value="40"><span translate> Wrong Contact Details</span>
+                    </md-radio-button>
+                  </md-radio-group>
+            </div>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-default " data-dismiss="modal" translate>Cancel</button>-->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" ng-click="vm.delete_Flag_Profile()" translate>Delete Flag</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="vm.save_Flag_Profile(vm.reportStatus)" translate>Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+<style type="text/css">
+  .md-confirm-button {
+    background: #ff5d0c  !important;;
+    font-size: 16px  !important;;
+    color: white !important;
+  }
+
+  .md-cancel-button {
+    font-size: 16px !important;
+    background-color: white !important;
+    border-color: black !important;
+    color: black !important;
+    border-radius: 3px ;
+    border: 1px solid transparent;
+  }
+</style>

@@ -1,0 +1,242 @@
+<div class="container payment-container">
+    <div class="row">
+        <div class="payment-header">
+            <h1 translate>Events</h1>
+        </div>
+        <md-content style="background-color: white;">
+            <md-tabs md-selected="vm.selectedIndex" md-dynamic-height>
+                <md-tab>
+                    <md-tab-label>
+                        <div class="tab-header">{{'Upcoming Events' |
+                            translate}} <span
+                                    class="circle-icon"><i
+                                    class="icon-mobile-card"></i></span></div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        <div layout="column" class="event-body"
+                             ng-repeat=" event in vm.UpcomingEventsData">
+                            <div flex="100" layout="row">
+                                <!--  <div flex ="25" ><h2>{{event.startDate}}</h2></div> -->
+                                <div class="event-date">
+                                    <div class="start-date">
+                                        <div class="event-weekday">
+                                            {{event.day}}
+                                        </div>
+                                        <div class="event-day">{{event.date}}
+                                        </div>
+                                        <div class="event-month">
+                                            {{event.month}}
+                                        </div>
+                                        <div
+                                                class="event-year">
+                                            {{event.year}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div flex="75"><h2>{{event.title}}</h2></div>
+                </div>
+                            <div flex="100">
+                                <p align="justify">{{event.description}}</p>
+                </div>
+                            <div layout="column" flex
+                                 layout-align="center center" layout-wrap
+                                 ng-show="event.images.length > 0">
+                                <div flex="100" class="event-container-pic">
+                                    <div flex="100" class="img-banner">
+                                        <img id="imgBanner-{{$index}}"
+                                             class="imgBanner-con"
+                                             ng-src="{{event.images[0]}}"
+                                             class="md-card-image"
+                                             alt="image caption">
+                                    </div>
+                                    <div flex="100" class="img-list">
+                                        <div class="event-img-container text-center">
+                                            <img ng-src="{{img}}"
+                                                 ng-click='vm.changeImage($parent.$index, img)'
+                                                 class="event-avatar"
+                                                 ng-repeat="img in event.images track by $index">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+
+                    </md-tab-body>
+                </md-tab>
+
+                <md-tab>
+                    <md-tab-label>
+                        <div class="tab-header">{{'Past Events' |
+                            translate}}<span class="circle-icon"><i
+                                    class="icon-wallet"></i></span></div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        <div layout="column" class="event-body" ng-repeat
+                                =" event in vm.PastEventsData">
+                            <div flex="100" layout="row">
+                                <!--  <div flex ="25" ><h2>{{event.startDate}}</h2></div> -->
+                                <div class="event-date">
+                                    <div class="start-date">
+                                        <div class="event-weekday">
+                                            {{event.day}}
+                                        </div>
+                                        <div class="event-day">{{event.date}}
+                                        </div>
+                                        <div class="event-month">
+                                            {{event.month}}
+                                        </div>
+                                        <div
+                                                class="event-year">
+                                            {{event.year}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div flex="75"><h2>{{event.title}}</h2></div>
+                            </div>
+                            <div flex="100">
+                                <p align="justify">{{event.description}}</p>
+                            </div>
+                            <div layout="column" flex
+                                 layout-align="center center" layout-wrap
+                                 ng-show="event.images.length > 0">
+                                <div flex="100" class="event-container-pic">
+                                    <div flex="100" class="img-banner">
+                                        <img id="imgBanner-{{$index}}"
+                                             class="imgBanner-con"
+                                             ng-src="{{event.images[0]}}"
+                                             class="md-card-image"
+                                             alt="image caption">
+                                    </div>
+                                    <div flex="100" class="img-list">
+                                        <div class="event-img-container text-center">
+                                            <img ng-src="{{img}}"
+                                                 ng-click='vm.changeImage($parent.$index, img)'
+                                                 class="event-avatar"
+                                                 ng-repeat="img in event.images track by $index">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </md-tab-body>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+</div>
+<style type="text/css">
+    .event-body{
+        margin: 10px 0px;
+        border-bottom: 1px solid #eee;
+    }
+    .event-container{
+        width: 100%;
+    padding: 15px 15px
+    }
+
+    .event-img-container {
+        position: absolute;
+        width:100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .event-avatar{
+        margin: 2px;
+        box-sizing: content-box;
+        -webkit-box-flex: 0;
+        -webkit-flex: none;
+        flex: none;
+        width: 50px;
+        height: 50px;
+    }
+    .event-container-pic{
+        position: relative;
+    }
+    .img-list{
+        margin: 10px 0;
+        height: 80px;
+    }
+
+    .event-img-container img:hover{
+    cursor: pointer;
+    border: 2px solid #ddd;
+    }
+    .event-img-active{
+    /* border: 2px solid #ddd;*/
+
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
+
+    .img-banner{
+    padding: 15px;
+    }
+    .imgBanner-con{
+    width: 300px;
+    }
+
+    @media screen and (max-width: 320px){
+    .imgBanner-con{
+    width: 250px;
+    }
+    }
+
+    .img-banner img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    }
+
+    .img-banner img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    .start-date {
+    text-align: center;
+    width: 3.6em;
+    border-radius: 8px;
+    background-color: rgb(214,237,247);
+    padding: 10px 5px;
+    }
+
+    .event-date {
+    float: left;
+    margin: 0 0.4em 1.5em 0;
+    }
+    .single-day {
+    margin: 0 0 0 5em;
+    }
+    .start-date {
+    text-align: center;
+    width: 4.3em;
+    border-radius: 8px;
+    background-color: #c8b58b;
+    padding: 10px 5px;
+    }
+    .event-weekday {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    }
+    .event-day {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: -0.2em;
+    }
+    .event-month {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 0.4em 0 0.4em 0;
+    }
+    .event-year {
+    font-size: 0.8em;
+    line-height: 0.8em;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.3em;
+    }
+
+    .event-body h2{
+    margin-top: 25px;
+    }
+</style>

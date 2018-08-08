@@ -1,0 +1,32 @@
+<div  style="padding: 10px;">
+  <div class="col-sm-6" style="background: #E4E4E4;
+ overflow: hidden;
+ height:325px;">
+    <img-crop image="myImage" result-image="myCroppedImage"></img-crop>
+  </div>
+  <div class="col-sm-6 " style="padding:15px;text-align:center"><img class="hidden-xs" ng-src="{{myCroppedImage}}" style="margin-bottom: 44px;border-radius: 50%;height: 215px;width: 215px;" />
+
+ <div class="search-profile-btns">
+    <button type="submit"  class="btn btn-secondary" data-dismiss="modal" ng-click="closeDialog()" translate>Cancel</button>
+    <button type="submit" class="btn btn-primary btn-register" ng-click="uploadPic()" translate>Update</button>
+</div>
+</div>
+</div>
+
+<style type="text/css">
+  .md-dialog-container {
+    z-index: 1000;
+  }
+
+  md-backdrop.md-dialog-backdrop {
+    z-index: 999 !important;
+  }
+
+  .md-button.md-accent.md-fab {
+    background-color: #ff5d0c !important;
+  }
+
+  .cancel.md-button.md-accent.md-fab {
+    background-color: rgb(250, 250, 250) !important;
+  }
+</style>

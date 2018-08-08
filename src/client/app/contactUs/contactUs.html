@@ -1,0 +1,135 @@
+<main id="main" class="fadein fadeout contactUs-content">
+    <div class="login-page-holder contactUs-page-holder">
+        <div class="container-fluid no-margin-left">
+            <h1 class="left-align-text" translate>Contact Us</h1>
+            <hr/>
+            <div class="row no-margin">
+                <div class="col-sm-7 no-buffer">
+                    <form name="myForm" novalidate>
+                        <div class="login-wrap">
+                            <p translate>We're here to help with any questions or comments. If you just want to say hi, that's cool too.</p>
+                            <div class="row no-margin">
+                                <md-input-container class="md-block user-name col-sm-5 no-padding"  style="margin-bottom:0;" flex-gt-sm>
+                                    <label translate>Subject</label>
+                                    <input ng-model="vm.contact.subject" required name="subject">
+                                    <div ng-messages="myForm.subject.$error" role="alert">
+                                        <div ng-message="required" class="my-message" translate>Please provide the Subject</div>
+                                    </div>
+                                    <div ng-show="vm.error_sub != null" class="ng-msg">{{vm.error_sub}}</div>
+                                </md-input-container>
+                                <div class="col-sm-2"></div>
+                                <md-input-container class="md-block contact-number col-sm-5 no-padding" flex-gt-sm>
+                                    <label translate>Contact Number</label>
+                                    <input type="tel" name="phone"
+                                      data-phone ng-model="vm.contact.mobile_number" >
+                                    <div ng-messages="myForm.phone.$error" role="alert">
+                                        <div ng-message="required pattern" class="my-message" translate>Please provide a phone number.</div>
+                                        <div ng-message="phoneField" class="my-message" translate>The entered value is not a phone number!</div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <div class="row no-margin">
+                                <md-input-container class="md-block contact-email col-sm-5 no-padding" flex-gt-sm>
+                                    <label translate>Email</label>
+                                    <input type="email"
+                                           ng-model="vm.contact.email"
+                                           required name="email" pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$">
+                                     <div ng-messages="myForm.email.$error" role="alert">
+                                        <div ng-message="required" class="my-message" translate>Please provide an email address.</div>
+                                        <div ng-message="pattern" class="my-message" translate>Entered email is not valid</div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <md-input-container class="md-block contact-message" flex-gt-sm>
+                                <label translate>Message</label>
+                                <input ng-model="vm.contact.message" required name="message" ng-minlength="5">
+                                <div ng-messages="myForm.message.$error" role="alert">
+                                        <div ng-message="required" class="my-message" translate>Please provide some message.</div>
+                                        <div ng-message="minlength" translate>
+                                                Please provide some message.
+                                            </div>
+                                </div>
+                                <div ng-show="vm.error_msg != null" class="ng-msg" >{{vm.error_msg}}</div>
+                            </md-input-container>
+                          <div id="recaptchaField"
+                               class="g-recaptcha lb-captcha"
+                               data-sitekey="6LeN-yMUAAAAAKU-j7MKzs63pmqZnuT0ti5Kgk6A"></div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <md-button type="submit" id="sendMSG" class="btn btn-primary send-msg-btn"  aria-label="" ng-click="vm.sendMessage(myForm)" disabled>{{'Send Message' | translate}}</md-button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <hr class="visible-xs">
+
+                <div class="col-sm-5 text-center pull-right">
+                    <div class="login-with-wrap">
+                        <div class="contactUs-social">
+                            <a href="https://www.facebook.com/marathilagnachibolni/" class=""><i class="icon-facebook2"></i></a>
+                            <a href="https://plus.google.com/+Lagnachibolni" class=""><i class="icon-google-plus2"></i></a>
+                            <a href="https://twitter.com/lagnachibolani?lang=en" class=""><i class="fa fa-twitter-square"></i></a>
+                        </div>
+                        <div class="contactUs-email">
+                            <h5 translate>Email</h5>
+
+                            <p>care@lagnachibolni.com</p>
+                        </div>
+                        <div class="contactUs-address">
+                          <h5 translate>Office Address</h5>
+                          <p translate>Plot no 12, 2nd floor, Sector - 18, Opp Jijamata park, Fule Nagar, Chinchwad Pune-411019 </p>
+                        </div>
+                      <div class="contactUs-address">
+                          <h5 translate>Office Timing</h5>
+                        <p translate>Friday to Wednesday - 10:00 AM to 06:00 PM </p>
+                        <p translate>Thrusday - Weekly off </p>
+                        </div>
+                      <div class="contactUs-address">
+                        <h5 translate>Registered Address</h5>
+                        <p translate>A-8 Regent lake View, Sector-26, Near Ganesh Talav, Nigadi Pradhikarn Pune, 411044, Maharashtra </p>
+                            </div>
+                            <div class="contactUs-call">
+                            <h5 translate>Call Us / Whatsapp us on</h5>
+
+                                <div class="contactUs-whatsapp">
+                                <div class="icon-whatsapp-wrap">
+                                    <i class="icon-whatsApp"></i>
+                                    <a ng-if="vm.mobileFlag == true"
+                                       href="tel:+91-7218701870"><p
+                                            class="whatsapp-number" translate>+91-7218701870</p></a>
+                                    <p ng-if="vm.desktopflag == true" class="whatsapp-number" translate>+91-7218701870</p>
+                                </div>
+                                </div>
+                                <p translate>+91-7722090227</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+          async defer>
+      </script>
+       <script type="text/javascript">
+        document.getElementById("sendMSG").disabled = true;
+        var onloadCallback = function() {
+            grecaptcha.render('recaptchaField', {
+                'sitekey' : '6LeN-yMUAAAAAKU-j7MKzs63pmqZnuT0ti5Kgk6A',
+                'callback' : verifyCallback
+            });
+        };
+        var verifyCallback = function(response) {
+            if(response !=null){
+               document.getElementById("sendMSG").disabled = false;
+            }else{
+                document.getElementById("sendMSG").disabled = true;
+            }
+        };
+      </script>

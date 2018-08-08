@@ -1,0 +1,103 @@
+<div ng-show="vm.searchHall">
+    <form name="search">
+        <div class="container-fluid no-margin-left">
+
+        <div class="fields clearfix">
+            <div class="labels">Search by Hall Name</div>
+            <div class="txtBoxMask">
+                <input type="text" id="hallName"
+                       class="txtfield" ng-model="vm.name" ng-change="vm.update_list()"/>
+                <!--class="txtfield" ng-model="vm.name" ng-change="vm.filter_name(name);"/>-->
+            </div>
+        </div>
+
+        <div class="fields clearfix">
+            <div class="labels">Search By Location</div>
+            <div class="txtBoxMask">
+                <input type="text" id="whereInPune"
+                       class="txtfield" ng-model="vm.area_in_pune" ng-change="vm.update_list()"/>
+            </div>
+        </div>
+
+        <div class="fields clearfix">
+            <div class="labels">
+                Size Range
+            </div>
+            <div class="txtBoxMask">
+                <ui-select ng-model="vm.hall_size"
+                           id="hall_capacity"
+                           name="hall_capacity"
+                           Hall_size="hall_capacity"
+                           class="select2-drp"
+                           theme="bootstrap"
+                           on-select="vm.update_list()" skip-focusser=true>
+                    <ui-select-match
+                            placeholder="Please select ...">
+                        {{$select.selected.value}}
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="status.key as status in vm.hall_capacity">
+                        <div ng-bind-html="status.value | highlight: $select.search"></div>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+
+        <div class="fields clearfix">
+            <div class="labels">
+                Hall Type
+            </div>
+            <div class="txtBoxMask">
+                <ui-select ng-model="vm.hall_type"
+                           id="type"
+                           name="Hall_type"
+                           Type="Hall_type"
+                           class="select2-drp"
+                           theme="bootstrap"
+                           on-select="vm.update_list()" skip-focusser=true>
+                    <ui-select-match
+                            placeholder="Please select ...">
+                        {{$select.selected.value}}
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="status.key as status in vm.Hall_type">
+                        <div ng-bind-html="status.value | highlight: $select.search"></div>
+                    </ui-select-choices>
+                </ui-select>
+
+            </div>
+        </div>
+
+        <div class="fields clearfix">
+            <div class="labels">
+                Function Type
+            </div>
+            <div class="txtBoxMask">
+                <ui-select ng-model="vm.Function_type"
+                           id="fun"
+                           name="function_type"
+                           function="function_type"
+                           class="select2-drp"
+                           theme="bootstrap"
+                           on-select="vm.update_list()" skip-focusser=true>
+                    <ui-select-match
+                            placeholder="Please select ...">
+                        {{$select.selected.value}}
+                    </ui-select-match>
+                    <ui-select-choices
+                            repeat="status.key as status in vm.function_type">
+                        <div ng-bind-html="status.value | highlight: $select.search"></div>
+                    </ui-select-choices>
+                </ui-select>
+
+            </div>
+        </div>
+        <div class="fields clearfix">
+            <input type="button" name="submit" value="Submit"
+                   class="btn_green_small" onclick="fetchWeddingHalls();"/>
+            <input type="button" name="reset" value="Reset"
+                   class="secondary-button-small"/>
+        </div>
+        </div>
+    </form>
+</div>

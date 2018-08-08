@@ -1,0 +1,432 @@
+<div class="container payment-container search-container" ng-init="vm.init()">
+  <div class="row">
+    <div class="search-header">
+      <h1 translate>Search</h1>
+    </div>
+    <md-content style="background-color: white;">
+      <md-tabs md-selected="vm.selectedIndex" md-dynamic-height>
+        <md-tab md-on-select="vm.selectTab(0)">
+          <md-tab-label>
+            <div class="tab-header" translate>Search Profile <span class="circle-icon"><i
+                                class="icon-search-people"></i></span></div>
+          </md-tab-label>
+          <md-tab-body>
+            <form name="searchForm" class="searchForm" >
+              <div class="search-profile-wrapper">
+                <div class="row row-buffer">
+                  <div class="pull-right search-id">
+                    <md-input-container class="md-block search">
+                      <label translate>Search by Profile ID</label>
+                      <input ng-model="profileId" ng-blur="vm.searchesByProfileId(profileId)">
+                    </md-input-container>
+                  </div>
+                </div>
+
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <md-input-container class="select no-max-height" data-ui-select-label>
+                      <label translate>Marital Status</label>
+                      <ui-select ng-model="vm.search.marital_status" theme="bootstrap" class="form-control" reset-search-input="true" multiple skip-focusser=true>
+                        <ui-select-match>{{$item.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="mstatus.key as mstatus in vm.maritalstatus | filter : $select.search">
+                          <div ng-bind-html="mstatus.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate> No marital status found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                  </div>
+                </div>
+
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12">
+                    <md-input-container class="select select-5" data-ui-select-label>
+                      <label translate>Age From</label>
+                      <ui-select ng-model="vm.search.age1" theme="bootstrap" skip-focusser=true class="form-control" reset-search-input="true" on-select="vm.checkValidAge1();vm.checkValidAge2();">
+                        <ui-select-match>
+                          {{$select.selected}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="age in vm.ages| filter : $select.search">
+                          <div ng-bind-html="age | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No age found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                      <div ng-messages="vm.isInvalidAgeFlag" class="invalid-age-error">
+                        <div ng-if="vm.isInvalidAgeFlag" style="color: #DD2C00">{{vm.ageError}}
+                        </div>
+                      </div>
+                    </md-input-container>
+
+                    <div class="select-2">
+                      <span translate>To</span>
+                    </div>
+                    <md-input-container class="select select-5" data-ui-select-label>
+                      <label translate> Age To </label>
+                      <ui-select ng-model="vm.search.age2" theme="bootstrap" skip-focusser=true class="form-control" reset-search-input="true" on-select="vm.checkValidAge2();vm.checkValidAge1();">
+                        <ui-select-match>
+                          {{$select.selected}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="age in vm.ages | filter : $select.search">
+                          <div ng-bind-html="age | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No age found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+
+                      <div ng-messages="vm.isInvalidAgeFlag2" class="invalid-age-error">
+                        <div ng-if="vm.isInvalidAgeFlag2" style="color: #DD2C00" translate>Age must be greater than {{vm.search.age1}}.
+                        </div>
+                      </div>
+                    </md-input-container>
+                  </div>
+                </div>
+
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12">
+                    <md-input-container class="select select-5" data-ui-select-label>
+                      <label translate>Height From</label>
+                      <ui-select ng-model="vm.search.height1" theme="bootstrap" class="form-control" reset-search-input="true" skip-focusser=true>
+                        <ui-select-match>
+                          {{$select.selected.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="height.key as height in vm.height | filter : $select.search">
+                          <div ng-bind-html="height.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>
+                          No height found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                    <div class="select-2" translate>
+                      To
+                    </div>
+                    <md-input-container class="select select-5" data-ui-select-label>
+                      <label translate>Height To</label>
+                      <ui-select ng-model="vm.search.height2" theme="bootstrap" class="form-control" reset-search-input="true" skip-focusser=true>
+                        <ui-select-match>
+                          {{$select.selected.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="height.key as height in vm.heightnew | filter : $select.search">
+                          <div ng-bind-html="height.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>
+                          No height found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <md-input-container class="select no-max-height" data-ui-select-label>
+                      <label translate>Education Field</label>
+                      <ui-select ng-model="vm.search.edu_field" theme="bootstrap" class="form-control" name="education" reset-search-input="true" multiple skip-focusser=true>
+                        <ui-select-match>{{$item.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="edu_field.key as edu_field in vm.education | filter : $select.search">
+                          <div ng-bind-html="edu_field.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No education field found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <md-input-container class="select no-max-height" data-ui-select-label>
+                      <label translate>Education Level</label>
+                      <ui-select ng-model="vm.search.edu_level" theme="bootstrap" class="form-control" name="education_level" reset-search-input="true" multiple skip-focusser=true>
+                        <ui-select-match>{{$item.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="edu_level.key as edu_level in vm.education_level | filter : $select.search">
+                          <div ng-bind-html="edu_level.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No education level found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                  </div>
+                </div>
+
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12">
+                    <md-input-container class="select select-5" data-ui-select-label>
+                      <label translate>Income From</label>
+                      <ui-select ng-model="vm.search.income1" theme="bootstrap" class="form-control" reset-search-input="true" skip-focusser=true>
+                        <ui-select-match>
+                          {{$select.selected.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="income.key as income in vm.incomeList | filter : $select.search">
+                          <div ng-bind-html="income.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No income found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                    <div class="select-2" translate>To
+                    </div>
+                    <md-input-container class="select select-5" data-ui-select-label>
+                      <label translate>Income To</label>
+                      <ui-select ng-model="vm.search.income2" theme="bootstrap" class="form-control" reset-search-input="true" skip-focusser=true>
+                        <ui-select-match>
+                          {{$select.selected.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="income.key as income in vm.incomeList | filter : $select.search">
+                          <div ng-bind-html="income.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No income found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <md-input-container class="select no-max-height" data-ui-select-label>
+                      <label translate> City</label>
+                      <ui-select ng-model="vm.search.current_place_residence" theme="bootstrap" skip-focusser=true class="form-control" name="City" reset-search-input="true" multiple>
+                        <ui-select-match>{{$item.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="city.key as city in vm.cities | filter : $select.search">
+                          <div ng-bind-html="city.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No city found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <md-input-container class="select no-max-height" data-ui-select-label>
+                      <label translate>Caste</label>
+                      <ui-select ng-model="vm.search.caste" theme="bootstrap" class="form-control" name="caste" reset-search-input="true" multiple skip-focusser=true>
+                        <ui-select-match>{{$item.value}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="caste.key as caste in vm.castes | filter : $select.search">
+                          <div ng-bind-html="caste.value | highlight: $select.search"></div>
+                        </ui-select-choices>
+                        <ui-select-no-choice > <span translate>No caste found. </span>
+                        </ui-select-no-choice>
+                      </ui-select>
+
+                    </md-input-container>
+                  </div>
+                </div>
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <label class="label-text lb-time-picker"
+                           translate>Mangal</label>
+                    <md-radio-group class="radio-wrap"
+                                    ng-model="vm.search.mangal"
+                    >
+                      <md-radio-button class="radio-button"
+                                       value="Yes"
+                                       class="md-primary"><span
+                        translate>Yes</span>
+                      </md-radio-button>
+                      <md-radio-button class="radio-button"
+                                       value="No"><span translate>No</span>
+                      </md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+                <div class="row row-buffer-lg">
+                  <div class="col-sm-12 ">
+                    <label class="label-text lb-time-picker"
+                           translate>Physical disability
+                    </label>
+                    <md-radio-group class="radio-wrap"
+                                    ng-model="vm.search.physical_disablity"
+                    >
+                      <md-radio-button class="radio-button"
+                                       value="Yes"
+                                       class="md-primary"><span
+                        translate>Yes</span>
+                      </md-radio-button>
+                      <md-radio-button class="radio-button"
+                                       value="No"><span translate>No</span>
+                      </md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+
+                <!--<div class="row row-buffer-lg">-->
+                <!--<div class="col-sm-12 ">-->
+                <!--<label class="label-text lb-time-picker"-->
+                <!--translate>Mangal</label></BR>-->
+                <!--<md-radio-group class="radio-wrap"-->
+                <!--ng-model="vm.search.mangal">-->
+                <!--<md-radio-button class="radio-button"-->
+                <!--value="Yes"-->
+                <!--class="md-primary"><span translate>Yes</span>-->
+                <!--</md-radio-button>-->
+                <!--<md-radio-button class="radio-button"-->
+                <!--value="No"> <span translate>No</span>-->
+                <!--</md-radio-button>-->
+                <!--</md-radio-group>-->
+                <!--</div>-->
+
+                <!--</div>-->
+
+                <!--<div class="row row-buffer-lg">-->
+                <!--<div class="col-sm-12 ">-->
+                <!--<label class="label-text lb-time-picker" translate>Physically Disabled</label> </BR>-->
+                <!--<md-radio-group class="radio-wrap"-->
+                <!--ng-model="vm.search.physical_disablity"-->
+                <!--ng-change='vm.changeContent( "physical_disablity",vm.search.physical_disablity)'>-->
+                <!--<md-radio-button class="radio-button"-->
+                <!--value="Yes"-->
+                <!--class="md-primary"><span-->
+                <!--translate>Yes</span>-->
+                <!--</md-radio-button>-->
+                <!--<md-radio-button class="radio-button"-->
+                <!--value="No"> <span translate>No</span>-->
+                <!--</md-radio-button>-->
+                <!--</md-radio-group>-->
+                <!--</div>-->
+
+                <!--</div>-->
+
+                <!--<div class="row row-buffer-lg">-->
+                <!--<div class="col-sm-12 ">-->
+                <!--<label class="label-text lb-time-picker"-->
+                <!--translate>Ready for inter-caste marriage</label></BR>-->
+                <!--<md-radio-group class="radio-wrap"-->
+                <!--ng-model="vm.search.inter_caste_marriage">-->
+                <!--<md-radio-button class="radio-button"-->
+                <!--value="Yes"-->
+                <!--class="md-primary"><span translate>Yes</span>-->
+                <!--</md-radio-button>-->
+                <!--<md-radio-button class="radio-button"-->
+                <!--value="No"> <span translate>No</span>-->
+                <!--</md-radio-button>-->
+                <!--</md-radio-group>-->
+                <!--</div>-->
+
+                <!--</div>-->
+
+
+                <div class="text-center search-profile-btns">
+                  <button ng-if="vm.isLoggedInUser" type="button" data-toggle="modal" data-target="#saveSearchData" class="btn btn-secondary" translate>Save Search
+                                    </button>
+                  <button type="button" class="btn btn-secondary" ng-click="vm.reset()" translate>Reset
+                                    </button>
+                  <button type="button" class="btn btn-primary" ng-click="vm.searchData(searchForm)" translate>Search
+                                    </button>
+                  <br/>
+                  <img src="images/floral.png" style="margin-top:15px">
+                </div>
+
+              </div>
+
+
+            </form>
+          </md-tab-body>
+        </md-tab>
+
+        <md-tab md-on-select="vm.selectTab(1)">
+          <md-tab-label>
+            <div class="tab-header" translate>Search Results <span class="circle-icon"><i
+                                class="icon-search-list"></i></span></div>
+          </md-tab-label>
+          <md-tab-body>
+            <div infinite-scroll="vm.searchNextData()" infinite-scroll-disabled="vm.unablescroll">
+              <div class="row search-pg-list">
+                <p class="plans-header" translate>{{vm.totalSearchCount}} matches found</p>
+
+                <div ng-if="vm.isLoggedInUser">
+
+                  <p ng-if="!vm.totalSearchCount" translate>Please modify your search</p>
+                </div>
+                <div ng-repeat="profile in  vm.searchResultProfile">
+                  <lb-search-result set-id="profile_{{$index}}" result-type="dashboard" profile-data="profile"></lb-search-result>
+                </div>
+              </div>
+            </div>
+
+          </md-tab-body>
+        </md-tab>
+        <md-tab ng-if="vm.isLoggedInUser" md-on-select="vm.selectTab(2)">
+          <md-tab-label>
+            <div class="tab-header" ng-click="vm.retrievesSearch()" translate>
+              Saved Search<span class="circle-icon"><i
+                                class="icon-floppy-disk padding-correction"></i></span>
+            </div>
+          </md-tab-label>
+          <md-tab-body>
+            <div class="saved-search-wrapper">
+              <div ng-if="vm.savedSearchList_count" class="table-responsive saved-search">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="4" translate>Search name</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-ng-repeat="data in vm.savedSearchList">
+                      <td class="search-name">
+                        {{data.search_name}}
+                      </td>
+                      <td>
+                        <a ng-click="vm.searchByData(data)"><i
+                                                    class="icon-search"></i></a>
+                      </td>
+                      <td>
+                        <a ng-click="vm.edit(data)"><i
+                                                    class="fa fa-pencil fa-lg"></i></a>
+                      </td>
+                      <td>
+                        <a ng-click="vm.deleteSearch(data.id ,$index)"><i
+                                                    class="icon-bin"></i></a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                  </tr>
+                </table>
+              </div>
+              <p ng-if="!vm.savedSearchList_count" translate>Save frequently used searches. You can save search from "Search Profile" tab, clicking on "Save Search" button.</p>
+
+              <div class="text-center search-profile-btns">
+                <br/>
+                <img src="images/floral.png">
+              </div>
+
+            </div>
+          </md-tab-body>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="saveSearchData" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center" translate>Save as</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <md-input-container class="md-block">
+            <label translate>Save Search Name</label>
+
+            <input type="text" class="form-control" ng-model="vm.search.search_name">
+          </md-input-container>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center">
+        <button type="button" class="btn btn-primary"  ng-click="vm.saveSearch()" translate>Save
+                </button>
+      </div>
+    </div>
+  </div>
+</div>

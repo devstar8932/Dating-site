@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <title>LagnachiBolni.com</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+    <div>
+        <div id="wrapper" class="inner-wrapper">
+            <div ng-include src="'partials/header.html'"></div>
+            <main id="main">
+
+                <div class="closed-sidenav visible-md visible-lg" ng-hide="isSidenavOpen">
+                    <ul class="nav-links">
+                        <li><a><i class="icon-email"></i></a></li>
+                        <li><a><i class="icon-box-remove"></i></a></li>
+                        <li><a><i class="icon-dashboard"></i></a></li>
+                        <li><a><i class="icon-search"></i></a></li>
+                        <li><a><i class="icon-human-resource"></i></a></li>
+                        <li><a><i class="icon-phone2"></i></a></li>
+                        <li class="active"><a><i class="icon-profile2"></i></a></li>
+                        <li><a><i class="icon-settings"></i></a></li>
+                        <li><a><i class="icon-logout"></i></a></li>
+                    </ul>
+                </div>
+
+                <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="isSidenavOpen" class="sidenav md-sidenav-left">
+                    <div class="sidenav-header">
+                        <span class="nav-close" ng-click="openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+                        <div class="logo-header">
+                            <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+                        </div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#"><i class="icon-email"></i> Inbox</a></li>
+                        <li><a href="#"><i class="icon-box-remove"></i> Outbox</a></li>
+                        <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="icon-search"></i> Search</a></li>
+                        <li><a href="#"><i class="icon-human-resource"></i> Refer Friends</a></li>
+                        <li><a href="#"><i class="icon-phone2"></i> Contact Us</a></li>
+                        <li class="active"><a href="#"><i class="icon-profile2"></i> My Profile</a></li>
+                        <li><a href="#"><i class="icon-settings"></i> Account Settings</a></li>
+                        <li><a href="#"><i class="icon-logout"></i> Logout</a></li>
+                    </ul>
+                </md-sidenav>
+
+                <div class="container payment-container account-container">
+                    <div class="row">
+                        <div class="payment-header">
+                            <h1>Account Settings</h1>
+                        </div>
+                        <md-content>
+                            <md-tabs md-selected="selectedIndex" md-dynamic-height>
+                                <md-tab>
+                                    <md-tab-label>
+                                        <div class="tab-header">General Settings<span class="circle-icon"><i class="icon-settings"></i></span></div>
+                                    </md-tab-label>
+                                    <md-tab-body>
+                                      <div class="col-12">
+                                        <div class="general-settings-wrapper">
+                                          <h3>Notification setting</h3>
+                                          <div class="row no-margin">
+                                            <md-checkbox  class="checkbox" ng-model="visitNotification">
+                                              Send Visit Notifications
+                                            </md-checkbox>
+                                            <div class="col-sm-3">
+                                              <md-checkbox  class="checkbox" ng-disabled="!visitNotification">
+                                                SMS
+                                              </md-checkbox>
+                                            </div>
+                                            <div class="col-sm-3">
+                                              <md-checkbox  class="checkbox" ng-disabled="!visitNotification">
+                                                EMAIL
+                                              </md-checkbox>
+                                            </div>
+                                            <div class="col-sm-6">
+                                              <md-checkbox  class="checkbox" ng-disabled="!visitNotification">
+                                                SMS & EMAIL
+                                              </md-checkbox>
+                                            </div>
+
+                                          </div>
+
+                                          <br>
+                                        <div class="row no-margin">
+                                          <md-checkbox  class="checkbox" ng-model="interestNotification">
+                                            Send Interest Notifications
+                                          </md-checkbox>
+                                          <div class="col-sm-3">
+                                            <md-checkbox  class="checkbox" ng-disabled="!interestNotification">
+                                              SMS
+                                            </md-checkbox>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <md-checkbox  class="checkbox" ng-disabled="!interestNotification">
+                                              EMAIL
+                                            </md-checkbox>
+                                          </div>
+                                          <div class="col-sm-6">
+                                            <md-checkbox  class="checkbox" ng-disabled="!interestNotification">
+                                              SMS & EMAIL
+                                            </md-checkbox>
+                                          </div>
+                                        </div>
+
+                                        <hr>
+                                        <h3>Verify Email Address</h3>
+                                        <div class="select row-buffer-lg">
+                                          <md-input-container ng-model="username">
+                                            <label>Email</label>
+                                            <input type="text" >
+                                          </md-input-container>
+                                        </div>
+                                        <div class="text-center delete-account">
+                                          <button class="btn btn-primary">Resend Email</button>
+                                          <br />
+                                          <img src="images/floral.png">
+                                        </div>
+                                        </div>
+                                      </div>
+                                    </md-tab-body>
+                                </md-tab>
+
+                                <md-tab>
+                                    <md-tab-label>
+                                        <div class="tab-header">Change Password<span class="circle-icon"><i class="icon-change"></i></span></div>
+                                    </md-tab-label>
+                                    <md-tab-body>
+                                      <div class="col-12">
+                                        <div class="change-password-wrapper ">
+                                          <h3 class="text-center">Change your password</h3>
+                                            <div class="select">
+                                              <md-input-container ng-model="username">
+                                                <label>Enter Current Password</label>
+                                                <input type="text" >
+                                              </md-input-container>
+                                            </div>
+
+                                          <div class="select">
+                                            <md-input-container ng-model="username">
+                                              <label>Enter new Password</label>
+                                              <input type="text" >
+                                            </md-input-container>
+                                          </div>
+                                          <div class="select row-buffer-lg">
+                                            <md-input-container ng-model="username">
+                                              <label>Re-Enter New Password</label>
+                                              <input type="text" >
+                                            </md-input-container>
+                                          </div>
+
+                                          <div class="text-center delete-account">
+                                            <button class="btn btn-secondary">Cancel</button>
+                                            <button class="btn btn-primary">Save New Password</button>
+                                            <br />
+                                            <img src="images/floral.png">
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </md-tab-body>
+                                </md-tab>
+
+                                <md-tab>
+                                    <md-tab-label>
+                                        <div class="tab-header">Delete Account<span class="circle-icon"><i class="icon-profile-delete"></i></span></div>
+                                    </md-tab-label>
+                                    <md-tab-body>
+                                      <div class="col-12">
+                                        <div class="delete-account-wrapper text-center">
+                                          <h3>I want to delete my account</h3>
+                                          <p class="delete-reason">
+                                            Please select the reason for account delete
+                                          </p>
+                                          <ul>
+                                            <li><div class="">
+                                              <md-checkbox  class="checkbox">
+                                                Lagachi bolni helped me in finding life partner. Partner Id
+                                              </md-checkbox>
+                                            </div></li>
+                                            <li><div class="">
+                                              <md-checkbox  class="checkbox">
+                                                Found partner in other matrimony
+                                              </md-checkbox>
+                                            </div></li>
+                                            <li><div class="">
+                                              <md-checkbox  class="checkbox">
+                                                Unable to find good profiles at Lagnachi bolni
+                                              </md-checkbox>
+                                            </div></li>
+                                            <li><div class="">
+                                              <md-checkbox  class="checkbox">
+                                                Unhappy with Lagnachi bolni
+                                              </md-checkbox>
+                                            </div></li>
+                                            <li><div class="">
+                                              <md-checkbox  class="checkbox">
+                                                The contact buying plans are expensive
+                                              </md-checkbox>
+                                            </div></li>
+                                            <li><div class=" other-reason">
+                                              <md-checkbox  class="checkbox">
+                                                Other reason
+                                              </md-checkbox>
+
+                                              <div class="select">
+                                                <md-input-container ng-model="username">
+                                                  <label>Specify the reason</label>
+                                                  <input type="text" >
+                                                </md-input-container>
+                                              </div>
+                                            </div></li>
+                                          </ul>
+
+                                          <div class="text-center delete-account">
+                                            <button class="btn btn-secondary">Cancel</button>
+                                            <button class="btn btn-primary">Delete My Account</button>
+                                            <br />
+                                            <img src="images/floral.png">
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </md-tab-body>
+                                </md-tab>
+                            </md-tabs>
+                        </md-content>
+
+                    </div>
+
+                </div>
+        </div>
+        </main>
+
+    </div>
+
+    <md-toolbar class="chrome-gap-correction">
+        <div ng-include src="'partials/footer.html'"></div>
+    </md-toolbar>
+
+        <script src="//code.jquery.com/jquery-3.1.1.min.js" ></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+        <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+        <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+        <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+        <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+        <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+        <script src="js/scrollRevealAnimations.js"></script>
+        <script src="js/app.js"></script>
+
+</body>
+
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

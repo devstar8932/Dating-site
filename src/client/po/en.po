@@ -1,0 +1,1499 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_IN\n"
+
+#: app/layout/footer.html:19
+msgid "96kuliMaratha"
+msgstr "96kuliMaratha"
+
+#: app/layout/footer.html:63
+msgid "AboutUs"
+msgstr "AboutUs"
+
+#: app/components/profileViewCard/profileViewCard.html:77
+msgid "Accept"
+msgstr "Accept"
+
+#: app/inbox/inbox.html:36 app/outbox/outbox.html:24
+msgid "Accepted"
+msgstr "Accepted"
+
+#: app/layout/sidebar.html:60
+msgid "AccountSettings"
+msgstr "AccountSettings"
+
+#: app/refer-your-friends/refer-your-friends.html:136
+msgid "AddMoreRef"
+msgstr "AddMoreRef"
+
+#: app/contactUs/contactUs.html:79
+msgid "Address"
+msgstr "Address"
+
+#: app/components/profileViewCard/profileViewCard.html:27
+#: app/home/home.html:206
+msgid "Age"
+msgstr "Age"
+
+#: app/layout/footer.html:22
+msgid "Agri"
+msgstr "Agri"
+
+#: app/layout/footer.html:43
+msgid "Ahmednagar"
+msgstr "Ahmednagar"
+
+#: app/refer-your-friends/refer-your-friends.html:148
+msgid "AlreadyReferred"
+msgstr "AlreadyReferred"
+
+#: app/refer-your-friends/refer-your-friends.html:161
+msgid "AlreadyRegistered"
+msgstr "AlreadyRegistered"
+
+#: app/payment/payment.html:81
+msgid "Amount"
+msgstr "Amount"
+
+#: app/profile/profile.html:470
+msgid "AnnualIncome"
+msgstr "AnnualIncome"
+
+#: app/layout/footer.html:23
+msgid "Arya-Vysya"
+msgstr "Arya-Vysya"
+
+#: app/layout/footer.html:24
+msgid "Aryasamaj"
+msgstr "Aryasamaj"
+
+#: app/dashboard/dashboard.html:74 app/profile/profile.html:35
+#: app/profile/profile.html:895
+msgid "AstroDetails"
+msgstr "AstroDetails"
+
+#: app/layout/footer.html:44
+msgid "Aurangabad"
+msgstr "Aurangabad"
+
+#: app/payment/payment.html:164
+msgid "BankName"
+msgstr "BankName"
+
+#: app/dashboard/dashboard.html:34
+msgid "BasicDetails"
+msgstr "BasicDetails"
+
+#: app/layout/footer.html:25
+msgid "Beldar"
+msgstr "Beldar"
+
+#: app/layout/footer.html:26
+msgid "Bhandari"
+msgstr "Bhandari"
+
+#: app/layout/footer.html:27
+msgid "Bhavsar"
+msgstr "Bhavsar"
+
+#: app/layout/footer.html:28
+msgid "Bhavsar-Kshatriya"
+msgstr "Bhavsar-Kshatriya"
+
+#: app/profile/profile.html:272
+msgid "BloodGroup"
+msgstr "BloodGroup"
+
+#: app/layout/footer.html:29
+msgid "Brahmin"
+msgstr "Brahmin"
+
+#: app/payment/payment.html:43
+msgid "Branchlb"
+msgstr "Branchlb"
+
+#: app/profile/profile.html:780
+msgid "BrotherDetails"
+msgstr "BrotherDetails"
+
+#: app/components/profileViewCard/profileViewCard.html:150
+#: app/components/uploadImage/uploadProfileImage.html:10
+#: app/layout/footer.html:138 app/layout/footer.html:166
+#: app/profile/profile.html:1078
+msgid "Cancel"
+msgstr "Cancel"
+
+#: app/components/profileViewCard/profileViewCard.html:43
+#: app/home/home.html:242 app/profile/profile.html:187
+msgid "Caste"
+msgstr "Caste"
+
+#: app/layout/footer.html:16
+msgid "Castes We Serve"
+msgstr "Castes We Serve"
+
+#: app/profile/profile.html:984
+msgid "Charan"
+msgstr "Charan"
+
+#: app/layout/footer.html:38
+msgid "Cities"
+msgstr "Cities"
+
+#: app/profile/profile.html:166
+msgid "City"
+msgstr "City"
+
+#: app/profile/profile.html:1101
+msgid "Close"
+msgstr "Close"
+
+#: app/components/profileViewCard/profileViewCard.html:22
+msgid "Complete"
+msgstr "Complete"
+
+#: app/home/home.html:379
+msgid "Complete Profiles"
+msgstr "Complete Profiles"
+
+#: app/profile/profile.html:328
+msgid "Complexion"
+msgstr "Complexion"
+
+#: app/home/home.html:317
+msgid "Confirm"
+msgstr "Confirm"
+
+#: app/home/home.html:338
+msgid "Connect"
+msgstr "Connect"
+
+#: app/dashboard/dashboard.html:130 app/dashboard/dashboard.html:8
+msgid "Connected"
+msgstr "Connected"
+
+#: app/dashboard/dashboard.html:88 app/dashboard/dashboard.html:92
+#: app/home/home.html:435 app/home/home.html:441 app/home/home.html:451
+#: app/home/home.html:459
+msgid "Contact Credits"
+msgstr "Contact Credits"
+
+#: app/profile/profile.html:31 app/profile/profile.html:502
+msgid "ContactDetails"
+msgstr "ContactDetails"
+
+#: app/payment/payment.html:75
+msgid "CreditsReceived"
+msgstr "CreditsReceived"
+
+#: app/profile/profile.html:555
+msgid "CurrentAddressLine1"
+msgstr "CurrentAddressLine1"
+
+#: app/profile/profile.html:564
+msgid "CurrentAddressLine2"
+msgstr "CurrentAddressLine2"
+
+#: app/layout/sidebar.html:53
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: app/profile/profile.html:131
+msgid "Date of Birth"
+msgstr "Date of Birth"
+
+#: app/components/profileViewCard/profileViewCard.html:59
+msgid "Degree"
+msgstr "Degree"
+
+#: app/components/profileViewCard/profileViewCard.html:149
+msgid "Delete"
+msgstr "Delete"
+
+#: app/profile/profile.html:910
+msgid "Devak"
+msgstr "Devak"
+
+#: app/profile/profile.html:19
+msgid "EditPhoto"
+msgstr "EditPhoto"
+
+#: app/profile/profile.html:406
+msgid "Education"
+msgstr "Education"
+
+#: app/profile/profile.html:385
+msgid "EducationField"
+msgstr "EducationField"
+
+#: app/profile/profile.html:365
+msgid "EducationLevel"
+msgstr "EducationLevel"
+
+#: app/home/home.html:10
+msgid "English"
+msgstr "English"
+
+#: app/refer-your-friends/refer-your-friends.html:28
+msgid "EnsureUserNameMust"
+msgstr "EnsureUserNameMust"
+
+#: app/payment/payment.html:176
+msgid "EnterAnAmount"
+msgstr "EnterAnAmount"
+
+#: app/profile/profile.html:1061
+msgid "EnterPINCode"
+msgstr "EnterPINCode"
+
+#: app/layout/footer.html:66
+msgid "FAQs"
+msgstr "FAQs"
+
+#: app/profile/profile.html:653
+msgid "FatherName"
+msgstr "FatherName"
+
+#: app/profile/profile.html:664
+msgid "FatherOccupation"
+msgstr "FatherOccupation"
+
+#: app/home/home.html:113 app/profile/profile.html:103
+#: app/registration/registration.html:139
+msgid "Female"
+msgstr "Female"
+
+#: app/home/home.html:193
+msgid "Find"
+msgstr "Find"
+
+#: app/home/home.html:187 app/home/home.html:259
+msgid "Find Match"
+msgstr "Find Match"
+
+#: app/home/home.html:87 app/profile/profile.html:57
+#: app/registration/registration.html:70
+msgid "First Name"
+msgstr "First Name"
+
+#: app/home/home.html:90
+msgid "FirstNameValidation1"
+msgstr "FirstNameValidation1"
+
+#: app/home/home.html:91 app/profile/profile.html:63
+msgid "FirstNameValidation2"
+msgstr "FirstNameValidation2"
+
+#: app/home/home.html:94
+msgid "FirstNameValidation3"
+msgstr "FirstNameValidation3"
+
+#: app/layout/footer.html:90
+msgid "Follow us on"
+msgstr "Follow us on"
+
+#: app/home/home.html:370
+msgid "Free Registration"
+msgstr "Free Registration"
+
+#: app/home/home.html:388
+msgid "Free SMS/Email Updates"
+msgstr "Free SMS/Email Updates"
+
+#: app/profile/profile.html:922
+msgid "Gan"
+msgstr "Gan"
+
+#: app/profile/profile.html:94
+msgid "Gender"
+msgstr "Gender"
+
+#: app/home/home.html:469
+msgid "Gift yourself"
+msgstr "Gift yourself"
+
+#: app/profile/profile.html:1052
+msgid "GoToTop"
+msgstr "GoToTop"
+
+#: app/profile/profile.html:901
+msgid "Gotra"
+msgstr "Gotra"
+
+#: app/layout/footer.html:60 app/layout/ht-top-nav.html:26
+msgid "Help"
+msgstr "Help"
+
+#: app/layout/footer.html:96
+msgid "Helpline Number"
+msgstr "Helpline Number"
+
+#: app/home/home.html:11
+msgid "Hindi"
+msgstr "Hindi"
+
+#: app/profile/profile.html:158
+msgid "HourBirthTime12"
+msgstr "HourBirthTime12"
+
+#: app/payment/payment.html:41
+msgid "IDBIBankAcc"
+msgstr "IDBIBankAcc"
+
+#: app/payment/payment.html:44
+msgid "IFSCCode"
+msgstr "IFSCCode"
+
+#: app/inbox/inbox.html:7 app/layout/sidebar.html:54
+msgid "Inbox"
+msgstr "Inbox"
+
+#: app/inbox/inbox.html:18 app/outbox/outbox.html:14
+msgid "Interests"
+msgstr "Interests"
+
+#: app/layout/footer.html:45
+msgid "Jalgaon"
+msgstr "Jalgaon"
+
+#: app/layout/footer.html:46
+msgid "Kolhapur"
+msgstr "Kolhapur"
+
+#: app/home/home.html:101 app/profile/profile.html:83
+#: app/registration/registration.html:102
+msgid "Last Name"
+msgstr "Last Name"
+
+#: app/home/home.html:104
+msgid "LastNameValidation1"
+msgstr "LastNameValidation1"
+
+#: app/home/home.html:105
+msgid "LastNameValidation2"
+msgstr "LastNameValidation2"
+
+#: app/home/home.html:107
+msgid "LastNameValidation3"
+msgstr "LastNameValidation3"
+
+#: app/home/home.html:6 app/login/login.html:130 app/login/login.html:186
+#: app/login/login.html:37 app/login/login.html:73 app/login/login.html:86
+msgid "Login"
+msgstr "Login"
+
+#: app/layout/sidebar.html:62
+msgid "Logout"
+msgstr "Logout"
+
+#: app/home/home.html:114 app/profile/profile.html:100
+#: app/registration/registration.html:142
+msgid "Male"
+msgstr "Male"
+
+#: app/profile/profile.html:865
+msgid "MamaSurname"
+msgstr "MamaSurname"
+
+#: app/profile/profile.html:1025
+msgid "Mangal"
+msgstr "Mangal"
+
+#: app/layout/footer.html:21
+msgid "Maratha"
+msgstr "Maratha"
+
+#: app/layout/footer.html:20
+msgid "MarathaDeshmukh"
+msgstr "MarathaDeshmukh"
+
+#: app/home/home.html:9
+msgid "Marathi"
+msgstr "Marathi"
+
+#: app/home/home.html:177
+msgid "May I help You"
+msgstr "May I help You"
+
+#: app/layout/footer.html:70
+msgid "Membership"
+msgstr "Membership"
+
+#: app/contactUs/contactUs.html:44
+msgid "Message"
+msgstr "Message"
+
+#: app/profile/profile.html:71
+msgid "MiddleName"
+msgstr "MiddleName"
+
+#: app/home/home.html:145 app/home/home.html:317 app/login/login.html:21
+#: app/profile/profile.html:527
+#: app/refer-your-friends/refer-your-friends.html:93
+#: app/registration/registration.html:192
+msgid "Mobile Number"
+msgstr "Mobile Number"
+
+#: app/login/login.html:94
+msgid "MobileUsername"
+msgstr "MobileUsername"
+
+#: app/profile/profile.html:677
+msgid "MotherName"
+msgstr "MotherName"
+
+#: app/profile/profile.html:686
+msgid "MotherOccupation"
+msgstr "MotherOccupation"
+
+#: app/layout/footer.html:42
+msgid "Mumbai"
+msgstr "Mumbai"
+
+#: app/layout/sidebar.html:56 app/profile/profile.html:4
+msgid "MyProfile"
+msgstr "MyProfile"
+
+#: app/profile/profile.html:942
+msgid "Nadi"
+msgstr "Nadi"
+
+#: app/layout/footer.html:48
+msgid "Nagpur"
+msgstr "Nagpur"
+
+#: app/profile/profile.html:1006
+msgid "Nakshatra"
+msgstr "Nakshatra"
+
+#: app/contactUs/contactUs.html:13 app/profile/profile.html:710
+#: app/profile/profile.html:793
+#: app/refer-your-friends/refer-your-friends.html:75
+msgid "Name"
+msgstr "Name"
+
+#: app/payment/payment.html:42
+msgid "Namelb"
+msgstr "Namelb"
+
+#: app/layout/footer.html:49
+msgid "Nashik"
+msgstr "Nashik"
+
+#: app/profile/profile.html:596
+msgid "NativeAddressLine1"
+msgstr "NativeAddressLine1"
+
+#: app/profile/profile.html:605
+msgid "NativeAddressLine2"
+msgstr "NativeAddressLine2"
+
+#: app/profile/profile.html:1034 app/profile/profile.html:302
+msgid "No"
+msgstr "No"
+
+#: app/profile/profile.html:997
+msgid "NoCharanFound"
+msgstr "NoCharanFound"
+
+#: app/profile/profile.html:341
+msgid "NoComplexionFound"
+msgstr "NoComplexionFound"
+
+#: app/profile/profile.html:399
+msgid "NoEducationFieldFound"
+msgstr "NoEducationFieldFound"
+
+#: app/profile/profile.html:420
+msgid "NoEducationFound"
+msgstr "NoEducationFound"
+
+#: app/profile/profile.html:378
+msgid "NoEducationLevelFound"
+msgstr "NoEducationLevelFound"
+
+#: app/profile/profile.html:935
+msgid "NoGanFound"
+msgstr "NoGanFound"
+
+#: app/profile/profile.html:484
+msgid "NoIncomeFound"
+msgstr "NoIncomeFound"
+
+#: app/profile/profile.html:955
+msgid "NoNadiFound"
+msgstr "NoNadiFound"
+
+#: app/profile/profile.html:1019
+msgid "NoNakshatraFound"
+msgstr "NoNakshatraFound"
+
+#: app/payment/payment.html:184
+msgid "NoPaymentFound"
+msgstr "NoPaymentFound"
+
+#: app/profile/profile.html:321
+msgid "NoPhysicFound"
+msgstr "NoPhysicFound"
+
+#: app/profile/profile.html:977
+msgid "NoRashiFound"
+msgstr "NoRashiFound"
+
+#: app/profile/profile.html:820
+msgid "NoStatusFound"
+msgstr "NoStatusFound"
+
+#: app/profile/profile.html:265
+msgid "NoWeightFound"
+msgstr "NoWeightFound"
+
+#: app/profile/profile.html:443
+msgid "NoWorkAreaFound"
+msgstr "NoWorkAreaFound"
+
+#: app/profile/profile.html:463
+msgid "NoWorkAsFound"
+msgstr "NoWorkAsFound"
+
+#: app/profile/profile.html:243
+msgid "Noheightfound"
+msgstr "Noheightfound"
+
+#: app/payment/payment.html:39
+msgid "Note"
+msgstr "Note"
+
+#: app/refer-your-friends/refer-your-friends.html:175
+#: app/refer-your-friends/refer-your-friends.html:189
+msgid "Notified"
+msgstr "Notified"
+
+#: app/payment/payment.html:33
+msgid "OfflinePayment"
+msgstr "OfflinePayment"
+
+#: app/home/home.html:415
+msgid "Online Payment"
+msgstr "Online Payment"
+
+#: app/payment/payment.html:72
+msgid "OrderId"
+msgstr "OrderId"
+
+#: app/layout/footer.html:80
+msgid "Other Services"
+msgstr "Other Services"
+
+#: app/layout/sidebar.html:55 app/outbox/outbox.html:6
+msgid "Outbox"
+msgstr "Outbox"
+
+#: app/profile/profile.html:1069
+msgid "PINCode"
+msgstr "PINCode"
+
+#: app/login/login.html:110
+msgid "Password"
+msgstr "Password"
+
+#: app/home/home.html:397
+msgid "Pay as you go"
+msgstr "Pay as you go"
+
+#: app/layout/sidebar.html:59 app/payment/payment.html:4
+msgid "Payment"
+msgstr "Payment"
+
+#: app/payment/payment.html:84
+msgid "PaymentDate"
+msgstr "PaymentDate"
+
+#: app/payment/payment.html:61
+msgid "PaymentHistory"
+msgstr "PaymentHistory"
+
+#: app/dashboard/dashboard.html:180 app/home/home.html:328
+msgid "Perfect Match"
+msgstr "Perfect Match"
+
+#: app/profile/profile.html:509
+msgid "Phone"
+msgstr "Phone"
+
+#: app/registration/registration.html:704
+msgid "Phone Number"
+msgstr "Phone Number"
+
+#: app/profile/profile.html:223 app/profile/profile.html:27
+msgid "PhysicalDetails"
+msgstr "PhysicalDetails"
+
+#: app/profile/profile.html:293
+msgid "PhysicallyDisabled"
+msgstr "PhysicallyDisabled"
+
+#: app/profile/profile.html:308
+msgid "Physique"
+msgstr "Physique"
+
+#: app/profile/profile.html:574 app/profile/profile.html:615
+msgid "Pin"
+msgstr "Pin"
+
+#: app/profile/profile.html:586 app/profile/profile.html:627
+msgid "PleaseEnter6Digits"
+msgstr "PleaseEnter6Digits"
+
+#: app/profile/profile.html:583 app/profile/profile.html:624
+msgid "PleaseEnterDigitsOnly"
+msgstr "PleaseEnterDigitsOnly"
+
+#: app/profile/profile.html:531
+msgid "PleaseEnterValidMobile"
+msgstr "PleaseEnterValidMobile"
+
+#: app/profile/profile.html:517
+msgid "PleaseEnterValidPhone"
+msgstr "PleaseEnterValidPhone"
+
+#: app/refer-your-friends/refer-your-friends.html:25
+#: app/refer-your-friends/refer-your-friends.html:84
+msgid "PleaseProvideName"
+msgstr "PleaseProvideName"
+
+#: app/refer-your-friends/refer-your-friends.html:105
+#: app/refer-your-friends/refer-your-friends.html:46
+msgid "PleaseProvidePhone"
+msgstr "PleaseProvidePhone"
+
+#: app/payment/payment.html:133
+msgid "ProfileId"
+msgstr "ProfileId"
+
+#: app/layout/footer.html:41
+msgid "Pune"
+msgstr "Pune"
+
+#: app/profile/profile.html:964
+msgid "Rashi"
+msgstr "Rashi"
+
+#: app/refer-your-friends/refer-your-friends.html:60
+msgid "Refer"
+msgstr "Refer"
+
+#: app/layout/sidebar.html:58
+msgid "Refer Friends"
+msgstr "Refer Friends"
+
+#: app/refer-your-friends/refer-your-friends.html:143
+msgid "ReferenceMobile"
+msgstr "ReferenceMobile"
+
+#: app/refer-your-friends/refer-your-friends.html:142
+msgid "ReferenceName"
+msgstr "ReferenceName"
+
+#: app/home/home.html:175 app/home/home.html:307 app/home/home.html:67
+#: app/login/login.html:145
+msgid "Register"
+msgstr "Register"
+
+#: app/components/profileViewCard/profileViewCard.html:78
+msgid "Reject"
+msgstr "Reject"
+
+#: app/inbox/inbox.html:27 app/outbox/outbox.html:19
+msgid "Rejected"
+msgstr "Rejected"
+
+#: app/profile/profile.html:874
+msgid "RelativeSurname"
+msgstr "RelativeSurname"
+
+#: app/login/login.html:125
+msgid "RememberMe"
+msgstr "RememberMe"
+
+#: app/home/home.html:406
+msgid "Safe"
+msgstr "Safe"
+
+#: app/layout/footer.html:67
+msgid "SafetyTips"
+msgstr "SafetyTips"
+
+#: app/components/profileViewCard/profileViewCard.html:67
+msgid "Salary"
+msgstr "Salary"
+
+#: app/layout/footer.html:50
+msgid "Sangli"
+msgstr "Sangli"
+
+#: app/components/profileViewCard/profileViewCard.html:148
+#: app/payment/payment.html:207
+msgid "Save"
+msgstr "Save"
+
+#: app/home/home.html:328 app/layout/sidebar.html:57
+msgid "Search"
+msgstr "Search"
+
+#: app/home/home.html:406
+msgid "Secure"
+msgstr "Secure"
+
+#: app/profile/profile.html:698
+msgid "SisterDetails"
+msgstr "SisterDetails"
+
+#: app/layout/footer.html:51
+msgid "Solapur"
+msgstr "Solapur"
+
+#: app/account/account.html:302
+msgid "SpecifyReason"
+msgstr "SpecifyReason"
+
+#: app/layout/footer.html:60
+msgid "Support"
+msgstr "Support"
+
+#: app/layout/footer.html:98
+msgid "Support Team"
+msgstr "Support Team"
+
+#: app/layout/footer.html:47
+msgid "Thane"
+msgstr "Thane"
+
+#: app/payment/payment.html:125
+msgid "TransactionDetails"
+msgstr "TransactionDetails"
+
+#: app/payment/payment.html:197
+msgid "TransactionNumber"
+msgstr "TransactionNumber"
+
+#: app/payment/payment.html:38
+msgid "TransferAmount"
+msgstr "TransferAmount"
+
+#: app/components/uploadImage/uploadProfileImage.html:11
+#: app/profile/profile.html:1082
+msgid "Update"
+msgstr "Update"
+
+#: app/components/uploadImage/uploadimage.html:15
+msgid "Upload"
+msgstr "Upload"
+
+#: app/components/uploadImage/uploadimage.html:3
+msgid "UploadYourPhotos"
+msgstr "UploadYourPhotos"
+
+#: app/home/home.html:70
+msgid "User Name/Email"
+msgstr "User Name/Email"
+
+#: app/login/login.html:63
+msgid "Username/Mobile"
+msgstr "Username/Mobile"
+
+#: app/layout/footer.html:30 app/layout/footer.html:52
+msgid "View All"
+msgstr "View All"
+
+#: app/home/home.html:310 app/home/home.html:320 app/home/home.html:331
+#: app/home/home.html:341 app/home/home.html:491 app/home/home.html:503
+#: app/home/home.html:515 app/home/home.html:527
+msgid "View More"
+msgstr "View More"
+
+#: app/home/home.html:538
+msgid "View More Matched"
+msgstr "View More Matched"
+
+#: app/profile/profile.html:251
+msgid "Weight"
+msgstr "Weight"
+
+#: app/profile/profile.html:450
+msgid "WorkingAs"
+msgstr "WorkingAs"
+
+#: app/profile/profile.html:430
+msgid "WorkingWith"
+msgstr "WorkingWith"
+
+#: app/profile/profile.html:1031 app/profile/profile.html:299
+msgid "Yes"
+msgstr "Yes"
+
+#: app/home/home.html:300
+msgid "You are only four steps away from your Perfect Match"
+msgstr "You are only four steps away from your Perfect Match"
+
+#: app/refer-your-friends/refer-your-friends.html:38
+msgid "YourMobileNumber"
+msgstr "YourMobileNumber"
+
+#: app/refer-your-friends/refer-your-friends.html:16
+msgid "YourName"
+msgstr "YourName"
+
+#: app/dashboard/dashboard.html:156
+msgid "acceptReject"
+msgstr "acceptReject"
+
+#: app/account/account.html:4
+msgid "accountSetting"
+msgstr "accountSetting"
+
+#: app/components/uploadImage/uploadimage.html:7
+msgid "addYourPic"
+msgstr "addYourPic"
+
+#: app/home/home.html:131 app/profile/profile.html:141
+#: app/profile/profile.html:758 app/profile/profile.html:842
+msgid "ageValidation1"
+msgstr "ageValidation1"
+
+#: app/home/home.html:134 app/profile/profile.html:144
+msgid "ageValidation2"
+msgstr "ageValidation2"
+
+#: app/home/home.html:137 app/profile/profile.html:147
+msgid "ageValidation3"
+msgstr "ageValidation3"
+
+#: app/home/home.html:233
+msgid "ageValidation4"
+msgstr "ageValidation4"
+
+#: app/dashboard/dashboard.html:8
+msgid "alreadrViewed"
+msgstr "alreadrViewed"
+
+#: app/components/profileViewCard/profileViewCard.html:139
+msgid "alreadyMarried"
+msgstr "alreadyMarried"
+
+#: app/components/profileViewCard/profileViewCard.html:137
+msgid "badPhoto"
+msgstr "badPhoto"
+
+#: app/dashboard/dashboard.html:109
+msgid "buyMore"
+msgstr "buyMore"
+
+#: app/home/home.html:445 app/payment/payment.html:22
+msgid "buyNowText"
+msgstr "buyNowText"
+
+#: app/payment/payment.html:10
+msgid "buyOnline"
+msgstr "buyOnline"
+
+#: app/contactUs/contactUs.html:83
+msgid "callUs"
+msgstr "callUs"
+
+#: app/payment/payment.html:154
+msgid "canNotFutureDate"
+msgstr "canNotFutureDate"
+
+#: app/home/home.html:162 app/home/home.html:251 app/profile/profile.html:203
+msgid "casteValidation1"
+msgstr "casteValidation1"
+
+#: app/home/home.html:166
+msgid "casteValidation2"
+msgstr "casteValidation2"
+
+#: app/account/account.html:112
+msgid "changePassword"
+msgstr "changePassword"
+
+#: app/account/account.html:120
+msgid "changeYourPassword"
+msgstr "changeYourPassword"
+
+#: app/home/home.html:339
+msgid "clickOnShowInterest"
+msgstr "clickOnShowInterest"
+
+#: app/components/uploadImage/uploadimage.html:8
+msgid "clickUpload"
+msgstr "clickUpload"
+
+#: app/home/home.html:361
+msgid "commitment"
+msgstr "commitment"
+
+#: app/home/home.html:362 app/home/home.html:436 app/home/home.html:470
+msgid "commitmentNextText"
+msgstr "commitmentNextText"
+
+#: app/contactUs/contactUs.html:22
+msgid "contactNubmer"
+msgstr "contactNubmer"
+
+#: app/contactUs/contactUs.html:4 app/layout/footer.html:64
+#: app/layout/sidebar.html:61 app/refer-your-friends/refer-your-friends.html:7
+msgid "contactUs"
+msgstr "contactUs"
+
+#: app/contactUs/contactUs.html:10
+msgid "contactUsSub"
+msgstr "contactUsSub"
+
+#: app/payment/payment.html:19
+msgid "contacts"
+msgstr "contacts"
+
+#: app/home/home.html:416
+msgid "creditCardDabitCardPayment"
+msgstr "creditCardDabitCardPayment"
+
+#: app/account/account.html:215
+msgid "deleteAccount"
+msgstr "deleteAccount"
+
+#: app/account/account.html:223
+msgid "deleteMyAccount"
+msgstr "deleteMyAccount"
+
+#: app/account/account.html:326
+msgid "deleteMyAccountText"
+msgstr "deleteMyAccountText"
+
+#: app/components/uploadImage/uploadimage.html:20
+msgid "dragAndDrop"
+msgstr "dragAndDrop"
+
+#: app/profile/profile.html:29 app/profile/profile.html:359
+msgid "eduAndProfDetails"
+msgstr "eduAndProfDetails"
+
+#: app/home/home.html:318
+msgid "emailMobConfirmation"
+msgstr "emailMobConfirmation"
+
+#: app/account/account.html:38 app/account/account.html:82
+#: app/contactUs/contactUs.html:33 app/contactUs/contactUs.html:74
+#: app/dashboard/dashboard.html:50 app/profile/profile.html:538
+msgid "emailText"
+msgstr "emailText"
+
+#: app/account/account.html:91 app/profile/profile.html:545
+msgid "emailValidation1"
+msgstr "emailValidation1"
+
+#: app/login/login.html:67
+msgid "enterCorrectEmail"
+msgstr "enterCorrectEmail"
+
+#: app/account/account.html:124
+msgid "enterCurrPassword"
+msgstr "enterCurrPassword"
+
+#: app/login/login.html:59
+msgid "enterMobileNumber"
+msgstr "enterMobileNumber"
+
+#: app/account/account.html:144
+msgid "enterNewPassword"
+msgstr "enterNewPassword"
+
+#: app/profile/profile.html:162
+msgid "enterValidBirthTime"
+msgstr "enterValidBirthTime"
+
+#: app/account/account.html:280
+msgid "expensivePlans"
+msgstr "expensivePlans"
+
+#: app/login/login.html:154
+msgid "facebook"
+msgstr "facebook"
+
+#: app/components/profileViewCard/profileViewCard.html:135
+msgid "fakeUser"
+msgstr "fakeUser"
+
+#: app/dashboard/dashboard.html:66 app/profile/profile.html:33
+#: app/profile/profile.html:647
+msgid "familyDetails"
+msgstr "familyDetails"
+
+#: app/account/account.html:238
+msgid "findMyLifePartner"
+msgstr "findMyLifePartner"
+
+#: app/layout/footer.html:149
+msgid "findYoursoulmate"
+msgstr "findYoursoulmate"
+
+#: app/refer-your-friends/refer-your-friends.html:7
+msgid "forMoreInfo"
+msgstr "forMoreInfo"
+
+#: app/login/login.html:56
+msgid "forgotPassword"
+msgstr "forgotPassword"
+
+#: app/login/login.html:12
+msgid "forgotUsrName"
+msgstr "forgotUsrName"
+
+#: app/account/account.html:247
+msgid "foundPartner"
+msgstr "foundPartner"
+
+#: app/payment/payment.html:112
+msgid "freePlan"
+msgstr "freePlan"
+
+#: app/account/account.html:10 app/account/account.html:21
+msgid "generalSetting"
+msgstr "generalSetting"
+
+#: app/login/login.html:71
+msgid "getPassword"
+msgstr "getPassword"
+
+#: app/login/login.html:33
+msgid "getUsername"
+msgstr "getUsername"
+
+#: app/dashboard/dashboard.html:123
+msgid "goAndSearchMatch"
+msgstr "goAndSearchMatch"
+
+#: app/login/login.html:178
+msgid "goodBye"
+msgstr "goodBye"
+
+#: app/login/login.html:160
+msgid "google-plus"
+msgstr "google-plus"
+
+#: app/components/profileViewCard/profileViewCard.html:35
+#: app/profile/profile.html:229
+msgid "height"
+msgstr "height"
+
+#: app/admin/admin.html:8
+msgid "implementYourFeatures"
+msgstr "implementYourFeatures"
+
+#: app/account/account.html:66
+msgid "interestNoti"
+msgstr "interestNoti"
+
+#: app/dashboard/dashboard.html:147 app/payment/payment.html:78
+msgid "interestReceived"
+msgstr "interestReceived"
+
+#: app/components/profileViewCard/profileViewCard.html:20
+msgid "lastLogin"
+msgstr "lastLogin"
+
+#: app/contactUs/contactUs.html:80
+msgid "lbAddress"
+msgstr "lbAddress"
+
+#: app/refer-your-friends/refer-your-friends.html:119
+msgid "listCantBeEmpty"
+msgstr "listCantBeEmpty"
+
+#: app/components/profileViewCard/profileViewCard.html:51
+#: app/profile/profile.html:109 app/profile/profile.html:721
+#: app/profile/profile.html:804
+msgid "maritalStatus"
+msgstr "maritalStatus"
+
+#: app/listview/listview.html:5
+msgid "matchFound"
+msgstr "matchFound"
+
+#: app/home/home.html:481
+msgid "matchedlb"
+msgstr "matchedlb"
+
+#: app/home/home.html:371
+msgid "matrimonyRegistration"
+msgstr "matrimonyRegistration"
+
+#: app/login/login.html:166
+msgid "mayIHelpYou"
+msgstr "mayIHelpYou"
+
+#: app/profile/profile.html:285
+msgid "noBloodGroupFound"
+msgstr "noBloodGroupFound"
+
+#: app/profile/profile.html:180
+msgid "noCityFound"
+msgstr "noCityFound"
+
+#: app/profile/profile.html:122 app/profile/profile.html:737
+msgid "noMaritalStatusFound"
+msgstr "noMaritalStatusFound"
+
+#: app/contactUs/contactUs.html:27
+msgid "notPhoneNo"
+msgstr "notPhoneNo"
+
+#: app/payment/payment.html:153
+msgid "notValidDate"
+msgstr "notValidDate"
+
+#: app/account/account.html:17
+msgid "notiSetting"
+msgstr "notiSetting"
+
+#: app/home/home.html:389
+msgid "notificationsForVisit"
+msgstr "notificationsForVisit"
+
+#: app/payment/payment.html:39
+msgid "offlineTransaction"
+msgstr "offlineTransaction"
+
+#: app/home/home.html:407
+msgid "onlyRegUser"
+msgstr "onlyRegUser"
+
+#: app/home/home.html:380
+msgid "onlycompleteProfiles"
+msgstr "onlycompleteProfiles"
+
+#: app/components/uploadImage/uploadimage.html:18
+msgid "orText"
+msgstr "orText"
+
+#: app/account/account.html:291
+msgid "otherReason"
+msgstr "otherReason"
+
+#: app/login/login.html:105
+msgid "passwordUsernameIncorrect"
+msgstr "passwordUsernameIncorrect"
+
+#: app/account/account.html:160
+msgid "passwordValidation1"
+msgstr "passwordValidation1"
+
+#: app/account/account.html:176
+msgid "passwordValidation2"
+msgstr "passwordValidation2"
+
+#: app/home/home.html:398
+msgid "payOnlyForContact"
+msgstr "payOnlyForContact"
+
+#: app/dashboard/dashboard.html:29
+msgid "pendingSection"
+msgstr "pendingSection"
+
+#: app/dashboard/dashboard.html:42 app/profile/profile.html:25
+#: app/profile/profile.html:51
+msgid "personalDetails"
+msgstr "personalDetails"
+
+#: app/home/home.html:148 app/login/login.html:25
+msgid "phoneNumberValidation1"
+msgstr "phoneNumberValidation1"
+
+#: app/home/home.html:149 app/login/login.html:27 app/login/login.html:66
+msgid "phoneNumberValidation2"
+msgstr "phoneNumberValidation2"
+
+#: app/dashboard/dashboard.html:161 app/inbox/inbox.html:47
+#: app/outbox/outbox.html:29
+msgid "photoRequest"
+msgstr "photoRequest"
+
+#: app/dashboard/dashboard.html:58
+msgid "photoUpload"
+msgstr "photoUpload"
+
+#: app/home/home.html:407
+msgid "photos"
+msgstr "photos"
+
+#: app/dashboard/dashboard.html:188
+msgid "pleaseStickArround"
+msgstr "pleaseStickArround"
+
+#: app/dashboard/dashboard.html:23
+msgid "profileComplete"
+msgstr "profileComplete"
+
+#: app/home/home.html:308
+msgid "profileImpDetails"
+msgstr "profileImpDetails"
+
+#: app/payment/payment.html:167
+msgid "provideBankName"
+msgstr "provideBankName"
+
+#: app/home/home.html:74
+msgid "provideEmail"
+msgstr "provideEmail"
+
+#: app/contactUs/contactUs.html:38
+msgid "provideEmailAdd"
+msgstr "provideEmailAdd"
+
+#: app/contactUs/contactUs.html:47
+msgid "provideMessage"
+msgstr "provideMessage"
+
+#: app/account/account.html:133 app/login/login.html:118
+msgid "providePassword"
+msgstr "providePassword"
+
+#: app/contactUs/contactUs.html:26
+msgid "providePhone"
+msgstr "providePhone"
+
+#: app/payment/payment.html:136
+msgid "provideProfileId"
+msgstr "provideProfileId"
+
+#: app/account/account.html:313
+msgid "provideReason"
+msgstr "provideReason"
+
+#: app/payment/payment.html:152
+msgid "provideTransDate"
+msgstr "provideTransDate"
+
+#: app/login/login.html:101
+msgid "provideUserName"
+msgstr "provideUserName"
+
+#: app/contactUs/contactUs.html:39
+msgid "provideValidEmailAdd"
+msgstr "provideValidEmailAdd"
+
+#: app/login/login.html:65
+msgid "provideValue"
+msgstr "provideValue"
+
+#: app/account/account.html:181
+msgid "reenterNewPassword"
+msgstr "reenterNewPassword"
+
+#: app/account/account.html:167
+msgid "reenterPassword"
+msgstr "reenterPassword"
+
+#: app/components/profileViewCard/profileViewCard.html:126
+msgid "reportProfile"
+msgstr "reportProfile"
+
+#: app/components/profileViewCard/profileViewCard.html:116
+msgid "reportUser"
+msgstr "reportUser"
+
+#: app/account/account.html:99
+msgid "resendEmail"
+msgstr "resendEmail"
+
+#: app/home/home.html:490 app/home/home.html:502 app/home/home.html:514
+#: app/home/home.html:526
+msgid "romanceDictMeaning"
+msgstr "romanceDictMeaning"
+
+#: app/account/account.html:201
+msgid "saveNewPassword"
+msgstr "saveNewPassword"
+
+#: app/home/home.html:329
+msgid "searchEfficientWay"
+msgstr "searchEfficientWay"
+
+#: app/payment/payment.html:188
+msgid "selectPayment"
+msgstr "selectPayment"
+
+#: app/payment/payment.html:14
+msgid "selectPlan"
+msgstr "selectPlan"
+
+#: app/account/account.html:226
+msgid "selectReasonDeleteAcc"
+msgstr "selectReasonDeleteAcc"
+
+#: app/contactUs/contactUs.html:55
+msgid "sendMessage"
+msgstr "sendMessage"
+
+#: app/login/login.html:15
+msgid "sendingUserName"
+msgstr "sendingUserName"
+
+#: app/refer-your-friends/refer-your-friends.html:4
+msgid "serveYourFriends"
+msgstr "serveYourFriends"
+
+#: app/login/login.html:183
+msgid "shareUsOnFB"
+msgstr "shareUsOnFB"
+
+#: app/dashboard/dashboard.html:100 app/home/home.html:443
+#: app/payment/payment.html:20
+msgid "showInterest"
+msgstr "showInterest"
+
+#: app/dashboard/dashboard.html:104
+msgid "showInterests"
+msgstr "showInterests"
+
+#: app/dashboard/dashboard.html:138
+msgid "showInterestst"
+msgstr "showInterestst"
+
+#: app/account/account.html:191
+msgid "showPassword"
+msgstr "showPassword"
+
+#: app/account/account.html:31
+msgid "smsText"
+msgstr "smsText"
+
+#: app/payment/payment.html:54
+msgid "submitTransDetails"
+msgstr "submitTransDetails"
+
+#: app/payment/payment.html:53
+msgid "submitTransactionDetails"
+msgstr "submitTransactionDetails"
+
+#: app/login/login.html:181
+msgid "successfullyLogout"
+msgstr "successfullyLogout"
+
+#: app/home/home.html:171
+msgid "termsAndConditionText1"
+msgstr "termsAndConditionText1"
+
+#: app/home/home.html:171 app/layout/footer.html:68
+msgid "termsAndConditionText2"
+msgstr "termsAndConditionText2"
+
+#: app/home/home.html:171 app/layout/footer.html:68
+msgid "termsAndConditionText3"
+msgstr "termsAndConditionText3"
+
+#: app/home/home.html:171
+msgid "termsAndConditionText4"
+msgstr "termsAndConditionText4"
+
+#: app/home/home.html:171 app/layout/footer.html:69
+msgid "termsAndConditionText5"
+msgstr "termsAndConditionText5"
+
+#: app/dashboard/dashboard.html:138
+msgid "toMakeConne"
+msgstr "toMakeConne"
+
+#: app/dashboard/dashboard.html:118
+msgid "totalVisits"
+msgstr "totalVisits"
+
+#: app/account/account.html:53
+msgid "typeOfNoti"
+msgstr "typeOfNoti"
+
+#: app/account/account.html:258
+msgid "unableFindGoodProfile"
+msgstr "unableFindGoodProfile"
+
+#: app/account/account.html:269
+msgid "unhappyWithLB"
+msgstr "unhappyWithLB"
+
+#: app/dashboard/dashboard.html:170
+msgid "updatePhoto"
+msgstr "updatePhoto"
+
+#: app/home/home.html:81
+msgid "userAlreadyUsed"
+msgstr "userAlreadyUsed"
+
+#: app/home/home.html:75
+msgid "usernameValidation1"
+msgstr "usernameValidation1"
+
+#: app/home/home.html:76
+msgid "usernameValidation2"
+msgstr "usernameValidation2"
+
+#: app/home/home.html:77
+msgid "usernameValidation3"
+msgstr "usernameValidation3"
+
+#: app/home/home.html:78
+msgid "usernameValidation4"
+msgstr "usernameValidation4"
+
+#: app/dashboard/dashboard.html:140
+msgid "usersConnected"
+msgstr "usersConnected"
+
+#: app/dashboard/dashboard.html:125
+msgid "usersVisited"
+msgstr "usersVisited"
+
+#: app/account/account.html:78
+msgid "varifyEmail"
+msgstr "varifyEmail"
+
+#: app/dashboard/dashboard.html:186
+msgid "viewAll"
+msgstr "viewAll"
+
+#: app/dashboard/dashboard.html:138
+msgid "viewContact"
+msgstr "viewContact"
+
+#: app/account/account.html:59
+msgid "visitNoti"
+msgstr "visitNoti"
+
+#: app/layout/footer.html:121
+msgid "weProvideService"
+msgstr "weProvideService"
+
+#: app/components/profileViewCard/profileViewCard.html:141
+msgid "wrongContactDetails"
+msgstr "wrongContactDetails"
+
+#: app/components/profileViewCard/profileViewCard.html:30
+msgid "years"
+msgstr "years"
+
+#: app/refer-your-friends/refer-your-friends.html:6
+msgid "youCanEarnMoney"
+msgstr "youCanEarnMoney"
+
+#: app/dashboard/dashboard.html:102 app/dashboard/dashboard.html:90
+msgid "youHaveText"
+msgstr "youHaveText"

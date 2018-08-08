@@ -1,0 +1,342 @@
+<div class="container payment-container account-container">
+  <div class="row">
+    <div class="payment-header">
+      <h1 translate>Account Settings</h1>
+    </div>
+    <md-content>
+      <md-tabs md-selected="vm.selectedIndex" md-dynamic-height>
+        <md-tab ng-click="vm.changeTab(0)">
+                    <md-tab-label>
+                        <div class="tab-header" translate>General Settings<span
+                                class="circle-icon"><i
+                                class="icon-settings"></i></span></div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        <div class="col-12">
+                            <div class="general-settings-wrapper">
+                                <h3 translate>Notification Settings</h3>
+
+                                <div class="row no-margin">
+                                    <div class="checkbox" translate>
+                                        How to notify you? Vi SMS or Email or Both
+                                    </div>
+
+                                    <!--   <md-checkbox  class="checkbox" ng-model="visitNotification">
+
+                                      </md-checkbox> -->
+                                    <div class="col-sm-6">
+                                        <md-checkbox class="checkbox"
+                                                     ng-model="vm.notification.sms"
+                                                     ng-change="vm.setNotificationSetting()" ><span translate>SMS</span>
+
+                                        </md-checkbox>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <md-checkbox class="checkbox"
+                                                     ng-model="vm.notification.email"
+                                                     ng-change="vm.setNotificationSetting()"><span translate>Email</span>
+
+                                        </md-checkbox>
+                                    </div>
+                                    <!-- <div class="col-sm-6">
+                                      <md-checkbox  class="checkbox" ng-disabled="!visitNotification">
+                                        SMS & EMAIL
+                                      </md-checkbox>
+                                    </div> -->
+
+                                </div>
+
+                                <br>
+
+                                <div class="row no-margin">
+                                    <div class="checkbox" translate>
+                                        Type of Notifications
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <md-checkbox class="checkbox"
+                                                     ng-model="vm.notification.visits"
+                                                     ng-change="vm.setNotificationSetting()" >
+                                            <span translate>Visit Notifications</span>
+                                        </md-checkbox>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <md-checkbox class="checkbox"
+                                                     ng-model="vm.notification.connect_requests"
+                                                     ng-change="vm.setNotificationSetting()" >
+                                            <span translate>Interest Notifications</span>
+                                        </md-checkbox>
+                                    </div>
+                                    <!-- <div class="col-sm-6">
+                                      <md-checkbox  class="checkbox" ng-disabled="!interestNotification">
+                                        SMS & EMAIL
+                                      </md-checkbox>
+                                    </div> -->
+                                </div>
+
+                                <hr>
+                                <form name="EmailConfirmForm" novalidate>
+                                    <h3 translate>Verify Email Address</h3>
+
+                                    <div class="select  row-buffer-lg">
+                                        <md-input-container>
+                                            <label translate>Email</label>
+                                            <input type="text"
+                                                   ng-model="vm.email_address"
+                                                   name="email_address"
+                                                   pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$">
+
+                                            <div ng-messages="EmailConfirmForm.email_address.$error"
+                                                 role="alert">
+                                                <div ng-message="pattern" translate>
+                                                    Please enter a valid email.
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                    <div class="text-center delete-account">
+                                        <button class="btn btn-primary"
+                                                ng-click="vm.sendConfirmEmail(vm.email_address)" >
+                                                <span translate>Resend Email</span>
+
+                                        </button>
+                                        <br/>
+                                        <img src="images/floral.png">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+
+                <md-tab ng-click="vm.changeTab(1)">
+                    <md-tab-label>
+                        <div class="tab-header" translate>Change Password<span
+                                class="circle-icon"><i class="icon-change"></i></span>
+                        </div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        <form name="passwordChangeForm" novalidate>
+                            <div class="col-12">
+                                <div class="change-password-wrapper ">
+                                    <h3 class="text-center" translate>Change your password</h3>
+
+                                    <div class="select">
+                                        <md-input-container>
+                                            <label translate>Enter Current Password</label>
+                                            <input type="{{ vm.showPassfield ? 'text' :'password' }}"
+                                                   name="currentPassword"
+                                                   ng-model="vm.passwordObj.currentPassword"
+                                                   required>
+
+                                            <div ng-messages="passwordChangeForm.currentPassword.$error"
+                                                 role="alert" multiple>
+                                                <div ng-message="required"
+                                                     class="my-message" translate>Please provide a password.
+                                                </div>
+                                                <div ng-if="vm.oldPassFlag">
+                                                    {{vm.oldPassError}}
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+
+                                    <div class="select">
+                                        <md-input-container>
+                                            <label translate>Enter new Password</label>
+                                            <input type="{{ vm.showPassfield ? 'text' :'password' }}"
+                                                   name="newPassword"
+                                                   ng-model="vm.passwordObj.newPassword"
+                                                   ng-blur="vm.isSameOldAndNewPass()"
+                                                   ng-change="vm.equalPass()"
+                                                   required>
+
+                                            <div id="samePass"></div>
+                                            <div ng-messages="passwordChangeForm.newPassword.$error ||vm.passwordmatch "
+                                                 role="alert" multiple>
+                                                <div ng-message="required"
+                                                     class="my-message" translate>Please provide a new password.
+                                                </div>
+                                                <div class="my-message"
+                                                     ng-if="vm.passwordmatch"
+                                                     style="font-size:9px;" translate>old and new password should not be same.
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                    <div class="select ">
+                                        <md-input-container>
+                                            <label translate>Re-Enter New Password</label>
+                                            <input type="{{ vm.showPassfield ? 'text' :'password' }}"
+                                                   name="confirmPassword"
+                                                   ng-model="vm.passwordObj.confirmPassword"
+                                                   ng-change="vm.equalPass()"
+                                                   required>
+
+                                            <div ng-if="vm.isSamePassword"
+                                                 style="color:red;font-size:9px;" translate>
+                                                Password Fields are not equal!
+                                            </div>
+                                            <div ng-messages="passwordChangeForm.confirmPassword.$error"
+                                                 role="alert">
+                                                <div ng-message="required"
+                                                     class="my-message" translate>Re-Enter new password.
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                    <div class="select row-buffer-lg-chpwd">
+                                        <md-checkbox class="checkbox"
+                                                     name="showPass"
+                                                     ng-model="vm.showPass"
+                                                     ng-change="vm.showPassfield = vm.showPass" >
+                                            <span translate>Show password.</span>
+                                        </md-checkbox>
+                                    </div>
+
+                                    <div class="text-center delete-account">
+                                        <!--<button type="button" class="btn btn-secondary">Cancel</button>-->
+                                        <button type="submit"
+                                                ng-disabled="vm.isSamePassword"
+                                                class="btn btn-primary"
+                                                ng-click="vm.changePassword(passwordChangeForm)" >
+                                                <span translate>Save New Password</span>
+                                        </button>
+                                        <br/>
+                                        <img src="images/floral.png">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </md-tab-body>
+                </md-tab>
+
+                <md-tab ng-click="vm.changeTab(2)">
+                    <md-tab-label>
+                        <div class="tab-header" translate>Delete Account<span
+                                class="circle-icon"><i
+                                class="icon-profile-delete"></i></span></div>
+                    </md-tab-label>
+                    <md-tab-body>
+                        <form name="deleteForm" novalidate>
+                            <div class="col-12">
+                                <div class="delete-account-wrapper text-center">
+                                    <h3 translate>I want to delete my account</h3>
+
+                                    <p class="delete-reason" translate>
+                                        Please select the reason for account deletion
+                                    </p>
+                                    <md-radio-group
+                                            ng-model="vm.deleteAccount.delete_reason">
+                                        <ul>
+                                            <li>
+                                                <div class="">
+
+                                                    <md-radio-button
+                                                            value='Lagachi bolni helped me in finding life partner. Partner Id'
+                                                            aria-label='Lagachi bolni helped me in finding life partner. Partner Id'
+                                                            >
+                                                            <span translate>Lagachi bolni helped me to find my life partner</span>
+                                                    </md-radio-button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <md-radio-button
+                                                            value="Found partner in other matrimony"
+                                                            aria-label=" Found partner in other matrimony" >
+                                                        <span translate>Found partner in other matrimony</span>
+                                                    </md-radio-button>
+                                                    </md-checkbox>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+
+                                                    <md-radio-button
+                                                            value='Unable to find good profiles at Lagnachi bolni'
+                                                            aria-label='Unable to find good profiles at Lagnachi bolni' ><span translate>Unable to find good profiles at Lagnachi bolni</span>
+
+                                                    </md-radio-button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <md-radio-button
+                                                            value="Unhappy with Lagnachi bolni"
+                                                            aria-label=" Found partner in other matrimony" >
+                                                        <span translate>Unhappy with Lagnachi bolni</span>
+                                                    </md-radio-button>
+                                                    </md-checkbox>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+
+                                                    <md-radio-button
+                                                            value='The contact buying plans are expensive'
+                                                            aria-label='Lagachi bolni helped me in finding life partner. Partner Id' ><span translate>The contact buying plans are expensive</span>
+
+                                                    </md-radio-button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" other-reason"
+                                                     layout="column"
+                                                     layout-gt-sm="row">
+                                                    <md-radio-button flex="50"
+                                                                     value="other"
+                                                                     aria-label=" Found partner in other matrimony" >
+                                                        <span translate>Other reason</span>
+                                                    </md-radio-button>
+
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="select" flex="50"
+                                                     ng-if="vm.deleteAccount.delete_reason ==='other'">
+                                                    <md-input-container
+                                                            style="margin-top: -8px;">
+                                                        <label name="labelother" translate>Specify the reason</label>
+                                                        <input type="text"
+                                                               name="textother"
+                                                               ng-model="vm.deleteAccount.delete_comment"
+                                                               required>
+
+                                                        <div ng-messages="deleteForm.textother.$error "
+                                                             role="alert"
+                                                             multiple>
+                                                            <div ng-message="required"
+                                                                 class="my-message" translate>
+                                                                Please provide a reason.
+                                                            </div>
+                                                        </div>
+                                                    </md-input-container>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </md-radio-group>
+                                    <div class="text-center delete-account">
+                                        <!--<button class="btn btn-secondary">Cancel</button>-->
+                                        <button type="submit"
+                                                class="btn btn-primary"
+                                                ng-click="vm.deleteMyAccount(deleteForm)" >
+                                                <span translate>Delete My Account</span>
+
+                                        </button>
+                                        <br/>
+                                        <img src="images/floral.png">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </md-tab-body>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+
+    </div>
+
+</div>

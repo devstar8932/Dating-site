@@ -1,0 +1,74 @@
+<div ng-controller="UploadController">
+  <div>
+    <h3 class="wizard-heading-title" translate>Upload your photos</h3>
+  </div>
+  <div class="col-sm-6 col-md-6">
+    <div class="upload-content">
+      <h1 class="upload-title" translate>ADD YOUR PICTURE</h1>
+      <span class="below-text" translate>Click to upload photos from your computer</span>
+      <br>
+      <br>
+
+      <div  layout="column" layout-align="center" layout-gt-sm="row" flex>
+        <div nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter" options="{ url: '/foo' }" layout="column" layout-align="center center" class="dropzone-div">
+          <label class="upload-button" style="margin-bottom: 0px">
+        <input class="ng-hide" type="file" id="logoFile" nv-file-select="" uploader="uploader" multiple translate />Upload
+        </label>
+          <br>
+          <p>or</p>
+          <div class="drag-box" style="text-align: center;" over-class="another-file-over-class" class="well my-drop-zone" ng-model="user1.pic">
+            <span ng-hide="filename!=''" translate>Drag or Drop photos here from computer</span>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="row" ng-if="errorMessage!=null" style="text-align: center; color:red;">
+       {{errorMessage}}
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-6 uploaded-images clearfix">
+    <div id="dvPreview">
+      <div>
+        <div class="img-box">
+          <i class="fa fa-times-circle close-img" ng-click="deletePic(1)"></i>
+
+          <img id="img1" ng-src='{{ vm.user.profile_image_url != null ? vm.user.profile_image_url : vm.user.gender == "male"?
+                 "./images/Male_avatar.jpg" : "./images/Female_avatar.jpg"}}'
+               width="auto" height="auto" border="0" class="img-thumbnail">
+
+        </div>
+      </div>
+      <!-- <div class="col-md-4 col-sm-6 col-md-6 col-xs-6">
+      <div class="img-box">
+      <i class="fa fa-times-circle close-img" ng-click="deletePic(2)"></i>
+      <img id="img2" ng-src="images/cuty.jpg" width="auto" height="auto" border="0" class="img-thumbnail" >
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-md-6 col-xs-6">
+      <div class="img-box">
+      <i class="fa fa-times-circle close-img" ng-click="deletePic(3)"></i>
+      <img id="img3" ng-src="images/cuty.jpg" width="auto" height="auto" border="0" class="img-thumbnail" >
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-md-6 col-xs-6">
+      <div class="img-box">
+      <i class="fa fa-times-circle close-img" ng-click="deletePic(4)"></i>
+      <img id="img4" ng-src="images/cuty.jpg" width="auto" height="auto" border="0" class="img-thumbnail" >
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-md-6 col-xs-6">
+      <div class="img-box">
+      <i class="fa fa-times-circle close-img" ng-click="deletePic(5)"></i>
+      <img id="img5" ng-src="images/img14.jpg" width="auto" height="auto" border="0" class="img-thumbnail" >
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-md-6 col-xs-6">
+      <div class="img-box">
+      <i class="fa fa-times-circle close-img" ng-click="deletePic(6)"></i>
+      <img id="img6" ng-src="images/cuty.jpg" width="auto" height="auto" border="0" class="img-thumbnail" >
+      </div>
+      </div> -->
+    </div>
+  </div>
+</div>

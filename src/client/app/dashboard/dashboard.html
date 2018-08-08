@@ -1,0 +1,260 @@
+<main id="inner-main" ng-init="vm.dashboarddata()">
+    <div id="wrapper">
+        <div>
+            <div style="margin-bottom:40px;">
+                <div class="db-header">
+                    <h4 class="user-heading">{{vm.greet}}! {{vm.user.firstname}} <span><i
+                        class="fa fa-thumbs-up"></i>&nbsp;
+                        Already Viewed &nbsp; | &nbsp; Connected</span>
+                    </h4>
+                </div>
+                <div class="row db-top-section">
+                    <div class="col-sm-6 db-left">
+                        <div class="col-sm-12 db-left-section clearfix flex-center">
+                                <div class="col-md-4 col-xs-12" style="padding:0">
+                                    <div class="text-center">
+                                        <div class="col-md-12">
+                                            <img ng-if="vm.user.profile_image_url ==null" class="img-circle db-profile" src="./images/img12.jpg">
+                                            <img  ng-if="vm.user.profile_image_url != null" ng-src="{{vm.dash_data.image_url}}" class="img-circle db-profile">
+                                        </div>
+                                        <div class="col-md-12 db-percentage-container">
+                                            <span class="db-profile-percentage">{{vm.dash_data.profile_state.complete_percentage}}%</span>
+                                            <span class="db-profile-completion" translate>Profile Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-xs-12" ng-if="!vm.sectionCompleted">
+                                    <p class="detail-table-header" translate>
+                                        Pending Sections
+                                    </p>
+                                    <table align="center" text-left class="detail-table">
+                                        <tr  ng-if="!vm.basic.isComplete">
+                                            <td>
+                                                <a class="pending-link" href="/profile#physique-detail" translate>Basic Details &nbsp;</a>
+                                            </td>
+                                            <td>
+                                                <span ng-if="!vm.basic.isComplete" class="incomplete"> {{vm.basic.value}}%</span>
+                                            </td>
+                                        </tr>
+                                        <tr  ng-if="!vm.personal.isComplete">
+                                            <td>
+                                                <a class="pending-link" href="/profile#personal-detail" translate> Personal Details &nbsp;</a>
+                                            </td>
+                                            <td>
+                                                <span ng-if="!vm.personal.isComplete" class="incomplete"> {{vm.personal.value}}%</span>
+                                            </td>
+                                        </tr>
+                                        <tr ng-if="!vm.email.isComplete">
+                                            <td>
+                                                <a class="pending-link" data-toggle="modal" data-target="#confirmEmail" translate>  Email &nbsp; </a>
+                                            </td>
+                                            <td>
+                                                <span ng-if="!vm.email.isComplete" class="incomplete"> {{vm.email.value}}% </span>
+                                            </td>
+                                        </tr>
+                                        <tr ng-if="!vm.photo.isComplete">
+                                            <td>
+                                                <a class="pending-link" href="/uploadimages" translate>Photo Upload &nbsp; </a>
+                                            </td>
+                                            <td>
+                                                <span ng-if="!vm.photo.isComplete" class="incomplete"> {{vm.photo.value}}%</span>
+                                            </td>
+                                        </tr>
+                                        <tr ng-if="!vm.family.isComplete">
+                                            <td>
+                                                <a class="pending-link" href="/profile#family-detail" translate> Family Details &nbsp; </a>
+                                            </td>
+                                            <td>
+                                                <span ng-if="!vm.family.isComplete" class="incomplete"> {{vm.family.value}}%</span>
+                                            </td>
+                                        </tr>
+                                        <tr ng-if="!vm.astro.isComplete">
+                                            <td>
+                                                <a class="pending-link" href="/profile#astro-detail" translate> Astro Details &nbsp; </a>
+                                            </td>
+                                            <td>
+                                                <span ng-if="vm.astro.isComplete" class="incomplete"> {{vm.astro.value}}%</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        </div>
+                        <div class="col-sm-12 db-left-section db-left-bottom">
+                            <div>
+                                <div class="col-sm-4 col-xs-6 divider-xs">
+                                    <div class="text-center">
+                                        <h4 translate>Contact Credits</h4>
+                                        <h1>{{vm.dash_data.contact_credits_remaining}}</h1>
+                                        <!--<p ng-if="!vm.dash_data.contact_credits_remaining" translate>You have {{vm.dash_data.contact_credits_remaining}} contact credits, Buy more if you want to get contact details of other profiles.</p>-->
+                                        <!--<p ng-if="vm.dash_data.contact_credits_remaining" translate>You have {{vm.dash_data.contact_credits_remaining}} contact credits. please use those to get contact detailss of others.</p>-->
+                                      <span class="" translate>You have {{vm.dash_data.contact_credits_remaining}}<br>contact credits</span>
+                                      <!--<span translate></span>-->
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 hidden-xs">
+                                    <hr width="1" size="500">
+                                </div>
+                                <div class="col-sm-4 col-xs-6 db-show-interest">
+                                    <div class="text-center">
+                                        <h4 translate>Show Interest</h4>
+                                        <h1>{{vm.dash_data.show_interests_remaining}}</h1>
+                                        <span class="" translate>You have {{vm.dash_data.show_interests_remaining}}<br>show interests</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="db-buy-more"><a class="db-buy-more" href="/payment" translate>
+                                BUY MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 db-right">
+                        <div class="col-sm-12 db-right-section">
+                            <div class="row">
+                                <div class="col-xs-6 top-left">
+                                    <div class="text-center">
+                                        <h4 translate>Total Visits</h4>
+                                        <notification-icon
+                                            count='vm.dash_data.profile_performance.profile_visits_new' animation="Grow" ng-click="vm.dash_data.profile_performance.profile_visits > 0 ? vm.changeview('visited-list') : null" class="card-pointer">
+                                            <h1>{{vm.dash_data.profile_performance.profile_visits}}</h1>
+                                        </notification-icon>
+                                        <p ng-if="!vm.dash_data.profile_performance.profile_visits" translate>Go and search for perfect matches</p>
+                                        <p ng-if="vm.dash_data.profile_performance.profile_visits" translate>users visited your profile</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 top-right">
+                                    <div class="text-center">
+                                        <h4 translate>Connected</h4>
+                                        <notification-icon
+                                                count='vm.dashboard.connected_profiles_new'
+                                                animation="Grow"
+                                                ng-click="vm.dashboard.connected_profiles > 0 ? vm.changeview('connected-list') : null"
+                                                class="card-pointer">
+                                            <h1>{{vm.dashboard.connected_profiles}}</h1>
+                                        </notification-icon>
+                                        <p ng-if="!vm.dashboard.connected_profiles" translate>
+                                            Show Interest/View Contact <br>to make connections</p>
+                                        <p ng-if="vm.dashboard.connected_profiles" translate>users connected to you</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bottom-row">
+                                <div class="col-xs-6 bottom-left">
+                                    <div class="text-center">
+                                        <h4 translate>Interest Received</h4>
+                                        <notification-icon
+                                                count='vm.dashboard.received_requests_new'
+                                                animation="Grow"
+                                                ng-click="vm.dashboard.received_requests > 0 ? vm.goTOInboxView('interest-received-list',0) : null"
+                                                class="card-pointer">
+                                            <h1>
+                                                {{vm.dashboard.received_requests}}</h1>
+                                        </notification-icon>
+                                        <p ng-if="!vm.dashboard.received_requests" translate>You have not received any interest. Dont worry, go ahead and search for the match</p>
+                                        <p ng-if="vm.dashboard.received_requests" translate>Accept/Reject them</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 bottom-right">
+                                    <div class="text-center">
+                                        <h4 translate>Photo Requests</h4>
+                                        <notification-icon
+                                                count='vm.dashboard.photo_requests_new'
+                                                animation="Grow"
+                                                ng-click="vm.dashboard.photo_requests > 0 ? vm.goTOInboxView('photo-request-list',3) : null"
+                                                class="card-pointer">
+                                            <h1>
+                                                {{vm.dashboard.photo_requests}}</h1>
+                                        </notification-icon>
+                                      <p ng-if="!vm.dashboard.photo_requests" translate>You have not received any photo request.</p>
+                                        <p ng-if="vm.dashboard.photo_requests" translate>please update your photo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-margin dashboard-perfect-match-header">
+                    <span class="pull-left">
+                        <notification-icon count='vm.dash_data.perfect_match_count' animation="Grow">
+                            <h2 translate>Perfect Match</h2>
+                        </notification-icon>
+                    </span>
+                    <span ng-if="vm.dash_data.perfect_match_count"
+                          class="pull-left view-all"><a
+                            ng-click="vm.changeview('perfect-match-list')"
+                            class="card-pointer" translate>View All</a></span>
+                </div>
+                <span ng-if="!vm.dash_data.perfect_match_count" translate>We are working to find best matches for you. Please stick around.</span>
+
+                <div class="row dashboard-perfect-match-list">
+                    <div ng-repeat ="profile in vm.dash_data.perfect_match">
+                        <lb-search-result result-type="inbox"
+                                          profile-data="profile"></lb-search-result>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<div class="modal fade" id="confirmEmail" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+     <form name="EmailConfirmForm" novalidate>
+       <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" ng-click="vm.cancel()">&times;</button>
+          <h3 class="modal-title" translate>Verify Email Address</h3>
+        </div>
+         <div class="modal-body">
+           <p ng-if="!vm.dash_data.welcome_gift" translate> Confirm your
+             email and get 5 show
+             interests
+             free! <span ng-show="vm.email_address != ''"> We have already sent you a mail. Check your Mail Box.</span>
+           </p>
+           <p ng-if="vm.dash_data.welcome_gift" translate> Confirm your email.
+             <span
+               ng-show="vm.email_address != ''"> We have already sent you a mail. Check your Mail Box.</span>
+             </p>
+
+                                    <div class="select  row-buffer-lg">
+                                        <md-input-container>
+                                            <label translate>Email</label>
+                                            <input type="text"
+                                                   ng-model="vm.email_address"
+                                                   name="email_address"
+                                                   pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z]+\.[A-Za-z]{2,4}$"
+                                                   ng-change="vm.checkEmail()" >
+
+                                            <div ng-messages="EmailConfirmForm.email_address.$error"
+                                                 role="alert">
+                                                <div ng-message="pattern" translate>
+                                                    Please enter a valid email.
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                    <div class="text-center delete-account">
+                                        <!--<button class="btn btn-primary"-->
+                                                <!--ng-click="vm.saveEmail(vm.email_address)"-->
+                                                <!--ng-disabled="vm.isButtonState">-->
+                                                <!--<span translate>Don't have Email</span>-->
+
+                                        <!--</button>-->
+                                         <button type="button" class="btn btn-secondary " data-dismiss="modal" ng-click="vm.cancel()" translate>Will Do it later</button>
+                                        <button class="btn btn-primary"
+                                                ng-click="vm.sendConfirmEmail(vm.email_address)"
+                                                ng-disabled="vm.isButtonState">
+                                                <span translate>Resend Email</span>
+
+                                        </button>
+                                        <br/>
+                                        <!--<img src="images/floral.png">-->
+                                    </div>
+         </div>
+                                </form>
+  </div>
+</div>
+</div>
+

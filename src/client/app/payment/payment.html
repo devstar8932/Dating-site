@@ -1,0 +1,272 @@
+<div class="container payment-container">
+  <div class="row">
+    <div class="payment-header">
+      <h1 translate>Payment</h1>
+    </div>
+    <md-content style="background-color: white;">
+        <md-tabs md-selected="vm.selectedIndex" md-dynamic-height>
+        <md-tab>
+          <md-tab-label>
+            <div class="tab-header">{{'Buy Online' | translate}} <span class="circle-icon"><i class="icon-mobile-card"></i></span></div>
+          </md-tab-label>
+          <md-tab-body>
+            <div class="row payment-plans-list">
+              <p class="plans-header" translate>Select the plan by clicking on 'Buy Now'</p>
+              <div class="col-sm-6 " ng-repeat ="plan in vm.plansList  | orderBy:'credits':'false'">
+                <div class="payment-plan">
+                  <h3> {{plan.name}}</h3>
+                  <p class="plan-price"><span class="rs" translate>Rs
+                  </span><span class="value">{{plan.actual_price}}</span>
+                    <span ng-show="plan.actual_price != plan.price"
+                          style="font-size: 12px;">Rs-</span><strike
+                      ng-show="plan.actual_price != plan.price"
+                      style="font-size: 15px;">{{plan
+                      .price}}</strike></p>
+                  <p class="bottom-text">{{plan.credits}} <span translate>Contacts</span></p>
+                  <p class="bottom-text">{{plan.interests}} {{'Show Interests' | translate}}</p>
+                  <span ng-show="plan.price == 500"> <p> <ul>
+<li translate>User initiative will lead to find perfect match </li>
+<li translate>Swayamwar package provides you access to potential profiles and choose the right one. Your initiative is atmost essential for your "Swayamwar"</li>
+</ul>
+                    </p> </span>
+                  <span ng-show="plan.price == 1000"> <p> <ul>
+<li translate>By registering for Saptpadi package, you get the access to all the profiles for your own search. </li>
+<li translate>This Value for Money Package  is designed to offer you more contact credits as well as Show Interest.</li>
+</ul>
+                    </p> </span>
+                  <span ng-show="plan.price == 2000"> <p> <ul>
+<li translate>Vivah is our exclusive package which has a system generated suggestive module to save your time by our system generated suggestions for suitable matches. </li>
+<li translate>Our tele- counselling session aims at clearing your basic emotional dilemmas.</li>
+</ul>
+                    </p> </span>
+
+                  <span ng-show="plan.price == 3500"> <p> <ul>
+<li translate>This is the most cost effective membership plan with a platter of varied services.  </li>
+<li translate>You will have access to all the profiles, and our personalized mentoring can short list the suitable match to save your time.</li>
+                    <li translate>Individual Marriage counseling session clears the emotional dilemmas and leads you towards Happy Married life.</li>
+<li translate>You will also be invited for our grooming sessions.</li>
+                    <li translate>We  will be pleased to gift you our welcome kit as well.</li>
+</ul>
+                    </p> </span>
+
+                  <div class="btn-wrap">
+                    <button class="btn btn-primary" ng-click="vm.buyNow(plan)" translate>Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </md-tab-body>
+        </md-tab>
+
+        <md-tab>
+          <md-tab-label>
+            <div class="tab-header">{{'Offline Payment' | translate}}<span class="circle-icon"><i class="icon-wallet"></i></span></div>
+          </md-tab-label>
+          <md-tab-body>
+            <div class="row">
+              <div class="account-wrapper">
+                <h2 translate>Transfer the amount to below account.</h2>
+
+                  <p class="line2"><span class="note" translate>Note: </span>
+                    <span translate>As this is an offline transaction for us, this will take 2 working days to Get the contact credits.</span>
+                  </p>
+                <div>
+                  <p class="line3"> <span translate>IDBI Bank Account Number - 0087102000042705 </span> <br><span translate>Name - LagnachiBolni </span> <br><span translate>Branch - Nigdi, Pune </span> <br> <span translate>IFSC Code - IBKL0000087</span></p>
+                </div>
+                <!--<div ng-if="!vm.isLoggedInUser">-->
+                  <!--<a href="/login">Login to use More</a>-->
+                <!--</div>-->
+              </div>
+
+            </div>
+            <div class="btn-wrap">
+              <p class="line2" translate>Submit the transaction details after you transfer the amount.</p>
+              <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#savePayment" translate>Submit Transaction Details
+              </button>
+            </div>
+          </md-tab-body>
+          </md-tab>
+        <md-tab ng-if="vm.isLoggedInUser">
+          <md-tab-label>
+            <div class="tab-header" ng-click="vm.getTransactions()"> {{'Payment History' | translate}}<span class="circle-icon"><i class="icon-file-history"></i></span></div>
+          </md-tab-label>
+
+                    <md-tab-body>
+
+                        <div class="row text-center" ng-if="vm.payment_gateway">
+                            <P translate
+                               ng-if="vm.lastPayment.trans_status == 'Initiated'"
+                               style="color: red;"> Your last payment for Rs.{{vm.lastPayment.payment_made}} is Initiated, But not completed.
+                            </P>
+
+                            <P translate
+                               ng-if="vm.lastPayment.trans_status == 'Failed'"
+                               style="color: red;">
+                                Your last payment for Rs.{{vm.lastPayment.payment_made}} is failed.
+                            </P>
+
+                            <P translate
+                               ng-if="vm.lastPayment.trans_status == 'Success'"
+                               style="color: #3f9d0b;">
+                                Your last payment for Rs.{{vm.lastPayment.payment_made }} is successful.
+                            </P>
+                        </div>
+                        <div ng-if="vm.transactionList_count"
+                             class="table-responsive payment-history">
+                            <span class="overflow-notifier visible-xs"> >>> </span>
+                            <table class="table ">
+                                <thead>
+                                <tr>
+                                    <th translate> Order Id
+                                    </th>
+                                    <th translate>Credits Received
+                                    </th>
+                                    <th translate>Interest Received
+                                    </th>
+                                    <th translate>Amount
+                                    </th>
+                                  <th translate>Payment Status
+                                  </th>
+                                    <th translate>Payment Date
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="transaction in vm.transactionList">
+                                    <td>
+                                      {{transaction.id}}
+                                    </td>
+                                    <td>
+                                        {{transaction.credits_granted}} Credits
+                                    </td>
+                                    <td>
+                                        {{transaction.interests_granted}}
+                                        Interests
+                                    </td>
+                                    <td>
+                                      Rs. {{transaction.payment_made}}
+                                    </td>
+                                  <td>
+                                    {{transaction.trans_status}}
+                                  </td>
+                                    <td>
+                                        <!--     10-May-2016  -->
+                                        {{transaction.date_submitted |
+                                        date:'dd-MMM-yyyy'}}
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p ng-if="!vm.transactionList_count" translate>You are on free plan. Go ahead and buy the one suites you.</p>
+                    </md-tab-body>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+</div>
+<div class="modal fade" id="savePayment" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <form id="myForm" name="myForm" novalidate>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" translate>Transaction Details</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="row row-buffer">
+            <div class="col-md-3"> </div>
+            <div class="col-sm-12 col-md-6">
+              <md-input-container class="md-block search">
+                <label translate>Profile Id</label>
+                <input ng-model="vm.transaction.profile_id" name="profile_id" required>
+                <div ng-messages="myForm.profile_id.$error " role="alert" multiple>
+                  <div ng-message="required" class="my-message" translate>Please provide your profile Id..</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="row row-buffer">
+            <div class="col-md-3"> </div>
+            <div class="col-sm-12 col-md-6">
+              <div >
+                <md-input-container class="md-block" flex-gt-sm>
+                  <input data-inputmask="'alias': 'date'"
+                         name="transaction_date"                                                data-datevalidater
+                         ng-model="vm.transaction.transaction_date"
+                         placeholder="Transaction Date" data-max-date="vm.todayDate"
+                         required/>
+                    <div ng-messages="myForm.transaction_date.$error " role="alert" >
+                    <div ng-message="required" class="my-message" translate>Please provide transaction date.</div>
+                    <div ng-message="dateField" class="my-message" translate>The entered value is not a valid date!</div>
+                     <div ng-message="maxDate" class="my-message" translate>Transaction date can not be future date.</div>
+                  </div>
+                </md-input-container>
+              </div>
+            </div>
+          </div>
+          <div class="row row-buffer">
+            <div class="col-md-3"> </div>
+            <div class="col-sm-12 col-md-6">
+              <md-input-container class="md-block search" style="margin-top:15px;">
+                <label translate> Bank Name</label>
+                <input ng-model="vm.transaction.bank_name" name="bank_name" required>
+                <div ng-messages="myForm.bank_name.$error " role="alert" multiple>
+                  <div ng-message="required" class="my-message" translate>Please provide Bank Name.</div>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+          <div class="row row-buffer ">
+            <div class="col-md-3"> </div>
+            <div class="col-sm-12 col-md-6">
+            <md-input-container class="md-block search" data-ui-select-label style="margin-top:15px;">
+                                <label translate> Enter an amount (Rs)</label>
+			              <ui-select ng-model="vm.transaction.payment_made" theme="bootstrap" class="form-control" name="payment" skip-focusser=true
+              reset-search-input="true" required>
+              <ui-select-match >{{$select.selected.price}}</ui-select-match>
+              <ui-select-choices repeat="payment in vm.plansList | filter : $select.search">
+                <div ng-bind-html="payment.price | highlight: $select.search"></div>
+              </ui-select-choices>
+                              <ui-select-no-choice>
+                                  <span translate> No payment found. </span>
+              </ui-select-no-choice>
+            </ui-select>
+            <div ng-messages="myForm.$submitted && myForm.payment.$error" role="alert" class="ui-select-error">
+              <div ng-message="required" class="my-message" translate>Please select a Payment</div>
+            </div>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="row row-buffer">
+          <div class="col-md-3"> </div>
+          <div class="col-sm-12 col-md-6">
+            <md-input-container class="md-block search" style="margin-top:15px;">
+              <label translate>Transaction Number</label>
+              <input ng-model="vm.transaction.transaction_number" name="transaction_number">
+              <!--<div ng-messages="myForm.transaction_number.$error " role="alert" multiple>-->
+                <!--<div ng-message="required" class="my-message">You must supply a Transaction Number.</div>-->
+              <!--</div>-->
+            </md-input-container>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center">
+        <button type="submit" class="btn btn-primary" ng-click="vm.saveTransaction(myForm)" translate>Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<style type="text/css">
+  .md-datepicker-calendar-pane{
+    z-index:555555 !important;
+  }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $(":input").inputmask();
+    });
+</script>

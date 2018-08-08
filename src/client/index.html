@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <style>
+    /* This helps the ng-show/ng-hide animations start at the right place. */
+    /* Since Angular has this but needs to load, this gives us the class early. */
+
+    .ng-hide {
+      display: none!important;
+    }
+  </style>
+  <title ng-bind="title">
+        lagnachibolni
+  </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="797468016697-m3ut285eic3rdgfib2i3g8u1vh5g552j.apps.googleusercontent.com">
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        media="print">
+
+  <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://www.lagnachibolni.com/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+
+  <!-- build:css styles/lib.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/bower_components/toastr/toastr.css" />
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="/bower_components/jcrop/css/jquery.Jcrop.css" />
+  <link rel="stylesheet" href="/bower_components/angular-notification-icons/dist/angular-notification-icons.css" />
+  <link rel="stylesheet" href="/bower_components/ng-img-crop/compile/minified/ng-img-crop.css" />
+  <link rel="stylesheet" href="/bower_components/angular-ui-select/dist/select.css" />
+  <link rel="stylesheet" href="/bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.css" />
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="/bower_components/roboto-fontface/css/roboto/roboto-fontface.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/app.css -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/.tmp/custom_style.css">
+  <link rel="stylesheet" href="/.tmp/splash-page.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+<body>
+  <!-- Load Facebook SDK for JavaScript -->
+
+
+
+  <div>
+<div ng-include="'app/layout/shell.html'">
+     <div id="splash-page" >
+      <div class="page-splash">
+        <div class="page-splash-message">
+         <img alt="" src="images/logo.png" >
+         <!-- <img id="spinner" alt="" src="images/spinner.gif" > -->
+         <div id="spinner">
+           <svg class="custom-spinner" width="45px" height="45px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+             <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+           </svg>
+         </div>
+
+        </div>
+      </div>
+    </div>
+ </div>
+    <div id="spinner2"
+         style="position: fixed;top: 50%;left: 50%;display:none;z-index:40;">
+         <svg class="custom-spinner" width="45px" height="45px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+           <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+         </svg>
+    </div>
+
+    <div id="loader" class="loader"  style="display:none;">
+      <span class="loader-inner">Saved</span>
+    </div>
+    <div id="loader-saving" class="loader" style="display:none;">
+      <span class="loader-inner">Saving...</span>
+    </div>
+  </div>
+   <div ui-view="footer" ></div>
+
+
+
+  <!-- build:js js/lib.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+  <script src="/bower_components/moment/moment.js"></script>
+  <script src="/bower_components/toastr/toastr.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-messages/angular-messages.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="/bower_components/angular-translate/angular-translate.js"></script>
+  <script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="/bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+  <script src="/bower_components/ng-file-upload/ng-file-upload.js"></script>
+  <script src="/bower_components/jcrop/js/jquery.Jcrop.js"></script>
+  <script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="/bower_components/ng-jcrop/ng-jcrop.js"></script>
+  <script src="/bower_components/angular-moment/angular-moment.js"></script>
+  <script src="/bower_components/angular-gettext/dist/angular-gettext.js"></script>
+  <script src="/bower_components/angular-notification-icons/dist/angular-notification-icons.js"></script>
+  <script src="/bower_components/scrollreveal/dist/scrollreveal.js"></script>
+  <script src="/bower_components/angular-parallax/scripts/angular-parallax.js"></script>
+  <script src="/bower_components/angular-scroll/angular-scroll.js"></script>
+  <script src="/bower_components/countUp.js/dist/countUp.min.js"></script>
+  <script src="/bower_components/ng-img-crop/compile/minified/ng-img-crop.js"></script>
+  <script src="/bower_components/ngMask/dist/ngMask.js"></script>
+  <script src="/bower_components/angular-swipe/dist/angular-swipe.js"></script>
+  <script src="/bower_components/angular-ui-select/dist/select.js"></script>
+  <script src="/bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.js"></script>
+  <script src="/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+  <script src="/bower_components/re-tree/re-tree.js"></script>
+  <script src="/bower_components/ng-device-detector/ng-device-detector.js"></script>
+  <script src="/bower_components/SHA-1/sha1.js"></script>
+  <script src="/bower_components/angulartics/src/angulartics.js"></script>
+  <script src="/bower_components/angulartics-google-analytics/lib/angulartics-ga.js"></script>
+  <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js js/app.js -->
+  <!-- inject:js -->
+  <script src="/src/client/app/app.module.js"></script>
+  <script src="/src/client/app/aboutUs/aboutUs.module.js"></script>
+  <script src="/src/client/app/account/account.module.js"></script>
+  <script src="/src/client/app/admin/admin.module.js"></script>
+  <script src="/src/client/app/blocks/exception/exception.module.js"></script>
+  <script src="/src/client/app/blocks/logger/logger.module.js"></script>
+  <script src="/src/client/app/blocks/router/router.module.js"></script>
+  <script src="/src/client/app/caterers/caterers.module.js"></script>
+  <script src="/src/client/app/confirm_email/confirm_email.module.js"></script>
+  <script src="/src/client/app/contactUs/contactUs.module.js"></script>
+  <script src="/src/client/app/core/core.module.js"></script>
+  <script src="/src/client/app/dashboard/dashboard.module.js"></script>
+  <script src="/src/client/app/events/events.module.js"></script>
+  <script src="/src/client/app/general/general.module.js"></script>
+  <script src="/src/client/app/home/home.module.js"></script>
+  <script src="/src/client/app/inbox/inbox.module.js"></script>
+  <script src="/src/client/app/layout/layout.module.js"></script>
+  <script src="/src/client/app/listview/listview.module.js"></script>
+  <script src="/src/client/app/login/login.module.js"></script>
+  <script src="/src/client/app/logout/logout.module.js"></script>
+  <script src="/src/client/app/outbox/outbox.module.js"></script>
+  <script src="/src/client/app/partner/partner.module.js"></script>
+  <script src="/src/client/app/partnerchangepassword/partnerChangePassword.module.js"></script>
+  <script src="/src/client/app/partnerdashboard/partnerdashboard.module.js"></script>
+  <script src="/src/client/app/partnerdetails/partnerdetails.module.js"></script>
+  <script src="/src/client/app/partnerlogin/partnerlogin.module.js"></script>
+  <script src="/src/client/app/partnerlogout/partnerlogout.module.js"></script>
+  <script src="/src/client/app/payment/payment.module.js"></script>
+  <script src="/src/client/app/profile/profile.module.js"></script>
+  <script src="/src/client/app/refer-your-friends/refer-your-friends.module.js"></script>
+  <script src="/src/client/app/registration/registration.module.js"></script>
+  <script src="/src/client/app/search/search.module.js"></script>
+  <script src="/src/client/app/viewprofile/viewprofile.module.js"></script>
+  <script src="/src/client/app/weddinghall/weddinghall.module.js"></script>
+  <script src="/src/client/app/widgets/widgets.module.js"></script>
+  <script src="/src/client/app/aboutUs/aboutUs.controller.js"></script>
+  <script src="/src/client/app/aboutUs/aboutUs.route.js"></script>
+  <script src="/src/client/app/aboutUs/aboutUsService.js"></script>
+  <script src="/src/client/app/account/account.controller.js"></script>
+  <script src="/src/client/app/account/account.route.js"></script>
+  <script src="/src/client/app/account/accountService.js"></script>
+  <script src="/src/client/app/admin/admin.controller.js"></script>
+  <script src="/src/client/app/admin/admin.route.js"></script>
+  <script src="/src/client/app/blocks/dataset.js"></script>
+  <script src="/src/client/app/blocks/exception/exception-handler.provider.js"></script>
+  <script src="/src/client/app/blocks/exception/exception.js"></script>
+  <script src="/src/client/app/blocks/logger/logger.js"></script>
+  <script src="/src/client/app/blocks/router/router-helper.provider.js"></script>
+  <script src="/src/client/app/caterers/caterers.controller.js"></script>
+  <script src="/src/client/app/caterers/caterers.route.js"></script>
+  <script src="/src/client/app/caterers/caterersService.js"></script>
+  <script src="/src/client/app/components/profileViewCard/profileViewCard.js"></script>
+  <script src="/src/client/app/components/profileViewCard/profileViewService.js"></script>
+  <script src="/src/client/app/components/translations/en.js"></script>
+  <script src="/src/client/app/components/translations/mr.js"></script>
+  <script src="/src/client/app/components/uploadImage/uploadimage.js"></script>
+  <script src="/src/client/app/confirm_email/confirm_email_service.js"></script>
+  <script src="/src/client/app/confirm_email/confirm_email.controller.js"></script>
+  <script src="/src/client/app/confirm_email/confirm_email.route.js"></script>
+  <script src="/src/client/app/contactUs/contactUs.controller.js"></script>
+  <script src="/src/client/app/contactUs/contactUs.route.js"></script>
+  <script src="/src/client/app/contactUs/contactUsService.js"></script>
+  <script src="/src/client/app/core/config.js"></script>
+  <script src="/src/client/app/core/constants.js"></script>
+  <script src="/src/client/app/core/core.route.js"></script>
+  <script src="/src/client/app/core/dataservice.js"></script>
+  <script src="/src/client/app/core/datevalidate.js"></script>
+  <script src="/src/client/app/core/directive.js"></script>
+  <script src="/src/client/app/core/i18n.js"></script>
+  <script src="/src/client/app/core/jquery.inputmask.bundle.js"></script>
+  <script src="/src/client/app/core/phonenumbervalidate.js"></script>
+  <script src="/src/client/app/core/ui-utils.jq.js"></script>
+  <script src="/src/client/app/core/uiselectlable.js"></script>
+  <script src="/src/client/app/core/usernameValidate.js"></script>
+  <script src="/src/client/app/dashboard/dashboard.controller.js"></script>
+  <script src="/src/client/app/dashboard/dashboard.route.js"></script>
+  <script src="/src/client/app/dashboard/dashboardService.js"></script>
+  <script src="/src/client/app/events/events.controller.js"></script>
+  <script src="/src/client/app/events/events.route.js"></script>
+  <script src="/src/client/app/events/eventsService.js"></script>
+  <script src="/src/client/app/general/general.controller.js"></script>
+  <script src="/src/client/app/general/general.route.js"></script>
+  <script src="/src/client/app/general/generalService.js"></script>
+  <script src="/src/client/app/home/home.controller.js"></script>
+  <script src="/src/client/app/home/home.route.js"></script>
+  <script src="/src/client/app/home/homeService.js"></script>
+  <script src="/src/client/app/inbox/inbox.controller.js"></script>
+  <script src="/src/client/app/inbox/inbox.route.js"></script>
+  <script src="/src/client/app/inbox/inboxService.js"></script>
+  <script src="/src/client/app/layout/footerController.js"></script>
+  <script src="/src/client/app/layout/ht-sidebar.directive.js"></script>
+  <script src="/src/client/app/layout/ht-top-nav.directive.js"></script>
+  <script src="/src/client/app/layout/shell.controller.js"></script>
+  <script src="/src/client/app/layout/sidebar.controller.js"></script>
+  <script src="/src/client/app/listview/listview.controller.js"></script>
+  <script src="/src/client/app/listview/listview.route.js"></script>
+  <script src="/src/client/app/listview/listviewservice.js"></script>
+  <script src="/src/client/app/login/login.controller.js"></script>
+  <script src="/src/client/app/login/login.route.js"></script>
+  <script src="/src/client/app/login/loginService.js"></script>
+  <script src="/src/client/app/logout/logout.controller.js"></script>
+  <script src="/src/client/app/logout/logout.route.js"></script>
+  <script src="/src/client/app/outbox/outbox.controller.js"></script>
+  <script src="/src/client/app/outbox/outbox.route.js"></script>
+  <script src="/src/client/app/outbox/outboxService.js"></script>
+  <script src="/src/client/app/partner/partner.controller.js"></script>
+  <script src="/src/client/app/partner/partner.route.js"></script>
+  <script src="/src/client/app/partner/partnerService.js"></script>
+  <script src="/src/client/app/partnerchangepassword/partnerChangePassword.controller.js"></script>
+  <script src="/src/client/app/partnerchangepassword/partnerChangePassword.route.js"></script>
+  <script src="/src/client/app/partnerchangepassword/partnerChangePasswordService.js"></script>
+  <script src="/src/client/app/partnerdashboard/partnerdashboard.controller.js"></script>
+  <script src="/src/client/app/partnerdashboard/partnerdashboard.route.js"></script>
+  <script src="/src/client/app/partnerdashboard/partnerdashboardService.js"></script>
+  <script src="/src/client/app/partnerdetails/partnerdetails.controller.js"></script>
+  <script src="/src/client/app/partnerdetails/partnerdetails.route.js"></script>
+  <script src="/src/client/app/partnerdetails/partnerdetailsService.js"></script>
+  <script src="/src/client/app/partnerlogin/partnerlogin.controller.js"></script>
+  <script src="/src/client/app/partnerlogin/partnerlogin.route.js"></script>
+  <script src="/src/client/app/partnerlogin/partnerloginService.js"></script>
+  <script src="/src/client/app/partnerlogout/partnerlogout.controller.js"></script>
+  <script src="/src/client/app/partnerlogout/partnerlogout.route.js"></script>
+  <script src="/src/client/app/partnerlogout/partnerLogoutService.js"></script>
+  <script src="/src/client/app/payment/payment.controller.js"></script>
+  <script src="/src/client/app/payment/payment.route.js"></script>
+  <script src="/src/client/app/payment/paymentService.js"></script>
+  <script src="/src/client/app/profile/profile.controller.js"></script>
+  <script src="/src/client/app/profile/profile.route.js"></script>
+  <script src="/src/client/app/profile/profileService.js"></script>
+  <script src="/src/client/app/refer-your-friends/refer-your-friends.controller.js"></script>
+  <script src="/src/client/app/refer-your-friends/refer-your-friends.route.js"></script>
+  <script src="/src/client/app/refer-your-friends/refer-your-friendservice.js"></script>
+  <script src="/src/client/app/registration/registration.controller.js"></script>
+  <script src="/src/client/app/registration/registration.route.js"></script>
+  <script src="/src/client/app/registration/registrationService.js"></script>
+  <script src="/src/client/app/search/search.controller.js"></script>
+  <script src="/src/client/app/search/search.route.js"></script>
+  <script src="/src/client/app/search/searchService.js"></script>
+  <script src="/src/client/app/viewprofile/viewprofile.controller.js"></script>
+  <script src="/src/client/app/viewprofile/viewprofile.route.js"></script>
+  <script src="/src/client/app/viewprofile/viewprofileService.js"></script>
+  <script src="/src/client/app/weddinghall/weddinghall.controller.js"></script>
+  <script src="/src/client/app/weddinghall/weddinghall.route.js"></script>
+  <script src="/src/client/app/weddinghall/weddinghallService.js"></script>
+  <script src="/src/client/app/widgets/ht-img-person.directive.js"></script>
+  <script src="/src/client/app/widgets/ht-widget-header.directive.js"></script>
+  <!-- endinject -->
+
+  <!-- inject:templates:js -->
+  <!-- endinject -->
+  <!-- endbuild -->
+
+<!--<div id="fb-root"></div>-->
+  <!--<script>-->
+  <!--FB = null;-->
+  <!--(function(d, s, id) {-->
+  <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+  <!--&lt;!&ndash;if (d.getElementById(id)) return;&ndash;&gt;-->
+  <!--js = d.createElement(s); js.id = id;-->
+  <!--js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";-->
+  <!--fjs.parentNode.insertBefore(js, fjs);-->
+<!--}(document, 'script', 'facebook-jssdk'));-->
+<!--</script>-->
+ </body>
+
+</html>

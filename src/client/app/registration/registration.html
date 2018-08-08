@@ -1,0 +1,1504 @@
+<main>
+    <div class="container-fluid reg-container registration-page"
+         ng-init="vm.init();">
+        <div class="reg-flow-wrapper">
+            <div class="reg-flow registration-wizard">
+                <div ng-if="vm.showregistration">
+                    <div class="reg-form-wrap">
+                        <form id="myForm" name="formStep0"
+                              class="wizard-form formStep0"
+                              ng-submit="vm.registerUser(formStep0)" novalidate>
+                            <div class="row no-margin">
+                                <div class="col-12">
+                                    <h1 class="wizard-heading-title" translate>Register</h1>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="col-sm-6 col-md-6">
+
+                                        <div class="select">
+
+                                             <md-input-container >
+                                                <label translate>User Name/Email</label>
+                                                <input type="text" data-username name="emailid"
+                                                       ng-model="vm.user.emailid"
+                                                       class="form-control" ng-blur="vm.checkUsername()"
+                                                       minlength="6" required>
+                                                <div ng-messages="formStep0.emailid.$error" role="alert">
+                                                  <div ng-message="required" class="my-message" translate>
+                                                    Please provide a username/email Id
+                                                  </div>
+                                                  <div ng-message="emailValid" class="my-message" translate>
+                                                    That doesn't look like a valid email
+                                                  </div>
+                                                  <div ng-message="phoneValid" class="my-message" translate>
+                                                    That doesn't look like a valid Mobile Number
+                                                  </div>
+                                                  <div ng-message="usernameValid" class="my-message"
+                                                       translate>That doesn't look like a valid UserName
+                                                  </div>
+                                                  <div ng-message-exp="['minlength']" class="my-message"
+                                                       translate>Username should be atleast six character long
+                                                  </div>
+                                                </div>
+                                                <div class="my-message" ng-if="vm.isUserNamePresent"
+                                                     style="color:#f10; font-size: 10px"
+                                                     translate>User name already used
+                                                </div>
+                                              </md-input-container>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="select">
+                                        <md-input-container>
+                                            <label translate> First Name</label>
+                                            <input type="text" name="firstname"
+                                                   ng-model="vm.user.firstname"
+                                                   class="form-control"
+                                                   ng-pattern="/^[a-zA-Z\s]*$/"
+                                                   minlength="2" tabindex="0" tabindex="0" required>
+
+                                            <div ng-messages="formStep0.firstname.$error"
+                                                 role="alert">
+                                                <div ng-message="required"
+                                                     class="my-message" translate>Please provide FirstName
+                                                </div>
+                                                <div ng-message="pattern"
+                                                     class="my-message" translate>Firstname should contain only characters
+                                                </div>
+                                                <div ng-message-exp="['minlength']"
+                                                     class="my-message" translate>Firstname should be atleast two characters long
+                                                </div>
+
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="select">
+                                        <md-input-container>
+                                            <label translate>Last Name</label>
+                                            <input type="text" name="lastname"
+                                                   ng-model="vm.user.lastname"
+                                                   class="form-control"
+                                                   ng-pattern="/^[a-zA-Z\s]*$/"
+                                                   minlength="2" tabindex="0" required>
+
+                                            <div ng-messages="formStep0.lastname.$error"
+                                                 role="alert">
+                                                <div ng-message="pattern"
+                                                     class="my-message" translate>Lastname should contain only characters
+                                                </div>
+                                                <div ng-message="required"
+                                                     class="my-message" translate>Please provide LastName
+                                                </div>
+                                                <div ng-message-exp="['minlength']"
+                                                     class="my-message" translate>Lastname should be atleast two characters long
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 no-margin-bottom" style="margin-top: 20px;">
+                                    <md-radio-group class="radio-wrap"
+                                                    name="gender"
+                                                    ng-model="vm.user.gender"
+                                                    ng-change="vm.isvalideDate()"
+                                                    required tabindex="0">
+                                        <md-radio-button class="radio-button"
+                                                         value="Female"
+                                                         class="md-primary" ><span translate>Female</span>
+
+                                        </md-radio-button>
+                                        <md-radio-button class="radio-button"
+                                                         value="Male"><span translate>Male</span>
+                                        </md-radio-button>
+                                        <div ng-messages="formStep0.$submitted && formStep0.gender.$error"
+                                             role="alert">
+                                            <div ng-message="required"
+                                                 class="my-message"
+                                                 style="color:red;" translate>Please provide Gender
+                                            </div>
+                                        </div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="select">
+                                        <md-input-container class="md-block"
+                                                            flex-gt-sm>
+                                            <input data-inputmask="'alias': 'date'"
+                                                   name="bday"
+                                                   data-datevalidater="vm.user.gender"
+                                                   ng-model="vm.user.bday"
+                                                   placeholder="{{'Date of Birth' | translate}}"
+                                                   type="text"
+                                                   ng-blur='vm.changeDateOfBirth( "bday" , vm.user.bday)' tabindex="0"/>
+
+                                            <div ng-messages="formStep0.bday.$error"
+                                                 role="alert">
+                                                <div ng-message="dateField"
+                                                     class="my-message" translate>Please provide valid date
+                                                </div>
+                                                <div ng-message='maleField'
+                                                     class="my-message" translate>Age should be 21 to 50
+                                                </div>
+                                                <div ng-message='femaleField'
+                                                     class="my-message" translate>Age should be 18 to 50
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="select ">
+                                        <md-input-container>
+                                            <input id="tel" type="tel"
+                                                   name="phone" data-phone
+                                                   ng-model="vm.user.phone_mobile"
+                                                   class="form-control"
+                                                   placeholder="{{'Mobile Number' | translate}}"
+                                                   ng-click="vm.initPhone()" tabindex="0"
+                                                   required/>
+
+                                            <div ng-messages="formStep0.phone.$error"
+                                                 role="alert">
+                                                <div ng-message="required"
+                                                     class="my-message" translate>Please provide phone number
+                                                </div>
+                                                <div ng-message="phoneField"
+                                                     class="my-message" translate>Please provide valid phone number
+                                                </div>
+                                            </div>
+                                        </md-input-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6">
+                                    <md-input-container class="md-block" data-ui-select-label>
+                                        <label translate> Caste</label>
+                                        <ui-select ng-model="vm.user.cast"
+                                                   theme="bootstrap"
+                                                   class="form-control"
+                                                   name="caste"
+                                                   skip-focusser=true
+                                                   ng-disabled="disabled"
+                                                    readonly="true"
+                                                   onkeypress="return false;"
+                                                    onfocus="blur();">
+                                            <ui-select-match tabindex="0">
+                                                {{$select.selected.value}}
+                                            </ui-select-match>
+                                            <ui-select-choices
+                                                    repeat="cast.key as cast in vm.casts | filter: $select.search">
+                                                <div ng-bind-html="cast.value | highlight: $select.search"></div>
+                                            </ui-select-choices>
+                                          <ui-select-no-choice > <span translate>No caste found</span>
+                                            </ui-select-no-choice>
+                                        </ui-select>
+                                        <div ng-messages="formStep0.caste.$error">
+                                            <div ng-message="required" translate>Please select a caste
+                                            </div>
+                                        </div>
+
+                                    </md-input-container>
+                                </div>
+                                <div class="col-sm-12 col-md-12 reg-terms">
+                                    <div class="form-group">
+                                        <md-checkbox ng-model="vm.cb1"
+                                                     class="checkbox"
+                                                     aria-label="Checkbox 1"
+                                                     ng-disabled="formStep0.$invalid" tabindex="0"><span translate>I agree with <a href="/terms" tabindex="-1">Terms &amp; Conditions</a> and <a href="/terms" tabindex="-1">privacy policy</a>.</span>
+                                            <div ng-if="!vm.cb1 && formStep0.$submitted"
+                                                 style="color:red;font-size:12px;color:rgb(221,44,0);" translate>You must agree with terms and conditions</div>
+                                        </md-checkbox>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="button-section">
+                                        <button type="submit" class="btn btn-primary btn-register"  ng-disabled="vm.isUserNamePresent || !vm.cb1" translate> Get Started Today
+                                        </button>
+                                        <br/>
+                                        <br/>
+                                        <img src="images/floral.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div ng-if="!vm.showregistration">
+                    <md-tabs md-selected="vm.selectedIndex" md-dynamic-height
+                             md-border-bottom>
+                        <md-tab index="0" id="basic" ng-click="vm.nextStep(0)">
+                            <md-tab-label>
+                                <span class="reg-state" translate>Basic Details </span>
+
+                                <div class="reg-icon-wrap">
+                                    <div class="reg-icon">
+                                        <i class="icon-photo-frame"></i>
+                                    </div>
+                                </div>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <div class="reg-form-wrap">
+                                    <form name="formStep1" novalidate
+                                          class="wizard-form formStep1"
+                                          ng-submit="vm.isComplete(formStep1,1)">
+                                        <div class="row no-margin">
+                                            <div class="col-12">
+                                                <h3 class="wizard-heading-title" translate>
+                                                    Tell Us About Yourself
+                                                </h3>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>City</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.current_place_residence"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          on-select='vm.updateProfile("current_place_residence",vm.user.current_place_residence)'
+                                                          name="city"
+                                                          required>
+                                                            <ui-select-match>
+                                                                {{$select.selected.key}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="city.key as city in vm.cities | filter : $select.search">
+                                                                <div ng-bind-html="city.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice >
+                                                               <span translate>No City found.</span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-if="formStep1.city.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate>Please provide a City
+                                                        </div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select ">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Education Field</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.edu_field"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile("edu_field",vm.user.edu_field)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          required
+                                                          name="education">
+                                                            <ui-select-match>
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="edu_field.key as edu_field in vm.education_field | filter : $select.search">
+                                                                <div ng-bind-html="edu_field.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                          <ui-select-no-choice > No Education Field found
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-if="formStep1.education.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate>Please provide an education field</div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label
+                                                                translate>Marital Status</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.marital_status"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile(  "marital_status",vm.user.marital_status)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          name="mstatus"
+                                                          required>
+                                                            <ui-select-match>
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="status.key as status in vm.maritalstatus | filter : $select.search">
+                                                                <div ng-bind-html="status.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice >
+                                                                <span translate > No status Found </span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-if="formStep1.mstatus.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate>Please provide a marital status</div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Education level</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.edu_level"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "edu_level",vm.user.edu_level)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          required
+                                                          name="edulevel">
+                                                            <ui-select-match>
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="edulevel.key as edulevel in vm.education_level | filter : $select.search">
+                                                                <div ng-bind-html="edulevel.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice >
+                                                              <span translate > No education level found </span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-if="formStep1.edulevel.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate> Please provide an education level</div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Height</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.height"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "height",vm.user.height)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          name="heightvalue"
+                                                          required>
+                                                            <ui-select-match>
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="height.key as height in vm.height | filter : $select.search">
+                                                                <div ng-bind-html="height.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice >
+                                                              <span translate > Not found </span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-show="formStep1.heightvalue.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate>Please provide a height</div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select ">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Degree</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.education"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "education", vm.user.education)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          name="edu"
+                                                          required>
+                                                            <ui-select-match>
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="education.key as education in vm.educationFields | filter : $select.search">
+                                                                <div ng-bind-html="education.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice >
+                                                                <span translate > No education found</span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-if="formStep1.edu.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate>Please provide an education</div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select ">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Income</label>
+                                                        <ui-select
+                                                          ng-model="vm.user.income"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          reset-search-input="true"
+                                                          skip-focusser=true
+                                                          name="income"
+                                                          on-select='vm.updateProfile( "income",vm.user.income)'
+                                                          required>
+                                                            <ui-select-match>
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="income.key as income in vm.income | filter : $select.search">
+                                                                <div ng-bind-html="income.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice >
+                                                                <span translate > No Income found.</span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                        <div ng-if="formStep1.income.$error.required && formStep1.$submitted"
+                                                             role="alert"
+                                                             class="ng-msg" translate>Please provide an income</div>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 hidden-xs">
+
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="button-section">
+                                                    <md-button
+                                                            class="md-primary registration-btn"
+                                                            type="submit"> <span translate>Create Your Profile</span> </md-button>
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/floral.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab index='1' ng-click="vm.nextStep(1)"
+                                ng-disabled="vm.stepComplete < 1">
+                            <md-tab-label>
+                                <span class="reg-state" translate>Contact Details</span>
+
+                                <div class="reg-icon-wrap">
+                                    <div class="reg-icon">
+                                        <i class="icon-male"></i>
+                                    </div>
+                                </div>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <div class="reg-form-wrap2">
+                                    <form name="formStep2" novalidate
+                                          class="wizard-form formStep2">
+                                        <div class="row no-margin">
+                                            <div>
+                                                <h3 class="wizard-heading-title" translate> Provide your contact details</h3>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" translate>Current Address
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="select">
+                                                                <md-input-container>
+                                                                    <label translate>Current Address Line 1</label>
+                                                                    <input type="text"
+                                                                           ng-model="vm.user.current_address"
+                                                                           ng-blur='vm.updateProfile("current_address",vm.user.current_address)'>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="select">
+                                                                <md-input-container>
+                                                                    <label translate>Current Address Line 2</label>
+                                                                    <input type="text"
+                                                                           ng-model="vm.user.current_address_1"
+                                                                           ng-blur='vm.updateProfile("current_address_1",vm.user.current_address_1)'>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="select">
+                                                                <md-input-container>
+                                                                    <label translate>Pin</label>
+                                                                    <input type="tel"
+                                                                           ng-model="vm.user.current_address_pincode"
+                                                                           ng-blur='vm.updateProfile("current_address_pincode",vm.user.current_address_pincode)'>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <md-checkbox
+                                                            ng-model="vm.user.isSameAddress"
+                                                            aria-label="Checkbox 1"
+                                                            ng-change="vm.saveNativeAddress()"><span translate>Native Address is different than current Address</span>
+
+                                                    </md-checkbox>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default"
+                                                 ng-show="vm.user.isSameAddress">
+                                                <div class="panel-heading" translate>Native Address
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="select">
+                                                                <md-input-container>
+                                                                    <label translate>Native Address Line 1</label>
+                                                                    <input type="text"
+                                                                           ng-model="vm.user.postal_address"
+                                                                           ng-blur='vm.updateProfile("postal_address",vm.user.postal_address)'>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="select">
+                                                                <md-input-container>
+                                                                    <label translate>Native Address Line 2</label>
+                                                                    <input type="text"
+                                                                           ng-model="vm.user.postal_address_1"
+                                                                           ng-blur='vm.updateProfile("postal_address_1",vm.user.postal_address_1)'/>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="select">
+                                                                <md-input-container>
+                                                                    <label translate>Pin</label>
+                                                                    <input type="tel"
+                                                                           ng-model="vm.user.postal_address_pincode"
+                                                                           ng-blur='vm.updateProfile("postal_address_pincode",vm.user.postal_address_pincode)'/>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="col-sm-4">
+                                                    <div class="select">
+                                                        <md-input-container>
+                                                            <label translate>Email Address</label>
+                                                            <input type="text"
+                                                                   name="email_address"
+                                                                   pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$"
+                                                                   ng-model="vm.user.email_address"
+                                                                   ng-blur="vm.sendConfirmEmail(vm.user.email_address)">
+
+                                                            <div ng-messages="formStep2.email_address.$error"
+                                                                 role="alert">
+                                                                <div ng-message="required"
+                                                                     class="my-message" translate>Please provide email Id.
+                                                                </div>
+                                                                <div ng-message="pattern"
+                                                                     class="my-message" translate>That doesn't look like a valid email.
+                                                                </div>
+                                                            </div>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="select ">
+                                                        <md-input-container>
+                                                            <input id="phone_residance"
+                                                                   type="text"
+                                                                   name="phone"
+                                                                   data-phone
+                                                                   ng-model="vm.user.phone_residance"
+                                                                   ng-blur='vm.updateProfile( "phone_residance",vm.user.phone_residance)'
+                                                                   class="form-control"
+                                                                   placeholder="{{ 'Phone Number' | translate}}"
+                                                                   ng-click="vm.initPhone()"/>
+
+                                                            <div ng-messages="formStep2.phone.$error"
+                                                                 role="alert">
+                                                                <div ng-message="phoneField"
+                                                                     class="my-message" translate>The entered value is not a phone number!
+                                                                </div>
+                                                            </div>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="select">
+                                                        <md-input-container>
+                                                            <label translate>Birth Place</label>
+                                                            <input ng-model="vm.user.birth_place"
+                                                                   ng-blur='vm.updateProfile( "birth_place",vm.user.birth_place)'
+                                                                   type="text"
+                                                                   maxlength="20">
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <div class="button-section">
+                                                    <md-button
+                                                            class="md-primary back-btn"
+                                                            ng-click="vm.nextStep(0)"
+                                                            aria-hidden="false">
+                                                        <i class="fa fa-arrow-left"
+                                                           aria-hidden="true"></i>Back
+                                                    </md-button>
+                                                    <md-button
+                                                            class="md-primary registration-btn"
+                                                            aria-label="finish"
+                                                            ng-click="vm.nextStep(2)"><span translate>Next</span>
+                                                    </md-button>
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/floral.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab index="2" ng-disabled="vm.stepComplete < 2"
+                                ng-click="vm.nextStep(2)">
+                            <md-tab-label>
+                                <span class="reg-state" translate>Personal Details</span>
+
+                                <div class="reg-icon-wrap">
+                                    <div class="reg-icon">
+                                        <i class="icon-male"></i>
+                                    </div>
+                                </div>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <div class="reg-form-wrap">
+                                    <form name="formStep3" novalidate
+                                          class="wizard-form formStep3">
+                                        <div class="row no-margin-personal">
+                                            <div>
+                                                <h3 class="wizard-heading-title" translate>Tell us about your personal details</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="select ">
+                                                        <md-input-container
+                                                                data-ui-select-label>
+                                                            <label translate>Physique</label>
+                                                            <ui-select
+                                                              ng-model="vm.user.physic"
+                                                              theme="bootstrap"
+                                                              class="form-control"
+                                                              reset-search-input="true"
+                                                              skip-focusser=true
+                                                              on-select='vm.updateProfile( "physic",vm.user.physic)'>
+                                                                <ui-select-match
+                                                                        placeholder="">
+                                                                    {{$select.selected.value}}
+                                                                </ui-select-match>
+                                                                <ui-select-choices
+                                                                        repeat="physic.key as physic in vm.physic | filter : $select.search">
+                                                                    <div ng-bind-html="physic.value | highlight: $select.search"></div>
+                                                                </ui-select-choices>
+                                                                <ui-select-no-choice >
+                                                                  <span translate > No physic found. </span>
+                                                                </ui-select-no-choice>
+                                                            </ui-select>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="select ">
+                                                        <md-input-container
+                                                                data-ui-select-label>
+                                                            <label translate>Weight</label>
+                                                            <ui-select
+                                                              ng-model="vm.user.weight"
+                                                              theme="bootstrap"
+                                                              class="form-control"
+                                                              on-select='vm.updateProfile( "weight",vm.user.weight)'
+                                                              reset-search-input="true"
+                                                              skip-focusser=true>
+                                                                <ui-select-match
+                                                                        placeholder="">
+                                                                    {{$select.selected}}
+                                                                </ui-select-match>
+                                                                <ui-select-choices
+                                                                        repeat="weight in vm.weights | filter : $select.search">
+                                                                    <div ng-bind-html="weight | highlight: $select.search"></div>
+                                                                </ui-select-choices>
+                                                              <ui-select-no-choice> <span translate > No weight found. </span>
+                                                                </ui-select-no-choice>
+                                                            </ui-select>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div>
+                                                    <div class="col-sm-6 col-md-6">
+                                                        <div class="select ">
+                                                            <md-input-container
+                                                                    data-ui-select-label>
+                                                                <label translate>Complexion</label>
+                                                                <ui-select
+                                                                  ng-model="vm.user.complexion"
+                                                                  theme="bootstrap"
+                                                                  class="form-control"
+                                                                  on-select='vm.updateProfile( "complexion",vm.user.complexion)'
+                                                                  reset-search-input="true"
+                                                                  skip-focusser=true>
+                                                                    <ui-select-match
+                                                                            placeholder="">
+                                                                        {{$select.selected.value}}
+                                                                    </ui-select-match>
+                                                                    <ui-select-choices
+                                                                            repeat="complexion.key as complexion in vm.complexions | filter : $select.search">
+                                                                        <div ng-bind-html="complexion.value | highlight: $select.search"></div>
+                                                                    </ui-select-choices>
+                                                                  <ui-select-no-choice > <span translate>No complexion found. </span>
+                                                                    </ui-select-no-choice>
+                                                                </ui-select>
+                                                            </md-input-container>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 reg-birth-time">
+                                                    <div class="select select-component">
+                                                        <label class="lb-time-picker" translate>12 Hour Birth Time</label>
+
+                                                        <div uib-timepicker
+                                                             ng-model="vm.birth_time"
+                                                             ng-change="vm.changedBirthTime()"
+                                                             show-spinners="false"
+                                                             hidden-date='true'
+                                                             show-meridian="true"></div>
+                                                             <div ng-if="vm.birthTimeFlag" style="color: red;font-size: 12px;" translate>Please enter valid birth time. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="select ">
+                                                        <md-input-container
+                                                                data-ui-select-label>
+                                                            <label translate>Working With</label>
+                                                            <ui-select
+                                                              ng-model="vm.user.working_with"
+                                                              theme="bootstrap"
+                                                              class="form-control"
+                                                              on-select='vm.updateProfile( "working_with",vm.user.working_with)'
+                                                              reset-search-input="true"
+                                                              skip-focusser=true>
+                                                                <ui-select-match
+                                                                        placeholder="">
+                                                                    {{$select.selected.value}}
+                                                                </ui-select-match>
+                                                                <ui-select-choices
+                                                                        repeat="work.key as work in vm.working_with | filter : $select.search">
+                                                                    <div ng-bind-html="work.value | highlight: $select.search"></div>
+                                                                </ui-select-choices>
+                                                                <ui-select-no-choice > <span translate>No work area found.</span>
+                                                                </ui-select-no-choice>
+                                                            </ui-select>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="select ">
+                                                        <md-input-container
+                                                                data-ui-select-label>
+                                                            <label translate>Working as</label>
+                                                            <ui-select
+                                                              ng-model="vm.user.occupation"
+                                                              theme="bootstrap"
+                                                              class="form-control"
+                                                              on-select='vm.updateProfile( "occupation",vm.user.occupation)'
+                                                              reset-search-input="true"
+                                                              skip-focusser=true>
+                                                                <ui-select-match
+                                                                        placeholder="">
+                                                                    {{$select.selected.value}}
+                                                                </ui-select-match>
+                                                                <ui-select-choices
+                                                                        repeat="occupatio.key as occupation in vm.working_as | filter : $select.search">
+                                                                    <div ng-bind-html="occupation.value | highlight: $select.search"></div>
+                                                                </ui-select-choices>
+                                                                <ui-select-no-choice > <span translate>No working found.</span>
+                                                                </ui-select-no-choice>
+                                                            </ui-select>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-6">
+                                                    <div class="select ">
+                                                        <md-input-container
+                                                                data-ui-select-label>
+                                                            <label translate>Blood-Group</label>
+                                                            <ui-select
+                                                              ng-model="vm.user.blood_group"
+                                                              theme="bootstrap"
+                                                              class="form-control"
+                                                              on-select='vm.updateProfile( "blood_group",vm.user.blood_group)'
+                                                              reset-search-input="true"
+                                                              skip-focusser=true>
+                                                                <ui-select-match
+                                                                        placeholder="">
+                                                                    {{$select.selected}}
+                                                                </ui-select-match>
+                                                                <ui-select-choices
+                                                                        repeat="blood in vm.blood_group | filter : $select.search">
+                                                                    <div ng-bind-html="blood | highlight: $select.search"></div>
+                                                                </ui-select-choices>
+                                                                <ui-select-no-choice > <span translate>No blood group found.</span>
+                                                                </ui-select-no-choice>
+                                                            </ui-select>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 disabled-label">
+                                                    <label class="label-text  small-font radio-label" translate>Physically Disabled</label>
+                                                    <br>
+                                                    <md-radio-group
+                                                            class="radio-wrap"
+                                                            ng-model="vm.user.physical_disablity"
+                                                            ng-change='vm.updateProfile( "physical_disablity",vm.user.physical_disablity)'>
+                                                        <md-radio-button
+                                                                class="radio-button"
+                                                                value="Yes"
+                                                                class="md-primary"><span translate>Yes</span>
+
+                                                        </md-radio-button>
+                                                        <md-radio-button
+                                                                class="radio-button"
+                                                                value="No"> <span translate>No</span>
+                                                        </md-radio-button>
+                                                    </md-radio-group>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="button-section">
+                                                        <md-button
+                                                                class="md-primary back-btn"
+                                                                ng-click="vm.nextStep(1)"
+                                                                ng-hide="vm.selectedIndex == 0"
+                                                                aria-hidden="false" translate>
+                                                            <i class="fa fa-arrow-left"
+                                                               aria-hidden="true"></i>Back
+                                                        </md-button>
+                                                        <md-button
+                                                                class="md-primary registration-btn"
+                                                                aria-label="finish"
+                                                                ng-click="vm.nextStep(3)"><span translate>Next</span>
+                                                        </md-button>
+                                                        <br>
+                                                        <br>
+                                                        <img src="images/floral.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab index="3" ng-disabled="vm.stepComplete < 3"
+                                ng-click="vm.nextStep(3)">
+                            <md-tab-label>
+                                <span class="reg-state" translate>Photo Upload</span>
+
+                                <div class="reg-icon-wrap">
+                                    <div class="reg-icon">
+                                        <i class="icon-photo-upload"></i>
+                                    </div>
+                                </div>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <div class="reg-form-wrap2">
+                                    <form name="formStep4" novalidate
+                                          class="wizard-form">
+                                        <div class="row no-margin">
+                                            <div ng-include="'app/components/uploadImage/uploadimage.html'"></div>
+                                            <div class="col-sm-12">
+                                                <div class="button-section">
+                                                    <md-button
+                                                            class="md-primary back-btn"
+                                                            ng-click="vm.nextStep(2)"
+                                                            aria-hidden="false" translate>
+                                                        <i class="fa fa-arrow-left"
+                                                           aria-hidden="true"></i>Back
+                                                    </md-button>
+                                                    <md-button
+                                                            class="md-primary registration-btn"
+                                                            aria-label="finish"
+                                                            ng-click="vm.nextStep(4)" ><span translate>Next</span>
+                                                    </md-button>
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/floral.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab index="4" ng-disabled="vm.stepComplete < 4"
+                                ng-click="vm.nextStep(4)">
+                            <md-tab-label>
+                                <span class="reg-state" translate>Family Details</span>
+
+                                <div class="reg-icon-wrap">
+                                    <div class="reg-icon">
+                                        <i class="icon-family"></i>
+                                    </div>
+                                </div>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <div class="reg-form-wrap2">
+                                    <form name="formStep5" novalidate
+                                          class="formStep5 wizard-form">
+                                        <div class="row no-margin">
+                                            <div>
+                                                <h3 class="wizard-heading-title" translate>Tell us about your family</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="select">
+                                                        <md-input-container>
+                                                            <label translate>Father's Name</label>
+                                                            <input type="text"
+                                                                   ng-model="vm.user.fathername"
+                                                                   maxlength="30"
+                                                                   ng-blur='vm.updateProfile( "fathername",vm.user.fathername)'>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="select">
+                                                        <md-input-container>
+                                                            <label translate>Father's Occupation</label>
+                                                            <input type="text"
+                                                                   ng-model="vm.user.father_occupation"
+                                                                   maxlength="50"
+                                                                   ng-blur='vm.updateProfile( "father_occupation",vm.user.father_occupation)'>
+                                                        </md-input-container>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div>
+                                                    <div class="col-sm-4">
+                                                        <div class="select">
+                                                            <md-input-container>
+                                                                <label translate>Mother's Name</label>
+                                                                <input type="text"
+                                                                       ng-model="vm.user.mothername"
+                                                                       maxlength="30"
+                                                                       ng-blur='vm.updateProfile( "mothername",vm.user.mothername)'>
+                                                            </md-input-container>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="select">
+                                                            <md-input-container>
+                                                                <label translate>Mother's Occupation</label>
+                                                                <input type="text"
+                                                                       ng-model="vm.user.mother_occupation"
+                                                                       maxlength="50"
+                                                                       ng-blur='vm.updateProfile( "mother_occupation",vm.user.mother_occupation)'>
+                                                            </md-input-container>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <span translate>Sister Details</span>  <span
+                                                            class="panel-buttons"><i
+                                                            class="icon-plus-circle"
+                                                            ng-click="vm.addSibling( 'sisterObject')"></i></span>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                    <form name="sisterForm" class="sister-form">
+                                                        <div ng-repeat="sister in vm.sisterList">
+                                                            <div class="row no-margin">
+                                                                <div class="col-xs-2 visible-xs-block">
+                                                                    <span class="panel-buttons mobile-panel-buttons"><i
+                                                                      class="icon-minus-circle"
+                                                                      ng-click="vm.deleteSibling(sister ,$index)"></i></span>
+                                                                </div>
+                                                                <div class=" col-sm-4 col-xs-10">
+                                                                    <md-input-container
+                                                                            class="md-block">
+                                                                        <label translate>Name</label>
+                                                                        <input type="text"
+                                                                               ng-model="sister.first_name"
+                                                                               class="form-input"
+                                                                               ng-blur="vm.updateSiblingData(sister,$index)"
+                                                                               focus="true">
+                                                                    </md-input-container>
+                                                                </div>
+                                                                <div class="col-xs-2 visible-xs-block"></div>
+                                                              <div class=" col-sm-4 col-xs-10">
+                                                                    <div class="select sister-margin-cor">
+                                                                        <md-input-container
+                                                                                class="select"
+                                                                                data-ui-select-label>
+                                                                            <label translate>Marital Status</label>
+                                                                            <ui-select
+                                                                              ng-model="sister.marital_status"
+                                                                              theme="bootstrap"
+                                                                              class="form-control"
+                                                                              reset-search-input="true"
+                                                                              skip-focusser=true
+                                                                              on-select='vm.updateSiblingData(sister,$index)'
+                                                                              ng-disabled="sister.id == null">
+                                                                                <ui-select-match>
+                                                                                    {{$select.selected.value}}
+                                                                                </ui-select-match>
+                                                                                <ui-select-choices
+                                                                                        repeat="mstatus.key as mstatus in vm.maritalstatus1 | filter : $select.search">
+                                                                                    <div ng-bind-html="mstatus.value | highlight: $select.search"></div>
+                                                                                </ui-select-choices>
+                                                                                <ui-select-no-choice > <span translate>
+                                                                                    No marital status found.</span>
+                                                                                </ui-select-no-choice>
+                                                                            </ui-select>
+                                                                        </md-input-container>
+                                                                    </div>
+                                                                </div>
+                                                              <div class="col-xs-2 visible-xs-block"></div>
+
+                                                              <div class=" col-sm-4 col-xs-10">
+
+                                                                    <div class="select">
+                                                                        <md-input-container class="md-block" flex-gt-sm>
+                                                                            <input data-inputmask="'alias': 'date'"
+                                                                                 name="sisbday"
+                                                                                 type ="tel"
+                                                                                  ng-disabled="sister.id == null"
+                                                                                 data-datevalidater
+                                                                                 ng-model="sister.date"
+                                                                                 placeholder="dd/mm/yyyy"
+                                                                                 ng-blur='vm.updateSiblingData(sister,$index)'
+                                                                                 />
+                                                                                  <div ng-messages="sisterForm.sisbday.$error"
+                                                                                   role="alert" >
+                                                                                  <div ng-message="dateField"
+                                                                                       class="my-message" translate>The entered value is not a date!
+                                                                                  </div>
+
+                                                                              </div>
+                                                                          </md-input-container>
+                                                                    </div>
+                                                                </div>
+                                                                <div class=" col-sm-1 delete-row-icon hidden-xs">
+                                                                    <i class="icon-minus-circle"
+                                                                       ng-click="vm.deleteSibling(sister ,$index)">
+
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <hr ng-if="!$last">
+                                                        </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row ">
+                                                <div class="panel panel-default" style="margin-bottom:0px;">
+                                                  <div class="panel-heading"> <span translate>Brother Details</span>
+                                                           <span class="panel-buttons"><i
+                                                            class="icon-plus-circle"
+                                                            ng-click="vm.addSibling('brotherObject')"></i></span>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                    <form name="brotherForm" class="sister-form">
+                                                        <div ng-repeat="brother in vm.brotherList">
+                                                            <div class="row no-margin">
+                                                                <div class="col-xs-2 visible-xs-block">
+                                                                    <span class="panel-buttons mobile-panel-buttons"><i
+                                                                      class="icon-minus-circle"
+                                                                      ng-click="vm.deleteSibling(brother ,$index)"></i></span>
+                                                                </div>
+                                                                <div class="col-sm-4 col-xs-10">
+
+                                                                    <md-input-container
+                                                                            class="md-block">
+                                                                        <label translate>Name</label>
+                                                                        <input type="text"
+                                                                               ng-model="brother.first_name"
+                                                                               class="form-input"
+                                                                               ng-blur="vm.updateSiblingData(brother,$index)"
+                                                                               focus="true">
+                                                                    </md-input-container>
+                                                                </div>
+                                                                <div class="col-xs-2 visible-xs-block"></div>
+                                                              <div class=" col-sm-4 col-xs-10">
+                                                                    <div class="select sister-margin-cor">
+                                                                        <md-input-container
+                                                                                class="select"
+                                                                                data-ui-select-label>
+                                                                            <label translate>Marital Status</label>
+                                                                            <ui-select
+                                                                              ng-model="brother.marital_status"
+                                                                              theme="bootstrap"
+                                                                              class="form-control"
+                                                                              on-select='vm.updateSiblingData(brother,$index)'
+                                                                              reset-search-input="true"
+                                                                              skip-focusser=true
+                                                                              ng-disabled="brother.id == null">
+                                                                                <ui-select-match>
+                                                                                    {{$select.selected.value}}
+                                                                                </ui-select-match>
+                                                                                <ui-select-choices
+                                                                                        repeat="cstatus.key as cstatus in vm.maritalstatus2 | filter : $select.search">
+                                                                                    <div ng-bind-html="cstatus.value | highlight: $select.search"></div>
+                                                                                </ui-select-choices>
+                                                                                <ui-select-no-choice > <span translate>
+                                                                                    No status found.</span>
+                                                                                </ui-select-no-choice>
+                                                                            </ui-select>
+                                                                        </md-input-container>
+                                                                    </div>
+                                                                </div>
+                                                              <div class="col-xs-2 visible-xs-block"></div>
+
+                                                              <div class=" col-sm-4 col-xs-10">
+                                                                    <div class="select">
+                                                                        <md-input-container class="md-block" flex-gt-sm>
+                                                                            <input data-inputmask="'alias': 'date'"
+                                                                                 name="brobday"
+                                                                                 type ="tel"
+                                                                                  ng-disabled="brother.id == null"
+                                                                                 data-datevalidater
+                                                                                 ng-model="brother.date"
+                                                                                 placeholder="dd/mm/yyyy"
+                                                                                 ng-blur='vm.updateSiblingData(brother,$index)'
+                                                                                 />
+                                                                                  <div ng-messages="brotherForm.brobday.$error"
+                                                                                   role="alert" >
+                                                                                  <div ng-message="dateField"
+                                                                                       class="my-message" translate>The entered value is not a date!
+                                                                                  </div>
+
+                                                                              </div>
+                                                                          </md-input-container>
+                                                                    </div>
+                                                                </div>
+                                                                <div class=" col-sm-1 delete-row-icon hidden-xs">
+                                                                    <i class="icon-minus-circle"
+                                                                       ng-click="vm.deleteSibling(brother ,$index)"></i>
+                                                                </div>
+                                                            </div>
+                                                            <hr ng-if="!$last">
+                                                        </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div>
+                                                    <div class=" col-sm-4">
+                                                        <div class="select">
+                                                            <md-input-container>
+                                                                <label translate>Mama's Name</label>
+                                                                <input type="text"
+                                                                       ng-model="vm.user.mamaname"
+                                                                       ng-blur='vm.updateProfile("mamaname",vm.user.mamaname)'
+                                                                       maxlength="50">
+                                                            </md-input-container>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-sm-4">
+                                                        <div class="select">
+                                                            <md-input-container>
+                                                                <label translate>Relative's Surname</label>
+                                                                <input type="text"
+                                                                       ng-model="vm.user.relatives"
+                                                                       ng-blur='vm.updateProfile( "relatives",vm.user.relatives)'
+                                                                       maxlength="100">
+                                                            </md-input-container>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="button-section">
+                                                    <md-button
+                                                            class="md-primary back-btn"
+                                                            ng-click="vm.nextStep(3)"
+                                                            aria-hidden="false" translate>
+                                                        <i class="fa fa-arrow-left"
+                                                           aria-hidden="true"></i>Back
+                                                    </md-button>
+                                                    <md-button
+                                                            class="md-primary registration-btn"
+                                                            aria-label="finish"
+                                                            ng-click="vm.nextStep(5)" ><span translate>Next</span>
+                                                    </md-button>
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/floral.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+
+                        <md-tab index="5" ng-disabled="vm.stepComplete < 5"
+                                ng-click="nextStep(5)">
+                            <md-tab-label>
+                                <span class="reg-state" translate>Astro Details</span>
+
+                                <div class="reg-icon-wrap no-divider">
+                                    <div class="reg-icon">
+                                        <i class="icon-astro"></i>
+                                    </div>
+                                </div>
+                            </md-tab-label>
+                            <md-tab-body>
+                                <div class="reg-form-wrap">
+                                    <form name="formStep6" novalidate
+                                          class="formStep6 wizard-form">
+                                        <div class="row no-margin">
+                                            <div>
+                                                <h3 class="wizard-heading-title" translate>Tell us about your astro details</h3>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container>
+                                                        <label translate>Gotra</label>
+                                                        <input type="text"
+                                                               ng-model="vm.user.gotra"
+                                                               ng-blur='vm.updateProfile( "gotra",vm.user.gotra)'>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container>
+                                                        <label translate>
+                                                            Devak</label>
+                                                        <input type="text"
+                                                               ng-model="vm.user.devak"
+                                                               ng-blur='vm.updateProfile( "devak",vm.user.devak)'>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Nadi</label>
+
+                                                        <ui-select
+                                                          ng-model="vm.user.nadi"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "nadi",vm.user.nadi)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true>
+                                                            <ui-select-match
+                                                                    >
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="nadi.key as nadi in vm.nadi | filter : $select.search">
+                                                                <div ng-bind-html="nadi.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice > <span translate>
+                                                                No nadi found.</span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Gan</label>
+
+                                                        <ui-select
+                                                          ng-model="vm.user.gan"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "gan",vm.user.gan)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true>
+                                                            <ui-select-match>
+
+                                                                {{$select.selected.value }}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="gan.key as gan in vm.gan | filter : $select.search">
+                                                                <div ng-bind-html="gan.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice > <span translate>
+                                                                No gan found.</span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Rashi</label>
+
+                                                        <ui-select
+                                                          ng-model="vm.user.rashi"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "rashi",vm.user.rashi)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true>
+                                                            <ui-select-match
+                                                                    >
+                                                                {{$select.selected.value}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="rashi.key as rashi in vm.rashi | filter : $select.search">
+                                                                <div ng-bind-html="rashi.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice > <span translate>No rashi found. </span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Charan</label>
+
+                                                        <ui-select
+                                                          ng-model="vm.user.charan"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "charan",vm.user.charan)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true>
+                                                            <ui-select-match>
+                                                                {{$select.selected}}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="charan in vm.charan | filter : $select.search">
+                                                                <div ng-bind-html="charan | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6">
+                                                <div class="select">
+                                                    <md-input-container
+                                                            data-ui-select-label>
+                                                        <label translate>Nakshatra</label>
+
+                                                        <ui-select
+                                                          ng-model="vm.user.nakshatra"
+                                                          theme="bootstrap"
+                                                          class="form-control"
+                                                          on-select='vm.updateProfile( "nakshatra",vm.user.nakshatra)'
+                                                          reset-search-input="true"
+                                                          skip-focusser=true>
+                                                            <ui-select-match>
+                                                                {{$select.selected.value }}
+                                                            </ui-select-match>
+                                                            <ui-select-choices
+                                                                    repeat="nakshatra.key as nakshatra in vm.nakshatra | filter : $select.search">
+                                                                <div ng-bind-html="nakshatra.value | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                            <ui-select-no-choice > <span translate>No charan found.</span>
+                                                            </ui-select-no-choice>
+                                                        </ui-select>
+                                                    </md-input-container>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 disabled-label">
+                                                <label class="label-text small-font  radio-label" translate>Mangal</label>
+                                                <br>
+                                                <md-radio-group
+                                                        class="radio-wrap"
+                                                        ng-model="vm.user.mangal"
+                                                        ng-change='vm.updateProfile( "mangal",vm.user.mangal)'>
+                                                    <md-radio-button
+                                                            class="radio-button"
+                                                            value="Yes"
+                                                            class="md-primary" ><span translate>Yes</span>
+
+                                                    </md-radio-button>
+                                                    <md-radio-button
+                                                            class="radio-button"
+                                                            value="No"><span translate>No</span>
+
+                                                    </md-radio-button>
+                                                </md-radio-group>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="button-section">
+                                                    <md-button
+                                                            class="md-primary back-btn"
+                                                            ng-click="vm.nextStep(4)"
+                                                            ng-hide="selectedIndex == 0"
+                                                            aria-hidden="false" translate>
+                                                        <i class="fa fa-arrow-left"
+                                                           aria-hidden="true"></i>Back
+                                                    </md-button>
+                                                    <md-button
+                                                            class="md-primary registration-btn"
+                                                            ng-click="vm.save()"> <span translate> Done </span>
+                                                    </md-button>
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/floral.png">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </form>
+                </div>
+                </md-tab-body>
+                </md-tab>
+                </md-tabs>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(":input").inputmask();
+  });
+
+</script>

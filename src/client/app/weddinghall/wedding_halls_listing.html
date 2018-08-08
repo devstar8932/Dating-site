@@ -1,0 +1,57 @@
+<div ng-show="vm.weddingHall">
+    <div class="weddingHall">
+        <div id="myDiv"></div>
+        <h1 class="page-title">Wedding halls in pune, Marriage Halls Pune </h1>
+        <span class="bold marginB10">Marriage Halls , Banquets, Party halls , Birthday party halls in pune, Kalyanmandapam, Mangal karyalaya in pune, Sabhagruh in Pune</span>
+
+        <div id="WeddingHalls">
+            <div ng-show="vm.non_selected_details">
+                <!--<div ng-repeat="wedding in vm.halls | filter:{name:vm.name} | filter:{area_in_pune:vm.area_in_pune}">-->
+                <div ng-repeat="wedding in vm.search_result">
+                    <div class="weddingHallTemplate">
+                        <div class="planContent">
+                            <div class="planDetail">
+                                <h3>
+                                    <a href="/wedding_planer"
+                                       ng-click="vm.hallDetails('type_hall');vm.getweddinghalldetails(wedding.id)"
+                                       title="{{wedding.name}}">{{wedding.name}}</a>
+                                </h3>
+
+                                <p><span>{{wedding.address}}</span></p>
+
+                                <p><span class="bold">Phone No:{{wedding.phone}} </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <md-button ng-click="vm.scrollTo('personal-detail')"
+                       class="md-fab md-mini md-no-ink md-fab-bottom-right"
+                       style="position:fixed; background-color: rgb(255, 93, 12);z-index:60">
+                <!-- <span style="font-size:14px; text-transform:none">Go to top</span> -->
+                <!-- <md-icon md-font-icon="icon-arrow-up" class="icon s24" style="cursor:pointer"></md-icon> -->
+                <i class="material-icons" style="margin-top: 8px;">arrow_upward</i>
+                <md-tooltip md-direction="left"><span translate>Go To Top</span></md-tooltip>
+            </md-button>
+            <div ng-show="vm.selected_details">
+                <div ng-repeat="wed in vm.active_hallType">
+                    <div class="weddingHallTemplate">
+                        <div class="planContent">
+                            <div class="planDetail">
+                                <h3>
+                                    <a href="/wedding_planer"
+                                       ng-click="vm.hallDetails('type_hall');vm.getweddinghalldetails(wedding.id)";
+                                       title="{{wedding.name}}">{{wed.hall_type}}</a>
+                                </h3>
+
+                                <p><span>{{wed.address}}</span></p>
+
+                                <p><span class="bold">Phone No:{{wed.phone}} </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

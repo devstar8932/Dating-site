@@ -1,0 +1,108 @@
+<div class="container payment-container search-container">
+    <md-content style="background-color: white;">
+      <md-tabs md-selected="vm.selectedIndex" md-dynamic-height>
+        <md-tab md-on-select="vm.selectTab(0)">
+          <md-tab-label>
+            <div class="tab-header" translate>Caterers<span
+                    class="circle-icon"><i
+                                class="icon-search-list"></i></span></div>
+          </md-tab-label>
+          <md-tab-body>
+
+
+          </md-tab-body>
+        </md-tab>
+
+        <md-tab md-on-select="vm.selectTab(1)">
+          <md-tab-label>
+            <div class="tab-header" ng-click="vm.getweddinghall()"
+                 translate>Wedding Hall <span class="circle-icon"><i
+                                class="icon-search-list-weddingHall"></i></span></div>
+          </md-tab-label>
+          <md-tab-body>
+
+
+          </md-tab-body>
+        </md-tab>
+      </md-tabs>
+    </md-content>
+</div>
+
+<!--<div class="container-fluid reg-container">-->
+    <!--&lt;!&ndash;<div class="row text-center">&ndash;&gt;-->
+    <!--&lt;!&ndash;<h1 style="font-size: 30px !important;" translate>Wedding halls in pune, Marriage Halls Pune</h1>&ndash;&gt;-->
+    <!--&lt;!&ndash;<hr>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--<button type="button" class="btn btn-secondary"-->
+            <!--ng-click="vm.getweddinghall()"-->
+            <!--translate>Wedding Hall-->
+    <!--</button>-->
+    <!--&lt;!&ndash;<button type="button" class="btn btn-primary"&ndash;&gt;-->
+            <!--&lt;!&ndash;ng-click="vm.searchData(searchForm)" translate>Caterers&ndash;&gt;-->
+    <!--&lt;!&ndash;</button>&ndash;&gt;-->
+
+    <!--<button type="button"><a-->
+            <!--href ="/caterers" >Caterers</a>-->
+    <!--</button>-->
+    <div class="ads searchPanel weddingHalls">
+    <div ng-include="'app/weddinghall/search_halls.html'"></div>
+    </div>
+    <div ng-include="'app/weddinghall/wedding_halls_listing.html'"></div>
+    <div ng-include="'app/weddinghall/hall_details.html'"></div>
+
+<!--</div>-->
+    <!--<div ng-repeat="hall in vm.hallsList" class="ng-scope">-->
+    <!--<div class="weddingHallTemplate col-sm-4  col-md-4">-->
+    <!--<div class="planContent">-->
+    <!--<div class="planDetail">-->
+    <!--<h3>&lt;!&ndash; <a href="wedding_hall.php" ng-click="vm.hallDetails('type_hall');vm.hall_detail(wedding.id)" title="Raskar Palace" class="ng-binding"> &ndash;&gt;-->
+    <!--<a href="wedding_hall.php" ng-click = true>-->
+    <!--{{hall.name}}-->
+    <!--</a></h3>-->
+    <!--<p>{{hall.address}}</p>-->
+    <!--<p><span class="bold ng-binding" translate>Phone: {{hall.phone}}</span></p>-->
+    <!--</div></div></div></div>-->
+
+
+<!--<style type="text/css">-->
+    <!--@media (min-width: 768px){-->
+    <!--.reg-container {-->
+    <!--padding-top: 0px;-->
+    <!--}-->
+    <!--}-->
+    <!--/*.inner-wrapper {-->
+    <!--padding-left:0px !important;-->
+    <!--}*/-->
+    <!--.weddingHallTemplate{-->
+    <!--border-bottom: 1px solid #ccc;-->
+    <!--float: left;-->
+    <!--/* width: 25%;*/-->
+    <!--margin-bottom: 10px;-->
+    <!--min-height: 162px;-->
+    <!--}-->
+
+    <!--.weddingHallTemplate .planContent {-->
+    <!--margin: 0 auto;-->
+    <!--padding: 10px;-->
+    <!--width: 310px;-->
+    <!--}-->
+
+    <!--.weddingHallTemplate .planDetail {-->
+    <!--width: 100%;-->
+    <!--}-->
+    <!--.weddingHallTemplate .planDetail h3 {-->
+    <!--color: #292f33;-->
+    <!--font-family: Georgia,"Times New Roman",Times,serif;-->
+    <!--font-size: 15px;-->
+    <!--line-height: 25px;-->
+    <!--margin: 5px 0;-->
+    <!--padding: 0;-->
+    <!--}-->
+    <!--.weddingHallTemplate .planDetail p {-->
+    <!--margin: 0 0 3px;-->
+    <!--padding: 0;-->
+    <!--}-->
+    <!--.bold {-->
+    <!--font-weight: 700;-->
+    <!--}-->
+<!--</style>-->

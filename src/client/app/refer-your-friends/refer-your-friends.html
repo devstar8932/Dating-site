@@ -1,0 +1,203 @@
+<div class="container-fluid">
+    <div class="refer-friend-wrapper">
+        <div>
+          <h1 translate>Help us to Serve your Friends or Relatives..!!! </h1>
+            <hr/>
+            <h5><span translate>You can earn money on each payment they make. Please <a href="/contactUs">Contact Us</a> for more info.</span> </h5>
+        </div>
+        <form name="referForm" class="refer-form" novalidate>
+            <div>
+                <div class="select" ng-if="!vm.hideFields">
+                    <md-input-container ng-model="name"
+                                        class="ng-pristine ng-untouched ng-valid ng-empty"
+                                        aria-invalid="false">
+                        <label translate>Your Name</label>
+                        <input type="text" ng-model="vm.referFriend.user_name"
+                               class="md-input" required name="username"
+                               minlength=2/>
+
+                        <div ng-messages="referForm.username.$error"
+                             role="alert"
+                                >
+                            <div ng-message="required"
+                                 class="my-message" translate>Please provide a name.
+                            </div>
+                            <div ng-message="minlength"
+                                 class="my-message" translate>Ensure user name must have at least 2 characters.
+                            </div>
+
+                        </div>
+
+                        <div class="md-errors-spacer"></div>
+                    </md-input-container>
+                </div>
+                <div class="select" ng-if="!vm.hideFields">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <input type="tel"
+                               name="phone" data-phone
+                               ng-model="vm.referFriend.user_mobile"
+                               minlength = "8"
+                               class="form-control"
+                               placeholder="{{'Mobile Number' | translate}}"
+                               ng-click="vm.initPhone()"
+                               required/>
+
+                        <div ng-messages="referForm.phone.$error"
+                             role="alert">
+                            <div ng-message="required minlength"
+                                 class="my-message" translate>Please provide a correct phone number.
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div class="select">
+                    <!-- <md-input-container ng-model="name" class="ng-pristine ng-untouched ng-valid ng-empty" aria-invalid="false">
+                      <label for="input_8">Friend's Mobile Numbers</label>
+                      <textarea ng-model="user.biography" md-maxlength="150" rows="3" md-select-on-focus></textarea>
+                      <div class="md-errors-spacer"></div>
+                    </md-input-container> -->
+                    <!--<div class="panel panel-default">-->
+                    <div class="panel-heading" align="center">
+                    <span translate>Refer</span>
+                    <span class="panel-buttons"><i class="icon-plus-circle"
+                                                   ng-click="!(referForm.pname.$error.required && referForm.phone.$error.required)?vm.addReference():vm.showerror()"></i></span>
+                    </div>
+                    <!--<div class="panel-body">-->
+                    <div ng-repeat="reference in vm.referFriend.references" class="reference-list">
+                        <div class="row no-margin">
+                            <div class="col-xs-2 visible-xs-block">
+                              <span class="panel-buttons"><i
+                                class="icon-minus-circle"
+                                ng-click="vm.deleteReference()"></i></span>
+                            </div>
+                            <div class=" col-sm-5 col-xs-10">
+
+                                <md-input-container class="md-block">
+                                    <label translate>Name</label>
+                                    <input type="text" name="pname"
+                                           ng-model="reference.reference_name"
+                                           class="form-control"
+                                           required/>
+
+                                    <div ng-messages="referForm.pname.$error"
+                                         role="alert" multiple>
+                                        <div ng-message="required minlength"
+                                             class="my-message" translate>Please provide a name.
+                                        </div>
+                                    </div>
+                                </md-input-container>
+                            </div>
+                            <div class="col-xs-2 visible-xs-block"></div>
+                            <div class=" col-sm-5 col-xs-10">
+                              <md-input-container class="md-block" flex-gt-sm>
+                                  <input type="tel"
+                                         name="phone" data-phone
+                                         ng-model="reference.reference_mobile"
+                                         minlength = "8"
+                                         class="form-control"
+                                         placeholder="{{'Mobile Number' | translate}}"
+                                         ng-click="vm.initPhone()"
+                                         required/>
+
+                                  <div ng-messages="referForm.phone.$error"
+                                       role="alert">
+                                      <div ng-message="required minlength"
+                                           class="my-message" translate>Please provide a correct phone number.
+                                      </div>
+                                  </div>
+                              </md-input-container>
+                            </div>
+                            <div class="col-sm-2 hidden-xs">
+                                        <span class="panel-buttons"><i
+                                                class="icon-minus-circle"
+                                                ng-click="vm.deleteReference()"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="vm.emptyListFlag &&  vm.referFriend.references.length <= 0"
+                         style="color :red ">
+                        <p translate>List cant be empty!!! </p>
+                    </div>
+                    <!--</div>-->
+                </div>
+                <!--</div>-->
+                <div class="text-center delete-account">
+                    <input type="submit" value="Refer"
+                           class="btn btn-primary center-block"
+                           ng-click="vm.sendReferFriendRequest(referForm)">
+                    <br/>
+                    <img src="images/floral.png">
+                </div>
+            </div>
+        </form>
+        <!-- code for ng repeat of references -->
+        <!--<div align="right">-->
+            <!--<button class="btn btn-primary" align="center"-->
+                    <!--ng-if="vm.hideReferForm" ng-click="vm.showForm()" translate>Add more references-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div class="form-horizontal" ng-show="!vm.hideForm">-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-4"></div>-->
+                <!--<div class="col-sm-4" translate><b>Reference Name</b></div>-->
+                <!--<div class="col-sm-4" translate><b>Reference Mobile</b></div>-->
+            <!--</div>-->
+            <!--<hr>-->
+            <!--<div class="row"-->
+                 <!--ng-if="vm.refResponseObject.already_referred.length>0">-->
+                <!--<div class="col-sm-4" translate><b>Already Referred</b></div>-->
+                <!--<div class="col-sm-8">-->
+                    <!--<div ng-repeat="refered in vm.refResponseObject.already_referred">-->
+                        <!--<div class="col-sm-6">{{refered.reference_name}}</div>-->
+                        <!--<div class="col-sm-6">{{refered.reference_mobile}}</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12">-->
+                    <!--<hr>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row"-->
+                 <!--ng-if="vm.refResponseObject.already_registered.length>0">-->
+                <!--<div class="col-sm-4" translate><b>Already Registered</b></div>-->
+                <!--<div class="col-sm-8">-->
+                    <!--<div ng-repeat="registered in vm.refResponseObject.already_registered">-->
+                        <!--<div class="col-sm-6">{{registered.reference_name}}-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-6">{{registered.reference_mobile}}-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12">-->
+                    <!--<hr>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row" ng-if="vm.refResponseObject.notified.length>0">-->
+                <!--<div class="col-sm-4" translate><b>Notified</b></div>-->
+                <!--<div class="col-sm-8">-->
+                    <!--<div ng-repeat="notified in vm.refResponseObject.notified">-->
+                        <!--<div class="col-sm-6">{{notified.reference_name}}</div>-->
+                        <!--<div class="col-sm-6">{{notified.reference_mobile}}-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12">-->
+                    <!--<hr>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row"-->
+                 <!--ng-if="vm.refResponseObject.failed_to_notify.length>0">-->
+                <!--<div class="col-sm-4" translate><b >Notified</b></div>-->
+                <!--<div class="col-sm-8">-->
+                    <!--<div ng-repeat="failed in vm.refResponseObject.failed_to_notify">-->
+                        <!--<div class="col-sm-6">{{failed.reference_name}}</div>-->
+                        <!--<div class="col-sm-6">{{failed.reference_mobile}}</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12">-->
+                    <!--<hr>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--end of code for ng-repeat references -->
+    </div>
+</div>

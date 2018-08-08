@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <title>LagnachiBolni.com</title>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+
+<body ng-app="lbApp" ng-cloak ng-controller="lbCtrl">
+    <div id="wrapper" class="inner-wrapper">
+        <div ng-include src="'partials/header.html'"></div>
+
+        <main id="main">
+
+            <div class="closed-sidenav visible-md visible-lg" ng-hide="isSidenavOpen">
+                <ul class="nav-links">
+                    <li><a><i class="icon-email"></i></a></li>
+                    <li><a><i class="icon-box-remove"></i></a></li>
+                    <li><a><i class="icon-dashboard"></i></a></li>
+                    <li><a><i class="icon-search"></i></a></li>
+                    <li><a><i class="icon-human-resource"></i></a></li>
+                    <li><a><i class="icon-phone2"></i></a></li>
+                    <li class="active"><a><i class="icon-profile2"></i></a></li>
+                    <li><a><i class="icon-settings"></i></a></li>
+                    <li><a><i class="icon-logout"></i></a></li>
+                </ul>
+            </div>
+
+            <md-sidenav md-component-id="left" md-disable-backdrop md-is-open="isSidenavOpen" class="sidenav md-sidenav-left">
+                <div class="sidenav-header">
+                    <span class="nav-close" ng-click="openLeftMenu()"><i class="icon-arrow-left1"></i></span>
+                    <div class="logo-header">
+                        <a href="#"><img src="images/logo-header.png" height="155" width="267" alt="LagnachiBolni"></a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#"><i class="icon-email"></i> Inbox</a></li>
+                    <li><a href="#"><i class="icon-box-remove"></i> Outbox</a></li>
+                    <li><a href="#"><i class="icon-dashboard"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="icon-search"></i> Search</a></li>
+                    <li><a href="#"><i class="icon-human-resource"></i> Refer Friends</a></li>
+                    <li><a href="#"><i class="icon-phone2"></i> Contact Us</a></li>
+                    <li class="active"><a href="#"><i class="icon-profile2"></i> My Profile</a></li>
+                    <li><a href="#"><i class="icon-settings"></i> Account Settings</a></li>
+                    <li><a href="#"><i class="icon-logout"></i> Logout</a></li>
+                </ul>
+            </md-sidenav>
+
+            <div class="container-fluid terms-container" ng-click="closeLeftMenuMobile()">
+                <div>
+                    <div class="row terms-header-row">
+                        <div class="col-sm-12">
+                            <div class="terms-header">
+                                <h1>FAQ</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row faq-content">
+
+                        <ol type="1">
+                            <li>
+                                <p class="faq-question">
+                                    What is Lorem Ipsum
+                                </p>
+                                <div class="faq-answer-wrapper" ng-click="faqCollapse.question1 = !faqCollapse.question1" ng-class="{'showContent' : faqCollapse.question1}">
+                                    <div class="faq-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+
+
+                                </div>
+                                <p class="faq-read-more" ng-click="faqCollapse.question1 = !faqCollapse.question1" ng-hide="faqCollapse.question1">Read More ...</p>
+                            </li>
+
+                            <li>
+                                <p class="faq-question">
+                                    What is Duis aute
+                                </p>
+                                <div class="faq-answer-wrapper" ng-click="faqCollapse.question2 = !faqCollapse.question2" ng-class="{'showContent' : faqCollapse.question2}">
+                                    <div class="faq-answer">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                                <p class="faq-read-more" ng-click="faqCollapse.question2 = !faqCollapse.question2" ng-hide="faqCollapse.question2">Read More ...</p>
+                            </li>
+
+                            <li>
+                                <p class="faq-question">
+                                    What is Ut enim
+                                </p>
+                                <div class="faq-answer-wrapper" ng-click="faqCollapse.question3 = !faqCollapse.question3" ng-class="{'showContent' : faqCollapse.question3}">
+                                    <div class="faq-answer">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                </div>
+                                <p class="faq-read-more" ng-click="faqCollapse.question3 = !faqCollapse.question3" ng-hide="faqCollapse.question3">Read More ...</p>
+                            </li>
+
+                            <li>
+                                <p class="faq-question">
+                                    What is Duis aute
+                                </p>
+                                <div class="faq-answer-wrapper" ng-click="faqCollapse.question4 = !faqCollapse.question4" ng-class="{'showContent' : faqCollapse.question4}">
+                                    <div class="faq-answer">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                                <p class="faq-read-more" ng-click="faqCollapse.question4 = !faqCollapse.question4" ng-hide="faqCollapse.question4">Read More ...</p>
+                            </li>
+
+                            <li>
+                                <p class="faq-question">
+                                    What is Ut enim
+                                </p>
+                                <div class="faq-answer-wrapper" ng-click="faqCollapse.question5 = !faqCollapse.question5" ng-class="{'showContent' : faqCollapse.question5}">
+                                    <div class="faq-answer">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                </div>
+                                <p class="faq-read-more" ng-click="faqCollapse.question5 = !faqCollapse.question5" ng-hide="faqCollapse.question5">Read More ...</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <md-toolbar class="chrome-gap-correction">
+        <div ng-include src="'partials/footer.html'"></div>
+    </md-toolbar>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+    <script src="bower_components/countUp.js/dist/countUp.min.js"></script>
+    <script src="bower_components/countUp.js/dist/angular-countUp.min.js"></script>
+    <script src="bower_components/angular-notification-icons/dist/angular-notification-icons.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+    <script src="js/scrollRevealAnimations.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+<!--
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at //material.angularjs.org/license.
+-->

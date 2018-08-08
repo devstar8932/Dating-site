@@ -1,0 +1,1406 @@
+<div class="container-fluid profile-container" ng-init="scrollTODivId()" ng-click="closeLeftMenuMobile()">
+    <div class="row">
+        <!--<div class="col-sm-3 col-md-3  profile-left-container">-->
+            <!--<h1 translate>My Profile - {{vm.user.profile_id}}</h1>-->
+            <!--<div class="profile-image" >-->
+                <!--<div class="img" ng-click="vm.previewImage()"><img-->
+                        <!--id="profileImage1"-->
+                        <!--ng-src="{{vm.user.profile_image_url}}"-->
+                        <!--class="img-circle main-profile-image"-->
+                        <!--alt="image description"></div>-->
+                <!--&lt;!&ndash;<div class="row row-buffer" ng-click="vm.previewImage()">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<img src={{vm.profile.profile_image_url}}&ndash;&gt;-->
+                         <!--&lt;!&ndash;class="img-circle main-profile-image"&ndash;&gt;-->
+                         <!--&lt;!&ndash;alt="Display Picture">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+                <!--<label class="upload-button" style="margin-bottom: 0px">-->
+                    <!--<a href="/uploadimages" class="link-edit" translate> Edit Photo </a>-->
+                <!--</label>-->
+            <!--</div>-->
+            <!--<nav class="profile-nav hidden-xs hidden-sm">-->
+                <!--<ul>-->
+                    <!--<li><a href="#personal-detail" du-smooth-scroll du-scrollspy-->
+                           <!--offset="100" translate>Personal Details</a></li>-->
+                    <!--<li><a href="#physique-detail" du-smooth-scroll du-scrollspy-->
+                           <!--offset="100" translate>Physical Details</a></li>-->
+                    <!--<li><a href="#education-detail" du-smooth-scroll-->
+                           <!--du-scrollspy offset="100" translate>Education and Profession-->
+                        <!--Details</a></li>-->
+                    <!--<li><a href="#contact-detail" du-smooth-scroll du-scrollspy-->
+                           <!--offset="100" translate>Contact Details</a></li>-->
+                    <!--<li><a href="#family-detail" du-smooth-scroll du-scrollspy-->
+                           <!--offset="100" translate>Family Details</a></li>-->
+                    <!--<li><a href="#astro-detail" du-smooth-scroll du-scrollspy-->
+                           <!--offset="100" translate>Astro Details</a></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+        <div class="col-sm-9 col-md-9 profile-right-container profile-detail-container">
+            <div>
+                <!--<div id="personal-detail" class="profile-detail-row">-->
+                    <!--<a class="detail-opener"-->
+                       <!--ng-click="collapsedTabs.personal = !collapsedTabs.personal"><i-->
+                            <!--class="icon-plus-circle"-->
+                            <!--ng-show="collapsedTabs.personal"></i><i-->
+                            <!--class="icon-minus-circle"-->
+                            <!--ng-hide="collapsedTabs.personal"></i></a>-->
+
+                    <!--<h3 class="detail-title"-->
+                        <!--ng-click="collapsedTabs.personal = !collapsedTabs.personal" translate>Personal Details</h3>-->
+                        <!--<form name="FormPersonal">-->
+                    <!--<div class="slide" uib-collapse="collapsedTabs.personal">-->
+                        <!--<div class="row first-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>First Name</label>-->
+                                    <!--<input type="text"-->
+                                           <!--ng-model="vm.user.firstname"-->
+                                           <!--class="form-input" name="firstname" pattern="^[a-zA-z]+$" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                           <!--<div ng-messages="FormPersonal.firstname.$error" role="alert">-->
+                                            <!--<div ng-message="pattern" class="my-message" translate>-->
+                                              <!--Firstname should contain only characters.-->
+                                            <!--</div>-->
+                                            <!--</div>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<div class="select">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Middle Name</label>-->
+                                        <!--<input type="text"-->
+                                               <!--name="middlename"-->
+                                               <!--ng-model="vm.user.middlename"-->
+                                               <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                    <!--</md-input-container>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<div class="select">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Last Name</label>-->
+                                        <!--<input type="text"-->
+                                               <!--name="lastname"-->
+                                               <!--ng-model="vm.user.lastname"-->
+                                               <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                    <!--</md-input-container>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<label class="label-text lb-time-picker" translate>Gender</label>-->
+                                <!--<md-radio-group class="radio-wrap"-->
+                                                <!--ng-model="vm.user.gender"-->
+                                                <!--ng-change='vm.changeContent( "gender",vm.user.gender)'>-->
+                                    <!--<md-radio-button class="radio-button"-->
+                                                     <!--value="Male"-->
+                                                     <!--class="md-primary"><span translate>Male</span>-->
+                                    <!--</md-radio-button>-->
+                                    <!--<md-radio-button class="radio-button"-->
+                                                     <!--value="Female"> <span translate>Female</span>-->
+                                    <!--</md-radio-button>-->
+                                <!--</md-radio-group>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label >-->
+                                    <!--<label translate>Marital Status</label>-->
+                                    <!--<ui-select ng-model="vm.user.marital_status"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "marital_status",vm.user.marital_status)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="mstatus in vm.maritalstatus | filter : $select.search">-->
+                                            <!--<div ng-bind-html="mstatus | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No Marital Status found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<div class="select">-->
+                                    <!--<md-input-container>-->
+                                      <!--<label translate>Date of Birth</label>-->
+                                         <!--<input data-inputmask="'alias': 'date'"-->
+                                               <!--name="bday"-->
+                                               <!--data-datevalidater="vm.user.gender"-->
+                                               <!--ng-model="vm.user.birth_date"-->
+                                               <!--ng-blur='vm.changeDateOfBirth( "birth_date" , vm.user.birth_date)'-->
+                                               <!--/>-->
+                                                <!--<div ng-messages="FormPersonal.bday.$error"-->
+                                                 <!--role="alert" >-->
+                                                <!--<div ng-message="dateField"-->
+                                                     <!--class="my-message" translate>The-->
+                                                    <!--entered value is not a date!-->
+                                                <!--</div>-->
+                                                <!--<div ng-message='maleField' class="my-message" translate>-->
+                                                   <!--Age should be 21 to 50.-->
+                                                <!--</div>-->
+                                                <!--<div ng-message='femaleField' class="my-message" translate>-->
+                                                    <!--Age should be 18 to 50.-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                    <!--</md-input-container>-->
+
+
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height select">-->
+                                <!--<label class="label-text lb-time-picker" translate>{{formDateOfBirth.bday.$error}}12 Hour Birth Time</label>-->
+                                <!--<div uib-timepicker-->
+                                     <!--ng-model="vm.birth_time"-->
+                                     <!--ng-change='vm.changedBirthTime("birth_time" , vm.birth_time)' show-spinners="false" hidden-date='true' show-meridian="true"></div>-->
+                                <!--<div ng-if="vm.birthTimeFlag" style="color: red;font-size: 12px;" translate>Please enter valid birth time. </div>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>City</label>-->
+                                    <!--<ui-select-->
+                                            <!--ng-model="vm.user.current_place_residence"-->
+                                            <!--theme="bootstrap"-->
+                                            <!--class="form-control"-->
+                                            <!--on-select='vm.changeContent( "current_place_residence",vm.user.current_place_residence)'-->
+                                            <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="city in vm.cities | filter : $select.search">-->
+                                            <!--<div ng-bind-html="city | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No city found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Caste</label>-->
+                                    <!--<ui-select ng-model="vm.user.caste"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "caste",vm.user.caste)'-->
+                                               <!--reset-search-input="true"-->
+                                               <!--ng-required="true">-->
+
+                                        <!--<ui-select-match>-->
+                                            <!--{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="cast in vm.casts | filter: $select.search">-->
+                                            <!--<div ng-bind-html="cast | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No caste found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <!--<div id="physique-detail" class="profile-detail-row">-->
+                    <!--<a href="#" class="detail-opener"-->
+                       <!--ng-click="collapsedTabs.physique = !collapsedTabs.physique"><i-->
+                            <!--class="icon-plus-circle"-->
+                            <!--ng-show="collapsedTabs.physique"></i><i-->
+                            <!--class="icon-minus-circle"-->
+                            <!--ng-hide="collapsedTabs.physique"></i></a>-->
+
+                    <!--<h3 class="detail-title"-->
+                        <!--ng-click="collapsedTabs.physique = !collapsedTabs.physique" translate>Physical Details</h3>-->
+
+                    <!--<div class="slide" uib-collapse="collapsedTabs.physique">-->
+                        <!--<div class="row first-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Height</label>-->
+                                    <!--<ui-select ng-model="vm.user.height"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "height",vm.user.height)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>-->
+                                            <!--{{$select.selected.value}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="height.key as height in vm.height | filter : $select.search">-->
+                                            <!--<div ng-bind-html="height.value | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No height found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Weight</label>-->
+                                    <!--<ui-select ng-model="vm.user.weight"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "weight",vm.user.weight)'>-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="weight in vm.weights | filter : $select.search">-->
+                                            <!--<div-->
+                                                    <!--ng-bind-html="weight | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No weight found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Blood Group</label>-->
+                                    <!--<ui-select ng-model="vm.user.blood_group"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "blood_group",vm.user.blood_group)'>-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="blood in vm.bloodgroups | filter : $select.search">-->
+                                            <!--<div ng-bind-html="blood | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No blood group found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height" >-->
+                                <!--<label class="label-text lb-time-picker" translate>Physically Disabled</label>-->
+                                <!--<md-radio-group class="radio-wrap"-->
+                                                <!--ng-model="vm.user.physical_disablity"-->
+                                                <!--ng-change='vm.changeContent( "physical_disablity",vm.user.physical_disablity)'>-->
+                                    <!--<md-radio-button class="radio-button"-->
+                                                     <!--value="Yes"-->
+                                                     <!--class="md-primary" ><span translate>Yes</span>-->
+                                    <!--</md-radio-button>-->
+                                    <!--<md-radio-button class="radio-button"-->
+                                                     <!--value="No"> <span translate>No</span>-->
+                                    <!--</md-radio-button>-->
+                                <!--</md-radio-group>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Physique</label>-->
+                                    <!--<ui-select ng-model="vm.user.physic"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "physic",vm.user.physic)'>-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="physic in vm.physic | filter : $select.search">-->
+                                            <!--<div ng-bind-html="physic | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No physic found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Complexion</label>-->
+                                    <!--<ui-select ng-model="vm.user.complexion"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "complexion",vm.user.complexion)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="complexion in vm.complexions | filter : $select.search">-->
+                                            <!--<div ng-bind-html="complexion | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No complexion found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div id="education-detail" class="profile-detail-row">-->
+                    <!--<a href="#" class="detail-opener"-->
+                       <!--ng-click="collapsedTabs.education = !collapsedTabs.education"><i-->
+                            <!--class="icon-plus-circle"-->
+                            <!--ng-show="collapsedTabs.education"></i><i-->
+                            <!--class="icon-minus-circle"-->
+                            <!--ng-hide="collapsedTabs.education"></i></a>-->
+
+                    <!--<h3 class="detail-title"-->
+                        <!--ng-click="collapsedTabs.education = !collapsedTabs.education" translate>Education and Profession Details</h3>-->
+
+                    <!--<div class="slide" uib-collapse="collapsedTabs.education">-->
+                        <!--<div class="row first-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Education Level</label>-->
+                                    <!--<ui-select ng-model="vm.user.edu_level"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "edu_level",vm.user.edu_level)'>-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="edulevel in vm.educationLevels | filter : $select.search">-->
+                                            <!--<div ng-bind-html="edulevel | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No education level found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Education Field</label>-->
+                                    <!--<ui-select ng-model="vm.user.edu_field"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent("edu_field",vm.user.edu_field)'-->
+                                            <!--&gt;-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="edu_field in vm.educationFields | filter : $select.search">-->
+                                            <!--<div ng-bind-html="edu_field | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No education field found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Education</label>-->
+                                    <!--<ui-select ng-model="vm.user.education"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "education", vm.user.education)'>-->
+                                        <!--<ui-select-match>-->
+                                            <!--{{$select.selected.value}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="education.key as education in vm.education | filter : $select.search">-->
+                                            <!--<div ng-bind-html="education.value | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No education found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select"-->
+                                                    <!--data-ui-select-label>-->
+                                    <!--<label translate>Working With</label>-->
+                                    <!--<ui-select ng-model="vm.user.working_with"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "working_with",vm.user.working_with)'>-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="work in vm.works | filter : $select.search">-->
+                                            <!--<div ng-bind-html="work | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No work area found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Working As</label>-->
+                                    <!--<ui-select ng-model="vm.user.occupation"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "occupation",vm.user.occupation)'>-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="work_as in vm.workas | filter : $select.search">-->
+                                            <!--<div ng-bind-html="work_as | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No work as found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Annual Income(Rs)</label>-->
+                                    <!--<ui-select ng-model="vm.user.income"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--reset-search-input="true"-->
+                                               <!--on-select='vm.changeContent( "income",vm.user.income.key)'>-->
+                                        <!--<ui-select-match>-->
+                                            <!--{{$select.selected.value}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="income.key as income in vm.annualIncome | filter : $select.search">-->
+                                            <!--<div ng-bind-html="income.value | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No income found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div id="contact-detail" class="profile-detail-row">
+                    <a href="#" class="detail-opener"
+                       ng-click="collapsedTabs.contact = !collapsedTabs.contact"><i
+                            class="icon-plus-circle"
+                            ng-show="collapsedTabs.contact"></i><i
+                            class="icon-minus-circle"
+                            ng-hide="collapsedTabs.contact"></i></a>
+
+                    <h3 class="detail-title"
+                        ng-click="collapsedTabs.contact = !collapsedTabs.contact" translate>Account Details</h3>
+
+                    <div class="slide" uib-collapse="collapsedTabs.contact">
+                        <div class="row first-row">
+                           <form name="formContact">
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Phone</label>-->
+                                    <!--<input ng-model="vm.user.phone_residance"-->
+                                           <!--type="tel" name="phone_residance" ng-maxlength="10"-->
+                                           <!--ng-minlength="10"-->
+                                           <!--data-phone-->
+                                           <!--onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>-->
+                                     <!--<div ng-messages="formContact.phone_residance.$error" role="alert">-->
+
+                                     <!--<div ng-message="phoneField" class="my-message" translate>Please enter a valid phone number.!</div>-->
+                                     <!--</div>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                             <div class="col-sm-4 input-fixed-height">
+                                <md-input-container class="md-block">
+                                    <label translate>Your Full Name</label>
+                                    <input type="text"
+                                           ng-model="vm.user.account_name"
+                                           class="form-input"
+                                           name="account_name"
+                                           minlength=2 pattern="^[a-zA-z]+$"
+                                           onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">
+                                    <div ng-messages="formContact.account_name.$error"
+                                        role="alert">
+                                        <div ng-message="required"
+                                            class="my-message" translate>Please provide a name.
+                                        </div>
+                                        <div ng-message="minlength"
+                                            class="my-message" translate>Ensure user name must have at least 2 characters.
+                                        </div>
+                                        <div ng-message="pattern"
+                                            class="my-message" translate>Your Name should contain only characters.
+                                       </div>
+
+                                    </div>
+                                </md-input-container>
+                            </div>
+
+                             <!--<md-input-container ng-model="name"-->
+                                        <!--class="ng-pristine ng-untouched ng-valid ng-empty"-->
+                                        <!--aria-invalid="false">-->
+                        <!--<label translate>Your Name</label>-->
+                        <!--<input type="text" ng-model="vm.referFriend.user_name"-->
+                               <!--class="md-input" required name="username"-->
+                               <!--minlength=2 pattern="^[a-zA-z]+$"/>-->
+
+                        <!--<div ng-messages="referForm.username.$error"-->
+                             <!--role="alert"-->
+                                <!--&gt;-->
+                            <!--<div ng-message="required"-->
+                                 <!--class="my-message" translate>Please provide a name.-->
+                            <!--</div>-->
+                            <!--<div ng-message="minlength"-->
+                                 <!--class="my-message" translate>Ensure user name must have at least 2 characters.-->
+                            <!--</div>-->
+                            <!--<div ng-message="pattern"-->
+                                 <!--class="my-message" translate>Your Name should contain only characters.-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+                        <!--<div class="md-errors-spacer"></div>-->
+                    <!--</md-input-container>-->
+
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<input id="tel_phone" type="tel"                    data-phone-->
+                                           <!--name="phone_mobile"-->
+                                           <!--ng-model="vm.user.phone_mobile"-->
+                                           <!--class="form-control"-->
+                                           <!--placeholder="{{ 'Mobile Number' | translate}}"-->
+                                           <!--onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().updateMobile(this.name,this.value) : null"/>-->
+                                     <!--<div ng-messages="formContact.phone_mobile.$error" role="alert">-->
+
+                                     <!--<div ng-message="phoneField" class="my-message" translate>Please enter a valid mobile number.!</div>-->
+                                     <!--</div>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                             <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Bank Name</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="current_address"-->
+                                           <!--ng-model="vm.user.current_address"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                    <!--<md-input-container class="md-block" >-->
+                                        <!--<label translate>Email</label>-->
+                                        <!--<input  type="text"-->
+                                                <!--name="email_address"-->
+                                                <!--ng-model="vm.user.email_address" ng-readonly="true"-->
+                                        <!--pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$"  ng-blur='vm.changeContent( "email_address",vm.user.email_address)'>-->
+                                        <!--<div ng-messages="formContact.email_address.$error" role="alert">-->
+                                            <!--<div ng-message="pattern">-->
+                                                <!--Please enter a valid email.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</md-input-container>-->
+                            <!--</div>-->
+                          </form>
+                        </div>
+
+
+                      <!--<div class="row second-row">-->
+
+                            <!--&lt;!&ndash;<div class="col-sm-4 input-fixed-height">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<md-input-container class="md-block">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<label translate>Phone</label>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<input ng-model="vm.user.phone_residance"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;type="tel" name="phone_residance" ng-maxlength="10"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;ng-minlength="10"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;data-phone&ndash;&gt;-->
+                                           <!--&lt;!&ndash;onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>&ndash;&gt;-->
+                                     <!--&lt;!&ndash;<div ng-messages="formContact.phone_residance.$error" role="alert">&ndash;&gt;-->
+
+                                     <!--&lt;!&ndash;<div ng-message="phoneField" class="my-message" translate>Please enter a valid phone number.!</div>&ndash;&gt;-->
+                                     <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</md-input-container>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                             <!--&lt;!&ndash;<div class="col-sm-4 input-fixed-height">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<md-input-container class="md-block">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<label translate>Your Full Name</label>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<input type="text"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;name="current_address"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;ng-model="vm.user.current_address"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">&ndash;&gt;-->
+                                <!--&lt;!&ndash;</md-input-container>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="col-sm-4 input-fixed-height">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<md-input-container class="md-block">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<input id="tel_phone" type="tel"                    data-phone&ndash;&gt;-->
+                                           <!--&lt;!&ndash;name="phone_mobile"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;ng-model="vm.user.phone_mobile"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;class="form-control"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;placeholder="{{ 'Mobile Number' | translate}}"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().updateMobile(this.name,this.value) : null"/>&ndash;&gt;-->
+                                     <!--&lt;!&ndash;<div ng-messages="formContact.phone_mobile.$error" role="alert">&ndash;&gt;-->
+
+                                     <!--&lt;!&ndash;<div ng-message="phoneField" class="my-message" translate>Please enter a valid mobile number.!</div>&ndash;&gt;-->
+                                     <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</md-input-container>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                             <!--&lt;!&ndash;<div class="col-sm-4 input-fixed-height">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<md-input-container class="md-block">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<label translate>Bank Name</label>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<input type="text"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;name="current_address"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;ng-model="vm.user.current_address"&ndash;&gt;-->
+                                           <!--&lt;!&ndash;class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">&ndash;&gt;-->
+                                <!--&lt;!&ndash;</md-input-container>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                              <!--<form name="form1">-->
+                                    <!--<md-input-container class="md-block" >-->
+                                        <!--<label translate>Email</label>-->
+                                        <!--<input  type="email"-->
+                                                <!--name="email"-->
+                                                <!--ng-model="vm.user.email"-->
+                                                <!--pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$"-->
+                                                <!--onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                        <!--<div ng-messages="form1.email.$error">-->
+                                            <!--<div ng-message="pattern" translate>-->
+                                                <!--Please enter a valid email.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                         <!--&lt;!&ndash;<div ng-messages="form1.email_address.$error">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div ng-message="pattern" translate>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;Please enter digits only.&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div ng-messages="formContact.email_address.$error">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<div ng-message="pattern" translate>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;Please enter digits only.&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--</md-input-container>-->
+                                <!--</form>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+
+                      <div class="row second-row">
+                           <form name="formContact">
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Phone</label>-->
+                                    <!--<input ng-model="vm.user.phone_residance"-->
+                                           <!--type="tel" name="phone_residance" ng-maxlength="10"-->
+                                           <!--ng-minlength="10"-->
+                                           <!--data-phone-->
+                                           <!--onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>-->
+                                     <!--<div ng-messages="formContact.phone_residance.$error" role="alert">-->
+
+                                     <!--<div ng-message="phoneField" class="my-message" translate>Please enter a valid phone number.!</div>-->
+                                     <!--</div>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                             <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Your Full Name</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="current_address"-->
+                                           <!--ng-model="vm.user.current_address"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<input id="tel_phone" type="tel"                    data-phone-->
+                                           <!--name="phone_mobile"-->
+                                           <!--ng-model="vm.user.phone_mobile"-->
+                                           <!--class="form-control"-->
+                                           <!--placeholder="{{ 'Mobile Number' | translate}}"-->
+                                           <!--onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().updateMobile(this.name,this.value) : null"/>-->
+                                     <!--<div ng-messages="formContact.phone_mobile.$error" role="alert">-->
+
+                                     <!--<div ng-message="phoneField" class="my-message" translate>Please enter a valid mobile number.!</div>-->
+                                     <!--</div>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                             <div class="col-sm-4 input-fixed-height">
+                                <md-input-container class="md-block">
+                                    <label translate>Bank Name</label>
+                                    <input type="text"
+                                           name="bank_name"
+                                           ng-model="vm.user.bank_name"
+                                           class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">
+                                </md-input-container>
+                            </div>
+
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                    <!--<md-input-container class="md-block" >-->
+                                        <!--<label translate>Email</label>-->
+                                        <!--<input  type="text"-->
+                                                <!--name="email_address"-->
+                                                <!--ng-model="vm.user.email_address" ng-readonly="true"-->
+                                        <!--pattern="^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$"  ng-blur='vm.changeContent( "email_address",vm.user.email_address)'>-->
+                                        <!--<div ng-messages="formContact.email_address.$error" role="alert">-->
+                                            <!--<div ng-message="pattern">-->
+                                                <!--Please enter a valid email.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</md-input-container>-->
+                            <!--</div>-->
+                          </form>
+                        </div>
+
+
+
+
+                        <div class="row second-row">
+                            <div class="col-sm-4 input-fixed-height">
+                                <md-input-container class="md-block">
+                                    <label translate>IFSC CODE</label>
+                                    <input type="text"
+                                           name="bank_ifsc"
+                                           ng-model="vm.user.bank_ifsc"
+                                           class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">
+                                </md-input-container>
+                            </div>
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Account Number</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="current_address_1"-->
+                                           <!--ng-model="vm.user.current_address_1"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<form name="form1">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Pin</label>-->
+                                        <!--<input type="tel"-->
+                                               <!--name="current_address_pincode"-->
+                                               <!--ng-model="vm.user.current_address_pincode"-->
+                                               <!--pattern="^[0-9]*$" minlength="6"-->
+                                               <!--maxlength="6" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>-->
+
+                                        <!--<div ng-messages="form1.current_address_pincode.$error">-->
+                                            <!--<div ng-message="pattern" translate>-->
+                                                <!--Please enter digits only.-->
+                                            <!--</div>-->
+                                            <!--<div ng-message="maxlength,minlength" translate>-->
+                                                <!--Please enter 6 digits.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</md-input-container>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        </div>
+
+
+                      <div class="row second-row">
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>IFSC CODE</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="current_address"-->
+                                           <!--ng-model="vm.user.current_address"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Account Number</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="current_address_1"-->
+                                           <!--ng-model="vm.user.account_number"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+
+                        <div class="col-sm-4 input-fixed-height">
+                                <form name="form1">
+                                    <md-input-container class="md-block">
+                                        <label translate>Account Number</label>
+                                        <input type="tel"
+                                               name="account_number"
+                                               ng-model="vm.user.account_number"
+                                               pattern="^[0-9]*$" minlength="10"
+                                               maxlength="10" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>
+
+                                        <div ng-messages="form1.account_number.$error">
+                                            <div ng-message="pattern" translate>
+                                                Please enter digits only.
+                                            </div>
+                                            <div ng-message="maxlength,minlength" translate>
+                                                Please enter 10 digits.
+                                            </div>
+                                        </div>
+                                    </md-input-container>
+                                </form>
+                            </div>
+                        </div>
+
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<form name="form1">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Pin</label>-->
+                                        <!--<input type="tel"-->
+                                               <!--name="current_address_pincode"-->
+                                               <!--ng-model="vm.user.current_address_pincode"-->
+                                               <!--pattern="^[0-9]*$" minlength="6"-->
+                                               <!--maxlength="6" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>-->
+
+                                        <!--<div ng-messages="form1.current_address_pincode.$error">-->
+                                            <!--<div ng-message="pattern" translate>-->
+                                                <!--Please enter digits only.-->
+                                            <!--</div>-->
+                                            <!--<div ng-message="maxlength,minlength" translate>-->
+                                                <!--Please enter 6 digits.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</md-input-container>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        </div>
+
+
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Native Address Line 1</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="postal_address"-->
+                                           <!--ng-model="vm.user.postal_address"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Native Address Line 2</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="postal_address_1"-->
+                                           <!--ng-model="vm.user.postal_address_1"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<form name="form2">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Pin</label>-->
+                                        <!--<input type="tel"-->
+                                               <!--name="postal_address_pincode"-->
+                                               <!--ng-model="vm.user.postal_address_pincode"-->
+                                               <!--pattern="^[0-9]*$" minlength="6"-->
+                                               <!--maxlength="6" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null"/>-->
+
+                                        <!--<div ng-messages="form2.postal_address_pincode.$error">-->
+                                            <!--<div ng-message="pattern" translate>-->
+                                                <!--Please enter digits only.-->
+                                            <!--</div>-->
+                                            <!--<div ng-message="maxlength,minlength" translate>-->
+                                                <!--Please enter 6 digits.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</md-input-container>-->
+                                <!--</form>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <!--<div id="family-detail" class="profile-detail-row">-->
+                    <!--<a href="#" class="detail-opener"-->
+                       <!--ng-click="collapsedTabs.family = !collapsedTabs.family"><i-->
+                            <!--class="icon-plus-circle"-->
+                            <!--ng-show="collapsedTabs.family"></i><i-->
+                            <!--class="icon-minus-circle"-->
+                            <!--ng-hide="collapsedTabs.family"></i></a>-->
+
+                    <!--<h3 class="detail-title"-->
+                        <!--ng-click="collapsedTabs.family = !collapsedTabs.family" translate>Family Details</h3>-->
+
+                    <!--<div class="slide" uib-collapse="collapsedTabs.family">-->
+                        <!--<div class="row first-row">-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Father's Name</label>-->
+                                    <!--<input ng-model="vm.user.fathername"-->
+                                           <!--name="fathername"-->
+                                           <!--class="form-input"-->
+                                           <!--type="text" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+
+                            <!--</div>-->
+                            <!--<div class="col-sm-4 input-fixed-height">-->
+                                <!--<div class="select">-->
+                                    <!--<md-input-container>-->
+                                        <!--<label translate>Father's Occupation</label>-->
+                                        <!--<input type="text"-->
+                                               <!--name="father_occupation"-->
+                                               <!--ng-model="vm.user.father_occupation"-->
+                                               <!--maxlength="50" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                    <!--</md-input-container>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div>-->
+                                <!--<div class="col-sm-4 input-fixed-height">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Mother's Name</label>-->
+                                        <!--<input ng-model="vm.user.mothername"-->
+                                               <!--name="mothername"-->
+                                               <!--type="text" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                    <!--</md-input-container>-->
+                                <!--</div>-->
+                                <!--<div class="col-sm-4 input-fixed-height">-->
+                                    <!--<div class="select">-->
+                                        <!--<md-input-container>-->
+                                            <!--<label translate>Mother's Occupation</label>-->
+                                            <!--<input type="text"-->
+                                                   <!--name="mother_occupation"-->
+                                                   <!--ng-model="vm.user.mother_occupation"-->
+                                                   <!--maxlength="50" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                        <!--</md-input-container>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row row-buffer">-->
+                            <!--<div class="panel panel-default">-->
+                                <!--<div class="panel-heading" translate>Sister Details <span-->
+                                        <!--class="panel-buttons"><i-->
+                                        <!--class="icon-plus-circle"-->
+                                        <!--ng-click="vm.addSibling( 'sisterObject')"></i></span>-->
+                                <!--</div>-->
+                                <!--<div class="panel-body">-->
+                                <!--<form name="sisterForm" class="sister-form">-->
+                                    <!--<div ng-repeat="sister in vm.sisterList">-->
+                                        <!--<div class="row no-margin">-->
+                                          <!--<div class="col-xs-2 visible-xs-block">-->
+                                            <!--<span class="panel-buttons"><i-->
+                                              <!--class="icon-minus-circle"-->
+                                              <!--ng-click="vm.deleteSibling(sister ,$index)"></i></span>-->
+                                          <!--</div>-->
+                                            <!--<div class=" col-sm-4 input-fixed-height col-xs-10 no-margin-bottom">-->
+                                                <!--<md-input-container-->
+                                                        <!--class="md-block">-->
+                                                    <!--<label translate>Name</label>-->
+                                                    <!--<input type="text"-->
+                                                           <!--ng-model="sister.first_name"-->
+                                                           <!--class="form-input"-->
+                                                           <!--ng-blur="vm.updateSiblingData(sister,$index)" id="test" focus="{{vm.focusFlag}}">-->
+                                                <!--</md-input-container>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-xs-2 visible-xs-block"></div>-->
+                                            <!--<div class=" col-sm-4 input-fixed-height col-xs-10">-->
+                                                <!--<div class="select select-component">-->
+                                                    <!--<md-input-container-->
+                                                            <!--class="select  margin-md-15" data-ui-select-label>-->
+                                                        <!--<label translate>Marital Status</label>-->
+                                                        <!--<ui-select-->
+                                                                <!--ng-model="sister.marital_status"-->
+                                                                <!--theme="bootstrap"-->
+                                                                <!--class="form-control"-->
+                                                                <!--reset-search-input="true"-->
+                                                                <!--on-select='vm.updateSiblingData(sister,$index)'-->
+                                                                <!--ng-disabled="sister.id == null">-->
+                                                            <!--<ui-select-match>-->
+                                                                <!--{{$select.selected}}-->
+                                                            <!--</ui-select-match>-->
+                                                            <!--<ui-select-choices-->
+                                                                    <!--repeat="mstatus in vm.maritalstatus1 | filter : $select.search">-->
+                                                                <!--<div ng-bind-html="mstatus | highlight: $select.search"></div>-->
+                                                            <!--</ui-select-choices>-->
+                                                            <!--<ui-select-no-choice translate>-->
+                                                                <!--No marital-->
+                                                                <!--status found.-->
+                                                            <!--</ui-select-no-choice>-->
+                                                        <!--</ui-select>-->
+                                                    <!--</md-input-container>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-xs-2 visible-xs-block"></div>-->
+                                            <!--<div class=" col-sm-3 col-xs-10">-->
+                                                <!--<div class="select">-->
+                                                  <!--<md-input-container class="md-block" flex-gt-sm>-->
+                                                    <!--<input data-inputmask="'alias': 'date'"-->
+                                                         <!--name="sisbday"-->
+                                                         <!--type ="tel"-->
+                                                          <!--ng-disabled="sister.id == null"-->
+                                                         <!--data-datevalidater-->
+                                                         <!--ng-model="sister.date"-->
+                                                         <!--placeholder="dd/mm/yyyy"-->
+                                                         <!--ng-blur='vm.updateSiblingData(sister,$index)'-->
+                                                         <!--/>-->
+                                                          <!--<div ng-messages="sisterForm.sisbday.$error"-->
+                                                           <!--role="alert" >-->
+                                                          <!--<div ng-message="dateField"-->
+                                                               <!--class="my-message" translate>The-->
+                                                              <!--entered value is not a date!-->
+                                                          <!--</div>-->
+
+                                                      <!--</div>-->
+                                                  <!--</md-input-container>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class=" col-sm-1 hidden-xs"-->
+                                                 <!--style="margin-top: 21px;">-->
+                                                <!--<i  class="icon-minus-circle"-->
+                                                   <!--ng-click="vm.deleteSibling(sister ,$index)"></i>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<hr ng-if="!$last">-->
+                                    <!--</div>-->
+                                    <!--</form>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="row row-buffer">-->
+                            <!--<div class="panel panel-default">-->
+                                <!--<div class="panel-heading" translate>Brother Details <span-->
+                                        <!--class="panel-buttons"><i-->
+                                        <!--class="icon-plus-circle"-->
+                                        <!--ng-click="vm.addSibling('brotherObject')"></i></span>-->
+                                <!--</div>-->
+                                <!--<div class="panel-body">-->
+                                <!--<form name="brotherForm" class="sister-form">-->
+                                    <!--<div ng-repeat="brother in vm.brotherList">-->
+                                        <!--<div class="row no-margin">-->
+                                            <!--<div class="col-xs-2 visible-xs-block">-->
+                                            <!--<span class="panel-buttons"><i-->
+                                              <!--class="icon-minus-circle"-->
+                                              <!--ng-click="vm.deleteSibling(brother ,$index)"></i></span>-->
+                                          <!--</div>-->
+                                            <!--<div class=" col-sm-4 input-fixed-height col-xs-10  no-margin-bottom">-->
+
+                                                <!--<md-input-container-->
+                                                        <!--class="md-block">-->
+                                                    <!--<label translate>Name</label>-->
+                                                    <!--<input type="text"-->
+                                                           <!--ng-model="brother.first_name"-->
+                                                           <!--class="form-input"-->
+                                                           <!--ng-blur="vm.updateSiblingData(brother,$index)" focus="{{vm.focusFlag}}">-->
+                                                <!--</md-input-container>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-xs-2 visible-xs-block"></div>-->
+                                            <!--<div class=" col-sm-4 input-fixed-height col-xs-10">-->
+                                                <!--<div class="select select-component">-->
+                                                    <!--<md-input-container-->
+                                                            <!--class="select  margin-md-15" data-ui-select-label>-->
+                                                        <!--<label translate>Marital Status</label>-->
+                                                        <!--<ui-select-->
+                                                                <!--ng-model="brother.marital_status"-->
+                                                                <!--theme="bootstrap"-->
+                                                                <!--class="form-control"-->
+                                                                <!--on-select='vm.updateSiblingData(brother,$index)'-->
+                                                                <!--reset-search-input="true"-->
+                                                                <!--ng-disabled="brother.id == null">-->
+                                                            <!--<ui-select-match>-->
+                                                                <!--{{$select.selected}}-->
+                                                            <!--</ui-select-match>-->
+                                                            <!--<ui-select-choices-->
+                                                                    <!--repeat="cstatus in vm.maritalstatus2 | filter : $select.search">-->
+                                                                <!--<div ng-bind-html="cstatus | highlight: $select.search"></div>-->
+                                                            <!--</ui-select-choices>-->
+                                                            <!--<ui-select-no-choice translate>-->
+                                                                <!--No status found.-->
+                                                            <!--</ui-select-no-choice>-->
+                                                        <!--</ui-select>-->
+                                                    <!--</md-input-container>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                          <!--<div class="col-xs-2 visible-xs-block"></div>-->
+                                            <!--<div class=" col-sm-3 col-xs-10 input-fixed-height">-->
+                                                <!--<div class="select">-->
+
+                                                  <!--<md-input-container class="md-block" flex-gt-sm>-->
+                                                    <!--<input data-inputmask="'alias': 'date'"-->
+                                                         <!--name="brobday"-->
+                                                         <!--type ="tel"-->
+                                                          <!--ng-disabled="brother.id == null"-->
+                                                         <!--data-datevalidater-->
+                                                         <!--ng-model="brother.date"-->
+                                                         <!--placeholder="dd/mm/yyyy"-->
+                                                         <!--ng-blur='vm.updateSiblingData(brother,$index)'-->
+                                                         <!--/>-->
+                                                          <!--<div ng-messages="brotherForm.brobday.$error"-->
+                                                           <!--role="alert" >-->
+                                                          <!--<div ng-message="dateField"-->
+                                                               <!--class="my-message" translate>The-->
+                                                              <!--entered value is not a date!-->
+                                                          <!--</div>-->
+
+                                                      <!--</div>-->
+                                                  <!--</md-input-container>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class=" col-sm-1 hidden-xs"-->
+                                                 <!--style="margin-top: 21px;">-->
+                                                <!--<i class="icon-minus-circle"-->
+                                                   <!--ng-click="vm.deleteSibling(brother ,$index)"></i>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<hr ng-if="!$last">-->
+                                    <!--</div>-->
+                                    <!--</form>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row third-row">-->
+                            <!--<div>-->
+                                <!--<div class=" col-sm-4 input-fixed-height">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Mama's Name</label>-->
+                                        <!--<input type="text"-->
+                                               <!--name="mamaname"-->
+                                               <!--ng-model="vm.user.mamaname"-->
+                                               <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                    <!--</md-input-container>-->
+                                <!--</div>-->
+                                <!--<div class=" col-sm-4 input-fixed-height">-->
+                                    <!--<md-input-container class="md-block">-->
+                                        <!--<label translate>Relative's Surname</label>-->
+                                        <!--<input type="text"-->
+                                               <!--name="relatives"-->
+                                               <!--ng-model="vm.user.relatives"-->
+                                               <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                    <!--</md-input-container>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div id="astro-detail" class="profile-detail-row">-->
+                    <!--<a href="#" class="detail-opener"-->
+                       <!--ng-click="collapsedTabs.astro = !collapsedTabs.astro"><i-->
+                            <!--class="icon-plus-circle"-->
+                            <!--ng-show="collapsedTabs.astro"></i><i-->
+                            <!--class="icon-minus-circle"-->
+                            <!--ng-hide="collapsedTabs.astro"></i></a>-->
+
+                    <!--<h3 class="detail-title"-->
+                        <!--ng-click="collapsedTabs.astro = !collapsedTabs.astro" translate>Astro Details</h3>-->
+
+                    <!--<div class="slide" uib-collapse="collapsedTabs.astro">-->
+                        <!--<div class="row first-row">-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Gotra</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="gotra"-->
+                                           <!--ng-model="vm.user.gotra"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="md-block">-->
+                                    <!--<label translate>Devak</label>-->
+                                    <!--<input type="text"-->
+                                           <!--name="devak"-->
+                                           <!--ng-model="vm.user.devak"-->
+                                           <!--class="form-input" onfocus="this.defaultValue =this.value" onblur="this.value != this.defaultValue ? angular.element(this).scope().changeContent1(this.name,this.value) : null">-->
+                                <!--</md-input-container>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Gan</label>-->
+                                    <!--<ui-select ng-model="vm.user.gan"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "gan",vm.user.gan)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="gan in vm.gan | filter : $select.search">-->
+                                            <!--<div ng-bind-html="gan | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No gan found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Nadi</label>-->
+                                    <!--<ui-select ng-model="vm.user.nadi"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "nadi",vm.user.nadi)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="nadi in vm.nadi | filter : $select.search">-->
+                                            <!--<div ng-bind-html="nadi | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No nadi found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Rashi</label>-->
+                                    <!--<ui-select ng-model="vm.user.rashi"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "rashi",vm.user.rashi)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="rashi in vm.rashi | filter : $select.search">-->
+                                            <!--<div ng-bind-html="rashi | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No rashi found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Charan</label>-->
+                                    <!--<ui-select ng-model="vm.user.charan"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "charan",vm.user.charan)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="charan in vm.charan | filter : $select.search">-->
+                                            <!--<div ng-bind-html="charan | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No charan found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row second-row">-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<md-input-container class="select" data-ui-select-label>-->
+                                    <!--<label translate>Nakshatra</label>-->
+                                    <!--<ui-select ng-model="vm.user.nakshatra"-->
+                                               <!--theme="bootstrap"-->
+                                               <!--class="form-control"-->
+                                               <!--on-select='vm.changeContent( "nakshatra",vm.user.nakshatra)'-->
+                                               <!--reset-search-input="true">-->
+                                        <!--<ui-select-match>{{$select.selected}}-->
+                                        <!--</ui-select-match>-->
+                                        <!--<ui-select-choices-->
+                                                <!--repeat="nakshatra in vm.nakshatra | filter : $select.search">-->
+                                            <!--<div ng-bind-html="nakshatra | highlight: $select.search"></div>-->
+                                        <!--</ui-select-choices>-->
+                                        <!--<ui-select-no-choice translate>-->
+                                            <!--No nakshatra found.-->
+                                        <!--</ui-select-no-choice>-->
+                                    <!--</ui-select>-->
+                                <!--</md-input-container>-->
+                            <!--</div>-->
+                            <!--<div class="col-sm-6 input-fixed-height">-->
+                                <!--<label class="label-text lb-time-picker" translate>Mangal</label>-->
+                                <!--<md-radio-group class="radio-wrap"-->
+                                                <!--ng-model="vm.user.mangal"-->
+                                                <!--ng-change='vm.changeContent( "mangal",vm.user.mangal)'>-->
+                                    <!--<md-radio-button class="radio-button"-->
+                                                     <!--value="Yes"-->
+                                                     <!--class="md-primary"><span translate>Yes</span>-->
+                                    <!--</md-radio-button>-->
+                                    <!--<md-radio-button class="radio-button"-->
+                                                     <!--value="No"> <span translate>No</span>-->
+                                    <!--</md-radio-button>-->
+                                <!--</md-radio-group>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+<md-button ng-click="vm.scrollTo('personal-detail')"
+           class="md-fab md-mini md-no-ink md-fab-bottom-right"
+           style="position:fixed; background-color: rgb(255, 93, 12);z-index:60">
+    <!-- <span style="font-size:14px; text-transform:none">Go to top</span> -->
+    <!-- <md-icon md-font-icon="icon-arrow-up" class="icon s24" style="cursor:pointer"></md-icon> -->
+    <i class="material-icons" style="margin-top: 8px;">arrow_upward</i>
+    <md-tooltip md-direction="left"><span translate>Go To Top</span></md-tooltip>
+</md-button>
+<!--<div class="modal fade" id="changeNo" role="dialog">-->
+    <!--<div class="modal-dialog modal-md">-->
+        <!--<div class="modal-content">-->
+            <!--<form name="myForm">-->
+                <!--<div class="modal-header">-->
+                    <!--<button type="button" class="close"-->
+                            <!--data-dismiss="modal">&times;</button>-->
+                    <!--<h4 class="modal-title" translate>Enter PIN Code</h4>-->
+                <!--</div>-->
+                <!--<div class="modal-body">-->
+                    <!--<div class="row row-buffer-lg">-->
+                        <!--<div class="col-sm-3 col-md-3">-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-5 col-md-5">-->
+                            <!--<md-input-container class="md-block search">-->
+                                <!--<label translate>PIN Code</label>-->
+                                <!--<input ng-model="vm.pin" required>-->
+                                <!--<div ng-if="vm.wrongPin != null" style="color:red;font-size:10px;">{{vm.wrongPin}}</div>-->
+                            <!--</md-input-container>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;<div class="row text-center">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="search-profile-btns">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<button type="submit" class="btn btn-secondary"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;ng-click="vm.cancelUpdateMobile()" translate>Cancel&ndash;&gt;-->
+                            <!--&lt;!&ndash;</button>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<button type="submit"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;class="btn btn-primary btn-register"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;ng-click="vm.confirmMobile(myForm)" translate>Update&ndash;&gt;-->
+                            <!--&lt;!&ndash;</button>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="modal fade" id="previewImage" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class ="row text-center">
+                <img id="addImage" src="{{vm.user.image_url}}"
+                       alt="image description">
+            </div>
+            <div class="row text-center">
+                <div class="search-profile-btns">
+                    <button type="button " class="btn btn-secondary"
+                            data-dismiss="modal">{{'Close' | translate}}
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--<script type="text/javascript">-->
+    <!--$(document).ready(function(){-->
+      <!--$(":input").inputmask();-->
+    <!--});-->
+<!--</script>-->
